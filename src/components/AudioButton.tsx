@@ -15,84 +15,88 @@ export function AudioButton({ text, className, size = "icon" }: AudioButtonProps
   const speak = () => {
     if (typeof window === "undefined" || !window.speechSynthesis) return;
 
-    // 既存の再生を即座に停止してキューをクリア
+    // 既存の再生を停止
     window.speechSynthesis.cancel();
 
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "zh-TW";
+    utterance.rate = 0.85; // 学習用に少しゆっくり
+    utterance.pitch = 1.1; // わずかに高く（女性的に）
 
     /**
-     * 台湾華語 (zh-TW) の音声を抽出し、女性の声をスコアリングして選択する
+     * 100msごとに最大10回、音声リストがロードされるのを待機するリトライロジック
      */
-    const findBestVoice = () => {
-      const allVoices = window.speechSynthesis.getVoices();
-      
-      // 1. 台湾華語（zh-TW）に関連する音声のみをフィルタリング
-      const twVoices = allVoices.filter(v => {
-        const lang = v.lang.toLowerCase().replace('_', '-');
-        return lang === 'zh-tw' || lang.includes('zh-tw') || lang.includes('zh-hant-tw');
-      });
+    let retries = 0;
+    const maxRetries = 10;
 
-      if (twVoices.length === 0) return null;
+    const findAndSpeak = () => {
+      const allVoices = window.speechSynthesis.getVoices();
+
+      if (allVoices.length === 0 && retries < maxRetries) {
+        retries++;
+        setTimeout(findAndSpeak, 100);
+        return;
+      }
 
       /**
-       * 2. 優先順位スコアリング
-       * ユーザーの要求に基づき、特定のキーワードを持つ音声を優先します。
+       * 属性ベースのフィルタリングと優先順位スコアリング
+       * zh-TW/zh-HK を対象とし、女性のキーワードを含むものを抽出
        */
+      const filteredVoices = allVoices.filter((v) => {
+        const lang = v.lang.toLowerCase().replace("_", "-");
+        const name = v.name.toLowerCase();
+        
+        // 言語フィルター (zh-TW を優先するが、指定により zh-HK も候補に含める)
+        const isTargetLang = lang.startsWith("zh-tw") || lang.startsWith("zh-hk") || lang.includes("hant");
+        
+        // 女性キーワードのいずれかを含むか
+        const hasFemaleKeyword = [
+          "female", "女性", "mei-jia", "sin-ji", "ting-ting", "yating", "hanhan", "google", "國語"
+        ].some(k => name.includes(k.toLowerCase()));
+
+        return isTargetLang && hasFemaleKeyword;
+      });
+
       const getScore = (voice: SpeechSynthesisVoice) => {
         const name = voice.name.toLowerCase();
+        const lang = voice.lang.toLowerCase().replace("_", "-");
         let score = 0;
 
-        // iOS: Mei-Jia (高品質な女性音声)
-        if (name.includes('mei-jia')) score += 100;
-        
-        // Android/Google: Sin-Ji (Googleの台湾女性音声)
-        if (name.includes('sin-ji')) score += 95;
+        // 台湾華語（zh-TW）を最優先（広東語よりも高いスコア）
+        if (lang.includes("tw")) score += 1000;
 
-        // Windows/Azure: Yating, Hanhan
-        if (name.includes('yating') || name.includes('hanhan')) score += 90;
+        // モバイル専用キーワードの優先スコア
+        // iOS 優先キーワード
+        if (name.includes("mei-jia")) score += 500;
+        if (name.includes("sin-ji")) score += 450;
+        if (name.includes("ting-ting")) score += 400;
 
-        // キーワードベースの検索 (Female, Google)
-        if (name.includes('female')) score += 50;
-        if (name.includes('google')) score += 40;
+        // Android 優先キーワード
+        if (name.includes("zh-tw-language")) score += 350;
+        if (name.includes("google 國語")) score += 300;
 
-        // 台湾であることを示す一般的なキーワード
-        if (name.includes('taiwan') || name.includes('hant')) score += 10;
+        // 一般的な属性キーワード
+        if (name.includes("female") || name.includes("女性")) score += 100;
 
         return score;
       };
 
-      // スコアでソートして最高得点の音声を選択。
-      // スコアが0でも、フィルタリングされた twVoices の中から最初のものが選ばれる（フォールバック）
-      return twVoices.sort((a, b) => getScore(b) - getScore(a))[0];
-    };
+      // スコア順にソートして最良の声を選択
+      const bestVoice = filteredVoices.sort((a, b) => getScore(b) - getScore(a))[0] 
+                        || allVoices.find(v => v.lang.toLowerCase().includes("tw"));
 
-    /**
-     * 再生実行処理
-     */
-    const executeSpeak = () => {
-      const preferredVoice = findBestVoice();
-      if (preferredVoice) {
-        utterance.voice = preferredVoice;
+      if (bestVoice) {
+        // デバッグ用ログ: 選択された音声情報を出力
+        console.log(`[AudioButton] Selected voice: "${bestVoice.name}" (lang: ${bestVoice.lang}) - score rank candidate`);
+        utterance.voice = bestVoice;
+      } else {
+        console.log("[AudioButton] No specific TW female voice found, using system default for zh-TW.");
       }
-
-      // 学習用に音声の特性を微調整
-      utterance.rate = 0.85; // 少しゆっくり
-      utterance.pitch = 1.1; // わずかに高く（明瞭で女性的な響きに）
 
       window.speechSynthesis.speak(utterance);
     };
 
-    // リストがまだロードされていない場合（特にモバイルブラウザ）
-    if (window.speechSynthesis.getVoices().length === 0) {
-      window.speechSynthesis.onvoiceschanged = () => {
-        executeSpeak();
-        // 重複実行を防ぐためイベントを解除
-        window.speechSynthesis.onvoiceschanged = null;
-      };
-    } else {
-      executeSpeak();
-    }
+    findAndSpeak();
   };
 
   return (
