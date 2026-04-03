@@ -1,8 +1,9 @@
+
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
-import { ChevronLeft, ChevronRight, BookOpen, GraduationCap, Trophy, Languages, Settings2, RefreshCw } from "lucide-react";
-import { VOCABULARY_DATA } from "@/app/lib/vocabulary";
+import { ChevronLeft, ChevronRight, BookOpen, GraduationCap, Trophy, Languages, Settings2, RefreshCw, Eye, EyeOff } from "lucide-react";
+import { VOCABULARY_DATA, VocabularyItem } from "@/app/lib/vocabulary";
 import { GRAMMAR_DATA, GrammarItem } from "@/app/lib/grammar";
 import { VocabularyCard } from "@/components/VocabularyCard";
 import { CompositionSection } from "@/components/CompositionSection";
@@ -13,6 +14,7 @@ import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { AudioButton } from "@/components/AudioButton";
+import { cn } from "@/lib/utils";
 
 type TrainingMode = 'word' | 'triple' | 'grammar';
 
@@ -21,7 +23,8 @@ export default function Home() {
   const [trainingMode, setTrainingMode] = useState<TrainingMode>('word');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showPinyin, setShowPinyin] = useState(true);
-  const [tripleWords, setTripleWords] = useState<string[]>([]);
+  const [showGrammarExample, setShowGrammarExample] = useState(true);
+  const [tripleItems, setTripleItems] = useState<VocabularyItem[]>([]);
 
   // Filter data based on selected level
   const filteredVocab = useMemo(() => {
@@ -36,7 +39,7 @@ export default function Home() {
   const refreshTripleChallenge = () => {
     if (filteredVocab.length < 3) return;
     const shuffled = [...filteredVocab].sort(() => 0.5 - Math.random());
-    setTripleWords(shuffled.slice(0, 3).map(w => w.word));
+    setTripleItems(shuffled.slice(0, 3));
   };
 
   useEffect(() => {
@@ -154,9 +157,14 @@ export default function Home() {
               </Button>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
-              {tripleWords.map((word, idx) => (
-                <div key={idx} className="bg-primary/10 px-6 py-4 rounded-2xl border-2 border-primary/20">
-                  <span className="text-3xl font-headline font-bold text-primary">{word}</span>
+              {tripleItems.map((item, idx) => (
+                <div key={idx} className="bg-primary/10 px-6 py-4 rounded-2xl border-2 border-primary/20 text-center min-w-[120px]">
+                  <span className="text-3xl font-headline font-bold text-primary block">{item.word}</span>
+                  {showPinyin && (
+                    <span className="text-xs font-body text-accent/80 font-medium mt-1 block">
+                      {item.pinyin}
+                    </span>
+                  )}
                 </div>
               ))}
             </div>
@@ -170,7 +178,18 @@ export default function Home() {
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-xl border-none space-y-6 animate-in fade-in duration-500">
             <div className="flex justify-between items-start">
               <Badge variant="secondary">Grammar Master</Badge>
-              <AudioButton text={currentGrammar.example} />
+              <div className="flex gap-2">
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  onClick={() => setShowGrammarExample(!showGrammarExample)}
+                  className="text-muted-foreground text-xs rounded-full"
+                >
+                  {showGrammarExample ? <EyeOff className="h-4 w-4 mr-1" /> : <Eye className="h-4 w-4 mr-1" />}
+                  {showGrammarExample ? "使用例を隠す" : "使用例を見る"}
+                </Button>
+                <AudioButton text={currentGrammar.example} />
+              </div>
             </div>
             <div className="text-center space-y-4">
               <h2 className="text-4xl font-headline font-bold text-primary tracking-tight">
@@ -182,7 +201,11 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="pt-6 border-t border-border/50">
+            
+            <div className={cn(
+              "pt-6 border-t border-border/50 transition-all duration-300 overflow-hidden",
+              showGrammarExample ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0 pointer-events-none p-0 border-none"
+            )}>
               <p className="text-xs font-headline uppercase tracking-widest text-muted-foreground font-bold mb-3">使用例</p>
               <p className="text-xl font-body text-foreground font-medium leading-relaxed">{currentGrammar.example}</p>
               {showPinyin && <p className="text-sm font-body text-accent/80 mt-1">{currentGrammar.examplePinyin}</p>}
@@ -197,7 +220,7 @@ export default function Home() {
             key={`${selectedLevel}-${trainingMode}-${currentIndex}`}
             mode={trainingMode}
             level={selectedLevel}
-            vocabularyWords={trainingMode === 'triple' ? tripleWords : (currentItem ? [currentItem.word] : [])}
+            vocabularyWords={trainingMode === 'triple' ? tripleItems.map(i => i.word) : (currentItem ? [currentItem.word] : [])}
             grammarItem={trainingMode === 'grammar' ? currentGrammar : undefined}
           />
         </div>
