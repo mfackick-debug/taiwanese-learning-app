@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -11,9 +10,10 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 interface CompositionSectionProps {
   vocabularyWord: string;
+  level: 'A' | 'B';
 }
 
-export function CompositionSection({ vocabularyWord }: CompositionSectionProps) {
+export function CompositionSection({ vocabularyWord, level }: CompositionSectionProps) {
   const [sentence, setSentence] = useState("");
   const [feedback, setFeedback] = useState<string | null>(null);
   const [isChecking, setIsChecking] = useState(false);
@@ -27,6 +27,7 @@ export function CompositionSection({ vocabularyWord }: CompositionSectionProps) 
       const result = await aiSentenceFeedback({
         sentence,
         vocabularyWord,
+        level,
       });
       setFeedback(result.feedback);
     } catch (error) {
@@ -41,7 +42,9 @@ export function CompositionSection({ vocabularyWord }: CompositionSectionProps) 
       <div className="space-y-4">
         <div className="flex items-center gap-2 text-primary">
           <Sparkles className="h-5 w-5" />
-          <h3 className="font-headline font-bold text-lg">作文練習 / Composition Practice</h3>
+          <h3 className="font-headline font-bold text-lg">
+            作文練習 (Band {level})
+          </h3>
         </div>
         
         <div className="relative">
@@ -89,7 +92,9 @@ export function CompositionSection({ vocabularyWord }: CompositionSectionProps) 
           <Info className="h-4 w-4" />
           <AlertTitle className="font-headline text-sm font-bold">ヒント</AlertTitle>
           <AlertDescription className="text-xs text-muted-foreground font-body">
-            短い文章から始めてみましょう。文法が正しくなくてもAIが丁寧に修正してくれます。
+            {level === 'A' 
+              ? "短い文章から始めてみましょう。基本的な文法をAIがチェックします。" 
+              : "接続詞や書き言葉を意識してみましょう。論理的な構成をAIが評価します。"}
           </AlertDescription>
         </Alert>
       )}
