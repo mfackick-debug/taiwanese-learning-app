@@ -1,0 +1,29 @@
+
+{
+  "entities": {
+    "HistoryItem": {
+      "title": "HistoryItem",
+      "description": "A record of a user's practice session including AI feedback.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "level": { "type": "string", "enum": ["A", "B"] },
+        "mode": { "type": "string", "enum": ["word", "triple", "grammar"] },
+        "target": { "type": "string" },
+        "userSentence": { "type": "string" },
+        "aiFeedback": { "type": "string" }
+      },
+      "required": ["id", "timestamp", "level", "mode", "target", "userSentence", "aiFeedback"]
+    }
+  },
+  "auth": {
+    "providers": ["google.com"]
+  },
+  "firestore": {
+    "/users/{userId}/history/{historyId}": {
+      "schema": { "$ref": "#/backend/entities/HistoryItem" },
+      "description": "Stores user practice history for persistent access across devices."
+    }
+  }
+}
