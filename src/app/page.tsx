@@ -1,17 +1,20 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
-import { ChevronLeft, ChevronRight, BookOpen, GraduationCap, Trophy } from "lucide-react";
+import { ChevronLeft, ChevronRight, BookOpen, GraduationCap, Trophy, Languages } from "lucide-react";
 import { VOCABULARY_DATA } from "@/app/lib/vocabulary";
 import { VocabularyCard } from "@/components/VocabularyCard";
 import { CompositionSection } from "@/components/CompositionSection";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
 
 export default function Home() {
   const [selectedLevel, setSelectedLevel] = useState<'A' | 'B'>('A');
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showPinyin, setShowPinyin] = useState(true);
 
   // Filter vocabulary based on selected level
   const filteredVocab = useMemo(() => {
@@ -52,30 +55,45 @@ export default function Home() {
         </div>
 
         {/* Level Selection Tabs */}
-        <div className="flex flex-col gap-2">
-          <p className="text-xs font-headline font-bold uppercase tracking-widest text-muted-foreground/60 flex items-center justify-center gap-2">
-            <Trophy className="h-3 w-3" /> Select Your Level
-          </p>
-          <Tabs 
-            defaultValue="A" 
-            className="w-full"
-            onValueChange={(val) => setSelectedLevel(val as 'A' | 'B')}
-          >
-            <TabsList className="grid w-full grid-cols-2 p-1 bg-secondary/50 rounded-2xl h-12">
-              <TabsTrigger 
-                value="A" 
-                className="rounded-xl data-[state=active]:bg-primary data-[state=active]:text-white font-headline"
-              >
-                Band A (Level 1-2)
-              </TabsTrigger>
-              <TabsTrigger 
-                value="B" 
-                className="rounded-xl data-[state=active]:bg-primary data-[state=active]:text-white font-headline"
-              >
-                Band B (Level 3-4)
-              </TabsTrigger>
-            </TabsList>
-          </Tabs>
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
+            <p className="text-xs font-headline font-bold uppercase tracking-widest text-muted-foreground/60 flex items-center justify-center gap-2">
+              <Trophy className="h-3 w-3" /> Select Your Level
+            </p>
+            <Tabs 
+              defaultValue="A" 
+              className="w-full"
+              onValueChange={(val) => setSelectedLevel(val as 'A' | 'B')}
+            >
+              <TabsList className="grid w-full grid-cols-2 p-1 bg-secondary/50 rounded-2xl h-12">
+                <TabsTrigger 
+                  value="A" 
+                  className="rounded-xl data-[state=active]:bg-primary data-[state=active]:text-white font-headline"
+                >
+                  Band A (Level 1-2)
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="B" 
+                  className="rounded-xl data-[state=active]:bg-primary data-[state=active]:text-white font-headline"
+                >
+                  Band B (Level 3-4)
+                </TabsTrigger>
+              </TabsList>
+            </Tabs>
+          </div>
+
+          {/* Pinyin Toggle */}
+          <div className="flex items-center justify-center gap-3 bg-white/50 py-3 px-6 rounded-2xl border border-primary/10 self-center">
+            <Languages className="h-4 w-4 text-primary" />
+            <Label htmlFor="pinyin-mode" className="text-sm font-headline font-bold text-muted-foreground cursor-pointer">
+              ピンインを表示
+            </Label>
+            <Switch 
+              id="pinyin-mode"
+              checked={showPinyin}
+              onCheckedChange={setShowPinyin}
+            />
+          </div>
         </div>
       </header>
 
@@ -115,7 +133,7 @@ export default function Home() {
       {/* Vocabulary Flashcard Section */}
       <section>
         {currentItem ? (
-          <VocabularyCard key={currentItem.id} item={currentItem} />
+          <VocabularyCard key={currentItem.id} item={currentItem} showPinyin={showPinyin} />
         ) : (
           <div className="text-center py-20 text-muted-foreground">
             単語がありません。

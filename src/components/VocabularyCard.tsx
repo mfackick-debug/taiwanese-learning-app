@@ -1,23 +1,24 @@
-
 "use client";
 
 import { VocabularyItem } from "@/app/lib/vocabulary";
 import { Card, CardContent } from "@/components/ui/card";
 import { AudioButton } from "@/components/AudioButton";
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 
 interface VocabularyCardProps {
   item: VocabularyItem;
+  showPinyin?: boolean;
 }
 
-export function VocabularyCard({ item }: VocabularyCardProps) {
+export function VocabularyCard({ item, showPinyin = true }: VocabularyCardProps) {
   return (
     <div className="w-full animate-in fade-in slide-in-from-bottom-4 duration-500">
       <Card className="overflow-hidden border-none shadow-xl bg-white/80 backdrop-blur-sm">
         <CardContent className="p-8 space-y-8">
           <div className="flex justify-between items-start">
             <Badge variant="secondary" className="px-3 py-1 font-headline tracking-tight">
-              TOCFL Band A
+              TOCFL Band {item.level}
             </Badge>
             <AudioButton text={item.word} size="icon" className="h-12 w-12 rounded-full shadow-sm" />
           </div>
@@ -26,9 +27,14 @@ export function VocabularyCard({ item }: VocabularyCardProps) {
             <h2 className="text-6xl font-headline font-bold text-primary tracking-tight">
               {item.word}
             </h2>
-            <p className="text-2xl font-body text-accent font-medium">
-              {item.pinyin}
-            </p>
+            <div className={cn(
+              "h-8 transition-opacity duration-300",
+              showPinyin ? "opacity-100" : "opacity-0 pointer-events-none"
+            )}>
+              <p className="text-2xl font-body text-accent font-medium">
+                {item.pinyin}
+              </p>
+            </div>
           </div>
 
           <div className="text-center">
