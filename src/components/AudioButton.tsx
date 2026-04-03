@@ -21,11 +21,8 @@ export function AudioButton({ text, className, size = "icon" }: AudioButtonProps
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "zh-TW";
 
-    // 利用可能な音声リストを取得
-    let voices = window.speechSynthesis.getVoices();
-
     /**
-     * 台湾華語 (zh-TW) の音声を抽出し、女性の声を優先順位付けして選択する
+     * 台湾華語 (zh-TW) の音声を抽出し、女性の声をスコアリングして選択する
      */
     const findBestVoice = () => {
       const allVoices = window.speechSynthesis.getVoices();
@@ -40,59 +37,61 @@ export function AudioButton({ text, className, size = "icon" }: AudioButtonProps
 
       /**
        * 2. 優先順位スコアリング
-       * スコアが高いほど優先的に選択されます。
+       * ユーザーの要求に基づき、特定のキーワードを持つ音声を優先します。
        */
       const getScore = (voice: SpeechSynthesisVoice) => {
         const name = voice.name.toLowerCase();
         let score = 0;
 
-        // iOS: Mei-Jia (美佳) は非常に高品質な台湾女性音声
+        // iOS: Mei-Jia (高品質な女性音声)
         if (name.includes('mei-jia')) score += 100;
         
+        // Android/Google: Sin-Ji (Googleの台湾女性音声)
+        if (name.includes('sin-ji')) score += 95;
+
         // Windows/Azure: Yating, Hanhan
         if (name.includes('yating') || name.includes('hanhan')) score += 90;
 
-        // Android/Google: Google 國語 (Taiwan)
-        if (name.includes('google') && (name.includes('國語') || name.includes('taiwan'))) score += 80;
+        // キーワードベースの検索 (Female, Google)
+        if (name.includes('female')) score += 50;
+        if (name.includes('google')) score += 40;
 
-        // 一般的な女性キーワード
-        if (name.includes('female') || name.includes('xiaozhen') || name.includes('lin-lin')) score += 50;
-
-        // 台湾であることを示すキーワード
+        // 台湾であることを示す一般的なキーワード
         if (name.includes('taiwan') || name.includes('hant')) score += 10;
 
         return score;
       };
 
-      // スコアでソートして最高得点の音声を選択
+      // スコアでソートして最高得点の音声を選択。
+      // スコアが0でも、フィルタリングされた twVoices の中から最初のものが選ばれる（フォールバック）
       return twVoices.sort((a, b) => getScore(b) - getScore(a))[0];
     };
 
-    const preferredVoice = findBestVoice();
-
-    if (preferredVoice) {
-      utterance.voice = preferredVoice;
-    }
-
     /**
-     * 学習用に音声の特性を微調整
-     * 速度 (rate): 0.85 (少しゆっくりで聞き取りやすく)
-     * ピッチ (pitch): 1.1 (わずかに高く設定し、より明瞭で女性的な響きに)
+     * 再生実行処理
      */
-    utterance.rate = 0.85;
-    utterance.pitch = 1.1;
+    const executeSpeak = () => {
+      const preferredVoice = findBestVoice();
+      if (preferredVoice) {
+        utterance.voice = preferredVoice;
+      }
 
-    // iOS/Safariで音声が取得できない場合、voiceschangedイベントを待つ必要があることがある
-    if (voices.length === 0) {
+      // 学習用に音声の特性を微調整
+      utterance.rate = 0.85; // 少しゆっくり
+      utterance.pitch = 1.1; // わずかに高く（明瞭で女性的な響きに）
+
+      window.speechSynthesis.speak(utterance);
+    };
+
+    // リストがまだロードされていない場合（特にモバイルブラウザ）
+    if (window.speechSynthesis.getVoices().length === 0) {
       window.speechSynthesis.onvoiceschanged = () => {
-        const voice = findBestVoice();
-        if (voice) utterance.voice = voice;
-        window.speechSynthesis.speak(utterance);
-        // 一度実行したらイベントを解除
+        executeSpeak();
+        // 重複実行を防ぐためイベントを解除
         window.speechSynthesis.onvoiceschanged = null;
       };
     } else {
-      window.speechSynthesis.speak(utterance);
+      executeSpeak();
     }
   };
 
