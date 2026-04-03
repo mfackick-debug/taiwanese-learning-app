@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
@@ -191,10 +190,18 @@ export default function Home() {
                 <AudioButton text={currentGrammar.example} />
               </div>
             </div>
-            <div className="text-center space-y-4">
+            <div className="text-center space-y-2">
               <h2 className="text-4xl font-headline font-bold text-primary tracking-tight">
                 {currentGrammar.name}
               </h2>
+              <div className={cn(
+                "h-8 transition-all duration-300",
+                showPinyin ? "opacity-100" : "opacity-0 pointer-events-none"
+              )}>
+                <p className="text-xl font-body text-accent font-medium">
+                  {currentGrammar.pinyin}
+                </p>
+              </div>
               <div className="inline-block px-4 py-2 rounded-lg bg-secondary/50">
                 <p className="text-sm font-body text-foreground/80 font-medium">
                   {currentGrammar.description}
@@ -208,7 +215,12 @@ export default function Home() {
             )}>
               <p className="text-xs font-headline uppercase tracking-widest text-muted-foreground font-bold mb-3">使用例</p>
               <p className="text-xl font-body text-foreground font-medium leading-relaxed">{currentGrammar.example}</p>
-              {showPinyin && <p className="text-sm font-body text-accent/80 mt-1">{currentGrammar.examplePinyin}</p>}
+              <div className={cn(
+                "transition-all duration-300 overflow-hidden",
+                showPinyin ? "max-h-12 opacity-100" : "max-h-0 opacity-0"
+              )}>
+                <p className="text-sm font-body text-accent/80 mt-1">{currentGrammar.examplePinyin}</p>
+              </div>
               <p className="text-muted-foreground text-sm mt-2">{currentGrammar.exampleTranslation}</p>
             </div>
           </div>
