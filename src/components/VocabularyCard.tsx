@@ -53,9 +53,19 @@ export function VocabularyCard({ item, showPinyin = true }: VocabularyCardProps)
               <AudioButton text={item.example} size="sm" />
             </div>
             <div className="space-y-3">
-              <p className="text-2xl font-body text-foreground font-medium leading-relaxed">
-                {item.example}
-              </p>
+              <div className="space-y-1">
+                <p className="text-2xl font-body text-foreground font-medium leading-relaxed">
+                  {item.example}
+                </p>
+                <div className={cn(
+                  "transition-all duration-300 overflow-hidden",
+                  showPinyin ? "max-h-12 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+                )}>
+                  <p className="text-sm font-body text-accent/80 font-medium">
+                    {item.examplePinyin}
+                  </p>
+                </div>
+              </div>
               <p className="text-lg font-body text-muted-foreground">
                 {item.exampleTranslation}
               </p>

@@ -4,6 +4,7 @@ export interface VocabularyItem {
   pinyin: string;
   translation: string;
   example: string;
+  examplePinyin: string;
   exampleTranslation: string;
   level: 'A' | 'B';
 }
@@ -17,6 +18,7 @@ export const VOCABULARY_DATA: VocabularyItem[] = [
     pinyin: 'wǒ',
     translation: '私',
     example: '我是一個學生。',
+    examplePinyin: 'Wǒ shì yí ge xuésheng.',
     exampleTranslation: '私は学生です。'
   },
   {
@@ -26,6 +28,7 @@ export const VOCABULARY_DATA: VocabularyItem[] = [
     pinyin: 'hǎo',
     translation: '良い、元気だ',
     example: '今天天氣很好。',
+    examplePinyin: 'Jīntiān tiānqì hěn hǎo.',
     exampleTranslation: '今日は天気がとても良いです。'
   },
   {
@@ -35,6 +38,7 @@ export const VOCABULARY_DATA: VocabularyItem[] = [
     pinyin: 'qù',
     translation: '行く',
     example: '我想去台灣旅行。',
+    examplePinyin: 'Wǒ xiǎng qù Táiwān lǚxíng.',
     exampleTranslation: '私は台湾旅行に行きたいです。'
   },
   {
@@ -44,6 +48,7 @@ export const VOCABULARY_DATA: VocabularyItem[] = [
     pinyin: 'jiā',
     translation: '家、家族',
     example: '我回家的路上看到了一隻貓。',
+    examplePinyin: 'Wǒ huí jiā de lùshàng kàndàole yì zhī māo.',
     exampleTranslation: '家に帰る途中で一匹の猫を見ました。'
   },
   {
@@ -53,6 +58,7 @@ export const VOCABULARY_DATA: VocabularyItem[] = [
     pinyin: 'piàoliàng',
     translation: '美しい、綺麗',
     example: '那朵花真漂亮。',
+    examplePinyin: 'Nà duǒ huā zhēn piàoliàng.',
     exampleTranslation: 'あの花は本当に綺麗です。'
   },
   // Band B (Level 3-4)
@@ -63,6 +69,7 @@ export const VOCABULARY_DATA: VocabularyItem[] = [
     pinyin: 'kǎolǜ',
     translation: '考慮する、検討する',
     example: '在做決定之前，我們必須仔細考慮所有的因素。',
+    examplePinyin: 'Zài zuò juédìng zhīqián, wǒmen bìxū zǐxì kǎolǜ suǒyǒu de yīnsù.',
     exampleTranslation: '決定を下す前に、私たちはすべての要因を慎重に検討しなければなりません。'
   },
   {
@@ -71,7 +78,8 @@ export const VOCABULARY_DATA: VocabularyItem[] = [
     word: '影響',
     pinyin: 'yǐngxiǎng',
     translation: '影響、影響を与える',
-    example: '極端天氣對當地的農業造成了嚴重的影響。',
+    example: '極端天氣對當地の農業造成了嚴重的影響。',
+    examplePinyin: 'Jíduān tiānqì duì dāngdì de nóngyè zàochéngle yánzhòng de yǐngxiǎng.',
     exampleTranslation: '極端な気象は地元の農業に深刻な影響を及ぼしました。'
   },
   {
@@ -81,6 +89,7 @@ export const VOCABULARY_DATA: VocabularyItem[] = [
     pinyin: 'jiànyì',
     translation: '提案、勧告、アドバイスする',
     example: '專家建議政府應該加強環境保護的法律。',
+    examplePinyin: 'Zhuānjiā jiànyì zhèngfǔ yīnggāi jiāqiáng huánjìng bǎohù de fǎlǜ.',
     exampleTranslation: '専門家は、政府が環境保護の法律を強化すべきだと提案しています。'
   },
   {
@@ -90,6 +99,7 @@ export const VOCABULARY_DATA: VocabularyItem[] = [
     pinyin: 'huánjìng',
     translation: '環境',
     example: '為了給下一代更好的生活環境，我們必須減少碳排放。',
+    examplePinyin: 'Wèile gěi xiàyídài gèng hǎo de shēnghuó huánjìng, wǒmen bìxū jiǎnshǎo tàn páifàng.',
     exampleTranslation: '次世代により良い生活環境を残すために、私たちは炭素排出を削減しなければなりません。'
   },
   {
@@ -99,6 +109,7 @@ export const VOCABULARY_DATA: VocabularyItem[] = [
     pinyin: 'gǎishàn',
     translation: '改善する、向上させる',
     example: '這項新政策旨在改善偏遠地區的醫療設施。',
+    examplePinyin: 'Zhè xiàng xīn zhèngcè zhǐzài gǎishàn piānyuǎn dìqū de yīliáo shèshī.',
     exampleTranslation: 'この新しい政策は、辺境地域の医療施設を改善することを目的としています。'
   }
 ];
