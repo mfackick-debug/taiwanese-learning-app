@@ -1,0 +1,11 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-landscape",
+      "description": "A serene landscape of Taiwan mountains",
+      "imageUrl": "https://picsum.photos/seed/taiwan/1200/600",
+      "imageHint": "Taiwan landscape"
+    }
+  ]
+}
