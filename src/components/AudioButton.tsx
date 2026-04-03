@@ -14,30 +14,43 @@ interface AudioButtonProps {
 export function AudioButton({ text, className, size = "icon" }: AudioButtonProps) {
   const speak = () => {
     if (typeof window !== "undefined" && window.speechSynthesis) {
-      // 既存の再生をキャンセル
+      // 既存の再生を即座に停止
       window.speechSynthesis.cancel();
 
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = "zh-TW";
       
-      // 利用可能な音声リストを取得
       const voices = window.speechSynthesis.getVoices();
       
-      // 1. 台湾華語 (zh-TW) を最優先で探す
-      // 2. 見つからない場合は標準中国語 (zh-CN) を探す
-      // 3. 広東語 (zh-HK) は除外する
-      const preferredVoice = 
-        voices.find(v => v.lang === "zh-TW" || v.lang === "zh_TW") ||
-        voices.find(v => v.lang.startsWith("zh-TW")) ||
-        voices.find(v => v.lang.startsWith("zh-CN")) ||
-        voices.find(v => v.lang.startsWith("zh"));
+      /**
+       * 台湾華語 (zh-TW) の女性音声を優先的に選択するロジック
+       * OSやブラウザによって名称が異なるため、代表的なキーワードでフィルタリングします
+       */
+      const preferredVoice = voices.find(v => {
+        const lang = v.lang.replace('_', '-');
+        const name = v.name.toLowerCase();
+        
+        const isTaiwan = lang === 'zh-TW';
+        
+        // 一般的な台湾の女性音声名や高品質なGoogle/Microsoftの音声キーワード
+        const isTargetFemale = 
+          name.includes('female') || 
+          name.includes('yating') || // Microsoft Yating
+          name.includes('hanhan') || // Microsoft Hanhan
+          name.includes('mei-jia') || // Apple Mei-Jia
+          name.includes('國語') ||    // Google 國語 (Taiwan)
+          name.includes('taiwan');
+          
+        return isTaiwan && isTargetFemale;
+      }) || voices.find(v => v.lang.replace('_', '-').startsWith('zh-TW'));
 
       if (preferredVoice) {
         utterance.voice = preferredVoice;
       }
       
-      // 速度を少し調整（学習用に聞き取りやすく）
-      utterance.rate = 0.9;
+      // 学習用に少し速度を落とし、ピッチを微調整してより女性的・自然な響きにします
+      utterance.rate = 0.85;
+      utterance.pitch = 1.05;
       
       window.speechSynthesis.speak(utterance);
     }
