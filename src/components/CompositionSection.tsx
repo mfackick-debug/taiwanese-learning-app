@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -14,9 +15,10 @@ interface CompositionSectionProps {
   level: 'A' | 'B';
   vocabularyWords?: string[];
   grammarItem?: GrammarItem;
+  onFeedback?: (userSentence: string, aiFeedback: string) => void;
 }
 
-export function CompositionSection({ mode, level, vocabularyWords, grammarItem }: CompositionSectionProps) {
+export function CompositionSection({ mode, level, vocabularyWords, grammarItem, onFeedback }: CompositionSectionProps) {
   const [sentence, setSentence] = useState("");
   const [feedback, setFeedback] = useState<string | null>(null);
   const [isChecking, setIsChecking] = useState(false);
@@ -36,6 +38,9 @@ export function CompositionSection({ mode, level, vocabularyWords, grammarItem }
         grammarDescription: grammarItem?.description,
       });
       setFeedback(result.feedback);
+      if (onFeedback) {
+        onFeedback(sentence, result.feedback);
+      }
     } catch (error) {
       console.error("AI Feedback failed", error);
     } finally {

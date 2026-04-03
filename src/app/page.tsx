@@ -1,7 +1,8 @@
+
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
-import { ChevronLeft, ChevronRight, BookOpen, GraduationCap, Trophy, Languages, Settings2, RefreshCw, Eye, EyeOff } from "lucide-react";
+import { ChevronLeft, ChevronRight, BookOpen, GraduationCap, Trophy, Languages, Settings2, RefreshCw, Eye, EyeOff, History, Trash2, Calendar } from "lucide-react";
 import { VOCABULARY_DATA, VocabularyItem } from "@/app/lib/vocabulary";
 import { GRAMMAR_DATA, GrammarItem } from "@/app/lib/grammar";
 import { VocabularyCard } from "@/components/VocabularyCard";
@@ -13,9 +14,22 @@ import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { AudioButton } from "@/components/AudioButton";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
 type TrainingMode = 'word' | 'triple' | 'grammar';
+
+export interface HistoryItem {
+  id: string;
+  timestamp: string;
+  level: 'A' | 'B';
+  mode: TrainingMode;
+  target: string;
+  userSentence: string;
+  aiFeedback: string;
+}
+
+const STORAGE_KEY = "formosan_wordsmith_history";
 
 export default function Home() {
   const [selectedLevel, setSelectedLevel] = useState<'A' | 'B'>('A');
@@ -24,6 +38,24 @@ export default function Home() {
   const [showPinyin, setShowPinyin] = useState(true);
   const [showGrammarExample, setShowGrammarExample] = useState(true);
   const [tripleItems, setTripleItems] = useState<VocabularyItem[]>([]);
+  const [history, setHistory] = useState<HistoryItem[]>([]);
+
+  // Load history from localStorage on mount
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        setHistory(JSON.parse(saved));
+      } catch (e) {
+        console.error("Failed to parse history", e);
+      }
+    }
+  }, []);
+
+  // Save history to localStorage when it changes
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
+  }, [history]);
 
   // Filter data based on selected level
   const filteredVocab = useMemo(() => {
@@ -70,6 +102,30 @@ export default function Home() {
     }
   };
 
+  const addToHistory = (userSentence: string, aiFeedback: string) => {
+    let target = "";
+    if (trainingMode === 'word') target = currentItem?.word || "";
+    if (trainingMode === 'triple') target = tripleItems.map(i => i.word).join(" / ");
+    if (trainingMode === 'grammar') target = currentGrammar?.name || "";
+
+    const newItem: HistoryItem = {
+      id: Date.now().toString(),
+      timestamp: new Date().toLocaleString('ja-JP'),
+      level: selectedLevel,
+      mode: trainingMode,
+      target,
+      userSentence,
+      aiFeedback,
+    };
+    setHistory(prev => [newItem, ...prev]);
+  };
+
+  const clearHistory = () => {
+    if (confirm("履歴をすべて削除しますか？")) {
+      setHistory([]);
+    }
+  };
+
   return (
     <main className="min-h-screen flex flex-col max-w-2xl mx-auto px-4 py-8 md:py-12 gap-8">
       {/* Header */}
@@ -83,7 +139,6 @@ export default function Home() {
           </h1>
         </div>
 
-        {/* Level & Mode Selection */}
         <div className="flex flex-col gap-6">
           <div className="space-y-3">
             <p className="text-xs font-headline font-bold uppercase tracking-widest text-muted-foreground/60 flex items-center justify-center gap-2">
@@ -227,15 +282,67 @@ export default function Home() {
         )}
 
         {/* Composition Section */}
-        <div className="pb-12">
-          <CompositionSection 
-            key={`${selectedLevel}-${trainingMode}-${currentIndex}`}
-            mode={trainingMode}
-            level={selectedLevel}
-            vocabularyWords={trainingMode === 'triple' ? tripleItems.map(i => i.word) : (currentItem ? [currentItem.word] : [])}
-            grammarItem={trainingMode === 'grammar' ? currentGrammar : undefined}
-          />
-        </div>
+        <CompositionSection 
+          key={`${selectedLevel}-${trainingMode}-${currentIndex}`}
+          mode={trainingMode}
+          level={selectedLevel}
+          vocabularyWords={trainingMode === 'triple' ? tripleItems.map(i => i.word) : (currentItem ? [currentItem.word] : [])}
+          grammarItem={trainingMode === 'grammar' ? currentGrammar : undefined}
+          onFeedback={addToHistory}
+        />
+
+        {/* History Section */}
+        <section className="mt-8 space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-primary">
+              <History className="h-5 w-5" />
+              <h3 className="font-headline font-bold text-lg">過去の練習履歴</h3>
+            </div>
+            {history.length > 0 && (
+              <Button variant="ghost" size="sm" onClick={clearHistory} className="text-muted-foreground hover:text-destructive rounded-full">
+                <Trash2 className="h-4 w-4 mr-1" /> 全削除
+              </Button>
+            )}
+          </div>
+
+          {history.length === 0 ? (
+            <div className="text-center py-12 bg-secondary/20 rounded-3xl border-2 border-dashed border-secondary/50">
+              <p className="text-muted-foreground font-body">履歴はまだありません。作文を送信するとここに保存されます。</p>
+            </div>
+          ) : (
+            <Accordion type="single" collapsible className="space-y-3">
+              {history.map((item) => (
+                <AccordionItem key={item.id} value={item.id} className="border-none bg-white/60 backdrop-blur-sm rounded-2xl overflow-hidden shadow-sm">
+                  <AccordionTrigger className="px-4 hover:no-underline">
+                    <div className="flex flex-col items-start gap-1 text-left">
+                      <div className="flex items-center gap-2">
+                        <Badge variant="outline" className="text-[10px] h-5 px-1.5 uppercase">{item.mode}</Badge>
+                        <Badge variant="secondary" className="text-[10px] h-5 px-1.5">Band {item.level}</Badge>
+                        <span className="text-sm font-headline font-bold text-primary">{item.target}</span>
+                      </div>
+                      <div className="flex items-center gap-1 text-[10px] text-muted-foreground">
+                        <Calendar className="h-3 w-3" />
+                        {item.timestamp}
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="px-4 pb-4 space-y-4 border-t border-border/30 pt-4">
+                    <div className="space-y-1">
+                      <p className="text-xs font-headline font-bold uppercase tracking-widest text-muted-foreground">あなたの作文</p>
+                      <p className="text-base font-body text-foreground bg-white/40 p-3 rounded-xl">{item.userSentence}</p>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-xs font-headline font-bold uppercase tracking-widest text-primary">AI講師のフィードバック</p>
+                      <div className="text-sm font-body text-foreground/90 bg-primary/5 p-4 rounded-xl whitespace-pre-wrap leading-relaxed">
+                        {item.aiFeedback}
+                      </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          )}
+        </section>
       </section>
 
       <footer className="mt-auto text-center py-8">
