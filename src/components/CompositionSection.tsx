@@ -2,10 +2,8 @@
 "use client";
 
 import { useState } from "react";
-import { Sparkles, Send, Loader2, Info } from "lucide-react";
+import { Sparkles, Info } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import { aiSentenceFeedback } from "@/ai/flows/ai-sentence-feedback";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { GrammarItem } from "@/app/lib/grammar";
@@ -20,33 +18,6 @@ interface CompositionSectionProps {
 
 export function CompositionSection({ mode, level, vocabularyWords, grammarItem, onFeedback }: CompositionSectionProps) {
   const [sentence, setSentence] = useState("");
-  const [feedback, setFeedback] = useState<string | null>(null);
-  const [isChecking, setIsChecking] = useState(false);
-
-  const handleCheck = async () => {
-    if (!sentence.trim()) return;
-    
-    setIsChecking(true);
-    setFeedback(null);
-    try {
-      const result = await aiSentenceFeedback({
-        sentence,
-        level,
-        mode,
-        vocabularyWords,
-        grammarPoint: grammarItem?.name,
-        grammarDescription: grammarItem?.description,
-      });
-      setFeedback(result.feedback);
-      if (onFeedback) {
-        onFeedback(sentence, result.feedback);
-      }
-    } catch (error) {
-      console.error("AI Feedback failed", error);
-    } finally {
-      setIsChecking(false);
-    }
-  };
 
   const getPlaceholder = () => {
     if (mode === 'word') return `「${vocabularyWords?.[0] || '単語'}」を使って文章を作ってみましょう...`;
@@ -72,40 +43,26 @@ export function CompositionSection({ mode, level, vocabularyWords, grammarItem, 
             value={sentence}
             onChange={(e) => setSentence(e.target.value)}
           />
-          <div className="absolute bottom-3 right-3">
-            <Button
-              onClick={handleCheck}
-              disabled={isChecking || !sentence.trim()}
-              className="rounded-full shadow-md bg-accent hover:bg-accent/90"
-            >
-              {isChecking ? (
-                <Loader2 className="h-4 w-4 animate-spin mr-2" />
-              ) : (
-                <Send className="h-4 w-4 mr-2" />
-              )}
-              AIでチェック
-            </Button>
-          </div>
         </div>
       </div>
 
-      {feedback && (
+      {sentence.trim().length > 0 && (
         <Card className="border-none bg-primary/5 shadow-inner">
           <CardHeader className="pb-2">
             <CardTitle className="text-base font-headline flex items-center gap-2 text-primary">
               <Info className="h-4 w-4" />
-              AI講師のフィードバック
+              メモ
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="prose prose-sm font-body text-foreground/90 whitespace-pre-wrap leading-relaxed">
-              {feedback}
+            <div className="text-sm font-body text-foreground/90 whitespace-pre-wrap leading-relaxed">
+              {sentence}
             </div>
           </CardContent>
         </Card>
       )}
 
-      {!feedback && !isChecking && (
+      {sentence.trim().length === 0 && (
         <Alert variant="default" className="bg-secondary/30 border-none">
           <Info className="h-4 w-4" />
           <AlertTitle className="font-headline text-sm font-bold">トレーニング目標</AlertTitle>

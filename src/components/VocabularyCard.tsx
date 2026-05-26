@@ -4,6 +4,7 @@ import { VocabularyItem } from "@/app/lib/vocabulary";
 import { Card, CardContent } from "@/components/ui/card";
 import { AudioButton } from "@/components/AudioButton";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
 interface VocabularyCardProps {
@@ -71,6 +72,23 @@ export function VocabularyCard({ item, showPinyin = true }: VocabularyCardProps)
               </p>
             </div>
           </div>
+
+          {item.grammarNote && (
+            <div className="pt-4 border-t border-border/50">
+              <Accordion type="single" collapsible>
+                <AccordionItem value="grammar-note" className="border-none">
+                  <AccordionTrigger className="py-2 text-sm font-headline uppercase tracking-widest text-muted-foreground font-bold">
+                    文法メモ / Grammar
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <p className="text-sm font-body text-muted-foreground leading-relaxed">
+                      {item.grammarNote}
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          )}
         </CardContent>
       </Card>
     </div>

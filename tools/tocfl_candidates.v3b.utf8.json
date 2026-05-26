@@ -1,0 +1,2827 @@
+{
+  "source": "https://raw.githubusercontent.com/tomcumming/tocfl-word-list/master/dist/tocfl.csv",
+  "existingCount": 360,
+  "candidateCount": 564,
+  "candidates": [
+    {
+      "word": "的",
+      "pinyin": "de",
+      "level": 1
+    },
+    {
+      "word": "山",
+      "pinyin": "shān",
+      "level": 2
+    },
+    {
+      "word": "哪",
+      "pinyin": "nǎ",
+      "level": 2
+    },
+    {
+      "word": "這裡",
+      "pinyin": "zhèlǐ",
+      "level": 2
+    },
+    {
+      "word": "那裡",
+      "pinyin": "nàlǐ",
+      "level": 2
+    },
+    {
+      "word": "外",
+      "pinyin": "wài",
+      "level": 2
+    },
+    {
+      "word": "右邊",
+      "pinyin": "yòubiān",
+      "level": 2
+    },
+    {
+      "word": "左邊",
+      "pinyin": "zuǒbiān",
+      "level": 2
+    },
+    {
+      "word": "旁邊",
+      "pinyin": "pángbiān",
+      "level": 2
+    },
+    {
+      "word": "中間",
+      "pinyin": "zhōngjiān",
+      "level": 2
+    },
+    {
+      "word": "地鐵",
+      "pinyin": "dìtiě",
+      "level": 2
+    },
+    {
+      "word": "地方",
+      "pinyin": "dìfāng",
+      "level": 2
+    },
+    {
+      "word": "離",
+      "pinyin": "lí",
+      "level": 2
+    },
+    {
+      "word": "往",
+      "pinyin": "wǎng",
+      "level": 2
+    },
+    {
+      "word": "送",
+      "pinyin": "sòng",
+      "level": 2
+    },
+    {
+      "word": "放",
+      "pinyin": "fàng",
+      "level": 2
+    },
+    {
+      "word": "拿",
+      "pinyin": "ná",
+      "level": 2
+    },
+    {
+      "word": "進來",
+      "pinyin": "jìnlái",
+      "level": 2
+    },
+    {
+      "word": "出去",
+      "pinyin": "chūqù",
+      "level": 2
+    },
+    {
+      "word": "站",
+      "pinyin": "zhàn",
+      "level": 2
+    },
+    {
+      "word": "身體",
+      "pinyin": "shēntǐ",
+      "level": 2
+    },
+    {
+      "word": "眼睛",
+      "pinyin": "yǎnjīng",
+      "level": 2
+    },
+    {
+      "word": "藥",
+      "pinyin": "yào",
+      "level": 2
+    },
+    {
+      "word": "雙",
+      "pinyin": "shuāng",
+      "level": 2
+    },
+    {
+      "word": "元",
+      "pinyin": "yuán",
+      "level": 2
+    },
+    {
+      "word": "鞋子",
+      "pinyin": "xiézi",
+      "level": 2
+    },
+    {
+      "word": "褲子",
+      "pinyin": "kùzi",
+      "level": 2
+    },
+    {
+      "word": "市場",
+      "pinyin": "shìchǎng",
+      "level": 2
+    },
+    {
+      "word": "衣服",
+      "pinyin": "yīfu",
+      "level": 2
+    },
+    {
+      "word": "比",
+      "pinyin": "bǐ",
+      "level": 2
+    },
+    {
+      "word": "長",
+      "pinyin": "cháng",
+      "level": 2
+    },
+    {
+      "word": "新",
+      "pinyin": "xīn",
+      "level": 2
+    },
+    {
+      "word": "一樣",
+      "pinyin": "yīyàng",
+      "level": 2
+    },
+    {
+      "word": "好吃",
+      "pinyin": "hǎochī",
+      "level": 2
+    },
+    {
+      "word": "件",
+      "pinyin": "jiàn",
+      "level": 2
+    },
+    {
+      "word": "杯",
+      "pinyin": "bēi",
+      "level": 2
+    },
+    {
+      "word": "瓶",
+      "pinyin": "píng",
+      "level": 2
+    },
+    {
+      "word": "菜",
+      "pinyin": "cài",
+      "level": 2
+    },
+    {
+      "word": "蘋果",
+      "pinyin": "píngguǒ",
+      "level": 2
+    },
+    {
+      "word": "肉",
+      "pinyin": "ròu",
+      "level": 2
+    },
+    {
+      "word": "酒",
+      "pinyin": "jiǔ",
+      "level": 2
+    },
+    {
+      "word": "喝",
+      "pinyin": "hē",
+      "level": 2
+    },
+    {
+      "word": "因為",
+      "pinyin": "yīnwèi",
+      "level": 2
+    },
+    {
+      "word": "和",
+      "pinyin": "hé",
+      "level": 2
+    },
+    {
+      "word": "所以",
+      "pinyin": "suǒyǐ",
+      "level": 2
+    },
+    {
+      "word": "跟",
+      "pinyin": "gēn",
+      "level": 2
+    },
+    {
+      "word": "著",
+      "pinyin": "zhe",
+      "level": 2
+    },
+    {
+      "word": "可能",
+      "pinyin": "kěnéng",
+      "level": 2
+    },
+    {
+      "word": "姓名",
+      "pinyin": "xìngmíng",
+      "level": 3
+    },
+    {
+      "word": "街",
+      "pinyin": "jiē",
+      "level": 3
+    },
+    {
+      "word": "點鐘",
+      "pinyin": "diǎnzhōng",
+      "level": 3
+    },
+    {
+      "word": "男生",
+      "pinyin": "nánshēng",
+      "level": 3
+    },
+    {
+      "word": "女生",
+      "pinyin": "nǚshēng",
+      "level": 3
+    },
+    {
+      "word": "小孩",
+      "pinyin": "xiǎohái",
+      "level": 3
+    },
+    {
+      "word": "小學",
+      "pinyin": "xiǎoxué",
+      "level": 3
+    },
+    {
+      "word": "上學",
+      "pinyin": "shàngxué",
+      "level": 3
+    },
+    {
+      "word": "功課",
+      "pinyin": "gōngkè",
+      "level": 3
+    },
+    {
+      "word": "讀書",
+      "pinyin": "dúshū",
+      "level": 3
+    },
+    {
+      "word": "圖片",
+      "pinyin": "túpiàn",
+      "level": 3
+    },
+    {
+      "word": "窗",
+      "pinyin": "chuānghu",
+      "level": 3
+    },
+    {
+      "word": "樓",
+      "pinyin": "lóu",
+      "level": 3
+    },
+    {
+      "word": "電梯",
+      "pinyin": "diàntī",
+      "level": 3
+    },
+    {
+      "word": "安靜",
+      "pinyin": "ānjìng",
+      "level": 3
+    },
+    {
+      "word": "湖",
+      "pinyin": "hú",
+      "level": 3
+    },
+    {
+      "word": "馬",
+      "pinyin": "mǎ",
+      "level": 3
+    },
+    {
+      "word": "鳥",
+      "pinyin": "niǎo",
+      "level": 3
+    },
+    {
+      "word": "貓",
+      "pinyin": "māo",
+      "level": 3
+    },
+    {
+      "word": "雞",
+      "pinyin": "jī",
+      "level": 3
+    },
+    {
+      "word": "太陽",
+      "pinyin": "tàiyáng",
+      "level": 3
+    },
+    {
+      "word": "下雪",
+      "pinyin": "xiàxuě",
+      "level": 3
+    },
+    {
+      "word": "新年",
+      "pinyin": "xīnnián",
+      "level": 3
+    },
+    {
+      "word": "游泳",
+      "pinyin": "yóuyǒng",
+      "level": 3
+    },
+    {
+      "word": "踢",
+      "pinyin": "tī",
+      "level": 3
+    },
+    {
+      "word": "足球",
+      "pinyin": "zúqiú",
+      "level": 3
+    },
+    {
+      "word": "籃球",
+      "pinyin": "lánqiú",
+      "level": 3
+    },
+    {
+      "word": "網球",
+      "pinyin": "wǎngqiú",
+      "level": 3
+    },
+    {
+      "word": "棒球",
+      "pinyin": "bàngqiú",
+      "level": 3
+    },
+    {
+      "word": "比賽",
+      "pinyin": "bǐsài",
+      "level": 3
+    },
+    {
+      "word": "騎",
+      "pinyin": "qí",
+      "level": 3
+    },
+    {
+      "word": "腳踏車",
+      "pinyin": "jiǎotàchē",
+      "level": 3
+    },
+    {
+      "word": "跑步",
+      "pinyin": "pǎobù",
+      "level": 3
+    },
+    {
+      "word": "電影院",
+      "pinyin": "diànyǐngyuàn",
+      "level": 3
+    },
+    {
+      "word": "表演",
+      "pinyin": "biǎoyǎn",
+      "level": 3
+    },
+    {
+      "word": "上網",
+      "pinyin": "shàngwǎng",
+      "level": 3
+    },
+    {
+      "word": "輸",
+      "pinyin": "shū",
+      "level": 3
+    },
+    {
+      "word": "贏",
+      "pinyin": "yíng",
+      "level": 3
+    },
+    {
+      "word": "有時候",
+      "pinyin": "yǒushíhou",
+      "level": 3
+    },
+    {
+      "word": "久",
+      "pinyin": "jiǔ",
+      "level": 3
+    },
+    {
+      "word": "報紙",
+      "pinyin": "bàozhǐ",
+      "level": 3
+    },
+    {
+      "word": "不客氣",
+      "pinyin": "bùkèqì",
+      "level": 3
+    },
+    {
+      "word": "禮物",
+      "pinyin": "lǐwù",
+      "level": 3
+    },
+    {
+      "word": "歡迎",
+      "pinyin": "huānyíng",
+      "level": 3
+    },
+    {
+      "word": "晚會",
+      "pinyin": "wǎnhuì",
+      "level": 3
+    },
+    {
+      "word": "信封",
+      "pinyin": "xìnfēng",
+      "level": 3
+    },
+    {
+      "word": "寄",
+      "pinyin": "jì",
+      "level": 3
+    },
+    {
+      "word": "接",
+      "pinyin": "jiē",
+      "level": 3
+    },
+    {
+      "word": "郵局",
+      "pinyin": "yóujú",
+      "level": 3
+    },
+    {
+      "word": "銀行",
+      "pinyin": "yínháng",
+      "level": 3
+    },
+    {
+      "word": "警察",
+      "pinyin": "jǐngchá",
+      "level": 3
+    },
+    {
+      "word": "壞",
+      "pinyin": "huài",
+      "level": 3
+    },
+    {
+      "word": "計程車",
+      "pinyin": "jìchéngchē",
+      "level": 3
+    },
+    {
+      "word": "車站",
+      "pinyin": "chēzhàn",
+      "level": 3
+    },
+    {
+      "word": "火車",
+      "pinyin": "huǒchē",
+      "level": 3
+    },
+    {
+      "word": "飛機",
+      "pinyin": "fēijī",
+      "level": 3
+    },
+    {
+      "word": "飛機場",
+      "pinyin": "fēijīchǎng",
+      "level": 3
+    },
+    {
+      "word": "馬路",
+      "pinyin": "mǎlù",
+      "level": 3
+    },
+    {
+      "word": "十字路口",
+      "pinyin": "shízìlùkǒu",
+      "level": 3
+    },
+    {
+      "word": "對面",
+      "pinyin": "duìmiàn",
+      "level": 3
+    },
+    {
+      "word": "裡面",
+      "pinyin": "lǐmiàn",
+      "level": 3
+    },
+    {
+      "word": "旅行",
+      "pinyin": "lǚxíng",
+      "level": 3
+    },
+    {
+      "word": "飯店",
+      "pinyin": "fàndiàn",
+      "level": 3
+    },
+    {
+      "word": "旅館",
+      "pinyin": "lǚguǎn",
+      "level": 3
+    },
+    {
+      "word": "參觀",
+      "pinyin": "cānguān",
+      "level": 3
+    },
+    {
+      "word": "地圖",
+      "pinyin": "dìtú",
+      "level": 3
+    },
+    {
+      "word": "照相機",
+      "pinyin": "zhàoxiàngjī",
+      "level": 3
+    },
+    {
+      "word": "照相",
+      "pinyin": "zhàoxiàng",
+      "level": 3
+    },
+    {
+      "word": "風景",
+      "pinyin": "fēngjǐng",
+      "level": 3
+    },
+    {
+      "word": "頭",
+      "pinyin": "tóu",
+      "level": 3
+    },
+    {
+      "word": "頭髮",
+      "pinyin": "tóufǎ",
+      "level": 3
+    },
+    {
+      "word": "耳朵",
+      "pinyin": "ěrduo",
+      "level": 3
+    },
+    {
+      "word": "手指",
+      "pinyin": "shǒuzhǐ",
+      "level": 3
+    },
+    {
+      "word": "肚子",
+      "pinyin": "dùzi",
+      "level": 3
+    },
+    {
+      "word": "健康",
+      "pinyin": "jiànkāng",
+      "level": 3
+    },
+    {
+      "word": "感冒",
+      "pinyin": "gǎnmào",
+      "level": 3
+    },
+    {
+      "word": "生病",
+      "pinyin": "shēngbìng",
+      "level": 3
+    },
+    {
+      "word": "受傷",
+      "pinyin": "shòushāng",
+      "level": 3
+    },
+    {
+      "word": "眼鏡",
+      "pinyin": "yǎnjìng",
+      "level": 3
+    },
+    {
+      "word": "痛",
+      "pinyin": "tòng",
+      "level": 3
+    },
+    {
+      "word": "希望",
+      "pinyin": "xīwàng",
+      "level": 3
+    },
+    {
+      "word": "商店",
+      "pinyin": "shāngdiàn",
+      "level": 3
+    },
+    {
+      "word": "重要",
+      "pinyin": "zhòngyào",
+      "level": 3
+    },
+    {
+      "word": "公斤",
+      "pinyin": "gōngjīn",
+      "level": 3
+    },
+    {
+      "word": "顏色",
+      "pinyin": "yánsè",
+      "level": 3
+    },
+    {
+      "word": "黃色",
+      "pinyin": "huángsè",
+      "level": 3
+    },
+    {
+      "word": "白色",
+      "pinyin": "báisè",
+      "level": 3
+    },
+    {
+      "word": "襪子",
+      "pinyin": "wàzi",
+      "level": 3
+    },
+    {
+      "word": "裙子",
+      "pinyin": "qúnzi",
+      "level": 3
+    },
+    {
+      "word": "短",
+      "pinyin": "duǎn",
+      "level": 3
+    },
+    {
+      "word": "牛奶",
+      "pinyin": "niúnǎi",
+      "level": 3
+    },
+    {
+      "word": "蛋",
+      "pinyin": "dàn",
+      "level": 3
+    },
+    {
+      "word": "餃子",
+      "pinyin": "jiǎozi",
+      "level": 3
+    },
+    {
+      "word": "麵",
+      "pinyin": "miàn",
+      "level": 3
+    },
+    {
+      "word": "湯",
+      "pinyin": "tāng",
+      "level": 3
+    },
+    {
+      "word": "包子",
+      "pinyin": "bāozi",
+      "level": 3
+    },
+    {
+      "word": "蛋糕",
+      "pinyin": "dàngāo",
+      "level": 3
+    },
+    {
+      "word": "麵包",
+      "pinyin": "miànbāo",
+      "level": 3
+    },
+    {
+      "word": "水果",
+      "pinyin": "shuǐguǒ",
+      "level": 3
+    },
+    {
+      "word": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "level": 3
+    },
+    {
+      "word": "食物",
+      "pinyin": "shíwù",
+      "level": 3
+    },
+    {
+      "word": "飲料",
+      "pinyin": "yǐnliào",
+      "level": 3
+    },
+    {
+      "word": "果汁",
+      "pinyin": "guǒzhī",
+      "level": 3
+    },
+    {
+      "word": "杯子",
+      "pinyin": "bēizi",
+      "level": 3
+    },
+    {
+      "word": "甜",
+      "pinyin": "tián",
+      "level": 3
+    },
+    {
+      "word": "菜單",
+      "pinyin": "càidān",
+      "level": 3
+    },
+    {
+      "word": "巧克力",
+      "pinyin": "qiǎokèlì",
+      "level": 3
+    },
+    {
+      "word": "碗",
+      "pinyin": "wǎn",
+      "level": 3
+    },
+    {
+      "word": "盤子",
+      "pinyin": "pánzi",
+      "level": 3
+    },
+    {
+      "word": "一半",
+      "pinyin": "yībàn",
+      "level": 3
+    },
+    {
+      "word": "一定",
+      "pinyin": "yīdìng",
+      "level": 3
+    },
+    {
+      "word": "出生",
+      "pinyin": "chūshēng",
+      "level": 4
+    },
+    {
+      "word": "不同",
+      "pinyin": "bùtóng",
+      "level": 4
+    },
+    {
+      "word": "地址",
+      "pinyin": "dìzhǐ",
+      "level": 4
+    },
+    {
+      "word": "傳真",
+      "pinyin": "chuánzhēn",
+      "level": 4
+    },
+    {
+      "word": "留言",
+      "pinyin": "liú​yán",
+      "level": 4
+    },
+    {
+      "word": "日期",
+      "pinyin": "rìqí",
+      "level": 4
+    },
+    {
+      "word": "時間",
+      "pinyin": "shíjiān",
+      "level": 4
+    },
+    {
+      "word": "鐘頭",
+      "pinyin": "zhōngtóu",
+      "level": 4
+    },
+    {
+      "word": "夜",
+      "pinyin": "yè",
+      "level": 4
+    },
+    {
+      "word": "禮拜",
+      "pinyin": "lǐbài",
+      "level": 4
+    },
+    {
+      "word": "禮拜天",
+      "pinyin": "lǐbàitiān",
+      "level": 4
+    },
+    {
+      "word": "前天",
+      "pinyin": "qiántiān",
+      "level": 4
+    },
+    {
+      "word": "後天",
+      "pinyin": "hòutiān",
+      "level": 4
+    },
+    {
+      "word": "從前",
+      "pinyin": "cóngqián",
+      "level": 4
+    },
+    {
+      "word": "一會兒",
+      "pinyin": "yīhuǐér",
+      "level": 4
+    },
+    {
+      "word": "不久",
+      "pinyin": "bùjiǔ",
+      "level": 4
+    },
+    {
+      "word": "剛剛",
+      "pinyin": "gānggāng",
+      "level": 4
+    },
+    {
+      "word": "剛才",
+      "pinyin": "gāngcái",
+      "level": 4
+    },
+    {
+      "word": "當然",
+      "pinyin": "dāngrán",
+      "level": 4
+    },
+    {
+      "word": "自己",
+      "pinyin": "zìjǐ",
+      "level": 4
+    },
+    {
+      "word": "別人",
+      "pinyin": "biérén",
+      "level": 4
+    },
+    {
+      "word": "年紀",
+      "pinyin": "niánjì",
+      "level": 4
+    },
+    {
+      "word": "男人",
+      "pinyin": "nánrén",
+      "level": 4
+    },
+    {
+      "word": "女人",
+      "pinyin": "nǚrén",
+      "level": 4
+    },
+    {
+      "word": "大人",
+      "pinyin": "dàrén",
+      "level": 4
+    },
+    {
+      "word": "老人",
+      "pinyin": "lǎorén",
+      "level": 4
+    },
+    {
+      "word": "習慣",
+      "pinyin": "xíguàn",
+      "level": 4
+    },
+    {
+      "word": "家庭",
+      "pinyin": "jiātíng",
+      "level": 4
+    },
+    {
+      "word": "父親",
+      "pinyin": "fùqīn",
+      "level": 4
+    },
+    {
+      "word": "母親",
+      "pinyin": "mǔqīn",
+      "level": 4
+    },
+    {
+      "word": "父母",
+      "pinyin": "fùmǔ",
+      "level": 4
+    },
+    {
+      "word": "爺爺",
+      "pinyin": "yéye",
+      "level": 4
+    },
+    {
+      "word": "奶奶",
+      "pinyin": "nǎinai",
+      "level": 4
+    },
+    {
+      "word": "關係",
+      "pinyin": "guānxì",
+      "level": 4
+    },
+    {
+      "word": "教堂",
+      "pinyin": "jiàotáng",
+      "level": 4
+    },
+    {
+      "word": "最",
+      "pinyin": "zuì",
+      "level": 4
+    },
+    {
+      "word": "更",
+      "pinyin": "gèng",
+      "level": 4
+    },
+    {
+      "word": "愉快",
+      "pinyin": "yúkuài",
+      "level": 4
+    },
+    {
+      "word": "開心",
+      "pinyin": "kāixīn",
+      "level": 4
+    },
+    {
+      "word": "著急",
+      "pinyin": "zhāojí",
+      "level": 4
+    },
+    {
+      "word": "擔心",
+      "pinyin": "dānxīn",
+      "level": 4
+    },
+    {
+      "word": "生氣",
+      "pinyin": "shēngqì",
+      "level": 4
+    },
+    {
+      "word": "怕",
+      "pinyin": "pà",
+      "level": 4
+    },
+    {
+      "word": "哭",
+      "pinyin": "kū",
+      "level": 4
+    },
+    {
+      "word": "難過",
+      "pinyin": "nánguò",
+      "level": 4
+    },
+    {
+      "word": "傷心",
+      "pinyin": "shāngxīn",
+      "level": 4
+    },
+    {
+      "word": "美麗",
+      "pinyin": "měilì",
+      "level": 4
+    },
+    {
+      "word": "聰明",
+      "pinyin": "cōngmíng",
+      "level": 4
+    },
+    {
+      "word": "認真",
+      "pinyin": "rènzhēn",
+      "level": 4
+    },
+    {
+      "word": "勇敢",
+      "pinyin": "yǒnggǎn",
+      "level": 4
+    },
+    {
+      "word": "禮貌",
+      "pinyin": "lǐmào",
+      "level": 4
+    },
+    {
+      "word": "害羞",
+      "pinyin": "hàixiū",
+      "level": 4
+    },
+    {
+      "word": "應該",
+      "pinyin": "yīnggāi",
+      "level": 4
+    },
+    {
+      "word": "相信",
+      "pinyin": "xiāngxìn",
+      "level": 4
+    },
+    {
+      "word": "經驗",
+      "pinyin": "jīngyàn",
+      "level": 4
+    },
+    {
+      "word": "關心",
+      "pinyin": "guānxīn",
+      "level": 4
+    },
+    {
+      "word": "願意",
+      "pinyin": "yuànyì",
+      "level": 4
+    },
+    {
+      "word": "心情",
+      "pinyin": "xīnqíng",
+      "level": 4
+    },
+    {
+      "word": "幸福",
+      "pinyin": "xìngfú",
+      "level": 4
+    },
+    {
+      "word": "可憐",
+      "pinyin": "kělián",
+      "level": 4
+    },
+    {
+      "word": "差",
+      "pinyin": "chà",
+      "level": 4
+    },
+    {
+      "word": "職業",
+      "pinyin": "zhíyè",
+      "level": 4
+    },
+    {
+      "word": "教師",
+      "pinyin": "jiàoshī",
+      "level": 4
+    },
+    {
+      "word": "經理",
+      "pinyin": "jīnglǐ",
+      "level": 4
+    },
+    {
+      "word": "記者",
+      "pinyin": "jìzhě",
+      "level": 4
+    },
+    {
+      "word": "服務員",
+      "pinyin": "fú​wù​yuán",
+      "level": 4
+    },
+    {
+      "word": "顧客",
+      "pinyin": "gùkè",
+      "level": 4
+    },
+    {
+      "word": "教書",
+      "pinyin": "jiāoshū",
+      "level": 4
+    },
+    {
+      "word": "開會",
+      "pinyin": "kāihuì",
+      "level": 4
+    },
+    {
+      "word": "危險",
+      "pinyin": "wéixiǎn",
+      "level": 4
+    },
+    {
+      "word": "安全",
+      "pinyin": "ānquán",
+      "level": 4
+    },
+    {
+      "word": "成功",
+      "pinyin": "chénggōng",
+      "level": 4
+    },
+    {
+      "word": "報告",
+      "pinyin": "bàogào",
+      "level": 4
+    },
+    {
+      "word": "打算",
+      "pinyin": "dǎsuàn",
+      "level": 4
+    },
+    {
+      "word": "機會",
+      "pinyin": "jīhuì",
+      "level": 4
+    },
+    {
+      "word": "如果",
+      "pinyin": "rúguǒ",
+      "level": 4
+    },
+    {
+      "word": "計畫",
+      "pinyin": "jìhuà",
+      "level": 4
+    },
+    {
+      "word": "努力",
+      "pinyin": "nǔlì",
+      "level": 4
+    },
+    {
+      "word": "管理",
+      "pinyin": "guǎnlǐ",
+      "level": 4
+    },
+    {
+      "word": "學院",
+      "pinyin": "xuéyuàn",
+      "level": 4
+    },
+    {
+      "word": "小學生",
+      "pinyin": "xiǎoxuéshēng",
+      "level": 4
+    },
+    {
+      "word": "大學生",
+      "pinyin": "dàxuéshēng",
+      "level": 4
+    },
+    {
+      "word": "同學",
+      "pinyin": "tóngxué",
+      "level": 4
+    },
+    {
+      "word": "校長",
+      "pinyin": "xiàozhǎng",
+      "level": 4
+    },
+    {
+      "word": "放假",
+      "pinyin": "fàngjià",
+      "level": 4
+    },
+    {
+      "word": "畢業",
+      "pinyin": "bìyè",
+      "level": 4
+    },
+    {
+      "word": "開學",
+      "pinyin": "kāixué",
+      "level": 4
+    },
+    {
+      "word": "成績",
+      "pinyin": "chéngjī",
+      "level": 4
+    },
+    {
+      "word": "學期",
+      "pinyin": "xuéqí",
+      "level": 4
+    },
+    {
+      "word": "學費",
+      "pinyin": "xuéfèi",
+      "level": 4
+    },
+    {
+      "word": "暑假",
+      "pinyin": "shǔjià",
+      "level": 4
+    },
+    {
+      "word": "寒假",
+      "pinyin": "hánjià",
+      "level": 4
+    },
+    {
+      "word": "服務",
+      "pinyin": "fúwù",
+      "level": 4
+    },
+    {
+      "word": "宿舍",
+      "pinyin": "sùshè",
+      "level": 4
+    },
+    {
+      "word": "操場",
+      "pinyin": "cāochǎng",
+      "level": 4
+    },
+    {
+      "word": "校園",
+      "pinyin": "xiàoyuán",
+      "level": 4
+    },
+    {
+      "word": "中文",
+      "pinyin": "zhōngwén",
+      "level": 4
+    },
+    {
+      "word": "文化",
+      "pinyin": "wénhuà",
+      "level": 4
+    },
+    {
+      "word": "語法",
+      "pinyin": "yǔfǎ",
+      "level": 4
+    },
+    {
+      "word": "漢語",
+      "pinyin": "hànyǔ",
+      "level": 4
+    },
+    {
+      "word": "書法",
+      "pinyin": "shūfǎ",
+      "level": 4
+    },
+    {
+      "word": "書桌",
+      "pinyin": "shūzhuō",
+      "level": 4
+    },
+    {
+      "word": "字典",
+      "pinyin": "zìdiǎn",
+      "level": 4
+    },
+    {
+      "word": "漢字",
+      "pinyin": "hànzì",
+      "level": 4
+    },
+    {
+      "word": "鉛筆",
+      "pinyin": "qiānbǐ",
+      "level": 4
+    },
+    {
+      "word": "尺",
+      "pinyin": "chǐ",
+      "level": 4
+    },
+    {
+      "word": "毛筆",
+      "pinyin": "máobǐ",
+      "level": 4
+    },
+    {
+      "word": "講",
+      "pinyin": "jiǎng",
+      "level": 4
+    },
+    {
+      "word": "講話",
+      "pinyin": "jiǎnghuà",
+      "level": 4
+    },
+    {
+      "word": "告訴",
+      "pinyin": "gàosù",
+      "level": 4
+    },
+    {
+      "word": "念",
+      "pinyin": "niàn",
+      "level": 4
+    },
+    {
+      "word": "討論",
+      "pinyin": "tǎolùn",
+      "level": 4
+    },
+    {
+      "word": "認為",
+      "pinyin": "rènwéi",
+      "level": 4
+    },
+    {
+      "word": "解釋",
+      "pinyin": "jiěshì",
+      "level": 4
+    },
+    {
+      "word": "同意",
+      "pinyin": "tóngyì",
+      "level": 4
+    },
+    {
+      "word": "了解",
+      "pinyin": "liǎojiě",
+      "level": 4
+    },
+    {
+      "word": "清楚",
+      "pinyin": "qīngchǔ",
+      "level": 4
+    },
+    {
+      "word": "無聊",
+      "pinyin": "wúliáo",
+      "level": 4
+    },
+    {
+      "word": "遍",
+      "pinyin": "biàn",
+      "level": 4
+    },
+    {
+      "word": "交",
+      "pinyin": "jiāo",
+      "level": 4
+    },
+    {
+      "word": "借",
+      "pinyin": "jiè",
+      "level": 4
+    },
+    {
+      "word": "辦法",
+      "pinyin": "bànfǎ",
+      "level": 4
+    },
+    {
+      "word": "方法",
+      "pinyin": "fāngfǎ",
+      "level": 4
+    },
+    {
+      "word": "有用",
+      "pinyin": "yǒuyòng",
+      "level": 4
+    },
+    {
+      "word": "進步",
+      "pinyin": "jìnbù",
+      "level": 4
+    },
+    {
+      "word": "忘",
+      "pinyin": "wàng",
+      "level": 4
+    },
+    {
+      "word": "公寓",
+      "pinyin": "gōngyù",
+      "level": 4
+    },
+    {
+      "word": "大樓",
+      "pinyin": "dàlóu",
+      "level": 4
+    },
+    {
+      "word": "臥室",
+      "pinyin": "wòshì",
+      "level": 4
+    },
+    {
+      "word": "花園",
+      "pinyin": "huāyuán",
+      "level": 4
+    },
+    {
+      "word": "門口",
+      "pinyin": "ménkǒu",
+      "level": 4
+    },
+    {
+      "word": "浴室",
+      "pinyin": "yùshì",
+      "level": 4
+    },
+    {
+      "word": "樓梯",
+      "pinyin": "lóutī",
+      "level": 4
+    },
+    {
+      "word": "牆",
+      "pinyin": "qiáng",
+      "level": 4
+    },
+    {
+      "word": "洗衣機",
+      "pinyin": "xǐyījī",
+      "level": 4
+    },
+    {
+      "word": "冰箱",
+      "pinyin": "bīngxiāng",
+      "level": 4
+    },
+    {
+      "word": "燈",
+      "pinyin": "dēng",
+      "level": 4
+    },
+    {
+      "word": "盒子",
+      "pinyin": "hézi",
+      "level": 4
+    },
+    {
+      "word": "鄰居",
+      "pinyin": "línjū",
+      "level": 4
+    },
+    {
+      "word": "熱鬧",
+      "pinyin": "rènao",
+      "level": 4
+    },
+    {
+      "word": "吵",
+      "pinyin": "chǎo",
+      "level": 4
+    },
+    {
+      "word": "滿意",
+      "pinyin": "mǎnyì",
+      "level": 4
+    },
+    {
+      "word": "乾淨",
+      "pinyin": "gānjìng",
+      "level": 4
+    },
+    {
+      "word": "房租",
+      "pinyin": "fángzū",
+      "level": 4
+    },
+    {
+      "word": "開水",
+      "pinyin": "kāishuǐ",
+      "level": 4
+    },
+    {
+      "word": "鄉下",
+      "pinyin": "xiāngxià",
+      "level": 4
+    },
+    {
+      "word": "森林",
+      "pinyin": "sēnlín",
+      "level": 4
+    },
+    {
+      "word": "草",
+      "pinyin": "cǎo",
+      "level": 4
+    },
+    {
+      "word": "枝",
+      "pinyin": "zhī",
+      "level": 4
+    },
+    {
+      "word": "隻",
+      "pinyin": "zhī",
+      "level": 4
+    },
+    {
+      "word": "動物",
+      "pinyin": "dòngwù",
+      "level": 4
+    },
+    {
+      "word": "虎",
+      "pinyin": "hǔ",
+      "level": 4
+    },
+    {
+      "word": "羊",
+      "pinyin": "yáng",
+      "level": 4
+    },
+    {
+      "word": "豬",
+      "pinyin": "zhū",
+      "level": 4
+    },
+    {
+      "word": "月亮",
+      "pinyin": "yuèliàng",
+      "level": 4
+    },
+    {
+      "word": "星星",
+      "pinyin": "xīngxīng",
+      "level": 4
+    },
+    {
+      "word": "雲",
+      "pinyin": "yún",
+      "level": 4
+    },
+    {
+      "word": "地球",
+      "pinyin": "dìqiú",
+      "level": 4
+    },
+    {
+      "word": "世界",
+      "pinyin": "shìjiè",
+      "level": 4
+    },
+    {
+      "word": "晴天",
+      "pinyin": "qíngtiān",
+      "level": 4
+    },
+    {
+      "word": "暖和",
+      "pinyin": "nuǎnhuo",
+      "level": 4
+    },
+    {
+      "word": "涼快",
+      "pinyin": "liángkuài",
+      "level": 4
+    },
+    {
+      "word": "溫暖",
+      "pinyin": "wēnnuǎn",
+      "level": 4
+    },
+    {
+      "word": "度",
+      "pinyin": "dù",
+      "level": 4
+    },
+    {
+      "word": "溫度",
+      "pinyin": "wēndù",
+      "level": 4
+    },
+    {
+      "word": "空氣",
+      "pinyin": "kōngqì",
+      "level": 4
+    },
+    {
+      "word": "發生",
+      "pinyin": "fāshēng",
+      "level": 4
+    },
+    {
+      "word": "發現",
+      "pinyin": "fāxiàn",
+      "level": 4
+    },
+    {
+      "word": "照顧",
+      "pinyin": "zhàogù",
+      "level": 4
+    },
+    {
+      "word": "打掃",
+      "pinyin": "dǎsǎo",
+      "level": 4
+    },
+    {
+      "word": "起來",
+      "pinyin": "qǐlái",
+      "level": 4
+    },
+    {
+      "word": "搬",
+      "pinyin": "bān",
+      "level": 4
+    },
+    {
+      "word": "掛",
+      "pinyin": "guà",
+      "level": 4
+    },
+    {
+      "word": "過年",
+      "pinyin": "guònián",
+      "level": 4
+    },
+    {
+      "word": "完",
+      "pinyin": "wán",
+      "level": 4
+    },
+    {
+      "word": "散步",
+      "pinyin": "sànbù",
+      "level": 4
+    },
+    {
+      "word": "爬",
+      "pinyin": "pá",
+      "level": 4
+    },
+    {
+      "word": "跳",
+      "pinyin": "tiào",
+      "level": 4
+    },
+    {
+      "word": "座位",
+      "pinyin": "zuòwèi",
+      "level": 4
+    },
+    {
+      "word": "博物館",
+      "pinyin": "bówùguǎn",
+      "level": 4
+    },
+    {
+      "word": "節目",
+      "pinyin": "jiémù",
+      "level": 4
+    },
+    {
+      "word": "新聞",
+      "pinyin": "xīnwén",
+      "level": 4
+    },
+    {
+      "word": "政治",
+      "pinyin": "zhèngzhì",
+      "level": 4
+    },
+    {
+      "word": "體育",
+      "pinyin": "tǐyù",
+      "level": 4
+    },
+    {
+      "word": "網站",
+      "pinyin": "wǎngzhàn",
+      "level": 4
+    },
+    {
+      "word": "經常",
+      "pinyin": "jīngcháng",
+      "level": 4
+    },
+    {
+      "word": "平常",
+      "pinyin": "píngcháng",
+      "level": 4
+    },
+    {
+      "word": "總是",
+      "pinyin": "zǒngshì",
+      "level": 4
+    },
+    {
+      "word": "已經",
+      "pinyin": "yǐjīng",
+      "level": 4
+    },
+    {
+      "word": "各",
+      "pinyin": "gè",
+      "level": 4
+    },
+    {
+      "word": "雜誌",
+      "pinyin": "zázhì",
+      "level": 4
+    },
+    {
+      "word": "文章",
+      "pinyin": "wénzhāng",
+      "level": 4
+    },
+    {
+      "word": "故事",
+      "pinyin": "gùshi",
+      "level": 4
+    },
+    {
+      "word": "小說",
+      "pinyin": "xiǎoshuō",
+      "level": 4
+    },
+    {
+      "word": "美術",
+      "pinyin": "měishù",
+      "level": 4
+    },
+    {
+      "word": "藝術",
+      "pinyin": "yìshù",
+      "level": 4
+    },
+    {
+      "word": "興趣",
+      "pinyin": "xìngqù",
+      "level": 4
+    },
+    {
+      "word": "收",
+      "pinyin": "shōu",
+      "level": 4
+    },
+    {
+      "word": "談",
+      "pinyin": "tán",
+      "level": 4
+    },
+    {
+      "word": "聊天",
+      "pinyin": "liáotiān",
+      "level": 4
+    },
+    {
+      "word": "遲到",
+      "pinyin": "chídào",
+      "level": 4
+    },
+    {
+      "word": "後來",
+      "pinyin": "hòulái",
+      "level": 4
+    },
+    {
+      "word": "變",
+      "pinyin": "biàn",
+      "level": 4
+    },
+    {
+      "word": "跳舞",
+      "pinyin": "tiàowǔ",
+      "level": 4
+    },
+    {
+      "word": "樂器",
+      "pinyin": "yuèqì",
+      "level": 4
+    },
+    {
+      "word": "吉他",
+      "pinyin": "jítā",
+      "level": 4
+    },
+    {
+      "word": "鋼琴",
+      "pinyin": "gāngqín",
+      "level": 4
+    },
+    {
+      "word": "可怕",
+      "pinyin": "kěpà",
+      "level": 4
+    },
+    {
+      "word": "活動",
+      "pinyin": "huódòng",
+      "level": 4
+    },
+    {
+      "word": "就",
+      "pinyin": "jiù",
+      "level": 4
+    },
+    {
+      "word": "消息",
+      "pinyin": "xiāoxí",
+      "level": 4
+    },
+    {
+      "word": "又",
+      "pinyin": "yòu",
+      "level": 4
+    },
+    {
+      "word": "客人",
+      "pinyin": "kèrén",
+      "level": 4
+    },
+    {
+      "word": "不好意思",
+      "pinyin": "bùhǎoyìsi",
+      "level": 4
+    },
+    {
+      "word": "怎麼了",
+      "pinyin": "zěnmele",
+      "level": 4
+    },
+    {
+      "word": "怎麼辦",
+      "pinyin": "zěnmebàn",
+      "level": 4
+    },
+    {
+      "word": "客氣",
+      "pinyin": "kèqi",
+      "level": 4
+    },
+    {
+      "word": "舞會",
+      "pinyin": "wǔhuì",
+      "level": 4
+    },
+    {
+      "word": "最近",
+      "pinyin": "zuìjìn",
+      "level": 4
+    },
+    {
+      "word": "請客",
+      "pinyin": "qǐngkè",
+      "level": 4
+    },
+    {
+      "word": "慶祝",
+      "pinyin": "qìngzhù",
+      "level": 4
+    },
+    {
+      "word": "聽說",
+      "pinyin": "tīngshuō",
+      "level": 4
+    },
+    {
+      "word": "見面",
+      "pinyin": "jiànmiàn",
+      "level": 4
+    },
+    {
+      "word": "約",
+      "pinyin": "yuē",
+      "level": 4
+    },
+    {
+      "word": "事情",
+      "pinyin": "shìqíng",
+      "level": 4
+    },
+    {
+      "word": "明信片",
+      "pinyin": "míngxìnpiàn",
+      "level": 4
+    },
+    {
+      "word": "卡片",
+      "pinyin": "kǎpiàn",
+      "level": 4
+    },
+    {
+      "word": "弄",
+      "pinyin": "nòng",
+      "level": 4
+    },
+    {
+      "word": "檢查",
+      "pinyin": "jiǎnchá",
+      "level": 4
+    },
+    {
+      "word": "通知",
+      "pinyin": "tōngzhī",
+      "level": 4
+    },
+    {
+      "word": "偷",
+      "pinyin": "tōu",
+      "level": 4
+    },
+    {
+      "word": "錢包",
+      "pinyin": "qiánbāo",
+      "level": 4
+    },
+    {
+      "word": "拉",
+      "pinyin": "lā",
+      "level": 4
+    },
+    {
+      "word": "小偷",
+      "pinyin": "xiǎotōu",
+      "level": 4
+    },
+    {
+      "word": "丟",
+      "pinyin": "diū",
+      "level": 4
+    },
+    {
+      "word": "啊",
+      "pinyin": "ā",
+      "level": 4
+    },
+    {
+      "word": "汽車",
+      "pinyin": "qìchē",
+      "level": 4
+    },
+    {
+      "word": "輛",
+      "pinyin": "liàng",
+      "level": 4
+    },
+    {
+      "word": "船",
+      "pinyin": "chuán",
+      "level": 4
+    },
+    {
+      "word": "停車場",
+      "pinyin": "tíngchēchǎng",
+      "level": 4
+    },
+    {
+      "word": "搭",
+      "pinyin": "dā",
+      "level": 4
+    },
+    {
+      "word": "起飛",
+      "pinyin": "qǐfēi",
+      "level": 4
+    },
+    {
+      "word": "出來",
+      "pinyin": "chūlái",
+      "level": 4
+    },
+    {
+      "word": "進去",
+      "pinyin": "jìnqù",
+      "level": 4
+    },
+    {
+      "word": "回去",
+      "pinyin": "huíqu",
+      "level": 4
+    },
+    {
+      "word": "路口",
+      "pinyin": "lùkǒu",
+      "level": 4
+    },
+    {
+      "word": "紅綠燈",
+      "pinyin": "hónglǜdēng",
+      "level": 4
+    },
+    {
+      "word": "橋",
+      "pinyin": "qiáo",
+      "level": 4
+    },
+    {
+      "word": "這邊",
+      "pinyin": "zhèbiān",
+      "level": 4
+    },
+    {
+      "word": "這些",
+      "pinyin": "zhèxiē",
+      "level": 4
+    },
+    {
+      "word": "那些",
+      "pinyin": "nàxiē",
+      "level": 4
+    },
+    {
+      "word": "那邊",
+      "pinyin": "nàbiān",
+      "level": 4
+    },
+    {
+      "word": "旅遊",
+      "pinyin": "lǚyóu",
+      "level": 4
+    },
+    {
+      "word": "動物園",
+      "pinyin": "dòngwùyuán",
+      "level": 4
+    },
+    {
+      "word": "出發",
+      "pinyin": "chūfā",
+      "level": 4
+    },
+    {
+      "word": "離開",
+      "pinyin": "líkāi",
+      "level": 4
+    },
+    {
+      "word": "向",
+      "pinyin": "xiàng",
+      "level": 4
+    },
+    {
+      "word": "南",
+      "pinyin": "nán",
+      "level": 4
+    },
+    {
+      "word": "南部",
+      "pinyin": "nánbù",
+      "level": 4
+    },
+    {
+      "word": "南邊",
+      "pinyin": "nánbiān",
+      "level": 4
+    },
+    {
+      "word": "西部",
+      "pinyin": "xībù",
+      "level": 4
+    },
+    {
+      "word": "西邊",
+      "pinyin": "xībiān",
+      "level": 4
+    },
+    {
+      "word": "北",
+      "pinyin": "běi",
+      "level": 4
+    },
+    {
+      "word": "北部",
+      "pinyin": "běibù",
+      "level": 4
+    },
+    {
+      "word": "北邊",
+      "pinyin": "běibiān",
+      "level": 4
+    },
+    {
+      "word": "東部",
+      "pinyin": "dōngbù",
+      "level": 4
+    },
+    {
+      "word": "東邊",
+      "pinyin": "dōngbiān",
+      "level": 4
+    },
+    {
+      "word": "經過",
+      "pinyin": "jīngguò",
+      "level": 4
+    },
+    {
+      "word": "轉",
+      "pinyin": "zhuǎn",
+      "level": 4
+    },
+    {
+      "word": "掉",
+      "pinyin": "diào",
+      "level": 4
+    },
+    {
+      "word": "一直",
+      "pinyin": "yīzhí",
+      "level": 4
+    },
+    {
+      "word": "過去",
+      "pinyin": "guòqù",
+      "level": 4
+    },
+    {
+      "word": "最後",
+      "pinyin": "zuìhòu",
+      "level": 4
+    },
+    {
+      "word": "躺",
+      "pinyin": "tǎng",
+      "level": 4
+    },
+    {
+      "word": "中心",
+      "pinyin": "zhōngxīn",
+      "level": 4
+    },
+    {
+      "word": "外國",
+      "pinyin": "wàiguó",
+      "level": 4
+    },
+    {
+      "word": "護照",
+      "pinyin": "hùzhào",
+      "level": 4
+    },
+    {
+      "word": "行李",
+      "pinyin": "xínglǐ",
+      "level": 4
+    },
+    {
+      "word": "出口",
+      "pinyin": "chūkǒu",
+      "level": 4
+    },
+    {
+      "word": "油",
+      "pinyin": "yóu",
+      "level": 4
+    },
+    {
+      "word": "鑰匙",
+      "pinyin": "yàoshi",
+      "level": 4
+    },
+    {
+      "word": "袋子",
+      "pinyin": "dàizi",
+      "level": 4
+    },
+    {
+      "word": "公里",
+      "pinyin": "gōnglǐ",
+      "level": 4
+    },
+    {
+      "word": "方向",
+      "pinyin": "fāngxiàng",
+      "level": 4
+    },
+    {
+      "word": "出現",
+      "pinyin": "chūxiàn",
+      "level": 4
+    },
+    {
+      "word": "交通",
+      "pinyin": "jiāotōng",
+      "level": 4
+    },
+    {
+      "word": "臉",
+      "pinyin": "liǎn",
+      "level": 4
+    },
+    {
+      "word": "腿",
+      "pinyin": "tuǐ",
+      "level": 4
+    },
+    {
+      "word": "鼻",
+      "pinyin": "bí",
+      "level": 4
+    },
+    {
+      "word": "背",
+      "pinyin": "bèi",
+      "level": 4
+    },
+    {
+      "word": "嘴巴",
+      "pinyin": "zuǐba",
+      "level": 4
+    },
+    {
+      "word": "脖子",
+      "pinyin": "bózi",
+      "level": 4
+    },
+    {
+      "word": "感覺",
+      "pinyin": "gǎnjué",
+      "level": 4
+    },
+    {
+      "word": "救護車",
+      "pinyin": "jiùhùchē",
+      "level": 4
+    },
+    {
+      "word": "咳嗽",
+      "pinyin": "késòu",
+      "level": 4
+    },
+    {
+      "word": "發燒",
+      "pinyin": "fāshāo",
+      "level": 4
+    },
+    {
+      "word": "疼",
+      "pinyin": "téng",
+      "level": 4
+    },
+    {
+      "word": "保險",
+      "pinyin": "bǎoxiǎn",
+      "level": 4
+    },
+    {
+      "word": "看病",
+      "pinyin": "kànbìng",
+      "level": 4
+    },
+    {
+      "word": "病人",
+      "pinyin": "bìngrén",
+      "level": 4
+    },
+    {
+      "word": "掛號",
+      "pinyin": "guàhào",
+      "level": 4
+    },
+    {
+      "word": "牙刷",
+      "pinyin": "yáshuā",
+      "level": 4
+    },
+    {
+      "word": "剪",
+      "pinyin": "jiǎn",
+      "level": 4
+    },
+    {
+      "word": "藥房",
+      "pinyin": "yàofáng",
+      "level": 4
+    },
+    {
+      "word": "恢復",
+      "pinyin": "huīfù",
+      "level": 4
+    },
+    {
+      "word": "救命",
+      "pinyin": "jiùmìng",
+      "level": 4
+    },
+    {
+      "word": "飽",
+      "pinyin": "bǎo",
+      "level": 4
+    },
+    {
+      "word": "吃飽",
+      "pinyin": "chībǎo",
+      "level": 4
+    },
+    {
+      "word": "簡單",
+      "pinyin": "jiǎndān",
+      "level": 4
+    },
+    {
+      "word": "書店",
+      "pinyin": "shūdiàn",
+      "level": 4
+    },
+    {
+      "word": "超級市場",
+      "pinyin": "chāojíshìchǎng",
+      "level": 4
+    },
+    {
+      "word": "戴",
+      "pinyin": "dài",
+      "level": 4
+    },
+    {
+      "word": "流行",
+      "pinyin": "liúxíng",
+      "level": 4
+    },
+    {
+      "word": "藍色",
+      "pinyin": "lánsè",
+      "level": 4
+    },
+    {
+      "word": "綠色",
+      "pinyin": "lǜsè",
+      "level": 4
+    },
+    {
+      "word": "紅色",
+      "pinyin": "hóngsè",
+      "level": 4
+    },
+    {
+      "word": "黑色",
+      "pinyin": "hēisè",
+      "level": 4
+    },
+    {
+      "word": "手表",
+      "pinyin": "shǒubiǎo",
+      "level": 4
+    },
+    {
+      "word": "付",
+      "pinyin": "fù",
+      "level": 4
+    },
+    {
+      "word": "襯衫",
+      "pinyin": "chènshān",
+      "level": 4
+    },
+    {
+      "word": "毛衣",
+      "pinyin": "máoyī",
+      "level": 4
+    },
+    {
+      "word": "大衣",
+      "pinyin": "dàyī",
+      "level": 4
+    },
+    {
+      "word": "牛仔褲",
+      "pinyin": "niúzǎikù",
+      "level": 4
+    },
+    {
+      "word": "雨衣",
+      "pinyin": "yǔyī",
+      "level": 4
+    },
+    {
+      "word": "內衣",
+      "pinyin": "nèiyī",
+      "level": 4
+    },
+    {
+      "word": "帽子",
+      "pinyin": "màozi",
+      "level": 4
+    },
+    {
+      "word": "皮包",
+      "pinyin": "píbāo",
+      "level": 4
+    },
+    {
+      "word": "外套",
+      "pinyin": "wàitào",
+      "level": 4
+    },
+    {
+      "word": "舊",
+      "pinyin": "jiù",
+      "level": 4
+    },
+    {
+      "word": "價格",
+      "pinyin": "jiàgé",
+      "level": 4
+    },
+    {
+      "word": "價錢",
+      "pinyin": "jiàqián",
+      "level": 4
+    },
+    {
+      "word": "信用卡",
+      "pinyin": "xìnyòngkǎ",
+      "level": 4
+    },
+    {
+      "word": "比較",
+      "pinyin": "bǐjiào",
+      "level": 4
+    },
+    {
+      "word": "樣子",
+      "pinyin": "yàngzi",
+      "level": 4
+    },
+    {
+      "word": "特別",
+      "pinyin": "tèbié",
+      "level": 4
+    },
+    {
+      "word": "一般",
+      "pinyin": "yībān",
+      "level": 4
+    },
+    {
+      "word": "圓",
+      "pinyin": "yuán",
+      "level": 4
+    },
+    {
+      "word": "光",
+      "pinyin": "guāng",
+      "level": 4
+    },
+    {
+      "word": "看見",
+      "pinyin": "kànjiɑn",
+      "level": 4
+    },
+    {
+      "word": "其他",
+      "pinyin": "qítā",
+      "level": 4
+    },
+    {
+      "word": "聲音",
+      "pinyin": "shēngyīn",
+      "level": 4
+    },
+    {
+      "word": "大聲",
+      "pinyin": "dàshēng",
+      "level": 4
+    },
+    {
+      "word": "好像",
+      "pinyin": "hǎoxiàng",
+      "level": 4
+    },
+    {
+      "word": "奇怪",
+      "pinyin": "qíguài",
+      "level": 4
+    },
+    {
+      "word": "死",
+      "pinyin": "sǐ",
+      "level": 4
+    },
+    {
+      "word": "髒",
+      "pinyin": "zāng",
+      "level": 4
+    },
+    {
+      "word": "差不多",
+      "pinyin": "chàbuduō",
+      "level": 4
+    },
+    {
+      "word": "一共",
+      "pinyin": "yīgòng",
+      "level": 4
+    },
+    {
+      "word": "牛排",
+      "pinyin": "niúpái",
+      "level": 4
+    },
+    {
+      "word": "米",
+      "pinyin": "mǐ",
+      "level": 4
+    },
+    {
+      "word": "三明治",
+      "pinyin": "sānmíngzhì",
+      "level": 4
+    },
+    {
+      "word": "西瓜",
+      "pinyin": "xīguā",
+      "level": 4
+    },
+    {
+      "word": "啤酒",
+      "pinyin": "píjiǔ",
+      "level": 4
+    },
+    {
+      "word": "紅茶",
+      "pinyin": "hóngchá",
+      "level": 4
+    },
+    {
+      "word": "點菜",
+      "pinyin": "diǎncài",
+      "level": 4
+    },
+    {
+      "word": "酸",
+      "pinyin": "suān",
+      "level": 4
+    },
+    {
+      "word": "鹹",
+      "pinyin": "xián",
+      "level": 4
+    },
+    {
+      "word": "辣",
+      "pinyin": "là",
+      "level": 4
+    },
+    {
+      "word": "點心",
+      "pinyin": "diǎnxīn",
+      "level": 4
+    },
+    {
+      "word": "冰淇淋",
+      "pinyin": "bīngqílín",
+      "level": 4
+    },
+    {
+      "word": "餅乾",
+      "pinyin": "bǐnggān",
+      "level": 4
+    },
+    {
+      "word": "漢堡",
+      "pinyin": "hànbǎo",
+      "level": 4
+    },
+    {
+      "word": "青菜",
+      "pinyin": "qīngcài",
+      "level": 4
+    },
+    {
+      "word": "鹽",
+      "pinyin": "yán",
+      "level": 4
+    },
+    {
+      "word": "糖",
+      "pinyin": "táng",
+      "level": 4
+    },
+    {
+      "word": "煮",
+      "pinyin": "zhǔ",
+      "level": 4
+    },
+    {
+      "word": "條",
+      "pinyin": "tiáo",
+      "level": 4
+    },
+    {
+      "word": "種",
+      "pinyin": "zhǒng",
+      "level": 4
+    },
+    {
+      "word": "夠",
+      "pinyin": "gòu",
+      "level": 4
+    },
+    {
+      "word": "任何",
+      "pinyin": "rènhé",
+      "level": 4
+    },
+    {
+      "word": "味道",
+      "pinyin": "wèidào",
+      "level": 4
+    },
+    {
+      "word": "全部",
+      "pinyin": "quánbù",
+      "level": 4
+    },
+    {
+      "word": "所有",
+      "pinyin": "suǒyǒu",
+      "level": 4
+    },
+    {
+      "word": "許多",
+      "pinyin": "xǔduō",
+      "level": 4
+    },
+    {
+      "word": "新鮮",
+      "pinyin": "xīnxian",
+      "level": 4
+    },
+    {
+      "word": "烤",
+      "pinyin": "kǎo",
+      "level": 4
+    },
+    {
+      "word": "嚐",
+      "pinyin": "cháng",
+      "level": 4
+    },
+    {
+      "word": "裝",
+      "pinyin": "zhuāng",
+      "level": 4
+    },
+    {
+      "word": "刀",
+      "pinyin": "dāo",
+      "level": 4
+    },
+    {
+      "word": "叉",
+      "pinyin": "chā",
+      "level": 4
+    },
+    {
+      "word": "湯匙",
+      "pinyin": "tāngchí",
+      "level": 4
+    },
+    {
+      "word": "筷子",
+      "pinyin": "kuàizi",
+      "level": 4
+    },
+    {
+      "word": "沒有",
+      "pinyin": "méiyǒu",
+      "level": 4
+    },
+    {
+      "word": "不用",
+      "pinyin": "bùyòng",
+      "level": 4
+    },
+    {
+      "word": "不但",
+      "pinyin": "bùdàn",
+      "level": 4
+    },
+    {
+      "word": "只好",
+      "pinyin": "zhǐhǎo",
+      "level": 4
+    },
+    {
+      "word": "正在",
+      "pinyin": "zhèngzài",
+      "level": 4
+    },
+    {
+      "word": "把",
+      "pinyin": "bǎ",
+      "level": 4
+    },
+    {
+      "word": "被",
+      "pinyin": "bèi",
+      "level": 4
+    },
+    {
+      "word": "讓",
+      "pinyin": "ràng",
+      "level": 4
+    },
+    {
+      "word": "或",
+      "pinyin": "huò",
+      "level": 4
+    },
+    {
+      "word": "或是",
+      "pinyin": "huòshì",
+      "level": 4
+    },
+    {
+      "word": "然後",
+      "pinyin": "ránhòu",
+      "level": 4
+    },
+    {
+      "word": "但是",
+      "pinyin": "dànshì",
+      "level": 4
+    },
+    {
+      "word": "而且",
+      "pinyin": "érqiě",
+      "level": 4
+    },
+    {
+      "word": "雖然",
+      "pinyin": "suīrán",
+      "level": 4
+    },
+    {
+      "word": "原來",
+      "pinyin": "yuánlái",
+      "level": 4
+    },
+    {
+      "word": "也許",
+      "pinyin": "yěxǔ",
+      "level": 4
+    },
+    {
+      "word": "為了",
+      "pinyin": "wèile",
+      "level": 4
+    },
+    {
+      "word": "必須",
+      "pinyin": "bìxū",
+      "level": 4
+    },
+    {
+      "word": "永遠",
+      "pinyin": "yǒngyuǎn",
+      "level": 4
+    },
+    {
+      "word": "那麼",
+      "pinyin": "nàme",
+      "level": 4
+    },
+    {
+      "word": "這麼",
+      "pinyin": "zhème",
+      "level": 4
+    },
+    {
+      "word": "本來",
+      "pinyin": "běnlái",
+      "level": 4
+    },
+    {
+      "word": "要是",
+      "pinyin": "yàoshì",
+      "level": 4
+    }
+  ]
+}
