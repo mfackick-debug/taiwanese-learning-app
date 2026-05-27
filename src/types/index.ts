@@ -24,7 +24,7 @@ export interface SentenceCard {
   pronunciationNote?: string;
   
   // 新しいデータ構造：3つのシチュエーションごとの例文を保持
-  examples: SentenceExample[];
+  examples?: SentenceExample[];
 
   bossReading?: {
     text: string;
@@ -34,4 +34,14 @@ export interface SentenceCard {
     grammarNote?: string;
     audioPath?: string;
   };
+
+  // Band B Level 3 旧形式データのためのフラットプロパティ
+  sentence?: string;
+  pinyin?: string;
+  translation?: string;
+  question?: string;
+  options?: string[];
+  answerIndex?: number;
+  chunks?: string[];
+  hintText?: string;
 }

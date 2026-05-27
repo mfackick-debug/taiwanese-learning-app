@@ -291,7 +291,7 @@ function generateRandomBatch(cards: SentenceCard[]): BatchItem[] {
   for (let i = 0; i < shuffled.length && selected.length < 3; i++) {
     const card = shuffled[i];
     if (!card) continue;
-    const examples = card.examples.filter((ex) => ex && ex.chinese && ex.pinyin);
+    const examples = card.examples?.filter((ex) => ex && ex.chinese && ex.pinyin) ?? [];
     if (examples.length === 0) continue;
     
     // Safely pick a random example
@@ -304,7 +304,7 @@ function generateRandomBatch(cards: SentenceCard[]): BatchItem[] {
   while (selected.length < 3 && validCards.length > 0) {
     const card = validCards[fallbackIndex % validCards.length];
     if (card) {
-      const examples = card.examples.filter((ex) => ex && ex.chinese && ex.pinyin);
+      const examples = card.examples?.filter((ex) => ex && ex.chinese && ex.pinyin) ?? [];
       if (examples.length > 0) {
         // Try to find an example we haven't selected yet
         const unselectedEx = examples.find((ex) => !selected.some((item) => item.example === ex));
