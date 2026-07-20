@@ -48,7 +48,7 @@ export async function POST(req: NextRequest) {
     });
 
     const prompt = `
-You are an expert Taiwanese Mandarin teacher creating TOCFL Band B/C listening comprehension questions.
+You are an expert Taiwanese Mandarin teacher creating practical listening comprehension questions for real-life situations.
 
 Given the following sentence from a listening audio track:
 Chinese: "${chinese}"

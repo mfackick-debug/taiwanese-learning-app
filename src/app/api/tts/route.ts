@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { cleanseTextForTaiwanTts } from "@/utils/taiwanTtsCleanse";
 
 export async function POST(req: Request) {
   try {
@@ -8,10 +9,12 @@ export async function POST(req: Request) {
     }
 
     const body = (await req.json()) as { text?: string };
-    const text = body?.text?.trim();
-    if (!text) {
+    const rawText = body?.text?.trim();
+    if (!rawText) {
       return NextResponse.json({ error: "Missing text" }, { status: 400 });
     }
+
+    const text = cleanseTextForTaiwanTts(rawText);
 
     const response = await fetch("https://tts.api.yating.tw/v2/speeches/short", {
       method: "POST",

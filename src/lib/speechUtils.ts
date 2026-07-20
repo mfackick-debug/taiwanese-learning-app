@@ -1,19 +1,35 @@
+import { cleanseTextForTaiwanTts } from "@/utils/taiwanTtsCleanse";
+
 export type SpeakOptions = {
   pitch?: number;
   rate?: number;
   lang?: string;
+  onStart?: () => void;
+  onEnd?: () => void;
+  onError?: () => void;
 };
 
+export function stopWebSpeech() {
+  if (typeof window !== "undefined" && window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+}
+
 export function speakTaiwaneseFemalePreferred(text: string, options: SpeakOptions = {}) {
-  if (typeof window === "undefined" || !window.speechSynthesis) return;
+  if (typeof window === "undefined" || !window.speechSynthesis) {
+    options.onError?.();
+    return;
+  }
 
-  // Stop any current speech
-  window.speechSynthesis.cancel();
+  stopWebSpeech();
 
-  const utterance = new SpeechSynthesisUtterance(text);
+  const utterance = new SpeechSynthesisUtterance(cleanseTextForTaiwanTts(text));
   utterance.lang = options.lang ?? "zh-TW";
   utterance.rate = options.rate ?? 0.9;
   utterance.pitch = options.pitch ?? 1.2;
+  utterance.onstart = () => options.onStart?.();
+  utterance.onend = () => options.onEnd?.();
+  utterance.onerror = () => options.onError?.();
 
   let retries = 0;
   const maxRetries = 10;

@@ -1,6 +1,6 @@
-import type { SentenceCard } from "@/types";
+import type { ExamplesSentenceCardInput } from "@/types";
 
-export const bandCData: SentenceCard[] = [
+export const bandCData: ExamplesSentenceCardInput[] = [
   {
     "id": "TW-C-026",
     "band": "C",

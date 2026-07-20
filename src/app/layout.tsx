@@ -6,7 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
   title: 'Formosan Wordsmith - Master Taiwanese Mandarin',
-  description: 'Interactive TOCFL Band B (Level 3-4) learning app with AI-powered feedback.',
+  description: '台湾華語の実践力を鍛える — 生活・職場・メディア・対話の4シチュエーションとAI添削。',
 };
 
 export default function RootLayout({

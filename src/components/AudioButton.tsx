@@ -4,8 +4,13 @@ import { useRef, useState } from "react";
 import { Loader2, Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { cleanseTextForTaiwanTts } from "@/utils/taiwanTtsCleanse";
 
 const audioCache: Record<string, string> = {};
+
+function ttsSpeechText(displayText: string): string {
+  return cleanseTextForTaiwanTts(displayText);
+}
 
 let globalAudio: HTMLAudioElement | null = null;
 
@@ -27,7 +32,7 @@ export async function prefetchTts(text: string) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ text }),
+      body: JSON.stringify({ text: ttsSpeechText(text) }),
     });
 
     if (!res.ok) return;
@@ -63,7 +68,7 @@ export async function getAudioBlob(text: string): Promise<{ blob: Blob; url: str
     const res = await fetch("/api/tts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text }),
+      body: JSON.stringify({ text: ttsSpeechText(text) }),
     });
     if (!res.ok) return null;
     const blob = await res.blob();
@@ -103,7 +108,7 @@ export async function playTts(text: string) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ text }),
+      body: JSON.stringify({ text: ttsSpeechText(text) }),
     });
 
     if (!res.ok) {
