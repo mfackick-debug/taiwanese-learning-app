@@ -29,6 +29,7 @@ import {
   type PracticeCategory,
 } from "@/types/practiceCategory";
 import { SKELETON_EXTRACTION_RULES } from "@/utils/extractContextSkeleton";
+import { parsePolishResponse } from "@/utils/parsePolishResponse";
 
 type FlowStep = "read" | "extract" | "shift";
 
@@ -156,7 +157,7 @@ export function ContextBuilderFlow() {
         throw new Error(details || `HTTP ${res.status}`);
       }
 
-      return (await res.json()) as PolishResponseBody;
+      return parsePolishResponse(await res.json(), userText, "gemini");
     },
     [card, item]
   );

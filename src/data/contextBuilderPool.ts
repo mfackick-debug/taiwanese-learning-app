@@ -19,7 +19,7 @@ export const CONTEXT_BUILDER_POOL: ContextBuilderItem[] = normalizeCards(
 ).map((normalized) => {
   const raw = rawById.get(normalized.sourceCardId);
   const situation = raw ? getSituationForCard(raw, normalized) : undefined;
-  const explicit = raw && "practiceCategory" in raw ? (raw as { practiceCategory?: PracticeCategory }).practiceCategory : undefined;
+  const explicit = raw?.practiceCategory;
   const category = inferPracticeCategory(normalized, { situation, explicit });
   return extractContextBuilderItem(normalized, { situation, category });
 });

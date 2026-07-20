@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
 import type { ConversationTurn, PolishRequestBody, PolishResponseBody } from "@/types/contextBuilder";
 import { getPracticeCategoryMeta } from "@/types/practiceCategory";
+import { parsePolishResponse } from "@/utils/parsePolishResponse";
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
 
@@ -39,32 +40,6 @@ function formatHistory(history: ConversationTurn[]): string {
     .join("\n");
 }
 
-function normalizePolishPayload(
-  parsed: Record<string, unknown>,
-  userText: string,
-  mode: PolishResponseBody["mode"]
-): PolishResponseBody {
-  const polishedText =
-    (typeof parsed.polishedText === "string" ? parsed.polishedText.trim() : "") || userText;
-
-  const nextQuestion =
-    (typeof parsed.nextQuestion === "string" ? parsed.nextQuestion.trim() : "") ||
-    (typeof parsed.followUpQuestion === "string" ? parsed.followUpQuestion.trim() : "") ||
-    "後來這件事有什麼新的發展嗎？";
-
-  const pinyin =
-    typeof parsed.pinyin === "string" && parsed.pinyin.trim()
-      ? parsed.pinyin.trim()
-      : "（ピンイン生成中）";
-
-  const explanation =
-    typeof parsed.explanation === "string" && parsed.explanation.trim()
-      ? parsed.explanation.trim()
-      : "表現を台湾華語として自然になるよう整えました。語順や語彙の選び方に注目してみてください。";
-
-  return { polishedText, pinyin, explanation, nextQuestion, mode };
-}
-
 function buildMockResponse(body: PolishRequestBody): PolishResponseBody {
   const trimmed = body.userText.trim();
   const isFollowUp = Boolean(body.conversationHistory?.length);
@@ -75,7 +50,7 @@ function buildMockResponse(body: PolishRequestBody): PolishResponseBody {
       : `【添削モック】${trimmed}（台湾華語として自然な表現に整える想定です。GEMINI_API_KEY を設定すると本番添削が有効になります。）`
     : "（入力が空です。あなたのエピソードを繁体字中国語で書いてください。）";
 
-  return normalizePolishPayload(
+  return parsePolishResponse(
     {
       polishedText,
       pinyin: "tiān tiān huá yǔ tiān cè（モック）",
@@ -85,6 +60,7 @@ function buildMockResponse(body: PolishRequestBody): PolishResponseBody {
       nextQuestion: isFollowUp
         ? "了解了！那後來你有試試看其他方法嗎？"
         : "這個情況後來你是怎麼處理的？可以再多說一點嗎？",
+      mode: "mock",
     },
     trimmed,
     "mock"
@@ -187,9 +163,9 @@ export async function POST(req: NextRequest) {
 
     const prompt = buildPrompt(body, userText);
     const result = await model.generateContent(prompt);
-    const parsed = JSON.parse(result.response.text()) as Record<string, unknown>;
+    const parsed = JSON.parse(result.response.text()) as unknown;
 
-    return NextResponse.json(normalizePolishPayload(parsed, userText, "gemini"));
+    return NextResponse.json(parsePolishResponse(parsed, userText, "gemini"));
   } catch (error) {
     console.error("Error in /api/polish:", error);
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });

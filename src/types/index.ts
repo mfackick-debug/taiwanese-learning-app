@@ -1,3 +1,5 @@
+import type { PracticeCategory } from '@/types/practiceCategory';
+
 export interface SentenceExample {
   situation: string;
   chinese: string;
@@ -14,8 +16,6 @@ export interface SentenceExample {
   /** options配列内の正解インデックス(0-3) */
   answerIndex?: number;
 }
-
-import type { PracticeCategory } from '@/types/practiceCategory';
 
 /** 旧形式・新形式で共通のフィールド */
 export interface SentenceCardBase {

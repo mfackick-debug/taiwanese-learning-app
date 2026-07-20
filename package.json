@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack -p 9002",
-    "build": "npm run validate-data && next build",
+    "build": "npm run typecheck && next build",
     "start": "next start",
     "lint": "next lint",
     "validate-data": "npx tsx scripts/validate-data.ts",
