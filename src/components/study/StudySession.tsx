@@ -21,9 +21,14 @@ import { initStepState, type StepState } from "@/components/study/stepState";
 import type { StudyStep, RecallEvaluation } from "@/components/study/types";
 import { shuffle } from "@/components/study/utils";
 import { VocabStep } from "@/components/study/VocabStep";
+import { StoryListeningStep } from "@/components/study/StoryListeningStep";
+import { StoryReadingAloudStep } from "@/components/study/StoryReadingAloudStep";
 import { DRILL_COURSE_OPTIONS } from "@/utils/drillCourseLabel";
 
 export type StudySessionMode = "drill" | "story";
+
+/** ストーリー: 全体理解 → 個別問題のトップダウン導入 */
+type StoryIntroPhase = "listening" | "reading" | "questions";
 
 export interface StudySessionProps {
   mode: StudySessionMode;
@@ -53,7 +58,13 @@ function isStoryCard(card: NormalizedStudyCard): card is StoryStudyCard {
 
 const STORY_MACRO_PHASES: readonly StudyStep[] = ["shadowing", "vocab", "reorder", "recall"];
 
-const STORY_PHASE_LABELS: ReadonlyArray<{ step: StudyStep; label: string }> = [
+const STORY_INTRO_LABELS: ReadonlyArray<{ id: StoryIntroPhase; label: string }> = [
+  { id: "listening", label: "①全体リスニング" },
+  { id: "reading", label: "②全文音読" },
+  { id: "questions", label: "③個別問題" },
+];
+
+const STORY_QUESTION_PHASE_LABELS: ReadonlyArray<{ step: StudyStep; label: string }> = [
   { step: "shadowing", label: "①通しシャドー" },
   { step: "vocab", label: "②一気穴埋め" },
   { step: "reorder", label: "③一気並替" },
@@ -103,6 +114,14 @@ export function StudySession({
   const [reviewQueue, setReviewQueue] = useState<NormalizedStudyCard[]>([]);
   const [todayScore, setTodayScore] = useState(0);
   const [episodeClearOpen, setEpisodeClearOpen] = useState(false);
+  const [storyIntroPhase, setStoryIntroPhase] = useState<StoryIntroPhase>(
+    mode === "story" ? "listening" : "questions"
+  );
+
+  const storyCards = useMemo(
+    () => shuffledCards.filter((c): c is StoryStudyCard => isStoryCard(c)),
+    [shuffledCards]
+  );
 
   const clearScreenData = useMemo(
     () => (episodeNumber != null ? getEpisodeClearScreenData(episodeNumber) : null),
@@ -131,7 +150,8 @@ export function StudySession({
     setReviewQueue([]);
     setIsHardModeEnabled(forceRecall);
     setEpisodeClearOpen(false);
-  }, [initialCards, forceRecall]);
+    setStoryIntroPhase(mode === "story" ? "listening" : "questions");
+  }, [initialCards, forceRecall, mode]);
 
   const transitionToStep = useCallback(
     (sessionCards: NormalizedStudyCard[], cardIndex: number, step: StudyStep) => {
@@ -150,12 +170,24 @@ export function StudySession({
     const next = shuffleOnRestart ? shuffle([...pool]) : [...pool];
     setReviewQueue([]);
     setShuffledCards(next);
+    if (mode === "story") {
+      setStoryIntroPhase("listening");
+      transitionToStep(next, 0, "shadowing");
+      return;
+    }
     transitionToStep(next, 0, "shadowing");
-  }, [restartPool, initialCards, shuffleOnRestart, transitionToStep]);
+  }, [restartPool, initialCards, shuffleOnRestart, transitionToStep, mode]);
 
   const addScore = useCallback((points: number) => {
     setTodayScore((s) => s + points);
   }, []);
+
+  const enterStoryQuestions = useCallback(() => {
+    stopTts();
+    setStoryIntroPhase("questions");
+    transitionToStep(shuffledCards, 0, "shadowing");
+    addScore(1);
+  }, [shuffledCards, transitionToStep, addScore]);
 
   const advanceAfterCardComplete = useCallback(() => {
     const nextIndex = currentCardIndex + 1;
@@ -374,7 +406,7 @@ export function StudySession({
   const stepLabels = useMemo(
     () =>
       mode === "story"
-        ? STORY_PHASE_LABELS
+        ? STORY_QUESTION_PHASE_LABELS
         : ([
             { step: "shadowing" as const, label: "①音読" },
             { step: "vocab" as const, label: "②穴埋め" },
@@ -386,13 +418,15 @@ export function StudySession({
 
   const storyNextLabel = useMemo(
     () =>
-      mode === "story"
+      mode === "story" && storyIntroPhase === "questions"
         ? getStoryStepNextLabel(currentStep, currentCardIndex, totalCards)
         : undefined,
-    [mode, currentStep, currentCardIndex, totalCards]
+    [mode, storyIntroPhase, currentStep, currentCardIndex, totalCards]
   );
 
-  if (!currentCard) {
+  const inStoryIntro = mode === "story" && storyIntroPhase !== "questions";
+
+  if (!currentCard && !inStoryIntro) {
     return (
       <main className="min-h-dvh flex items-center justify-center">
         <p className="text-muted-foreground font-body">カードがありません</p>
@@ -400,100 +434,140 @@ export function StudySession({
     );
   }
 
-  const storyCard = isStoryCard(currentCard) ? currentCard : null;
+  const storyCard =
+    currentCard && isStoryCard(currentCard) ? currentCard : null;
 
   const courseContent = (
     <div className="space-y-4">
-      {mode === "story" && episodeTitle && (
-        <Card className="border-none bg-cyan-50/80 rounded-2xl">
-          <CardContent className="pt-4 pb-4 space-y-1">
-            <p className="font-headline font-bold text-sm text-cyan-900">{episodeTitle}</p>
-            {episodeSubtitle && (
-              <p className="text-xs text-cyan-800/80 font-body">{episodeSubtitle}</p>
-            )}
-          </CardContent>
-        </Card>
-      )}
-
-      {mode === "story" && storyCard?.sceneContext && (
-        <SceneContextBanner context={storyCard.sceneContext} />
-      )}
-
-      {storyCard && <StorySpeakerBadge card={storyCard} />}
-
-      <div className="flex items-center justify-between px-1">
-        <span className="text-sm text-muted-foreground font-body">
-          {mode === "story" ? (
-            <>
-              {currentCardIndex + 1} / {totalCards}
-              <span className="text-muted-foreground/60"> · </span>
-              {STORY_PHASE_LABELS.find((p) => p.step === currentStep)?.label}
-            </>
-          ) : (
-            <>
-              {currentCardIndex + 1} / {totalCards}
-            </>
-          )}
-        </span>
-        <div className="flex gap-1 flex-wrap justify-end">
-          {stepLabels.map(({ step, label }) => (
+      {mode === "story" && (
+        <div className="flex gap-1 flex-wrap justify-center">
+          {STORY_INTRO_LABELS.map(({ id, label }) => (
             <span
-              key={step}
+              key={id}
               className={cn(
-                "text-xs px-2 py-0.5 rounded-full font-headline",
-                currentStep === step
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-muted text-muted-foreground"
+                "text-xs px-2.5 py-1 rounded-full font-headline",
+                storyIntroPhase === id
+                  ? "bg-cyan-600 text-white"
+                  : "bg-white/70 text-muted-foreground"
               )}
             >
               {label}
             </span>
           ))}
         </div>
-      </div>
+      )}
 
-      {currentStep === "shadowing" && (
-        <ShadowingStep
-          card={currentCard}
-          isDone={stepState.isShadowingDone}
-          onComplete={handleShadowingComplete}
-          onNext={goToNextStep}
-          nextLabel={storyNextLabel}
+      {mode === "story" && storyIntroPhase === "listening" && (
+        <StoryListeningStep
+          cards={storyCards}
+          episodeTitle={episodeTitle}
+          episodeSubtitle={episodeSubtitle}
+          onComplete={() => {
+            stopTts();
+            setStoryIntroPhase("reading");
+            addScore(1);
+          }}
         />
       )}
-      {currentStep === "vocab" && (
-        <VocabStep
-          card={currentCard}
-          choices={stepState.vocabChoices}
-          selected={stepState.vocabSelected}
-          result={stepState.vocabResult}
-          onSelect={handleVocabSelect}
-          onRetry={handleVocabRetry}
-          onNext={goToNextStep}
-          nextLabel={storyNextLabel}
-        />
+
+      {mode === "story" && storyIntroPhase === "reading" && (
+        <StoryReadingAloudStep cards={storyCards} onComplete={enterStoryQuestions} />
       )}
-      {currentStep === "reorder" && (
-        <ReorderStep
-          card={currentCard}
-          shuffledChunks={stepState.shuffledChunks}
-          selectedChunks={stepState.selectedChunks}
-          result={stepState.reorderResult}
-          isLastCard={currentCardIndex + 1 >= totalCards}
-          hasRecallStep={mode === "story" ? false : useRecall}
-          onChunkClick={handleChunkClick}
-          onRetry={handleReorderRetry}
-          onNext={goToNextStep}
-          nextLabel={storyNextLabel}
-        />
-      )}
-      {currentStep === "recall" && (
-        <RecallStep
-          card={currentCard}
-          isRevealed={stepState.isRecallRevealed}
-          onReveal={handleRecallReveal}
-          onEvaluate={handleRecallEvaluate}
-        />
+
+      {(mode === "drill" || storyIntroPhase === "questions") && currentCard && (
+        <>
+          {mode === "story" && episodeTitle && (
+            <Card className="border-none bg-cyan-50/80 rounded-2xl">
+              <CardContent className="pt-4 pb-4 space-y-1">
+                <p className="font-headline font-bold text-sm text-cyan-900">{episodeTitle}</p>
+                {episodeSubtitle && (
+                  <p className="text-xs text-cyan-800/80 font-body">{episodeSubtitle}</p>
+                )}
+              </CardContent>
+            </Card>
+          )}
+
+          {mode === "story" && storyCard?.sceneContext && (
+            <SceneContextBanner context={storyCard.sceneContext} />
+          )}
+
+          {storyCard && <StorySpeakerBadge card={storyCard} />}
+
+          <div className="flex items-center justify-between px-1">
+            <span className="text-sm text-muted-foreground font-body">
+              {mode === "story" ? (
+                <>
+                  {currentCardIndex + 1} / {totalCards}
+                  <span className="text-muted-foreground/60"> · </span>
+                  {STORY_QUESTION_PHASE_LABELS.find((p) => p.step === currentStep)?.label}
+                </>
+              ) : (
+                <>
+                  {currentCardIndex + 1} / {totalCards}
+                </>
+              )}
+            </span>
+            <div className="flex gap-1 flex-wrap justify-end">
+              {stepLabels.map(({ step, label }) => (
+                <span
+                  key={step}
+                  className={cn(
+                    "text-xs px-2 py-0.5 rounded-full font-headline",
+                    currentStep === step
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-muted text-muted-foreground"
+                  )}
+                >
+                  {label}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {currentStep === "shadowing" && (
+            <ShadowingStep
+              card={currentCard}
+              isDone={stepState.isShadowingDone}
+              onComplete={handleShadowingComplete}
+              onNext={goToNextStep}
+              nextLabel={storyNextLabel}
+            />
+          )}
+          {currentStep === "vocab" && (
+            <VocabStep
+              card={currentCard}
+              choices={stepState.vocabChoices}
+              selected={stepState.vocabSelected}
+              result={stepState.vocabResult}
+              onSelect={handleVocabSelect}
+              onRetry={handleVocabRetry}
+              onNext={goToNextStep}
+              nextLabel={storyNextLabel}
+            />
+          )}
+          {currentStep === "reorder" && (
+            <ReorderStep
+              card={currentCard}
+              shuffledChunks={stepState.shuffledChunks}
+              selectedChunks={stepState.selectedChunks}
+              result={stepState.reorderResult}
+              isLastCard={currentCardIndex + 1 >= totalCards}
+              hasRecallStep={mode === "story" ? false : useRecall}
+              onChunkClick={handleChunkClick}
+              onRetry={handleReorderRetry}
+              onNext={goToNextStep}
+              nextLabel={storyNextLabel}
+            />
+          )}
+          {currentStep === "recall" && (
+            <RecallStep
+              card={currentCard}
+              isRevealed={stepState.isRecallRevealed}
+              onReveal={handleRecallReveal}
+              onEvaluate={handleRecallEvaluate}
+            />
+          )}
+        </>
       )}
     </div>
   );
@@ -590,28 +664,30 @@ export function StudySession({
         )}
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-t">
-        <div className="max-w-2xl mx-auto px-4 py-3 flex gap-3">
-          <Button
-            type="button"
-            variant="outline"
-            className="flex-1 rounded-2xl h-12 font-headline"
-            onClick={goToPrevCard}
-            disabled={currentCardIndex <= 0}
-          >
-            ← 前へ
-          </Button>
-          <Button
-            type="button"
-            variant="outline"
-            className="flex-1 rounded-2xl h-12 font-headline"
-            onClick={goToNextCard}
-            disabled={currentCardIndex >= totalCards - 1}
-          >
-            次へ →
-          </Button>
+      {!inStoryIntro && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-t">
+          <div className="max-w-2xl mx-auto px-4 py-3 flex gap-3">
+            <Button
+              type="button"
+              variant="outline"
+              className="flex-1 rounded-2xl h-12 font-headline"
+              onClick={goToPrevCard}
+              disabled={currentCardIndex <= 0}
+            >
+              ← 前へ
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              className="flex-1 rounded-2xl h-12 font-headline"
+              onClick={goToNextCard}
+              disabled={currentCardIndex >= totalCards - 1}
+            >
+              次へ →
+            </Button>
+          </div>
         </div>
-      </div>
+      )}
 
       {clearScreenData && (
         <EpisodeClearModal

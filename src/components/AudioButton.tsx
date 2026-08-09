@@ -80,21 +80,42 @@ export async function getAudioBlob(text: string): Promise<{ blob: Blob; url: str
   }
 }
 
-export async function playTts(text: string) {
+async function playUrl(url: string, waitUntilEnd: boolean): Promise<void> {
+  const audio = new Audio(url);
+  globalAudio = audio;
+
+  if (!waitUntilEnd) {
+    audio.onended = () => {
+      stopTts();
+    };
+    audio.onerror = () => {
+      stopTts();
+    };
+    await audio.play();
+    return;
+  }
+
+  await new Promise<void>((resolve, reject) => {
+    audio.onended = () => {
+      stopTts();
+      resolve();
+    };
+    audio.onerror = () => {
+      stopTts();
+      reject(new Error("Audio playback failed"));
+    };
+    audio.play().catch(reject);
+  });
+}
+
+export async function playTts(text: string, options?: { waitUntilEnd?: boolean }) {
+  const waitUntilEnd = options?.waitUntilEnd ?? false;
   stopTts();
 
   const cachedUrl = audioCache[text];
   if (cachedUrl) {
     try {
-      const audio = new Audio(cachedUrl);
-      globalAudio = audio;
-      audio.onended = () => {
-        stopTts();
-      };
-      audio.onerror = () => {
-        stopTts();
-      };
-      await audio.play();
+      await playUrl(cachedUrl, waitUntilEnd);
     } catch (err) {
       console.error("playTts cached audio error:", err);
       stopTts();
@@ -119,16 +140,7 @@ export async function playTts(text: string) {
     const blob = await res.blob();
     const url = URL.createObjectURL(blob);
     audioCache[text] = url;
-
-    const audio = new Audio(url);
-    globalAudio = audio;
-    audio.onended = () => {
-      stopTts();
-    };
-    audio.onerror = () => {
-      stopTts();
-    };
-    await audio.play();
+    await playUrl(url, waitUntilEnd);
   } catch (err) {
     console.error("playTts TTS error:", err);
     stopTts();

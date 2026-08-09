@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Bookmark, Sparkles } from "lucide-react";
+import { Bookmark, PenLine, Sparkles } from "lucide-react";
 
 export interface ModeSelectScreenProps {
   onSelectDrill: () => void;
@@ -53,7 +53,7 @@ export function ModeSelectScreen({ onSelectDrill, onSelectStory }: ModeSelectScr
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-sm text-muted-foreground font-body">
-                隆志と阿倫の12話ドラマ。台北の生活を追いながら、会話文で4ステップ学習（全60シーン）。
+                全体リスニング→全文音読→個別問題のトップダウン学習。隆志と阿倫の12話ドラマ（全60シーン）。
               </p>
               <Button
                 type="button"
@@ -65,6 +65,29 @@ export function ModeSelectScreen({ onSelectDrill, onSelectStory }: ModeSelectScr
             </CardContent>
           </Card>
         </div>
+
+        <Card className="border-none bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border-2 border-teal-200/60">
+          <CardHeader>
+            <CardTitle className="font-headline text-lg flex items-center gap-2">
+              <PenLine className="h-5 w-5 text-teal-600" />
+              マイ単語（カスタム学習）
+            </CardTitle>
+            <p className="text-xs text-teal-700 font-body">任意の語 → 例文生成 → 作文添削</p>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-sm text-muted-foreground font-body">
+              覚えたい単語を入力すると Band B 相当の例文を生成。その語を使った作文を AI が台湾華語に添削します。
+            </p>
+            <Button
+              type="button"
+              variant="secondary"
+              className="w-full rounded-2xl font-headline bg-teal-600 text-white hover:bg-teal-700"
+              asChild
+            >
+              <Link href="/my-word">マイ単語を始める</Link>
+            </Button>
+          </CardContent>
+        </Card>
 
         <Card className="border-none bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border-2 border-violet-200/60">
           <CardHeader>
