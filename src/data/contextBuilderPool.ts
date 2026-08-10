@@ -1,4 +1,4 @@
-import { bandBLevel4Data } from "@/data/bandBLevel4";
+import { bandBLevel4AllData } from "@/data";
 import { bandCData } from "@/data/bandC";
 import type { ContextBuilderItem } from "@/types/contextBuilder";
 import type { PracticeCategory } from "@/types/practiceCategory";
@@ -8,13 +8,13 @@ import { inferPracticeCategory } from "@/utils/inferPracticeCategory";
 import { normalizeCards } from "@/utils/normalizeCard";
 
 const rawById = new Map<string, SentenceCardInput>();
-for (const card of [...bandBLevel4Data, ...bandCData]) {
+for (const card of [...bandBLevel4AllData, ...bandCData]) {
   rawById.set(card.id, card);
 }
 
 /** Context Re-builder 用プール（実践例文 + カテゴリ付与） */
 export const CONTEXT_BUILDER_POOL: ContextBuilderItem[] = normalizeCards(
-  [...bandBLevel4Data, ...bandCData],
+  [...bandBLevel4AllData, ...bandCData],
   { expandExamples: true }
 ).map((normalized) => {
   const raw = rawById.get(normalized.sourceCardId);

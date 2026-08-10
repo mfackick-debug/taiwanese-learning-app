@@ -266,6 +266,7 @@ async function main() {
   const filesToCheck = [
     { path: "../src/data/bandBLevel3.ts", exportName: "bandBLevel3Data" },
     { path: "../src/data/bandBLevel4.ts", exportName: "bandBLevel4Data" },
+    { path: "../src/data/bandBLevel5.ts", exportName: "bandBLevel5Data" },
     { path: "../src/data/bandC.ts", exportName: "bandCData" },
     { path: "../src/data/storyMode/episodes.ts", exportName: "storyModeFlatCards" },
   ];

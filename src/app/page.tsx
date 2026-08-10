@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { bandBLevel3Data } from "@/data/bandBLevel3";
-import { bandBLevel4Data } from "@/data/bandBLevel4";
+import { bandBLevel4AllData } from "@/data";
 import { getStoryEpisode, getStoryEpisodeCards } from "@/data/storyMode";
 import { isEpisodeUnlocked, loadStoryProgress } from "@/data/storyMode/progress";
 import { useStoryProgress } from "@/hooks/useStoryProgress";
@@ -19,7 +19,7 @@ type AppScreen = "mode-select" | "story-list" | "study";
 type StudyKind = "drill" | "story";
 
 function getDrillCards(level: 3 | 4): NormalizedStudyCard[] {
-  const raw = level === 3 ? bandBLevel3Data : bandBLevel4Data;
+  const raw = level === 3 ? bandBLevel3Data : bandBLevel4AllData;
   return shuffle(normalizeCards(raw));
 }
 
@@ -62,7 +62,7 @@ export default function StudyPage() {
 
   const startDrill = useCallback(() => {
     const cards = getDrillCards(drillLevel);
-    const pool = normalizeCards(drillLevel === 3 ? bandBLevel3Data : bandBLevel4Data);
+    const pool = normalizeCards(drillLevel === 3 ? bandBLevel3Data : bandBLevel4AllData);
     setStudyKind("drill");
     setEpisodeNumber(null);
     setSessionCards(cards);
@@ -74,7 +74,7 @@ export default function StudyPage() {
   const handleDrillLevelChange = useCallback((level: 3 | 4) => {
     setDrillLevel(level);
     const cards = getDrillCards(level);
-    const pool = normalizeCards(level === 3 ? bandBLevel3Data : bandBLevel4Data);
+    const pool = normalizeCards(level === 3 ? bandBLevel3Data : bandBLevel4AllData);
     setSessionCards(cards);
     setRestartPool(pool);
     setSessionKey((k) => k + 1);

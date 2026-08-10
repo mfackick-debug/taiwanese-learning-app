@@ -7,8 +7,8 @@ export const DRILL_COURSE_OPTIONS = [
   },
   {
     level: 4 as const,
-    label: "社会・職場",
-    description: "職場、ニュース、社会問題など、やや硬い話題",
+    label: "社会・職場＋日常",
+    description: "社会・職場に加え、飲食・買い物・交通など暮らしの実践例文も含む",
   },
 ] as const;
 
