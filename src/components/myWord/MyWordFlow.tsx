@@ -1,16 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Loader2, PenLine, Sparkles, Wand2 } from "lucide-react";
+import { ArrowLeft, BookmarkPlus, Loader2, PenLine, Sparkles, Wand2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { AudioButton } from "@/components/AudioButton";
+import { usePhraseBook } from "@/hooks/usePhraseBook";
+import { toast } from "@/hooks/use-toast";
 import type { GeneratedExample, WritingCorrection } from "@/types/myWord";
 
 export function MyWordFlow() {
+  const { addEntry } = usePhraseBook();
   const [targetWord, setTargetWord] = useState("");
   const [example, setExample] = useState<GeneratedExample | null>(null);
   const [userText, setUserText] = useState("");
@@ -18,6 +21,8 @@ export function MyWordFlow() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [isCorrecting, setIsCorrecting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [savedExample, setSavedExample] = useState(false);
+  const [savedRewrite, setSavedRewrite] = useState(false);
 
   const handleGenerate = async () => {
     const word = targetWord.trim();
@@ -25,6 +30,8 @@ export function MyWordFlow() {
     setIsGenerating(true);
     setError(null);
     setCorrection(null);
+    setSavedExample(false);
+    setSavedRewrite(false);
 
     try {
       const res = await fetch("/api/generate-example", {
@@ -49,6 +56,7 @@ export function MyWordFlow() {
     if (!example || !userText.trim() || isCorrecting) return;
     setIsCorrecting(true);
     setError(null);
+    setSavedRewrite(false);
 
     try {
       const res = await fetch("/api/correct-writing", {
@@ -72,6 +80,45 @@ export function MyWordFlow() {
       setIsCorrecting(false);
     }
   };
+
+  const saveExampleToPhraseBook = useCallback(() => {
+    if (!example) return;
+    addEntry({
+      sourceCardId: `my-word:example:${example.targetWord}`,
+      targetWord: example.targetWord,
+      skeletonText: example.sentence,
+      category: "survival",
+      promptHintJa: "マイ単語で生成した例文",
+      userDraft: "",
+      polishedText: example.sentence,
+      pinyin: example.pinyin,
+      explanation: example.translation,
+    });
+    setSavedExample(true);
+    toast({
+      title: "My Phrase Book に保存しました",
+      description: "生成例文をフレーズ帳に追加しました。",
+    });
+  }, [addEntry, example]);
+
+  const saveRewriteToPhraseBook = useCallback(() => {
+    if (!example || !correction) return;
+    addEntry({
+      sourceCardId: `my-word:rewrite:${example.targetWord}`,
+      targetWord: example.targetWord,
+      skeletonText: example.sentence,
+      category: "survival",
+      promptHintJa: "マイ単語の作文添削",
+      userDraft: userText.trim(),
+      polishedText: correction.naturalRewrite,
+      explanation: correction.feedback,
+    });
+    setSavedRewrite(true);
+    toast({
+      title: "My Phrase Book に保存しました",
+      description: "添削後の表現をフレーズ帳に追加しました。",
+    });
+  }, [addEntry, correction, example, userText]);
 
   return (
     <main className="min-h-dvh bg-gradient-to-br from-blue-50 via-cyan-50 to-sky-50 pb-24">
@@ -153,12 +200,22 @@ export function MyWordFlow() {
                 <p className="text-sm text-muted-foreground/70 font-body">{example.pinyin}</p>
                 <p className="text-sm text-muted-foreground font-body">{example.translation}</p>
               </div>
-              <div className="flex justify-center">
+              <div className="flex flex-wrap justify-center gap-2">
                 <AudioButton
                   text={example.sentence}
                   size="lg"
                   className="h-14 w-14 rounded-full bg-teal-50 hover:bg-teal-100"
                 />
+                <Button
+                  type="button"
+                  variant="secondary"
+                  className="rounded-2xl font-headline h-14 px-4"
+                  disabled={savedExample}
+                  onClick={saveExampleToPhraseBook}
+                >
+                  <BookmarkPlus className="mr-2 h-4 w-4" />
+                  {savedExample ? "保存済み" : "フレーズ帳に保存"}
+                </Button>
               </div>
             </CardContent>
           </Card>
@@ -211,8 +268,19 @@ export function MyWordFlow() {
                     <p className="text-lg font-headline text-slate-900 whitespace-pre-wrap">
                       {correction.naturalRewrite}
                     </p>
-                    <div className="flex justify-end">
+                    <div className="flex flex-wrap justify-end gap-2">
                       <AudioButton text={correction.naturalRewrite} size="sm" />
+                      <Button
+                        type="button"
+                        variant="secondary"
+                        size="sm"
+                        className="rounded-2xl font-headline"
+                        disabled={savedRewrite}
+                        onClick={saveRewriteToPhraseBook}
+                      >
+                        <BookmarkPlus className="mr-1 h-4 w-4" />
+                        {savedRewrite ? "保存済み" : "フレーズ帳に保存"}
+                      </Button>
                     </div>
                   </div>
                   <div className="rounded-2xl bg-sky-50/80 p-4 space-y-1">

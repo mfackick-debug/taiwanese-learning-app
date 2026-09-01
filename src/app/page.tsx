@@ -1,173 +1,155 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { bandBLevel3Data } from "@/data/bandBLevel3";
-import { bandBLevel4AllData } from "@/data";
-import { getStoryEpisode, getStoryEpisodeCards } from "@/data/storyMode";
-import { isEpisodeUnlocked, loadStoryProgress } from "@/data/storyMode/progress";
-import { useStoryProgress } from "@/hooks/useStoryProgress";
+import {
+  countDrillPool,
+  getDrillCards,
+  resolveDrillCardsByIds,
+  type DrillCourseId,
+} from "@/data/drillPool";
+import {
+  clearDrillProgress,
+  formatDrillProgressLabel,
+  loadDrillProgress,
+  saveDrillProgress,
+  type DrillProgress,
+} from "@/data/drillProgress";
 import type { NormalizedStudyCard } from "@/types";
-import { normalizeCards } from "@/utils/normalizeCard";
+import type { StudyStep } from "@/components/study/types";
 import { ModeSelectScreen } from "@/components/study/ModeSelectScreen";
-import { StoryEpisodeSelect } from "@/components/study/StoryEpisodeSelect";
 import { StudySession } from "@/components/study/StudySession";
-import { shuffle } from "@/components/study/utils";
-import { getDrillCourseLabel } from "@/utils/drillCourseLabel";
+import {
+  getDrillCourseDescription,
+  getDrillCourseLabel,
+} from "@/utils/drillCourseLabel";
 
-type AppScreen = "mode-select" | "story-list" | "study";
-
-type StudyKind = "drill" | "story";
-
-function getDrillCards(level: 3 | 4): NormalizedStudyCard[] {
-  const raw = level === 3 ? bandBLevel3Data : bandBLevel4AllData;
-  return shuffle(normalizeCards(raw));
-}
+type AppScreen = "mode-select" | "study";
 
 export default function StudyPage() {
   const [appScreen, setAppScreen] = useState<AppScreen>("mode-select");
-  const [studyKind, setStudyKind] = useState<StudyKind>("drill");
-  const [drillLevel, setDrillLevel] = useState<3 | 4>(3);
-  const [sessionCards, setSessionCards] = useState<NormalizedStudyCard[]>(() =>
-    getDrillCards(3)
-  );
-  const [restartPool, setRestartPool] = useState<NormalizedStudyCard[]>(() =>
-    normalizeCards(bandBLevel3Data)
-  );
-  const [episodeNumber, setEpisodeNumber] = useState<number | null>(null);
+  const [drillCourse, setDrillCourse] = useState<DrillCourseId>("all");
+  const [sessionCards, setSessionCards] = useState<NormalizedStudyCard[]>([]);
+  const [restartPool, setRestartPool] = useState<NormalizedStudyCard[]>([]);
   const [sessionKey, setSessionKey] = useState(0);
+  const [initialCardIndex, setInitialCardIndex] = useState(0);
+  const [initialStep, setInitialStep] = useState<StudyStep>("shadowing");
+  const [savedProgress, setSavedProgress] = useState<DrillProgress | null>(null);
 
-  const {
-    progress: storyProgress,
-    refreshProgress,
-    completeEpisode,
-    resetProgress,
-    unlockAllEpisodes,
-  } = useStoryProgress();
-
-  const episodeMeta = useMemo(() => {
-    if (episodeNumber == null) return null;
-    const ep = getStoryEpisode(episodeNumber);
-    if (!ep) return null;
-    return {
-      title: `第${ep.episodeNumber}話：${ep.title}`,
-      subtitle: ep.subtitle,
-    };
-  }, [episodeNumber]);
+  const totalQuestionCount = useMemo(() => countDrillPool("all"), []);
 
   useEffect(() => {
-    if (appScreen === "story-list") {
-      refreshProgress();
+    setSavedProgress(loadDrillProgress());
+  }, [appScreen]);
+
+  const resumeLabel = useMemo(() => {
+    if (!savedProgress) return null;
+    const course = getDrillCourseLabel(savedProgress.course);
+    return `${course} · ${formatDrillProgressLabel(savedProgress)}`;
+  }, [savedProgress]);
+
+  const startFreshDrill = useCallback((course: DrillCourseId = "all") => {
+    const cards = getDrillCards(course, { shuffle: true });
+    const pool = getDrillCards(course, { shuffle: false });
+    clearDrillProgress();
+    setSavedProgress(null);
+    setDrillCourse(course);
+    setSessionCards(cards);
+    setRestartPool(pool);
+    setInitialCardIndex(0);
+    setInitialStep("shadowing");
+    setSessionKey((k) => k + 1);
+    setAppScreen("study");
+    saveDrillProgress({
+      course,
+      cardIds: cards.map((c) => c.id),
+      currentCardIndex: 0,
+      currentStep: "shadowing",
+      updatedAt: new Date().toISOString(),
+    });
+  }, []);
+
+  const resumeDrill = useCallback(() => {
+    const progress = loadDrillProgress();
+    if (!progress) {
+      startFreshDrill("all");
+      return;
     }
-  }, [appScreen, refreshProgress]);
-
-  const startDrill = useCallback(() => {
-    const cards = getDrillCards(drillLevel);
-    const pool = normalizeCards(drillLevel === 3 ? bandBLevel3Data : bandBLevel4AllData);
-    setStudyKind("drill");
-    setEpisodeNumber(null);
+    const cards = resolveDrillCardsByIds(progress.course, progress.cardIds);
+    if (cards.length === 0) {
+      startFreshDrill(progress.course);
+      return;
+    }
+    const pool = getDrillCards(progress.course, { shuffle: false });
+    setDrillCourse(progress.course);
     setSessionCards(cards);
     setRestartPool(pool);
+    setInitialCardIndex(Math.min(progress.currentCardIndex, cards.length - 1));
+    setInitialStep(progress.currentStep);
     setSessionKey((k) => k + 1);
     setAppScreen("study");
-  }, [drillLevel]);
+  }, [startFreshDrill]);
 
-  const handleDrillLevelChange = useCallback((level: 3 | 4) => {
-    setDrillLevel(level);
-    const cards = getDrillCards(level);
-    const pool = normalizeCards(level === 3 ? bandBLevel3Data : bandBLevel4AllData);
-    setSessionCards(cards);
-    setRestartPool(pool);
-    setSessionKey((k) => k + 1);
-  }, []);
+  const handleCourseChange = useCallback((course: DrillCourseId) => {
+    startFreshDrill(course);
+  }, [startFreshDrill]);
 
-  const openStoryList = useCallback(() => {
-    refreshProgress();
-    setAppScreen("story-list");
-  }, [refreshProgress]);
-
-  const startStoryEpisode = useCallback((num: number) => {
-    const current = loadStoryProgress();
-    if (!isEpisodeUnlocked(current, num)) return;
-    const cards = getStoryEpisodeCards(num);
-    if (cards.length === 0) return;
-    setStudyKind("story");
-    setEpisodeNumber(num);
-    setSessionCards(cards);
-    setRestartPool(cards);
-    setSessionKey((k) => k + 1);
-    setAppScreen("study");
-  }, []);
-
-  const goToNextStoryEpisode = useCallback(() => {
-    if (episodeNumber == null) return;
-    const next = episodeNumber + 1;
-    const current = loadStoryProgress();
-    if (!isEpisodeUnlocked(current, next)) return;
-    if (getStoryEpisodeCards(next).length === 0) return;
-    startStoryEpisode(next);
-  }, [episodeNumber, startStoryEpisode]);
-
-  const handleEpisodeCleared = useCallback(
-    (num: number) => {
-      completeEpisode(num);
+  const handleProgressChange = useCallback(
+    (snapshot: {
+      cardIds: string[];
+      currentCardIndex: number;
+      currentStep: StudyStep;
+    }) => {
+      const next: DrillProgress = {
+        course: drillCourse,
+        cardIds: snapshot.cardIds,
+        currentCardIndex: snapshot.currentCardIndex,
+        currentStep: snapshot.currentStep,
+        updatedAt: new Date().toISOString(),
+      };
+      saveDrillProgress(next);
+      setSavedProgress(next);
     },
-    [completeEpisode]
+    [drillCourse]
   );
 
   const exitToModeSelect = useCallback(() => {
+    setSavedProgress(loadDrillProgress());
     setAppScreen("mode-select");
-    setEpisodeNumber(null);
   }, []);
 
-  const exitStoryToList = useCallback(() => {
-    refreshProgress();
-    setAppScreen("story-list");
-    setEpisodeNumber(null);
-  }, [refreshProgress]);
+  const handleResetProgress = useCallback(() => {
+    clearDrillProgress();
+    setSavedProgress(null);
+  }, []);
 
   if (appScreen === "mode-select") {
     return (
       <ModeSelectScreen
-        onSelectDrill={() => {
-          setStudyKind("drill");
-          startDrill();
-        }}
-        onSelectStory={openStoryList}
-      />
-    );
-  }
-
-  if (appScreen === "story-list") {
-    return (
-      <StoryEpisodeSelect
-        progress={storyProgress}
-        onSelectEpisode={startStoryEpisode}
-        onBack={exitToModeSelect}
-        onResetProgress={resetProgress}
-        onUnlockAll={unlockAllEpisodes}
+        onStartDrill={() => startFreshDrill(drillCourse)}
+        onResumeDrill={resumeLabel ? resumeDrill : undefined}
+        onResetProgress={handleResetProgress}
+        resumeLabel={resumeLabel}
+        totalQuestionCount={totalQuestionCount}
       />
     );
   }
 
   return (
     <StudySession
-      key={`${studyKind}-${sessionKey}`}
-      mode={studyKind}
+      key={`drill-${sessionKey}`}
+      mode="drill"
       cards={sessionCards}
       restartPool={restartPool}
-      episodeTitle={episodeMeta?.title}
-      episodeSubtitle={episodeMeta?.subtitle}
-      forceRecall={studyKind === "story"}
-      shuffleOnRestart={studyKind === "drill"}
-      showDrillSettings={studyKind === "drill"}
-      courseLabel={getDrillCourseLabel(drillLevel)}
-      selectedLevel={drillLevel}
-      onCourseChange={handleDrillLevelChange}
-      onExit={studyKind === "story" ? exitStoryToList : exitToModeSelect}
-      onNextEpisode={studyKind === "story" ? goToNextStoryEpisode : undefined}
-      onEpisodeClearBackToList={studyKind === "story" ? exitStoryToList : undefined}
-      onEpisodeCleared={studyKind === "story" ? handleEpisodeCleared : undefined}
-      episodeNumber={studyKind === "story" ? episodeNumber ?? undefined : undefined}
+      shuffleOnRestart
+      showDrillSettings
+      courseLabel={getDrillCourseLabel(drillCourse)}
+      courseDescription={getDrillCourseDescription(drillCourse)}
+      selectedCourse={drillCourse}
+      onCourseChange={handleCourseChange}
+      initialCardIndex={initialCardIndex}
+      initialStep={initialStep}
+      onProgressChange={handleProgressChange}
+      onExit={exitToModeSelect}
     />
   );
 }

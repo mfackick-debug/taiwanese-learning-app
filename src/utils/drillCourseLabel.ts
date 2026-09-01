@@ -1,17 +1,37 @@
-/** ドリル難易度ラベル（旧 Band B Level 3/4 の UI 代替） */
-export const DRILL_COURSE_OPTIONS = [
+/** 実践ドリルのコース定義 */
+import type { DrillCourseId } from "@/data/drillPool";
+import { countDrillPool } from "@/data/drillPool";
+
+export interface DrillCourseOption {
+  id: DrillCourseId;
+  label: string;
+  description: string;
+}
+
+export const DRILL_COURSE_OPTIONS: readonly DrillCourseOption[] = [
   {
-    level: 3 as const,
-    label: "生活・日常",
-    description: "買い物、交通、近所のやりとりなど、暮らしの場面",
+    id: "all",
+    label: "総合（全問題）",
+    description: "日常・社会・ストーリー転用例文をすべて含むメインコース",
   },
   {
-    level: 4 as const,
-    label: "社会・職場＋日常",
-    description: "社会・職場に加え、飲食・買い物・交通など暮らしの実践例文も含む",
+    id: "daily",
+    label: "生活・日常",
+    description: "暮らし・会話・ストーリー転用を中心にした実践例文",
+  },
+  {
+    id: "social",
+    label: "社会・職場",
+    description: "社会問題・職場・ニュース寄りの例文",
   },
 ] as const;
 
-export function getDrillCourseLabel(level: 3 | 4): string {
-  return DRILL_COURSE_OPTIONS.find((o) => o.level === level)?.label ?? "実践ドリル";
+export function getDrillCourseLabel(course: DrillCourseId): string {
+  return DRILL_COURSE_OPTIONS.find((o) => o.id === course)?.label ?? "実践ドリル";
+}
+
+export function getDrillCourseDescription(course: DrillCourseId): string {
+  const base = DRILL_COURSE_OPTIONS.find((o) => o.id === course)?.description ?? "";
+  const count = countDrillPool(course);
+  return `${base}（約 ${count} 問）`;
 }

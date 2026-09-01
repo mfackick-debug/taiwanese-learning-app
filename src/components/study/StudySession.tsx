@@ -23,7 +23,11 @@ import { shuffle } from "@/components/study/utils";
 import { VocabStep } from "@/components/study/VocabStep";
 import { StoryListeningStep } from "@/components/study/StoryListeningStep";
 import { StoryReadingAloudStep } from "@/components/study/StoryReadingAloudStep";
-import { DRILL_COURSE_OPTIONS } from "@/utils/drillCourseLabel";
+import type { DrillCourseId } from "@/data/drillPool";
+import {
+  DRILL_COURSE_OPTIONS,
+  getDrillCourseDescription,
+} from "@/utils/drillCourseLabel";
 
 export type StudySessionMode = "drill" | "story";
 
@@ -43,8 +47,17 @@ export interface StudySessionProps {
   shuffleOnRestart?: boolean;
   showDrillSettings?: boolean;
   courseLabel?: string;
-  onCourseChange?: (level: 3 | 4) => void;
-  selectedLevel?: 3 | 4;
+  courseDescription?: string;
+  onCourseChange?: (course: DrillCourseId) => void;
+  selectedCourse?: DrillCourseId;
+  /** 途中再開用 */
+  initialCardIndex?: number;
+  initialStep?: StudyStep;
+  onProgressChange?: (progress: {
+    cardIds: string[];
+    currentCardIndex: number;
+    currentStep: StudyStep;
+  }) => void;
   onExit: () => void;
   onSessionComplete?: () => void;
   onNextEpisode?: () => void;
@@ -96,19 +109,30 @@ export function StudySession({
   shuffleOnRestart = true,
   showDrillSettings = false,
   courseLabel,
+  courseDescription,
   onCourseChange,
-  selectedLevel,
+  selectedCourse,
+  initialCardIndex = 0,
+  initialStep = "shadowing",
+  onProgressChange,
   onExit,
   onSessionComplete,
   onNextEpisode,
   onEpisodeClearBackToList,
   onEpisodeCleared,
 }: StudySessionProps) {
+  const clampIndex = (index: number, length: number) =>
+    Math.max(0, Math.min(index, Math.max(0, length - 1)));
+
+  const startIndex = clampIndex(initialCardIndex, initialCards.length);
+  const startStep = initialStep;
+  const startCard = initialCards[startIndex] ?? initialCards[0]!;
+
   const [shuffledCards, setShuffledCards] = useState(initialCards);
-  const [currentCardIndex, setCurrentCardIndex] = useState(0);
-  const [currentStep, setCurrentStep] = useState<StudyStep>("shadowing");
+  const [currentCardIndex, setCurrentCardIndex] = useState(startIndex);
+  const [currentStep, setCurrentStep] = useState<StudyStep>(startStep);
   const [stepState, setStepState] = useState<StepState>(() =>
-    initStepState(initialCards[0]!, "shadowing")
+    initStepState(startCard, startStep)
   );
   const [isHardModeEnabled, setIsHardModeEnabled] = useState(forceRecall);
   const [reviewQueue, setReviewQueue] = useState<NormalizedStudyCard[]>([]);
@@ -143,15 +167,29 @@ export function StudySession({
   const totalCards = shuffledCards.length;
 
   useEffect(() => {
+    const idx = clampIndex(initialCardIndex, initialCards.length);
+    const step = initialStep;
+    const card = initialCards[idx] ?? initialCards[0];
+    if (!card) return;
     setShuffledCards(initialCards);
-    setCurrentCardIndex(0);
-    setCurrentStep("shadowing");
-    setStepState(initStepState(initialCards[0]!, "shadowing"));
+    setCurrentCardIndex(idx);
+    setCurrentStep(step);
+    setStepState(initStepState(card, step));
     setReviewQueue([]);
     setIsHardModeEnabled(forceRecall);
     setEpisodeClearOpen(false);
     setStoryIntroPhase(mode === "story" ? "listening" : "questions");
-  }, [initialCards, forceRecall, mode]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- resume snapshot is owned by parent key
+  }, [initialCards, forceRecall, mode, initialCardIndex, initialStep]);
+
+  useEffect(() => {
+    if (mode !== "drill" || !onProgressChange || shuffledCards.length === 0) return;
+    onProgressChange({
+      cardIds: shuffledCards.map((c) => c.id),
+      currentCardIndex,
+      currentStep,
+    });
+  }, [mode, onProgressChange, shuffledCards, currentCardIndex, currentStep]);
 
   const transitionToStep = useCallback(
     (sessionCards: NormalizedStudyCard[], cardIndex: number, step: StudyStep) => {
@@ -601,24 +639,24 @@ export function StudySession({
                   <CardTitle className="font-headline text-lg">学習設定</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  {onCourseChange && selectedLevel && (
+                  {onCourseChange && selectedCourse && (
                     <div>
-                      <p className="font-headline font-bold text-sm mb-2">難易度</p>
+                      <p className="font-headline font-bold text-sm mb-2">コース</p>
                       <div className="flex flex-wrap gap-2">
-                        {DRILL_COURSE_OPTIONS.map(({ level, label }) => (
+                        {DRILL_COURSE_OPTIONS.map(({ id, label }) => (
                           <Button
-                            key={level}
+                            key={id}
                             type="button"
-                            variant={selectedLevel === level ? "default" : "outline"}
+                            variant={selectedCourse === id ? "default" : "outline"}
                             className="rounded-full"
-                            onClick={() => onCourseChange(level)}
+                            onClick={() => onCourseChange(id)}
                           >
                             {label}
                           </Button>
                         ))}
                       </div>
                       <p className="text-xs text-muted-foreground font-body mt-2">
-                        {DRILL_COURSE_OPTIONS.find((o) => o.level === selectedLevel)?.description}
+                        {courseDescription ?? getDrillCourseDescription(selectedCourse)}
                       </p>
                     </div>
                   )}
