@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Loader2, Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { speakTaiwaneseFemalePreferred, stopWebSpeech } from "@/lib/speechUtils";
+import { playTts, stopTts } from "@/components/AudioButton";
 
 interface WebSpeechPlayButtonProps {
   text: string;
@@ -21,22 +21,22 @@ export function WebSpeechPlayButton({
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    return () => stopWebSpeech();
+    return () => stopTts();
   }, []);
 
-  const handlePlay = useCallback(() => {
+  const handlePlay = useCallback(async () => {
     if (isPlaying) {
-      stopWebSpeech();
+      stopTts();
       setIsPlaying(false);
       return;
     }
 
-    speakTaiwaneseFemalePreferred(text, {
-      lang: "zh-TW",
-      onStart: () => setIsPlaying(true),
-      onEnd: () => setIsPlaying(false),
-      onError: () => setIsPlaying(false),
-    });
+    setIsPlaying(true);
+    try {
+      await playTts(text, { waitUntilEnd: true });
+    } finally {
+      setIsPlaying(false);
+    }
   }, [isPlaying, text]);
 
   return (
@@ -50,7 +50,7 @@ export function WebSpeechPlayButton({
         className
       )}
       onClick={handlePlay}
-      title="台湾華語で読み上げ（Web Speech API）"
+      title="台湾華語で読み上げ"
       aria-label="読み上げ"
     >
       {isPlaying ? (

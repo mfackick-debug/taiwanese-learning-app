@@ -9,12 +9,71 @@ export type SpeakOptions = {
   onError?: () => void;
 };
 
+const BLOCKED_VOICE_NAME = /xiaoxiao|xiaoyi|yunxi|yunjian|yunxia|yunyang|ting-ting|tingting|sin-ji|sinji|cantonese|hong\s*kong|yue[-_]?|粤|粵/i;
+
+function normalize(value: string): string {
+  return value.toLowerCase().replaceAll("_", "-");
+}
+
+function isZhTw(voice: SpeechSynthesisVoice): boolean {
+  return normalize(voice.lang) === "zh-tw" || normalize(voice.lang).startsWith("zh-tw-");
+}
+
+function isBlockedVoice(voice: SpeechSynthesisVoice): boolean {
+  const lang = normalize(voice.lang);
+  if (lang.includes("zh-cn") || lang.includes("zh-hk") || lang.includes("zh-yue")) return true;
+  return BLOCKED_VOICE_NAME.test(voice.name);
+}
+
+function hasFemaleName(voice: SpeechSynthesisVoice): boolean {
+  const name = normalize(voice.name);
+  return (
+    name.includes("female") ||
+    name.includes("女性") ||
+    name.includes("mei-jia") ||
+    name.includes("meijia") ||
+    name.includes("美佳") ||
+    name.includes("hsiaochen") ||
+    name.includes("hsiao-chen") ||
+    name.includes("曉臻") ||
+    name.includes("晓臻") ||
+    name.includes("hsiaoyu") ||
+    name.includes("hsiao-yu") ||
+    name.includes("曉雨") ||
+    name.includes("晓雨")
+  );
+}
+
+function findByNameIncludes(voices: SpeechSynthesisVoice[], keyword: string): SpeechSynthesisVoice | undefined {
+  const k = normalize(keyword);
+  return voices.find((voice) => isZhTw(voice) && !isBlockedVoice(voice) && normalize(voice.name).includes(k));
+}
+
+export function pickTaiwanZhTwVoice(allVoices: SpeechSynthesisVoice[]): SpeechSynthesisVoice | undefined {
+  const taiwan = allVoices.filter((voice) => isZhTw(voice) && !isBlockedVoice(voice));
+  if (taiwan.length === 0) return undefined;
+
+  return (
+    findByNameIncludes(taiwan, "hsiaochen") ||
+    findByNameIncludes(taiwan, "曉臻") ||
+    findByNameIncludes(taiwan, "mei-jia") ||
+    findByNameIncludes(taiwan, "美佳") ||
+    findByNameIncludes(taiwan, "hsiaoyu") ||
+    findByNameIncludes(taiwan, "曉雨") ||
+    taiwan.find(hasFemaleName) ||
+    taiwan[0]
+  );
+}
+
 export function stopWebSpeech() {
   if (typeof window !== "undefined" && window.speechSynthesis) {
     window.speechSynthesis.cancel();
   }
 }
 
+/**
+ * Last-resort device TTS. Only zh-TW voices; never assigns zh-CN / zh-HK.
+ */
 export function speakTaiwaneseFemalePreferred(text: string, options: SpeakOptions = {}) {
   if (typeof window === "undefined" || !window.speechSynthesis) {
     options.onError?.();
@@ -25,16 +84,14 @@ export function speakTaiwaneseFemalePreferred(text: string, options: SpeakOption
 
   const utterance = new SpeechSynthesisUtterance(cleanseTextForTaiwanTts(text));
   utterance.lang = options.lang ?? "zh-TW";
-  utterance.rate = options.rate ?? 0.9;
-  utterance.pitch = options.pitch ?? 1.2;
+  utterance.rate = options.rate ?? 0.88;
+  utterance.pitch = options.pitch ?? 1;
   utterance.onstart = () => options.onStart?.();
   utterance.onend = () => options.onEnd?.();
   utterance.onerror = () => options.onError?.();
 
   let retries = 0;
   const maxRetries = 10;
-
-  const normalize = (s: string) => s.toLowerCase().replaceAll("_", "-");
 
   const findAndSpeak = () => {
     const allVoices = window.speechSynthesis.getVoices();
@@ -45,33 +102,12 @@ export function speakTaiwaneseFemalePreferred(text: string, options: SpeakOption
       return;
     }
 
-    const isZhTW = (voice: SpeechSynthesisVoice) => normalize(voice.lang).includes("zh-tw");
-
-    const hasFemaleName = (voice: SpeechSynthesisVoice) => {
-      const name = normalize(voice.name);
-      return name.includes("female") || name.includes("女性");
-    };
-
-    const findByNameIncludes = (keyword: string) => {
-      const k = normalize(keyword);
-      return allVoices.find((v) => normalize(v.name).includes(k));
-    };
-
-    const bestVoice =
-      // Priority 1: Mei-Jia (iOS Taiwan)
-      findByNameIncludes("mei-jia") ||
-      // Priority 2: Sin-Ji (iOS Taiwan)
-      findByNameIncludes("sin-ji") ||
-      // Priority 3: Google 國語 (Android Taiwan)
-      findByNameIncludes("google 國語") ||
-      // Priority 4: Ting-Ting (iOS China/Taiwan)
-      findByNameIncludes("ting-ting") ||
-      // Priority 5: zh-TW + (Female/女性 in name)
-      allVoices.find((v) => isZhTW(v) && hasFemaleName(v));
-
+    const bestVoice = pickTaiwanZhTwVoice(allVoices);
     if (bestVoice) {
       utterance.voice = bestVoice;
-      utterance.lang = options.lang ?? "zh-TW";
+      utterance.lang = "zh-TW";
+    } else {
+      utterance.lang = "zh-TW";
     }
 
     window.speechSynthesis.speak(utterance);

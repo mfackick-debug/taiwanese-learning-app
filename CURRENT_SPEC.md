@@ -37,7 +37,7 @@
   - グローバル状態管理ライブラリ（Redux/Zustand等）は現状使用していない
 - バックエンド/サーバ機能
   - Next.js API Route（`src/app/api/tts/route.ts`）
-  - 外部TTSサービス（Yating）へのプロキシ
+  - Microsoft Edge TTS（無料・APIキー不要、台湾華語女性声）へのプロキシ
 - 永続化
   - ブラウザ `localStorage`
 - Firebase
@@ -255,7 +255,7 @@ export interface SentenceCard {
 
 ### 5.1 クライアント側：`AudioButton`（`src/components/AudioButton.tsx`）
 - 主な公開関数
-  - `playTts(text: string)`
+  - `playTts(text: string, options?: { waitUntilEnd?: boolean })`
   - `prefetchTts(text: string)`
   - `stopTts()`
 - キャッシュ
@@ -264,13 +264,14 @@ export interface SentenceCard {
   - value: `URL.createObjectURL(blob)` で生成したBlob URL
 - 多重再生
   - `globalAudio` で現在再生中の `HTMLAudioElement` を保持
-  - `playTts` の冒頭で `stopTts()` を呼び、前の音声を停止してから再生する
+  - `playTts` の冒頭で `stopTts()` を呼び、前の音声と Web Speech を停止してから再生する
 - `prefetchTts`
   - すでに `audioCache[text]` があれば何もしない
   - `/api/tts` にPOSTし、成功した音声Blobをキャッシュ
 - `playTts`
   - キャッシュがあればそのURLで再生
   - なければ `/api/tts` にPOST → 取得したBlobをキャッシュして再生
+  - Edge TTS が失敗したら端末の `SpeechSynthesis`（`lang: zh-TW`、台湾女性声優先）にフォールバック。クラッシュしない
 
 ### 5.2 学習画面側のプリフェッチ（`src/app/page.tsx`）
 - カレントバッチ（3文）の `sentence` を `prefetchTts` で逐次プリフェッチ
@@ -279,18 +280,20 @@ export interface SentenceCard {
 - エンドポイント
   - `POST /api/tts`
 - 入力
-  - JSON `{ text: string }`
+  - JSON `{ text: string, voice?: string, rate?: string }`
 - 環境変数
-  - `YATING_API_KEY`
-  - 未設定の場合は `500` で `{ error: "Missing YATING_API_KEY" }`
-- 外部通信（上流）
-  - `https://tts.api.yating.tw/v2/speeches/short` にPOST
-  - Header `key: apiKey`
-  - `voice.model = "zh_en_female_1"`
-  - `audioConfig.encoding = "MP3"`
+  - APIキー不要（Edge TTS は無料の読み上げエンドポイント）
+- 上流
+  - Microsoft Edge TTS（`TaiwanTtsService`）
+  - 主声: `zh-TW-HsiaoChenNeural`（曉臻）
+  - 予備: `zh-TW-HsiaoYuNeural`（曉雨）
+  - 速度デフォルト: `-12%`
+  - 同一 text+voice+rate はメモリキャッシュ
+  - 長文は句読点で分割して MP3 を連結
 - 出力
   - 成功時: MP3バイナリを `Content-Type: audio/mpeg` で返却
-  - 失敗時: `NextResponse.json` でエラーを返却
+  - 失敗時: `NextResponse.json` でエラーを返却（クライアントは端末TTSへフォールバック）
+- 確認: `npm run verify-tts`（例文「你好，今天天氣真好。」）
 
 ---
 
@@ -413,7 +416,9 @@ Step4（翻訳入力）の比較で利用されます。
 - `src/app/page.tsx`
   - 学習画面（Study/Dashboard）の主要ロジック
 - `src/app/api/tts/route.ts`
-  - TTSプロキシAPI
+  - Edge TTS（台湾華語女性）プロキシAPI
+- `src/lib/taiwanTts/taiwanTtsService.ts`
+  - サーバ側 TTS 本体（キャッシュ・リトライ・声の切替）
 - `src/components/AudioButton.tsx`
   - TTS再生・キャッシュ
 - `src/data/*`

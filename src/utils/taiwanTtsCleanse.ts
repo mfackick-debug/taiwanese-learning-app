@@ -1,7 +1,7 @@
 /**
  * Taiwan TTS cleansing booster.
  *
- * Rewrites text only for speech engines (Yating API / Web Speech API).
+ * Rewrites text only for speech engines (Edge TTS / Web Speech API).
  * Never apply to on-screen sentences or source card data.
  */
 

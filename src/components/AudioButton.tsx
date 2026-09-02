@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { Loader2, Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { speakTaiwaneseFemalePreferred, stopWebSpeech } from "@/lib/speechUtils";
 import { cleanseTextForTaiwanTts } from "@/utils/taiwanTtsCleanse";
 
 const audioCache: Record<string, string> = {};
@@ -20,6 +21,7 @@ export function stopTts() {
     globalAudio.currentTime = 0;
     globalAudio = null;
   }
+  stopWebSpeech();
 }
 
 export async function prefetchTts(text: string) {
@@ -37,10 +39,11 @@ export async function prefetchTts(text: string) {
 
     if (!res.ok) return;
     const blob = await res.blob();
+    if (blob.size < 64) return;
     const url = URL.createObjectURL(blob);
     audioCache[text] = url;
   } catch {
-    // ignore
+    // ignore — playback can still fall back to device TTS
   }
 }
 
@@ -63,7 +66,6 @@ export async function getAudioBlob(text: string): Promise<{ blob: Blob; url: str
     return { blob, url: cached };
   }
 
-  // Not cached yet – fetch it
   try {
     const res = await fetch("/api/tts", {
       method: "POST",
@@ -72,6 +74,7 @@ export async function getAudioBlob(text: string): Promise<{ blob: Blob; url: str
     });
     if (!res.ok) return null;
     const blob = await res.blob();
+    if (blob.size < 64) return null;
     const url = URL.createObjectURL(blob);
     audioCache[text] = url;
     return { blob, url };
@@ -86,10 +89,10 @@ async function playUrl(url: string, waitUntilEnd: boolean): Promise<void> {
 
   if (!waitUntilEnd) {
     audio.onended = () => {
-      stopTts();
+      if (globalAudio === audio) globalAudio = null;
     };
     audio.onerror = () => {
-      stopTts();
+      if (globalAudio === audio) globalAudio = null;
     };
     await audio.play();
     return;
@@ -97,14 +100,36 @@ async function playUrl(url: string, waitUntilEnd: boolean): Promise<void> {
 
   await new Promise<void>((resolve, reject) => {
     audio.onended = () => {
-      stopTts();
+      if (globalAudio === audio) globalAudio = null;
       resolve();
     };
     audio.onerror = () => {
-      stopTts();
+      if (globalAudio === audio) globalAudio = null;
       reject(new Error("Audio playback failed"));
     };
     audio.play().catch(reject);
+  });
+}
+
+function playWebSpeechFallback(text: string, waitUntilEnd: boolean): Promise<void> {
+  return new Promise((resolve) => {
+    let settled = false;
+    const done = () => {
+      if (settled) return;
+      settled = true;
+      resolve();
+    };
+
+    speakTaiwaneseFemalePreferred(text, {
+      lang: "zh-TW",
+      rate: 0.88,
+      onEnd: done,
+      onError: done,
+    });
+
+    if (!waitUntilEnd) {
+      done();
+    }
   });
 }
 
@@ -116,11 +141,11 @@ export async function playTts(text: string, options?: { waitUntilEnd?: boolean }
   if (cachedUrl) {
     try {
       await playUrl(cachedUrl, waitUntilEnd);
+      return;
     } catch (err) {
       console.error("playTts cached audio error:", err);
-      stopTts();
+      delete audioCache[text];
     }
-    return;
   }
 
   try {
@@ -138,12 +163,19 @@ export async function playTts(text: string, options?: { waitUntilEnd?: boolean }
     }
 
     const blob = await res.blob();
+    if (blob.size < 64) {
+      throw new Error("TTS response empty");
+    }
     const url = URL.createObjectURL(blob);
     audioCache[text] = url;
     await playUrl(url, waitUntilEnd);
   } catch (err) {
-    console.error("playTts TTS error:", err);
-    stopTts();
+    console.error("playTts Edge TTS error, falling back to zh-TW SpeechSynthesis:", err);
+    try {
+      await playWebSpeechFallback(text, waitUntilEnd);
+    } catch (fallbackErr) {
+      console.error("playTts device TTS fallback error:", fallbackErr);
+    }
   }
 }
 

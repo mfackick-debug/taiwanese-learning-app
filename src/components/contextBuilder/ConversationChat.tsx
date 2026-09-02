@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import { WebSpeechPlayButton } from "@/components/contextBuilder/WebSpeechPlayButton";
 import { useSpeechRecognition } from "@/hooks/useSpeechRecognition";
-import { stopWebSpeech } from "@/lib/speechUtils";
+import { stopTts } from "@/components/AudioButton";
 import type { ChatMessage } from "@/types/contextBuilder";
 
 export interface ConversationChatProps {
@@ -127,7 +127,7 @@ export function ConversationChat({
   const handleMicToggle = () => {
     setSttError(null);
     if (!isListening) {
-      stopWebSpeech();
+      stopTts();
       baseInputRef.current = chatInput;
     }
     toggleListening();
