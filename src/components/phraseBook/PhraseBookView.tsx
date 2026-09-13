@@ -47,7 +47,7 @@ function PhraseCard({
       <CardHeader className="pb-2 space-y-2">
         <div className="flex flex-wrap items-center gap-2">
           <Badge variant="outline" className={cn("font-body border text-xs", meta.badgeClass)}>
-            {meta.labelJa}
+            {entry.themeLabelJa ?? meta.labelJa}
           </Badge>
           <span className="text-[10px] text-muted-foreground font-body">{formatDate(entry.createdAt)}</span>
         </div>
@@ -60,12 +60,27 @@ function PhraseCard({
       </CardHeader>
       <CardContent className="space-y-3 pt-0">
         <div className="rounded-xl bg-slate-50 p-3 text-xs font-body space-y-1">
-          <p>
-            <span className="text-muted-foreground">骨組み:</span> {entry.skeletonText}
-          </p>
-          <p>
-            <span className="text-muted-foreground">キーワード:</span> {entry.targetWord}
-          </p>
+          {entry.themeLabelJa ? (
+            <>
+              <p>
+                <span className="text-muted-foreground">テーマ:</span> {entry.themeLabelJa}
+              </p>
+              {(entry.promptQuestion || entry.skeletonText) && (
+                <p>
+                  <span className="text-muted-foreground">質問:</span> {entry.promptQuestion || entry.skeletonText}
+                </p>
+              )}
+            </>
+          ) : (
+            <>
+              <p>
+                <span className="text-muted-foreground">骨組み:</span> {entry.skeletonText}
+              </p>
+              <p>
+                <span className="text-muted-foreground">キーワード:</span> {entry.targetWord}
+              </p>
+            </>
+          )}
         </div>
 
         {entry.explanation && (
@@ -169,7 +184,7 @@ export function PhraseBookView() {
             </Link>
           </Button>
           <Button variant="outline" size="sm" className="rounded-full font-headline" asChild>
-            <Link href="/context-builder">Re-builder</Link>
+            <Link href="/context-builder">テーマ会話</Link>
           </Button>
         </div>
 
@@ -179,7 +194,7 @@ export function PhraseBookView() {
             My Phrase Book
           </h1>
           <p className="text-sm text-muted-foreground font-body">
-            Context Re-builder で完成した「自分だけの例文」
+            テーマ会話やマイ単語で完成した「自分だけの例文」
           </p>
         </div>
 
@@ -239,7 +254,7 @@ export function PhraseBookView() {
                   : "このカテゴリにはフレーズがありません。"}
               </p>
               <Button className="rounded-2xl font-headline" asChild>
-                <Link href="/context-builder">Context Re-builder で書く</Link>
+                <Link href="/context-builder">テーマ会話で書く</Link>
               </Button>
             </CardContent>
           </Card>

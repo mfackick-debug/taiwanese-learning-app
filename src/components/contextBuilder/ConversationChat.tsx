@@ -74,8 +74,15 @@ function Bubble({ message }: { message: ChatMessage }) {
           )}
         </div>
         <p className="text-sm font-body whitespace-pre-wrap leading-relaxed">{message.text}</p>
-        {message.variant === "polished" && message.pinyin && (
-          <p className="text-xs text-emerald-600/90 font-body mt-1.5 tracking-wide">{message.pinyin}</p>
+        {message.pinyin && (
+          <p
+            className={cn(
+              "text-xs font-body mt-1.5 tracking-wide",
+              message.variant === "polished" ? "text-emerald-600/90" : "text-violet-700/80",
+            )}
+          >
+            {message.pinyin}
+          </p>
         )}
         {message.variant === "polished" && message.explanation && (
           <div className="mt-2 rounded-xl bg-white/70 border border-emerald-100 px-3 py-2">
@@ -170,7 +177,7 @@ export function ConversationChat({
       <div className="space-y-2 rounded-2xl border bg-slate-50/80 p-3">
         <div className="flex items-center justify-between gap-2">
           <p className="text-xs font-headline font-bold text-muted-foreground">
-            深掘り質問に返信
+            {messages.some((m) => m.variant === "raw") ? "深掘り質問に返信" : "質問に答える"}
           </p>
           {isListening && (
             <span className="text-[10px] font-headline font-bold text-rose-600 animate-pulse">

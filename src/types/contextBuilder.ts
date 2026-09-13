@@ -59,16 +59,38 @@ export interface ChatMessage {
   explanation?: string;
 }
 
+/** /api/generate-question リクエスト */
+export interface GenerateQuestionRequestBody {
+  themeId: string;
+  themeLabelJa: string;
+  category?: PracticeCategory;
+  customTheme?: string;
+  /** 同じテーマで直前に出した質問。重複回避用 */
+  avoidQuestions?: string[];
+}
+
+/** /api/generate-question レスポンス */
+export interface GenerateQuestionResponseBody {
+  question: string;
+  pinyin: string;
+  hintJa: string;
+  mode: "gemini" | "mock";
+}
+
 /** /api/polish リクエスト */
 export interface PolishRequestBody {
   userText: string;
-  sourceSentence: string;
-  skeletonText: string;
-  targetWord: string;
-  grammarNote: string;
+  sourceSentence?: string;
+  skeletonText?: string;
+  targetWord?: string;
+  grammarNote?: string;
   promptHintJa?: string;
   category?: PracticeCategory;
   connectorLabel?: string;
+  themeLabelJa?: string;
+  customTheme?: string;
+  /** アプリが出したテーマ質問 */
+  promptQuestion?: string;
   /** 2ターン目以降の会話履歴 */
   conversationHistory?: ConversationTurn[];
 }
@@ -104,4 +126,8 @@ export interface PhraseBookEntry {
   followUpQuestion?: string;
   /** 保存時点の会話履歴（任意） */
   conversation?: ConversationTurn[];
+  themeId?: string;
+  themeLabelJa?: string;
+  customTheme?: string;
+  promptQuestion?: string;
 }

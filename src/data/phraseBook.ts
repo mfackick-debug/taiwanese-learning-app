@@ -50,6 +50,10 @@ function normalizeEntry(raw: Partial<PhraseBookEntry>): PhraseBookEntry | null {
             )
         )
       : undefined,
+    themeId: typeof raw.themeId === "string" ? raw.themeId : undefined,
+    themeLabelJa: typeof raw.themeLabelJa === "string" ? raw.themeLabelJa : undefined,
+    customTheme: typeof raw.customTheme === "string" ? raw.customTheme : undefined,
+    promptQuestion: typeof raw.promptQuestion === "string" ? raw.promptQuestion : undefined,
   };
 }
 

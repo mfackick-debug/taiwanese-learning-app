@@ -116,7 +116,7 @@ export function ModeSelectScreen({
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-sm text-muted-foreground font-body">
-                Re-builder やマイ単語で保存したフレーズを復習・CSVエクスポート。
+                テーマ会話やマイ単語で保存したフレーズを復習・CSVエクスポート。
               </p>
               <Button
                 type="button"
@@ -134,13 +134,13 @@ export function ModeSelectScreen({
           <CardHeader>
             <CardTitle className="font-headline text-lg flex items-center gap-2">
               <Sparkles className="h-5 w-5 text-violet-600" />
-              Context Re-builder
+              テーマ会話
             </CardTitle>
-            <p className="text-xs text-violet-700 font-body">アウトプット型</p>
+            <p className="text-xs text-violet-700 font-body">質問 → 回答 → 添削</p>
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-sm text-muted-foreground font-body">
-              骨組みを使って自分のエピソードを書き、AI添削と会話で定着させます。
+              細かいテーマ、または自分で決めた話題に沿ってアプリが質問します。答えを添削してフレーズ帳に残せます。
             </p>
             <Button
               type="button"
@@ -148,7 +148,7 @@ export function ModeSelectScreen({
               className="w-full rounded-2xl font-headline bg-violet-600 text-white hover:bg-violet-700"
               asChild
             >
-              <Link href="/context-builder">リビルダーを始める</Link>
+              <Link href="/context-builder">テーマ会話を始める</Link>
             </Button>
           </CardContent>
         </Card>

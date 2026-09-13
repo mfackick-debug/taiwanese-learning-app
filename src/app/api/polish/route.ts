@@ -82,17 +82,26 @@ function buildPrompt(body: PolishRequestBody, userText: string): string {
   const categoryMeta = body.category ? getPracticeCategoryMeta(body.category) : null;
   const history = body.conversationHistory ?? [];
   const isFollowUp = history.length > 0;
+  const themeLabel = body.themeLabelJa || categoryMeta?.labelJa || "日常会話";
+  const asked = body.promptQuestion || body.promptHintJa || "";
 
-  const sharedContext = `
+  const sharedContext = body.sourceSentence
+    ? `
 Practice situation: ${categoryMeta?.labelJa ?? "日常会話"}
 ${body.connectorLabel ? `Preferred spoken pattern: 「${body.connectorLabel}」` : ""}
 
 Model sentence studied earlier:
 "${body.sourceSentence}"
 
-Skeleton pattern: "${body.skeletonText}"
-Grammar note (Japanese): ${body.grammarNote}
+Skeleton pattern: "${body.skeletonText ?? ""}"
+Grammar note (Japanese): ${body.grammarNote ?? ""}
 Original writing scenario (Japanese): ${body.promptHintJa ?? "Write about your own recent experience using this pattern."}
+`
+    : `
+Practice theme: ${themeLabel}
+${body.customTheme ? `Learner-chosen topic: 「${body.customTheme}」` : ""}
+The app asked: "${asked}"
+Coach the learner to answer that theme in everyday spoken Taiwan Mandarin (繁體字). Do not switch to Simplified Chinese.
 `;
 
   if (isFollowUp) {

@@ -3,7 +3,8 @@ import { getPracticeCategoryMeta } from "@/types/practiceCategory";
 
 const CSV_HEADERS = [
   "Category",
-  "Skeleton(骨組み)",
+  "Theme",
+  "Question(質問)",
   "User Original(自分の初稿)",
   "AI Polished(添削された自然な表現)",
   "Pinyin(ピンイン)",
@@ -21,7 +22,8 @@ function escapeCsvField(value: string): string {
 function buildCsvContent(entries: PhraseBookEntry[]): string {
   const rows = entries.map((entry) => [
     getPracticeCategoryMeta(entry.category).labelJa,
-    entry.skeletonText,
+    entry.themeLabelJa ?? entry.targetWord,
+    entry.promptQuestion ?? entry.skeletonText,
     entry.userDraft,
     entry.polishedText,
     entry.pinyin ?? "",
