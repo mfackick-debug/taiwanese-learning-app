@@ -5,6 +5,7 @@ import Link from "next/link";
 import {
   Bookmark,
   ChevronDown,
+  ListMusic,
   PenLine,
   PlayCircle,
   Sparkles,
@@ -85,6 +86,12 @@ export function ModeSelectScreen({
                   >
                     最初からシャドーイングで始める
                   </button>
+                  <Link
+                    href="/playlist"
+                    className="text-sky-700 underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded"
+                  >
+                    例文プレイリスト
+                  </Link>
                   <a
                     href="#features"
                     className="text-muted-foreground underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded"
@@ -110,6 +117,17 @@ export function ModeSelectScreen({
                   onClick={onStartDrill}
                 >
                   まずはシャドーイングから始める
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="w-full max-w-md mx-auto h-12 rounded-2xl font-headline border-sky-200"
+                  asChild
+                >
+                  <Link href="/playlist">
+                    <ListMusic className="mr-2 h-4 w-4" />
+                    例文プレイリストを聞く
+                  </Link>
                 </Button>
                 <a
                   href="#features"
@@ -226,6 +244,31 @@ export function ModeSelectScreen({
               ドリルを始める
             </Button>
           )}
+
+          <Card className="border border-sky-100/80 bg-white/80 rounded-2xl shadow-sm">
+            <CardHeader className="pb-2 space-y-1">
+              <CardTitle className="font-headline text-base flex items-center gap-2">
+                <ListMusic className="h-4 w-4 text-sky-600" />
+                例文プレイリスト
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3 pt-0">
+              <p className="text-xs font-body text-slate-700">
+                完成した例文だけを、レベル・テーマを1本にまとめて教材順で再生
+              </p>
+              <p className="text-[11px] font-body text-muted-foreground">
+                単語カード・並べ替え断片・リコール用プロンプト・フレーズ帳・AI作文は含みません
+              </p>
+              <Button
+                type="button"
+                variant="ghost"
+                className="w-full rounded-xl font-headline text-sky-800 hover:bg-sky-50"
+                asChild
+              >
+                <Link href="/playlist">プレイリストを開く</Link>
+              </Button>
+            </CardContent>
+          </Card>
         </section>
 
         {/* アウトプット導線（カードは残すが主CTAより弱く） */}
