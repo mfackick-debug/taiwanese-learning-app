@@ -4,7 +4,7 @@ import { bandBLevel4Data } from "@/data/bandBLevel4";
 import { bandBLevel5Data } from "@/data/bandBLevel5";
 import { bandCData } from "@/data/bandC";
 
-/** Level 4 ドリル用（既存 L4 + 日常生活100問） */
+/** Level 4 ドリル用（既存 L4 + 日常生活125問） */
 export const bandBLevel4AllData: SentenceCardInput[] = [
   ...bandBLevel4Data,
   ...bandBLevel5Data,

@@ -66,7 +66,7 @@ export function ModeSelectScreen({
 }: ModeSelectScreenProps) {
   const canResume = Boolean(resumeLabel && onResumeDrill);
   const questionLabel =
-    typeof totalQuestionCount === "number" ? `約 ${totalQuestionCount} 問` : "約 475 問";
+    typeof totalQuestionCount === "number" ? `約 ${totalQuestionCount} 問` : "約 500 問";
   const [guideOpen, setGuideOpen] = useState(false);
 
   return (

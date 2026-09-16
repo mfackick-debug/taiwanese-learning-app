@@ -1,6 +1,6 @@
 import type { FlatSentenceCardInput } from "@/types";
 
-/** Band B 日常生活語彙ドリル（B-416〜B-515） */
+/** Band B 日常生活語彙ドリル（B-416〜B-540） */
 export const bandBLevel5Data: FlatSentenceCardInput[] = [
   {
     "id": "B-416",
@@ -1701,5 +1701,406 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
       "掰掰。"
     ],
     "hintText": "我等一下"
+  },
+  {
+    "id": "B-516",
+    "band": "B",
+    "sentence": "因為還沒退押金，所以我暫時不能搬家。",
+    "pinyin": "yīn wèi hái méi tuì yā jīn, suǒ yǐ wǒ zàn shí bù néng bān jiā.",
+    "translation": "敷金がまだ返っていないので、しばらく引っ越せません。",
+    "targetWord": "押金",
+    "distractors": ["租金", "訂金", "保證金"],
+    "grammarNote": "「押金（yā jīn）」は賃貸の敷金。台湾の部屋探しでは契約時に家賃1〜2か月分を預けるのが一般的です。",
+    "chunks": [
+      "因為還沒退押金，",
+      "所以我暫時",
+      "不能搬家。"
+    ],
+    "hintText": "因為還沒退押金，"
+  },
+  {
+    "id": "B-517",
+    "band": "B",
+    "sentence": "如果冷氣壞了的話，我可以請房東來修嗎？",
+    "pinyin": "rú guǒ lěng qì huài le de huà, wǒ kě yǐ qǐng fáng dōng lái xiū ma?",
+    "translation": "エアコンが壊れたら、大家さんに修理を頼んでもいいですか？",
+    "targetWord": "房東",
+    "distractors": ["房客", "管家", "鄰居"],
+    "grammarNote": "「房東（fáng dōng）」は大家・貸主。設備の故障や契約の話で必ず出てくる生活語彙です。",
+    "chunks": [
+      "如果冷氣壞了的話，",
+      "我可以請",
+      "房東來修嗎？"
+    ],
+    "hintText": "如果冷氣壞了的話，"
+  },
+  {
+    "id": "B-518",
+    "band": "B",
+    "sentence": "這個月的水電費比上個月高，因為常常開冷氣。",
+    "pinyin": "zhè ge yuè de shuǐ diàn fèi bǐ shàng ge yuè gāo, yīn wèi cháng cháng kāi lěng qì.",
+    "translation": "今月の水道光熱費は先月より高いです。エアコンをよくつけているからです。",
+    "targetWord": "水電費",
+    "distractors": ["管理費", "網路費", "停車費"],
+    "grammarNote": "「水電費（shuǐ diàn fèi）」は水道・電気代。台湾の賃貸では家賃と別に精算することが多いです。",
+    "chunks": [
+      "這個月的水電費",
+      "比上個月高，",
+      "因為常常開冷氣。"
+    ],
+    "hintText": "這個月的水電費"
+  },
+  {
+    "id": "B-519",
+    "band": "B",
+    "sentence": "房間太熱了，可以幫我把冷氣開強一點嗎？",
+    "pinyin": "fáng jiān tài rè le, kě yǐ bāng wǒ bǎ lěng qì kāi qiáng yì diǎn ma?",
+    "translation": "部屋が暑すぎるので、エアコンを少し強くしてもらえますか？",
+    "targetWord": "冷氣",
+    "distractors": ["暖氣", "電扇", "空調"],
+    "grammarNote": "「冷氣（lěng qì）」はエアコン。台湾では「空調」より日常語としてよく使います。",
+    "chunks": [
+      "房間太熱了，",
+      "可以幫我把",
+      "冷氣開強一點嗎？"
+    ],
+    "hintText": "房間太熱了，"
+  },
+  {
+    "id": "B-520",
+    "band": "B",
+    "sentence": "結帳時請幫我開發票，我要用載具歸戶。",
+    "pinyin": "jié zhàng shí qǐng bāng wǒ kāi fā piào, wǒ yào yòng zài jù guī hù.",
+    "translation": "会計のとき領収証（統一發票）を切ってください。載具に紐づけたいです。",
+    "targetWord": "發票",
+    "distractors": ["收據", "帳單", "發票聯"],
+    "grammarNote": "「發票（fā piào）」は台湾の統一發票。買い物で必ず聞かれるほか、抽選番号もついています。",
+    "chunks": [
+      "結帳時請幫我",
+      "開發票，",
+      "我要用載具歸戶。"
+    ],
+    "hintText": "結帳時請幫我"
+  },
+  {
+    "id": "B-521",
+    "band": "B",
+    "sentence": "不好意思，我的發票載具條碼在手機裡，等我一下。",
+    "pinyin": "bù hǎo yì si, wǒ de fā piào zài jù tiáo mǎ zài shǒu jī lǐ, děng wǒ yí xià.",
+    "translation": "すみません、電子發票の載具バーコードがスマホの中にあるので、少し待ってください。",
+    "targetWord": "載具",
+    "distractors": ["載體", "條碼", "會員卡"],
+    "grammarNote": "「載具（zài jù）」は電子發票を受け取るスマホのバーコード。紙の發票の代わりにかざします。",
+    "chunks": [
+      "不好意思，",
+      "我的發票載具條碼",
+      "在手機裡，",
+      "等我一下。"
+    ],
+    "hintText": "不好意思，"
+  },
+  {
+    "id": "B-522",
+    "band": "B",
+    "sentence": "我沒帶現金，可以用行動支付嗎？",
+    "pinyin": "wǒ méi dài xiàn jīn, kě yǐ yòng xíng dòng zhī fù ma?",
+    "translation": "現金を持っていないのですが、モバイル決済は使えますか？",
+    "targetWord": "行動支付",
+    "distractors": ["信用卡", "現金", "轉帳"],
+    "grammarNote": "「行動支付（xíng dòng zhī fù）」はスマホ決済。LINE Pay や街口支付など、台湾の店頭でよく使います。",
+    "chunks": [
+      "我沒帶現金，",
+      "可以用",
+      "行動支付嗎？"
+    ],
+    "hintText": "我沒帶現金，"
+  },
+  {
+    "id": "B-523",
+    "band": "B",
+    "sentence": "我每天騎機車上班，所以一定會戴安全帽。",
+    "pinyin": "wǒ měi tiān qí jī chē shàng bān, suǒ yǐ yí dìng huì dài ān quán mào.",
+    "translation": "毎日スクーターで通勤するので、必ずヘルメットをかぶります。",
+    "targetWord": "機車",
+    "distractors": ["汽車", "腳踏車", "公車"],
+    "grammarNote": "「機車（jī chē）」はスクーター／バイク。台湾の通勤・移動で最も身近な乗り物の一つです。",
+    "chunks": [
+      "我每天騎機車上班，",
+      "所以一定會",
+      "戴安全帽。"
+    ],
+    "hintText": "我每天騎機車上班，"
+  },
+  {
+    "id": "B-524",
+    "band": "B",
+    "sentence": "這裡不能停車，請把車移到前面一點。",
+    "pinyin": "zhè lǐ bù néng tíng chē, qǐng bǎ chē yí dào qián miàn yì diǎn.",
+    "translation": "ここには駐車できません。車を少し前に移動してください。",
+    "targetWord": "停車",
+    "distractors": ["開車", "騎車", "等車"],
+    "grammarNote": "「停車（tíng chē）」は駐車する／車を停める。店の前や路地でよく注意される表現です。",
+    "chunks": [
+      "這裡不能停車，",
+      "請把車",
+      "移到前面一點。"
+    ],
+    "hintText": "這裡不能停車，"
+  },
+  {
+    "id": "B-525",
+    "band": "B",
+    "sentence": "騎機車一定要戴安全帽，不然警察會開罰單。",
+    "pinyin": "qí jī chē yí dìng yào dài ān quán mào, bù rán jǐng chá huì kāi fá dān.",
+    "translation": "スクーターに乗るときは必ずヘルメットをかぶらないと、警察に罰金切符を切られます。",
+    "targetWord": "安全帽",
+    "distractors": ["帽子", "安全鞋", "雨衣"],
+    "grammarNote": "「安全帽（ān quán mào）」はヘルメット。台湾では機車乗車時の着用が義務です。",
+    "chunks": [
+      "騎機車一定要",
+      "戴安全帽，",
+      "不然警察會開罰單。"
+    ],
+    "hintText": "騎機車一定要"
+  },
+  {
+    "id": "B-526",
+    "band": "B",
+    "sentence": "因為明天放颱風假，所以公司不用上班。",
+    "pinyin": "yīn wèi míng tiān fàng tái fēng jià, suǒ yǐ gōng sī bú yòng shàng bān.",
+    "translation": "明日は台風休業なので、会社は出勤しなくてよいです。",
+    "targetWord": "颱風假",
+    "distractors": ["國定假日", "病假", "年假"],
+    "grammarNote": "「颱風假（tái fēng jià）」は台風による休業。台湾では自治体の発表に合わせて学校や会社が休みになります。",
+    "chunks": [
+      "因為明天放颱風假，",
+      "所以公司",
+      "不用上班。"
+    ],
+    "hintText": "因為明天放颱風假，"
+  },
+  {
+    "id": "B-527",
+    "band": "B",
+    "sentence": "剛剛突然停電，所以電腦的檔案沒存到。",
+    "pinyin": "gāng gāng tū rán tíng diàn, suǒ yǐ diàn nǎo de dǎng àn méi cún dào.",
+    "translation": "さっき突然停電したので、パソコンのファイルが保存できませんでした。",
+    "targetWord": "停電",
+    "distractors": ["停水", "斷線", "當機"],
+    "grammarNote": "「停電（tíng diàn）」は停電。台風や工事のあとによく使う生活語彙です。",
+    "chunks": [
+      "剛剛突然停電，",
+      "所以電腦的",
+      "檔案沒存到。"
+    ],
+    "hintText": "剛剛突然停電，"
+  },
+  {
+    "id": "B-528",
+    "band": "B",
+    "sentence": "紙箱要拿到外面做資源回收，不要跟一般垃圾放一起。",
+    "pinyin": "zhǐ xiāng yào ná dào wài miàn zuò zī yuán huí shōu, bú yào gēn yì bān lè sè fàng yì qǐ.",
+    "translation": "段ボールは外に出して資源回収へ。普通ゴミと一緒に捨てないでください。",
+    "targetWord": "資源回收",
+    "distractors": ["一般垃圾", "廚餘", "堆肥"],
+    "grammarNote": "「資源回收（zī yuán huí shōu）」は資源ゴミの分別回収。台湾のマンションや巷では曜日が決まっていることが多いです。",
+    "chunks": [
+      "紙箱要拿到外面",
+      "做資源回收，",
+      "不要跟一般垃圾放一起。"
+    ],
+    "hintText": "紙箱要拿到外面"
+  },
+  {
+    "id": "B-529",
+    "band": "B",
+    "sentence": "我明天要去醫院，想跟主管請假半天。",
+    "pinyin": "wǒ míng tiān yào qù yī yuàn, xiǎng gēn zhǔ guǎn qǐng jià bàn tiān.",
+    "translation": "明日病院に行くので、上司に半日の休暇を取りたいです。",
+    "targetWord": "請假",
+    "distractors": ["休假", "曠職", "加班"],
+    "grammarNote": "「請假（qǐng jià）」は休暇を申請する。病假・事假など、職場で欠勤を伝える定番動詞です。",
+    "chunks": [
+      "我明天要去醫院，",
+      "想跟主管",
+      "請假半天。"
+    ],
+    "hintText": "我明天要去醫院，"
+  },
+  {
+    "id": "B-530",
+    "band": "B",
+    "sentence": "雖然今天要加班，不過我九點以前會回家。",
+    "pinyin": "suī rán jīn tiān yào jiā bān, bù guò wǒ jiǔ diǎn yǐ qián huì huí jiā.",
+    "translation": "今日は残業だけど、9時前には家に帰ります。",
+    "targetWord": "加班",
+    "distractors": ["值班", "請假", "出差"],
+    "grammarNote": "「加班（jiā bān）」は残業する。予定を伝えるとき「今天要加班」とよく言います。",
+    "chunks": [
+      "雖然今天要加班，",
+      "不過我九點以前",
+      "會回家。"
+    ],
+    "hintText": "雖然今天要加班，"
+  },
+  {
+    "id": "B-531",
+    "band": "B",
+    "sentence": "請把你的門號傳給我，我到了再打電話。",
+    "pinyin": "qǐng bǎ nǐ de mén hào chuán gěi wǒ, wǒ dào le zài dǎ diàn huà.",
+    "translation": "電話番号を送ってください。着いたら電話します。",
+    "targetWord": "門號",
+    "distractors": ["帳號", "地址", "信箱"],
+    "grammarNote": "「門號（mén hào）」は携帯電話の番号。台湾では「電話號碼」よりカジュアルに使われます。",
+    "chunks": [
+      "請把你的門號",
+      "傳給我，",
+      "我到了再打電話。"
+    ],
+    "hintText": "請把你的門號"
+  },
+  {
+    "id": "B-532",
+    "band": "B",
+    "sentence": "捷運地下層訊號很差，所以訊息常常傳不出去。",
+    "pinyin": "jié yùn dì xià céng xùn hào hěn chà, suǒ yǐ xùn xī cháng cháng chuán bù chū qù.",
+    "translation": "捷運の地下階は電波が悪いので、メッセージがよく送れません。",
+    "targetWord": "訊號",
+    "distractors": ["網路", "電波", "連線"],
+    "grammarNote": "「訊號（xùn hào）」は電波・信号。地下やエレベーターで「沒有訊號」とよく言います。",
+    "chunks": [
+      "捷運地下層",
+      "訊號很差，",
+      "所以訊息常常傳不出去。"
+    ],
+    "hintText": "捷運地下層"
+  },
+  {
+    "id": "B-533",
+    "band": "B",
+    "sentence": "我先去超商提款，然後再去繳水電費。",
+    "pinyin": "wǒ xiān qù chāo shāng tí kuǎn, rán hòu zài qù jiǎo shuǐ diàn fèi.",
+    "translation": "先にコンビニで引き出しをしてから、水道光熱費を払いに行きます。",
+    "targetWord": "提款",
+    "distractors": ["存款", "匯款", "繳費"],
+    "grammarNote": "「提款（tí kuǎn）」はお金を引き出す。台湾では超商のATMで少額を引き出す人が多いです。",
+    "chunks": [
+      "我先去超商提款，",
+      "然後再去",
+      "繳水電費。"
+    ],
+    "hintText": "我先去超商提款，"
+  },
+  {
+    "id": "B-534",
+    "band": "B",
+    "sentence": "房租我已經轉帳了，你看一下帳戶有沒有入帳。",
+    "pinyin": "fáng zū wǒ yǐ jīng zhuǎn zhàng le, nǐ kàn yí xià zhàng hù yǒu méi yǒu rù zhàng.",
+    "translation": "家賃はもう振り込みました。口座に入金されているか見てください。",
+    "targetWord": "轉帳",
+    "distractors": ["提款", "刷卡", "找零"],
+    "grammarNote": "「轉帳（zhuǎn zhàng）」は振込・口座振替。家賃や割り勘を銀行アプリで送るときに使います。",
+    "chunks": [
+      "房租我已經轉帳了，",
+      "你看一下帳戶",
+      "有沒有入帳。"
+    ],
+    "hintText": "房租我已經轉帳了，"
+  },
+  {
+    "id": "B-535",
+    "band": "B",
+    "sentence": "請問這裡的無線網路密碼是多少？",
+    "pinyin": "qǐng wèn zhè lǐ de wú xiàn wǎng lù mì mǎ shì duō shǎo?",
+    "translation": "こちらのWi-Fiパスワードは何ですか？",
+    "targetWord": "密碼",
+    "distractors": ["帳號", "驗證碼", "條碼"],
+    "grammarNote": "「密碼（mì mǎ）」はパスワード。カフェや民宿で「Wi-Fi密碼」を聞く定番フレーズです。",
+    "chunks": [
+      "請問這裡的",
+      "無線網路密碼",
+      "是多少？"
+    ],
+    "hintText": "請問這裡的"
+  },
+  {
+    "id": "B-536",
+    "band": "B",
+    "sentence": "辦門號的時候，需要帶居留證和護照。",
+    "pinyin": "bàn mén hào de shí hou, xū yào dài jū liú zhèng hé hù zhào.",
+    "translation": "携帯番号を契約するときは、居留証とパスポートが必要です。",
+    "targetWord": "居留證",
+    "distractors": ["身分證", "健保卡", "駕照"],
+    "grammarNote": "「居留證（jū liú zhèng）」は居留証。留学生や外国人が門號・銀行口座を作るときに求められます。",
+    "chunks": [
+      "辦門號的時候，",
+      "需要帶",
+      "居留證和護照。"
+    ],
+    "hintText": "辦門號的時候，"
+  },
+  {
+    "id": "B-537",
+    "band": "B",
+    "sentence": "這個週末我要搬家，如果你有空的話可以來幫忙嗎？",
+    "pinyin": "zhè ge zhōu mò wǒ yào bān jiā, rú guǒ nǐ yǒu kòng de huà kě yǐ lái bāng máng ma?",
+    "translation": "今週末引っ越すのですが、暇なら手伝いに来てもらえますか？",
+    "targetWord": "搬家",
+    "distractors": ["出國", "旅行", "出差"],
+    "grammarNote": "「搬家（bān jiā）」は引っ越す。日程を伝える・手伝いを頼むときに使う日常動詞です。",
+    "chunks": [
+      "這個週末我要搬家，",
+      "如果你有空的話",
+      "可以來幫忙嗎？"
+    ],
+    "hintText": "這個週末我要搬家，"
+  },
+  {
+    "id": "B-538",
+    "band": "B",
+    "sentence": "簽約以前，請先把租屋合約看清楚。",
+    "pinyin": "qiān yuē yǐ qián, qǐng xiān bǎ zū wū hé yuē kàn qīng chǔ.",
+    "translation": "サインする前に、賃貸契約書をよく読んでください。",
+    "targetWord": "合約",
+    "distractors": ["收據", "發票", "說明書"],
+    "grammarNote": "「合約（hé yuē）」は契約書。台湾の賃貸では押金・期限・早退違約金を必ず確認します。",
+    "chunks": [
+      "簽約以前，",
+      "請先把",
+      "租屋合約看清楚。"
+    ],
+    "hintText": "簽約以前，"
+  },
+  {
+    "id": "B-539",
+    "band": "B",
+    "sentence": "沙發旁邊有沒有插座？我想先充電。",
+    "pinyin": "shā fā páng biān yǒu méi yǒu chā zuò? wǒ xiǎng xiān chōng diàn.",
+    "translation": "ソファの横にコンセントはありますか？先に充電したいです。",
+    "targetWord": "插座",
+    "distractors": ["開關", "插頭", "電池"],
+    "grammarNote": "「插座（chā zuò）」はコンセント。カフェやシェアハウスで席を探すときに便利な語です。",
+    "chunks": [
+      "沙發旁邊",
+      "有沒有插座？",
+      "我想先充電。"
+    ],
+    "hintText": "沙發旁邊"
+  },
+  {
+    "id": "B-540",
+    "band": "B",
+    "sentence": "晚上七點垃圾車會來，我們先把袋子拿到樓下。",
+    "pinyin": "wǎn shàng qī diǎn lè sè chē huì lái, wǒ men xiān bǎ dài zi ná dào lóu xià.",
+    "translation": "夜7時にゴミ収集車が来るので、先に袋を下に持っていきましょう。",
+    "targetWord": "垃圾車",
+    "distractors": ["消防車", "救護車", "公車"],
+    "grammarNote": "「垃圾車（lè sè chē）」はゴミ収集車。台湾では音楽が流れて収集に来るので、時間に合わせて出すのが基本です。",
+    "chunks": [
+      "晚上七點",
+      "垃圾車會來，",
+      "我們先把袋子拿到樓下。"
+    ],
+    "hintText": "晚上七點"
   }
 ];

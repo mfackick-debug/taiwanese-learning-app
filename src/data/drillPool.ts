@@ -49,7 +49,7 @@ function toDrillFlatCards(cards: readonly FlatSentenceCardInput[]): FlatSentence
 
 const storyDrillCards = toDrillFlatCards(storyModeFlatCards as FlatSentenceCardInput[]);
 
-/** 日常寄り（L3 + 暮らし100問 + ストーリー転用） */
+/** 日常寄り（L3 + 暮らし125問 + ストーリー転用） */
 export const DRILL_DAILY_RAW: SentenceCardInput[] = [
   ...bandBLevel3Data,
   ...bandBLevel5Data,
