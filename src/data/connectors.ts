@@ -1,12 +1,12 @@
 import { shuffle } from "@/components/study/utils";
 import type { NormalizedStudyCard } from "@/types";
 
-/** 台湾華語で文をつなぐ頻出表現（長いもの優先でマッチ） */
+/** 文をつなぐ接続表現。名詞用法と紛らわしい語（結果など）は入れない */
 export const CONNECTOR_LEXICON: readonly string[] = [
   "要不然",
-  "不如說",
   "除此之外",
   "另一方面",
+  "否則的話",
   "不但",
   "而且",
   "雖然",
@@ -17,9 +17,7 @@ export const CONNECTOR_LEXICON: readonly string[] = [
   "所以",
   "因此",
   "於是",
-  "結果",
   "如果",
-  "的話",
   "只要",
   "不管",
   "無論",
@@ -28,13 +26,11 @@ export const CONNECTOR_LEXICON: readonly string[] = [
   "然後",
   "接著",
   "此外",
-  "另外",
   "其實",
   "畢竟",
   "反正",
   "乾脆",
   "否則",
-  "否則的話",
   "就算",
   "即使",
   "既然",
@@ -42,13 +38,7 @@ export const CONNECTOR_LEXICON: readonly string[] = [
   "寧可",
   "一邊",
   "一方面",
-  "先",
-  "再",
-  "就",
-  "才",
-  "卻",
-  "並",
-  "也",
+  "的話",
 ];
 
 const DISTRACTOR_POOL = CONNECTOR_LEXICON.filter((c) => c.length >= 2);
@@ -116,19 +106,19 @@ function stripLightPunctuation(text: string): string {
  * 骨組み発話用キーワード（内容語中心、つなぎ語は除外）
  */
 export function extractSkeletonKeywords(card: NormalizedStudyCard): string[] {
-  const out: string[] = [];
+  const candidates: string[] = [];
   const push = (raw: string) => {
     const t = stripLightPunctuation(raw);
-    if (!t || t.length < 2) return;
+    if (!t || t.length < 2 || t.length > 8) return;
     if (CONNECTOR_SET.has(t)) return;
-    if (out.includes(t)) return;
-    out.push(t);
+    if (candidates.includes(t)) return;
+    if (candidates.some((c) => c.includes(t) || t.includes(c))) return;
+    candidates.push(t);
   };
 
   push(card.targetWord);
 
   for (const chunk of card.chunks) {
-    // チャンク内のつなぎ語を落として残りを候補に
     let rest = chunk;
     for (const c of [...CONNECTOR_LEXICON].sort((a, b) => b.length - a.length)) {
       rest = rest.split(c).join(" ");
@@ -136,8 +126,7 @@ export function extractSkeletonKeywords(card: NormalizedStudyCard): string[] {
     for (const part of rest.split(/\s+/)) {
       push(part);
     }
-    if (out.length >= 4) break;
   }
 
-  return out.slice(0, 3);
+  return candidates.slice(0, 3);
 }

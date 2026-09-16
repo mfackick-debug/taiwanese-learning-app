@@ -75,9 +75,11 @@ function VocabStepComponent({
           <p className="text-xl leading-10 font-headline text-slate-900 whitespace-pre-wrap">
             {maskTargetWord(card.sentence, blank)}
           </p>
-          <p className="mt-2 text-sm text-muted-foreground/70 font-body">
-            {maskTargetWord(card.pinyin, blank)}
-          </p>
+          {card.pinyin.includes(blank) ? (
+            <p className="mt-2 text-sm text-muted-foreground/70 font-body">
+              {maskTargetWord(card.pinyin, blank)}
+            </p>
+          ) : null}
           <p className="mt-1 text-sm text-muted-foreground/60 font-body">{card.translation}</p>
         </div>
 

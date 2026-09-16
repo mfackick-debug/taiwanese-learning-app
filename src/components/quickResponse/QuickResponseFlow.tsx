@@ -195,6 +195,9 @@ export function QuickResponseFlow() {
                 言いたいこと（日本語）
               </p>
               <p className="text-lg font-body text-slate-900 leading-relaxed">{item.promptJa}</p>
+              <p className="text-[11px] font-body text-muted-foreground">
+                この内容を、中国語で一言にしてください
+              </p>
             </div>
 
             {phase === "ready" && (
