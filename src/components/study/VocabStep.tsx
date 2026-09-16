@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { maskTargetWord } from "@/components/study/utils";
 import type { QuizResult } from "@/components/study/types";
+import type { BlankDrillKind } from "@/data/connectors";
 import type { NormalizedStudyCard } from "@/types";
 
 function highlightQuantifiers(text: string): ReactNode {
@@ -35,6 +36,8 @@ function highlightQuantifiers(text: string): ReactNode {
 
 export interface VocabStepProps {
   card: NormalizedStudyCard;
+  kind: BlankDrillKind;
+  blank: string;
   choices: string[];
   selected: string | null;
   result: QuizResult;
@@ -46,6 +49,8 @@ export interface VocabStepProps {
 
 function VocabStepComponent({
   card,
+  kind,
+  blank,
   choices,
   selected,
   result,
@@ -56,30 +61,36 @@ function VocabStepComponent({
 }: VocabStepProps) {
   if (choices.length === 0) return null;
 
+  const isConnector = kind === "connector";
+
   return (
     <Card className="border-none bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl">
       <CardHeader className="space-y-2">
-        <CardTitle className="font-headline text-lg">Step2：語彙選択</CardTitle>
+        <CardTitle className="font-headline text-lg">
+          {isConnector ? "Step2：つなぎ語" : "Step2：キーワード"}
+        </CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
         <div className="text-center">
           <p className="text-xl leading-10 font-headline text-slate-900 whitespace-pre-wrap">
-            {maskTargetWord(card.sentence, card.targetWord)}
+            {maskTargetWord(card.sentence, blank)}
           </p>
           <p className="mt-2 text-sm text-muted-foreground/70 font-body">
-            {maskTargetWord(card.pinyin, card.targetWord)}
+            {maskTargetWord(card.pinyin, blank)}
           </p>
           <p className="mt-1 text-sm text-muted-foreground/60 font-body">{card.translation}</p>
         </div>
 
         <div className="text-sm text-muted-foreground font-body text-center">
-          下記から正しい語彙を選んでください
+          {isConnector
+            ? "空欄のつなぎ語（因為・所以・可是 など）を選んでください"
+            : "空欄のキーワードを選んでください"}
         </div>
 
         <div className="grid grid-cols-2 gap-3">
           {choices.map((choice) => {
             const isSelected = selected === choice;
-            const isCorrectChoice = result === "correct" && choice === card.targetWord;
+            const isCorrectChoice = result === "correct" && choice === blank;
             const isWrongSelected = result === "wrong" && isSelected;
 
             return (

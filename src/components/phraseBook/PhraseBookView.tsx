@@ -184,7 +184,7 @@ export function PhraseBookView() {
             </Link>
           </Button>
           <Button variant="outline" size="sm" className="rounded-full font-headline" asChild>
-            <Link href="/context-builder">テーマ会話</Link>
+            <Link href="/quick-response">15秒応答</Link>
           </Button>
         </div>
 
@@ -194,7 +194,7 @@ export function PhraseBookView() {
             My Phrase Book
           </h1>
           <p className="text-sm text-muted-foreground font-body">
-            テーマ会話やマイ単語で完成した「自分だけの例文」
+            15秒応答やマイ単語で完成した「自分だけの例文」
           </p>
         </div>
 
@@ -254,7 +254,7 @@ export function PhraseBookView() {
                   : "このカテゴリにはフレーズがありません。"}
               </p>
               <Button className="rounded-2xl font-headline" asChild>
-                <Link href="/context-builder">テーマ会話で書く</Link>
+                <Link href="/quick-response">15秒応答で練習</Link>
               </Button>
             </CardContent>
           </Card>

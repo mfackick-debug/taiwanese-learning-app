@@ -8,7 +8,7 @@ import {
   ListMusic,
   PenLine,
   PlayCircle,
-  Sparkles,
+  Timer,
   Volume2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -195,7 +195,8 @@ export function ModeSelectScreen({
           <div className="space-y-1">
             <h2 className="text-lg font-headline font-bold text-slate-900">メイン学習：実践ドリル</h2>
             <p className="text-sm text-muted-foreground font-body">
-              シャドーイング → 語彙 → 並べ替え → リコール。日常〜社会の例文とストーリー転用を含む {questionLabel}。
+              シャドーイング → つなぎ語 → 並べ替え → 骨組み発話。日常〜社会の例文とストーリー転用を含む{" "}
+              {questionLabel}。
             </p>
           </div>
 
@@ -207,9 +208,9 @@ export function ModeSelectScreen({
                 forWhom: "発音とリズムを掴みたい人",
               },
               {
-                title: "語彙",
-                can: "キーワードの意味と使い方を固める",
-                forWhom: "覚え違いを減らしたい人",
+                title: "つなぎ語",
+                can: "因為・所以・可是 などで文をつなぐ",
+                forWhom: "単語は出るが文にできない人",
               },
               {
                 title: "並べ替え",
@@ -217,9 +218,9 @@ export function ModeSelectScreen({
                 forWhom: "語順を体で覚えたい人",
               },
               {
-                title: "リコール",
-                can: "訳やヒントから自分で言い切る",
-                forWhom: "アウトプット力を伸ばしたい人",
+                title: "骨組み発話",
+                can: "キーワードからつなぎを自分で入れて言う",
+                forWhom: "ネイティブ前で詰まりやすい人",
               },
             ].map((skill) => (
               <div
@@ -271,9 +272,35 @@ export function ModeSelectScreen({
           </Card>
         </section>
 
-        {/* アウトプット導線（カードは残すが主CTAより弱く） */}
+        {/* アウトプット導線 */}
         <section className="space-y-3">
-          <h2 className="text-lg font-headline font-bold text-slate-900">書いて・話して定着</h2>
+          <h2 className="text-lg font-headline font-bold text-slate-900">咄嗟に出す・書いて定着</h2>
+
+          <Card className="border border-violet-100/80 bg-white/80 rounded-2xl shadow-sm">
+            <CardHeader className="pb-2 space-y-1">
+              <CardTitle className="font-headline text-base flex items-center gap-2">
+                <Timer className="h-4 w-4 text-violet-600" />
+                15秒応答
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3 pt-0">
+              <p className="text-xs font-body text-slate-700">
+                場面を見て15秒で一言。つなぎ語込みの即答回路を作る（旧テーマ会話の進化版）
+              </p>
+              <p className="text-[11px] font-body text-muted-foreground">
+                向いている人：ネイティブの前で言葉が出てこない人
+              </p>
+              <Button
+                type="button"
+                variant="ghost"
+                className="w-full rounded-xl font-headline text-violet-900 hover:bg-violet-50"
+                asChild
+              >
+                <Link href="/quick-response">15秒応答を始める</Link>
+              </Button>
+            </CardContent>
+          </Card>
+
           <div className="grid gap-3 sm:grid-cols-2">
             <Card className="border border-teal-100/80 bg-white/75 rounded-2xl shadow-sm">
               <CardHeader className="pb-2 space-y-1">
@@ -321,29 +348,6 @@ export function ModeSelectScreen({
               </CardContent>
             </Card>
           </div>
-
-          <Card className="border border-violet-100/80 bg-white/75 rounded-2xl shadow-sm">
-            <CardHeader className="pb-2 space-y-1">
-              <CardTitle className="font-headline text-base flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-violet-600" />
-                テーマ会話
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3 pt-0">
-              <p className="text-xs font-body text-slate-700">質問 → 回答 → 添削（テーマ指定・自由入力可）</p>
-              <p className="text-[11px] font-body text-muted-foreground">
-                向いている人：会話のやりとりで表現を直したい人
-              </p>
-              <Button
-                type="button"
-                variant="ghost"
-                className="w-full rounded-xl font-headline text-violet-900 hover:bg-violet-50"
-                asChild
-              >
-                <Link href="/context-builder">テーマ会話を開く</Link>
-              </Button>
-            </CardContent>
-          </Card>
         </section>
 
         {/* 5. 音声 */}

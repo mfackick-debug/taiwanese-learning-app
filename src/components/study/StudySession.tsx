@@ -24,6 +24,7 @@ import { VocabStep } from "@/components/study/VocabStep";
 import { StoryListeningStep } from "@/components/study/StoryListeningStep";
 import { StoryReadingAloudStep } from "@/components/study/StoryReadingAloudStep";
 import type { DrillCourseId } from "@/data/drillPool";
+import { buildBlankDrillSetup } from "@/data/connectors";
 import {
   DRILL_COURSE_OPTIONS,
   getDrillCourseDescription,
@@ -79,23 +80,23 @@ const STORY_INTRO_LABELS: ReadonlyArray<{ id: StoryIntroPhase; label: string }> 
 
 const STORY_QUESTION_PHASE_LABELS: ReadonlyArray<{ step: StudyStep; label: string }> = [
   { step: "shadowing", label: "①通しシャドー" },
-  { step: "vocab", label: "②一気穴埋め" },
+  { step: "vocab", label: "②つなぎ穴埋め" },
   { step: "reorder", label: "③一気並替" },
-  { step: "recall", label: "④一気発話" },
+  { step: "recall", label: "④骨組み発話" },
 ];
 
 function getStoryStepNextLabel(step: StudyStep, cardIndex: number, totalCards: number): string {
   const isLastCardInPhase = cardIndex >= totalCards - 1;
   if (step === "shadowing") {
-    return isLastCardInPhase ? "フェーズ2へ（穴埋め）" : "次の文へ（シャドーイング）";
+    return isLastCardInPhase ? "フェーズ2へ（つなぎ語）" : "次の文へ（シャドーイング）";
   }
   if (step === "vocab") {
-    return isLastCardInPhase ? "フェーズ3へ（並べ替え）" : "次の文へ（穴埋め）";
+    return isLastCardInPhase ? "フェーズ3へ（並べ替え）" : "次の文へ（つなぎ語）";
   }
   if (step === "reorder") {
-    return isLastCardInPhase ? "フェーズ4へ（発話）" : "次の文へ（並べ替え）";
+    return isLastCardInPhase ? "フェーズ4へ（骨組み発話）" : "次の文へ（並べ替え）";
   }
-  return "次の文へ（発話）";
+  return "次の文へ（骨組み発話）";
 }
 
 export function StudySession({
@@ -134,7 +135,7 @@ export function StudySession({
   const [stepState, setStepState] = useState<StepState>(() =>
     initStepState(startCard, startStep)
   );
-  const [isHardModeEnabled, setIsHardModeEnabled] = useState(forceRecall);
+  const [isHardModeEnabled, setIsHardModeEnabled] = useState(true);
   const [reviewQueue, setReviewQueue] = useState<NormalizedStudyCard[]>([]);
   const [todayScore, setTodayScore] = useState(0);
   const [episodeClearOpen, setEpisodeClearOpen] = useState(false);
@@ -176,7 +177,7 @@ export function StudySession({
     setCurrentStep(step);
     setStepState(initStepState(card, step));
     setReviewQueue([]);
-    setIsHardModeEnabled(forceRecall);
+    setIsHardModeEnabled(true);
     setEpisodeClearOpen(false);
     setStoryIntroPhase(mode === "story" ? "listening" : "questions");
     // eslint-disable-next-line react-hooks/exhaustive-deps -- resume snapshot is owned by parent key
@@ -280,7 +281,7 @@ export function StudySession({
   const handleVocabSelect = useCallback(
     (selected: string) => {
       if (!currentCard || stepState.vocabResult) return;
-      const isCorrect = selected === currentCard.targetWord;
+      const isCorrect = selected === stepState.blankTarget;
       setStepState((prev) => ({
         ...prev,
         vocabSelected: selected,
@@ -291,14 +292,17 @@ export function StudySession({
         playTts(currentCard.sentence);
       }
     },
-    [currentCard, stepState.vocabResult, addScore]
+    [currentCard, stepState.vocabResult, stepState.blankTarget, addScore]
   );
 
   const handleVocabRetry = useCallback(() => {
     if (!currentCard) return;
+    const setup = buildBlankDrillSetup(currentCard);
     setStepState((prev) => ({
       ...prev,
-      vocabChoices: shuffle([currentCard.targetWord, ...currentCard.distractors]),
+      blankKind: setup.kind,
+      blankTarget: setup.blank,
+      vocabChoices: setup.choices,
       vocabSelected: null,
       vocabResult: null,
     }));
@@ -471,9 +475,9 @@ export function StudySession({
         ? STORY_QUESTION_PHASE_LABELS
         : ([
             { step: "shadowing" as const, label: "①音読" },
-            { step: "vocab" as const, label: "②穴埋め" },
+            { step: "vocab" as const, label: "②つなぎ" },
             { step: "reorder" as const, label: "③並べ替え" },
-            ...(useRecall ? [{ step: "recall" as const, label: "④発話" }] : []),
+            ...(useRecall ? [{ step: "recall" as const, label: "④骨組み" }] : []),
           ] as const),
     [mode, useRecall]
   );
@@ -598,6 +602,8 @@ export function StudySession({
           {currentStep === "vocab" && (
             <VocabStep
               card={currentCard}
+              kind={stepState.blankKind}
+              blank={stepState.blankTarget}
               choices={stepState.vocabChoices}
               selected={stepState.vocabSelected}
               result={stepState.vocabResult}
@@ -625,6 +631,7 @@ export function StudySession({
           {currentStep === "recall" && (
             <RecallStep
               card={currentCard}
+              keywords={stepState.skeletonKeywords}
               isRevealed={stepState.isRecallRevealed}
               onReveal={handleRecallReveal}
               onEvaluate={handleRecallEvaluate}
@@ -689,10 +696,10 @@ export function StudySession({
                     <div className="flex items-center justify-between gap-4 rounded-2xl border p-4">
                       <div className="space-y-1 pr-2">
                         <Label htmlFor="hard-mode" className="font-headline text-sm font-bold">
-                          ハードモード
+                          骨組み発話（Step4）
                         </Label>
                         <p className="text-xs text-muted-foreground font-body">
-                          Step 4: 日本語訳からの自力発話テスト
+                          キーワードと日本語から、つなぎ語を自分で入れて言う（推奨オン）
                         </p>
                       </div>
                       <Switch

@@ -106,7 +106,7 @@ function ReorderStepComponent({
             >
               {nextLabel ??
                 (hasRecallStep
-                  ? "次へ（ブラインド・リコール）"
+                  ? "次へ（骨組み発話）"
                   : isLastCard
                     ? "お疲れ様でした！最初から"
                     : "次の単語へ")}

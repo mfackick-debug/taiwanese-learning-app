@@ -19,7 +19,7 @@ function ShadowingStepComponent({
   isDone,
   onComplete,
   onNext,
-  nextLabel = "次へ（語彙選択）",
+  nextLabel = "次へ（つなぎ語）",
 }: ShadowingStepProps) {
   return (
     <Card className="border-none bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl">

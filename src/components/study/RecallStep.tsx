@@ -8,6 +8,7 @@ import type { RecallEvaluation } from "@/components/study/types";
 
 export interface RecallStepProps {
   card: NormalizedStudyCard;
+  keywords: string[];
   isRevealed: boolean;
   onReveal: () => void;
   onEvaluate: (result: RecallEvaluation) => void;
@@ -24,27 +25,28 @@ const EVALUATION_OPTIONS: {
     result: "perfect",
     emoji: "🟢",
     label: "Perfect",
-    sublabel: "余裕で言えた",
+    sublabel: "つなぎも含めて言えた",
     className: "border-emerald-200 bg-emerald-50/80 hover:bg-emerald-100/80 text-emerald-900",
   },
   {
     result: "hard",
     emoji: "🟡",
     label: "Hard",
-    sublabel: "つっかえながら言えた",
+    sublabel: "単語は出たがつないで詰まった",
     className: "border-amber-200 bg-amber-50/80 hover:bg-amber-100/80 text-amber-900",
   },
   {
     result: "fail",
     emoji: "🔴",
     label: "Fail",
-    sublabel: "全く言えなかった",
+    sublabel: "咄嗟に文にできなかった",
     className: "border-rose-200 bg-rose-50/80 hover:bg-rose-100/80 text-rose-900",
   },
 ];
 
 function RecallStepComponent({
   card,
+  keywords,
   isRevealed,
   onReveal,
   onEvaluate,
@@ -52,19 +54,27 @@ function RecallStepComponent({
   return (
     <Card className="border-none bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl">
       <CardHeader className="space-y-2">
-        <CardTitle className="font-headline text-lg">
-          Step4：ブラインド・リコール
-        </CardTitle>
+        <CardTitle className="font-headline text-lg">Step4：骨組み発話</CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
         <div className="text-sm text-muted-foreground font-body text-center">
-          日本語訳を見て、声に出して中国語で言ってみましょう
+          日本語の意図とキーワードだけ見て、つなぎ語を自分で入れて一文で言ってください
         </div>
 
-        <div className="text-center py-6 px-4 bg-secondary/20 rounded-2xl min-h-[120px] flex items-center justify-center">
-          <p className="text-2xl leading-relaxed font-body text-slate-900">
-            {card.translation}
-          </p>
+        <div className="text-center py-5 px-4 bg-secondary/20 rounded-2xl space-y-4">
+          <p className="text-xl leading-relaxed font-body text-slate-900">{card.translation}</p>
+          {keywords.length > 0 && (
+            <div className="flex flex-wrap justify-center gap-2">
+              {keywords.map((word) => (
+                <span
+                  key={word}
+                  className="inline-flex rounded-full border border-sky-200 bg-white/90 px-3 py-1 text-sm font-headline text-sky-900"
+                >
+                  {word}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
 
         {!isRevealed ? (
@@ -73,13 +83,13 @@ function RecallStepComponent({
             className="w-full rounded-2xl h-14 text-base font-headline"
             onClick={onReveal}
           >
-            解答を表示
+            言えたら解答を表示
           </Button>
         ) : (
           <div className="space-y-4">
             <div className="text-center space-y-2 p-4 bg-emerald-50/80 rounded-2xl">
               <p className="text-xs font-headline uppercase tracking-widest text-emerald-700 font-bold">
-                正解
+                模範の一文
               </p>
               <p className="text-xl leading-10 font-headline text-slate-900 whitespace-pre-wrap">
                 {card.sentence}
