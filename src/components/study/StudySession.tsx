@@ -272,9 +272,10 @@ export function StudySession({
   ]);
 
   const handleShadowingComplete = useCallback(() => {
+    if (stepState.isShadowingDone) return;
     setStepState((prev) => ({ ...prev, isShadowingDone: true }));
     addScore(1);
-  }, [addScore]);
+  }, [addScore, stepState.isShadowingDone]);
 
   const handleVocabSelect = useCallback(
     (selected: string) => {
@@ -332,19 +333,30 @@ export function StudySession({
     advanceAfterCardComplete,
   ]);
 
-  const handleChunkClick = useCallback(
-    (chunk: string) => {
+  const handlePoolChunkClick = useCallback(
+    (poolIndex: number) => {
       if (!currentCard || stepState.reorderResult === "correct") return;
-      if (stepState.selectedChunks.includes(chunk)) return;
-      const newSelected = [...stepState.selectedChunks, chunk];
+      if (stepState.selectedIndices.includes(poolIndex)) return;
+
+      const newSelected = [...stepState.selectedIndices, poolIndex];
       if (newSelected.length < stepState.shuffledChunks.length) {
-        setStepState((prev) => ({ ...prev, selectedChunks: newSelected }));
+        setStepState((prev) => ({
+          ...prev,
+          selectedIndices: newSelected,
+          reorderResult: null,
+        }));
         return;
       }
-      const isCorrect = newSelected.join("") === currentCard.sentence;
+
+      const built = newSelected
+        .map((i) => stepState.shuffledChunks[i] ?? "")
+        .join("|");
+      const expected = currentCard.chunks.join("|");
+      const isCorrect = built === expected;
+
       setStepState((prev) => ({
         ...prev,
-        selectedChunks: newSelected,
+        selectedIndices: newSelected,
         reorderResult: isCorrect ? "correct" : "wrong",
       }));
       if (isCorrect) {
@@ -355,10 +367,22 @@ export function StudySession({
     [
       currentCard,
       stepState.reorderResult,
-      stepState.selectedChunks,
-      stepState.shuffledChunks.length,
+      stepState.selectedIndices,
+      stepState.shuffledChunks,
       addScore,
     ]
+  );
+
+  const handleSelectedChunkClick = useCallback(
+    (selectedPosition: number) => {
+      if (stepState.reorderResult === "correct") return;
+      setStepState((prev) => ({
+        ...prev,
+        selectedIndices: prev.selectedIndices.filter((_, i) => i !== selectedPosition),
+        reorderResult: null,
+      }));
+    },
+    [stepState.reorderResult]
   );
 
   const handleReorderRetry = useCallback(() => {
@@ -366,7 +390,7 @@ export function StudySession({
     setStepState((prev) => ({
       ...prev,
       shuffledChunks: shuffle(currentCard.chunks),
-      selectedChunks: [],
+      selectedIndices: [],
       reorderResult: null,
     }));
   }, [currentCard]);
@@ -587,11 +611,12 @@ export function StudySession({
             <ReorderStep
               card={currentCard}
               shuffledChunks={stepState.shuffledChunks}
-              selectedChunks={stepState.selectedChunks}
+              selectedIndices={stepState.selectedIndices}
               result={stepState.reorderResult}
               isLastCard={currentCardIndex + 1 >= totalCards}
               hasRecallStep={mode === "story" ? false : useRecall}
-              onChunkClick={handleChunkClick}
+              onPoolChunkClick={handlePoolChunkClick}
+              onSelectedChunkClick={handleSelectedChunkClick}
               onRetry={handleReorderRetry}
               onNext={goToNextStep}
               nextLabel={storyNextLabel}

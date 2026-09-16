@@ -10,11 +10,12 @@ import type { NormalizedStudyCard } from "@/types";
 export interface ReorderStepProps {
   card: NormalizedStudyCard;
   shuffledChunks: string[];
-  selectedChunks: string[];
+  selectedIndices: number[];
   result: QuizResult;
   isLastCard: boolean;
   hasRecallStep?: boolean;
-  onChunkClick: (chunk: string) => void;
+  onPoolChunkClick: (poolIndex: number) => void;
+  onSelectedChunkClick: (selectedPosition: number) => void;
   onRetry: () => void;
   onNext: () => void;
   nextLabel?: string;
@@ -23,16 +24,21 @@ export interface ReorderStepProps {
 function ReorderStepComponent({
   card,
   shuffledChunks,
-  selectedChunks,
+  selectedIndices,
   result,
   isLastCard,
   hasRecallStep = false,
-  onChunkClick,
+  onPoolChunkClick,
+  onSelectedChunkClick,
   onRetry,
   onNext,
   nextLabel,
 }: ReorderStepProps) {
   if (card.chunks.length < 2) return null;
+
+  const selectedChunks = selectedIndices
+    .map((i) => shuffledChunks[i])
+    .filter((chunk): chunk is string => typeof chunk === "string");
 
   return (
     <Card className="border-none bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl">
@@ -41,32 +47,45 @@ function ReorderStepComponent({
       </CardHeader>
       <CardContent className="space-y-6">
         <div className="text-sm text-muted-foreground font-body text-center">
-          チャンクをタップして正しい順序に並べ替えてください
+          チャンクをタップして並べ替え。解答側をタップすると取り消せます
         </div>
 
         <div className="min-h-[60px] p-4 bg-secondary/20 rounded-2xl">
-          <p className="text-lg font-headline text-slate-900 text-center">
-            {selectedChunks.length > 0 ? (
-              selectedChunks.join("")
-            ) : (
-              <span className="text-muted-foreground/50">タップして文を構築...</span>
-            )}
-          </p>
+          {selectedChunks.length > 0 ? (
+            <div className="flex flex-wrap gap-2 justify-center">
+              {selectedChunks.map((chunk, pos) => (
+                <Button
+                  key={`selected-${selectedIndices[pos]}-${pos}`}
+                  type="button"
+                  variant="default"
+                  className="rounded-xl text-base font-headline"
+                  onClick={() => onSelectedChunkClick(pos)}
+                  disabled={result === "correct"}
+                >
+                  {chunk}
+                </Button>
+              ))}
+            </div>
+          ) : (
+            <p className="text-lg font-headline text-center text-muted-foreground/50">
+              タップして文を構築...
+            </p>
+          )}
         </div>
 
         <div className="flex flex-wrap gap-2 justify-center">
           {shuffledChunks.map((chunk, idx) => {
-            const isUsed = selectedChunks.includes(chunk);
+            const isUsed = selectedIndices.includes(idx);
             return (
               <Button
-                key={`${chunk}-${idx}`}
+                key={`pool-${idx}`}
                 type="button"
                 variant={isUsed ? "ghost" : "secondary"}
                 className={cn(
                   "rounded-xl text-base font-headline transition-all",
                   isUsed && "opacity-30 pointer-events-none"
                 )}
-                onClick={() => onChunkClick(chunk)}
+                onClick={() => onPoolChunkClick(idx)}
                 disabled={isUsed || result === "correct"}
               >
                 {chunk}
@@ -100,8 +119,11 @@ function ReorderStepComponent({
             <div className="text-center text-2xl font-headline font-bold text-rose-600">
               × 順序が違います
             </div>
+            <p className="text-center text-xs text-muted-foreground font-body">
+              解答のチャンクをタップして選び直せます
+            </p>
             <Button variant="ghost" className="w-full rounded-full" onClick={onRetry}>
-              もう一度並べ替える
+              すべてリセットして並べ替える
             </Button>
           </div>
         )}

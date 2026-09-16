@@ -8,7 +8,8 @@ export interface StepState {
   vocabSelected: string | null;
   vocabResult: QuizResult;
   shuffledChunks: string[];
-  selectedChunks: string[];
+  /** shuffledChunks 内のインデックス（選び直し・重複チャンク対応） */
+  selectedIndices: number[];
   reorderResult: QuizResult;
   isRecallRevealed: boolean;
 }
@@ -24,7 +25,7 @@ export function initStepState(card: NormalizedStudyCard, step: StudyStep): StepS
     vocabSelected: null,
     vocabResult: null,
     shuffledChunks: step === "reorder" ? shuffle(card.chunks) : [],
-    selectedChunks: [],
+    selectedIndices: [],
     reorderResult: null,
     isRecallRevealed: false,
   };

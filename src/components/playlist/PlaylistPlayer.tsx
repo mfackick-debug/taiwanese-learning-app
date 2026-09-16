@@ -90,27 +90,60 @@ export function PlaylistPlayer() {
     }
   }, []);
 
-  const playCurrent = useCallback(
-    async (target: PlaylistItem) => {
-      const gen = ++playGenRef.current;
-      cancelledRef.current = false;
-      setIsBusy(true);
-      setIsPlaying(true);
-      setPhase("a");
-      try {
-        await playTts(target.sentence, { waitUntilEnd: true });
-      } finally {
-        if (playGenRef.current === gen) {
-          setIsPlaying(false);
-          setIsBusy(false);
-        }
-      }
+  const playCurrent = useCallback(async (target: PlaylistItem) => {
+    const gen = ++playGenRef.current;
+    cancelledRef.current = false;
+    setIsBusy(true);
+    setIsPlaying(true);
+    setPhase("a");
 
-      if (cancelledRef.current || playGenRef.current !== gen) return;
-      setPhase("b");
-    },
-    []
-  );
+    try {
+      await playTts(target.sentence, { waitUntilEnd: true });
+    } catch {
+      // fall through — still show Phase B
+    }
+
+    if (cancelledRef.current || playGenRef.current !== gen) {
+      if (playGenRef.current === gen) {
+        setIsPlaying(false);
+        setIsBusy(false);
+      }
+      return;
+    }
+
+    // Phase B: show Japanese translation and play audio again
+    setPhase("b");
+    setIsPlaying(true);
+    setIsBusy(true);
+    try {
+      await playTts(target.sentence, { waitUntilEnd: true });
+    } finally {
+      if (playGenRef.current === gen) {
+        setIsPlaying(false);
+        setIsBusy(false);
+      }
+    }
+  }, []);
+
+  const revealPhaseBAndReplay = useCallback(async () => {
+    if (!item) return;
+    clearDwell();
+    cancelledRef.current = true;
+    stopTts();
+    const gen = ++playGenRef.current;
+    cancelledRef.current = false;
+    setPhase("b");
+    setIsBusy(true);
+    setIsPlaying(true);
+    try {
+      await playTts(item.sentence, { waitUntilEnd: true });
+    } finally {
+      if (playGenRef.current === gen) {
+        setIsPlaying(false);
+        setIsBusy(false);
+      }
+    }
+  }, [clearDwell, item]);
 
   const startAt = useCallback(
     (startIndex: number) => {
@@ -162,13 +195,15 @@ export function PlaylistPlayer() {
   );
 
   useEffect(() => {
-    if (phase !== "b" || finished || !autoAdvance || !hasStarted || isPlaying) return;
+    if (phase !== "b" || finished || !autoAdvance || !hasStarted || isPlaying || isBusy) {
+      return;
+    }
     clearDwell();
     dwellTimerRef.current = setTimeout(() => {
       goTo(index + 1, { play: true });
     }, PHASE_B_DWELL_MS);
     return () => clearDwell();
-  }, [autoAdvance, clearDwell, finished, goTo, hasStarted, index, isPlaying, phase]);
+  }, [autoAdvance, clearDwell, finished, goTo, hasStarted, index, isBusy, isPlaying, phase]);
 
   const handleReplay = useCallback(() => {
     if (!item) return;
@@ -364,14 +399,7 @@ export function PlaylistPlayer() {
                   type="button"
                   variant="outline"
                   className="w-full h-12 rounded-2xl font-headline"
-                  onClick={() => {
-                    cancelledRef.current = true;
-                    stopTts();
-                    playGenRef.current += 1;
-                    setIsPlaying(false);
-                    setIsBusy(false);
-                    setPhase("b");
-                  }}
+                  onClick={() => void revealPhaseBAndReplay()}
                 >
                   訳を見る（Phase B）
                 </Button>

@@ -40,6 +40,7 @@ function ShadowingStepComponent({
             text={card.sentence}
             size="lg"
             className="h-16 w-16 rounded-full bg-primary/10 hover:bg-primary/20"
+            onPlay={onComplete}
           />
         </div>
 
@@ -47,15 +48,7 @@ function ShadowingStepComponent({
           音声を聞いて、声に出して繰り返しましょう
         </div>
 
-        {!isDone ? (
-          <Button
-            type="button"
-            className="w-full rounded-2xl h-14 text-base font-headline"
-            onClick={onComplete}
-          >
-            シャドーイング完了
-          </Button>
-        ) : (
+        {isDone && (
           <div className="space-y-4">
             <div className="text-center text-base text-emerald-700 font-headline font-bold">
               シャドーイング完了 ✓
