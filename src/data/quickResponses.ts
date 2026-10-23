@@ -88,7 +88,7 @@ const CURATED: Record<Exclude<InterviewThemeId, "custom">, CuratedPair[]> = {
   ],
   transport: [
     {
-      promptJa: "次の駅で降ると伝えたい",
+      promptJa: "次の駅で降りると伝えたい",
       answerZh: "我下一站要下車。",
       answerPinyin: "Wǒ xià yí zhàn yào xiàchē.",
     },
@@ -153,8 +153,8 @@ const CURATED: Record<Exclude<InterviewThemeId, "custom">, CuratedPair[]> = {
     },
     {
       promptJa: "健保カードを使いたいと伝えたい",
-      answerZh: "我有健保卡，可以刷卡嗎？",
-      answerPinyin: "Wǒ yǒu jiànbǎo kǎ, kěyǐ shuākǎ ma?",
+      answerZh: "請問這裡可以用健保卡嗎？",
+      answerPinyin: "Qǐngwèn zhèlǐ kěyǐ yòng jiànbǎo kǎ ma?",
     },
   ],
   government: [
@@ -221,8 +221,8 @@ const CURATED: Record<Exclude<InterviewThemeId, "custom">, CuratedPair[]> = {
   email: [
     {
       promptJa: "返信が遅れたことを謝りたい",
-      answerZh: "抱歉回覆晚了。",
-      answerPinyin: "Bàoqiàn huífù wǎn le.",
+      answerZh: "抱歉這麼晚才回覆。",
+      answerPinyin: "Bàoqiàn zhème wǎn cái huífù.",
     },
     {
       promptJa: "資料を添付したと伝えたい",

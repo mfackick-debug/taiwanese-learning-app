@@ -18,7 +18,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "band": "B",
     "sentence": "媽媽在市場買菜。",
     "pinyin": "Māma zài shìchǎng mǎi cài.",
-    "translation": "お母さんは市場で野菜を買います。",
+    "translation": "お母さんは市場で食材を買います。",
     "targetWord": "市場",
     "distractors": ["教室", "公園", "醫院"],
     "grammarNote": "「市場（shìchǎng）」は「市場」。スーパーだけでなく伝統市場（傳統市場）も含みます。",
@@ -76,16 +76,16 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
   {
     "id": "A-307",
     "band": "B",
-    "sentence": "這件衣服有瑕疵，我想去跟店員要求換貨。",
-    "pinyin": "zhè jiàn yī fú yǒu xiá cī, wǒ xiǎng qù gēn diàn yuán yāo qiú huàn huò.",
-    "translation": "この服には欠陥があるので、店員に交換（換貨）を要求しに行きたいです。",
+    "sentence": "這件衣服有瑕疵，我想請店員幫我換貨。",
+    "pinyin": "zhè jiàn yī fú yǒu xiá cī, wǒ xiǎng qǐng diàn yuán bāng wǒ huàn huò.",
+    "translation": "この服には欠陥があるので、店員に交換（換貨）してもらいたいです。",
     "targetWord": "換貨",
     "distractors": ["退貨", "送貨", "進貨"],
     "grammarNote": "「換貨（huànhuò）」は購入した商品を「交換する」こと。返品や交換の会話で重要です。",
     "chunks": [
       "這件衣服有瑕疵，",
-      "我想去",
-      "跟店員要求",
+      "我想請店員",
+      "幫我",
       "換貨。"
     ],
     "hintText": "這件衣服有瑕疵，"
@@ -297,14 +297,14 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
   {
     "id": "A-325",
     "band": "B",
-    "sentence": "我週末和朋友去書店看書。",
-    "pinyin": "Wǒ zhōumò hé péngyou qù shūdiàn kàn shū.",
-    "translation": "私は週末に友達と書店へ本を見に行きます。",
+    "sentence": "我週末和朋友去逛書店。",
+    "pinyin": "Wǒ zhōumò hé péngyou qù guàng shūdiàn.",
+    "translation": "私は週末に友達と書店をぶらぶらしに行きます。",
     "targetWord": "書店",
     "distractors": ["藥局", "花店", "麵包店"],
     "grammarNote": "「書店（shūdiàn）」は「書店」。買い物や趣味の話題で使われます。",
-    "chunks": ["我週末和朋友", "去書店", "看書。"],
-    "hintText": "我週末和朋友去"
+    "chunks": ["我週末和朋友", "去逛", "書店。"],
+    "hintText": "我週末和朋友去逛"
   },
   {
     "id": "A-326",
@@ -345,14 +345,14 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
   {
     "id": "A-329",
     "band": "B",
-    "sentence": "我每天早上晚上都要刷牙。",
-    "pinyin": "Wǒ měitiān zǎoshang wǎnshang dōu yào shuāyá.",
-    "translation": "私は毎朝晩、歯を磨きます。",
+    "sentence": "我每天早晚都會刷牙。",
+    "pinyin": "Wǒ měitiān zǎowǎn dōu huì shuāyá.",
+    "translation": "私は毎日朝晩、歯を磨きます。",
     "targetWord": "刷牙",
     "distractors": ["洗臉", "洗澡", "梳頭"],
     "grammarNote": "「刷牙（shuāyá）」は「歯を磨く」。日常の習慣や身だしなみの話題で使われます。",
-    "chunks": ["我每天早上晚上", "都要", "刷牙。"],
-    "hintText": "我每天早上晚上都要"
+    "chunks": ["我每天早晚", "都會", "刷牙。"],
+    "hintText": "我每天早晚都會"
   },
   {
     "id": "A-330",
@@ -361,7 +361,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Bǐsài de shíhou dàjiā dōu wèi tā jiāyóu.",
     "translation": "試合の時、みんなが彼のために応援しました。",
     "targetWord": "加油",
-    "distractors": ["歡呼", "打氣", "鼓勵"],
+    "distractors": ["加班", "加速", "油門"],
     "grammarNote": "「加油（jiāyóu）」は「頑張れ・応援する」。最もポピュラーな台湾華語の応援表現です。",
     "chunks": ["比賽的時候", "大家都", "為他加油。"],
     "hintText": "比賽的時候大家都"
@@ -409,7 +409,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Dàjiā dōu juéde tā de tàidù lěngdàn.",
     "translation": "みんなは彼の態度が冷淡だと思っています。",
     "targetWord": "冷淡",
-    "distractors": ["冷漠", "熱情", "溫柔"],
+    "distractors": ["冷凍", "熱鬧", "溫暖"],
     "grammarNote": "「冷淡（lěngdàn）」は「冷淡な・無関心な」。人の態度や反応を表す形容詞です。",
     "chunks": ["大家都覺得", "他的態度", "冷淡。"],
     "hintText": "大家都覺得他的態度"
@@ -457,7 +457,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Wǒ juédìng zhōumò hé péngyou qù kàn diànyǐng.",
     "translation": "私は週末に友達と映画を見に行くことにしました。",
     "targetWord": "決定",
-    "distractors": ["打算", "考慮", "選擇"],
+    "distractors": ["決賽", "規定", "定案"],
     "grammarNote": "「決定（juédìng）」は「決める・決定する」。意志や予定を表す時に使う基本動詞です。",
     "chunks": ["我決定", "週末和朋友", "去看電影。"],
     "hintText": "我"
@@ -489,14 +489,14 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
   {
     "id": "A-341",
     "band": "B",
-    "sentence": "考試的過程進行得很順利。",
-    "pinyin": "Kǎoshì de guòchéng jìnxíng de hěn shùnlì.",
-    "translation": "試験の過程はとても順調に進みました。",
+    "sentence": "這次考試進行得很順利。",
+    "pinyin": "Zhè cì kǎoshì jìnxíng de hěn shùnlì.",
+    "translation": "今回の試験はとても順調に進みました。",
     "targetWord": "順利",
     "distractors": ["流利", "方便", "成功"],
     "grammarNote": "「順利（shùnlì）」は「順調な」。物事が滞りなく進む様子を表します。",
-    "chunks": ["考試的過程", "進行得", "很順利。"],
-    "hintText": "考試的過程進行得很"
+    "chunks": ["這次考試", "進行得", "很順利。"],
+    "hintText": "這次考試進行得很"
   },
   {
     "id": "A-342",
@@ -529,7 +529,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Nǐ duì tā kěnéng yǒu hěn dà de wùhuì.",
     "translation": "あなたは彼に対して大きな誤解をしているかもしれません。",
     "targetWord": "誤會",
-    "distractors": ["誤解", "錯誤", "誤差"],
+    "distractors": ["誤差", "錯字", "誤點"],
     "grammarNote": "「誤會（wùhuì）」は「誤解」。相手の意図を正しく理解していない時に使います。",
     "chunks": ["你對他可能", "有很大的", "誤會。"],
     "hintText": "你對他可能有很大的"
@@ -601,7 +601,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Nǐ dàodǐ shénme shíhou néng gěi wǒ dá'àn?",
     "translation": "あなたは一体いつになったら私に答えをくれるのですか？",
     "targetWord": "到底",
-    "distractors": ["究竟", "終究", "畢竟"],
+    "distractors": ["終究", "畢竟", "終於"],
     "grammarNote": "「到底（dàodǐ）」は「一体・結局」。疑問文で強調や催促の気持ちを表します。",
     "chunks": ["你到底", "什麼時候", "能給我答案？"],
     "hintText": "你"
@@ -613,9 +613,9 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Péngyou tuījiàn wǒ qù chī yì jiā xiǎochī diàn.",
     "translation": "友達が私に軽食屋さんを勧めてくれました。",
     "targetWord": "推薦",
-    "distractors": ["建議", "介紹", "提醒"],
+    "distractors": ["推動", "推辭", "舉薦"],
     "grammarNote": "「推薦（tuījiàn）」は「推薦する・勧める」。人にお店や商品を勧める時に使います。",
-    "chunks": ["朋友推薦我", "去一家", "小吃店。"],
+    "chunks": ["朋友推薦我", "去吃一家", "小吃店。"],
     "hintText": "朋友推薦"
   },
   {
@@ -637,7 +637,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Tā yǒu fēicháng fēngfù de rénshēng jīngyàn.",
     "translation": "彼は非常に豊かな人生経験を持っています。",
     "targetWord": "豐富",
-    "distractors": ["豐富", "充足", "滿滿"],
+    "distractors": ["豐收", "充足", "滿滿"],
     "grammarNote": "「豐富（fēngfù）」は「豊富な」。経験や知識、内容が多いことを表します。",
     "chunks": ["他有", "非常豐富的", "人生經驗。"],
     "hintText": "他有"
@@ -649,7 +649,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Yòng Yōuyóukǎ dā jiéyùn hěn pǔbiàn.",
     "translation": "悠遊カードでMRTに乗るのはとても一般的です。",
     "targetWord": "普遍",
-    "distractors": ["普通", "廣泛", "常見"],
+    "distractors": ["廣大", "平凡", "遍布"],
     "grammarNote": "「普遍（pǔbiàn）」は「普遍的・一般的」。広く行き渡っている様子を表します。",
     "chunks": ["用悠遊卡", "搭捷運", "很普遍。"],
     "hintText": "用悠遊卡搭捷運很"
@@ -661,7 +661,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Tāmen de guānxì zhújiàn gǎishàn le.",
     "translation": "彼らの関係は徐々に改善しました。",
     "targetWord": "逐漸",
-    "distractors": ["慢慢", "漸漸", "快速"],
+    "distractors": ["漸進", "逐一", "進展"],
     "grammarNote": "「逐漸（zhújiàn）」は「徐々に・次第に」。変化の過程を表す副詞です。",
     "chunks": ["他們的關係", "逐漸", "改善了。"],
     "hintText": "他們的關係"
@@ -673,7 +673,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Tā sìhū zuótiān wǎnshang méi shuì hǎo.",
     "translation": "彼はどうやら昨夜よく眠れなかったようです。",
     "targetWord": "似乎",
-    "distractors": ["好像", "類似", "相似"],
+    "distractors": ["類似", "相似", "似的"],
     "grammarNote": "「似乎（sìhū）」は「どうやら〜ようだ」。推測や様子を表す副詞です。",
     "chunks": ["他似乎", "昨天晚上", "沒睡好。"],
     "hintText": "他似乎"
@@ -685,7 +685,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Wǒmen tízǎo chūfā bìmiǎn sāichē.",
     "translation": "私たちは渋滞を避けるために早めに出発しました。",
     "targetWord": "避免",
-    "distractors": ["防止", "避開", "免強"],
+    "distractors": ["防止", "避開", "勉強"],
     "grammarNote": "「避免（bìmiǎn）」は「避ける・防止する」。良くないことを起こさないようにする時に使います。",
     "chunks": ["我們提早出發", "避免", "塞車。"],
     "hintText": "我們提早出發"
@@ -693,13 +693,13 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
   {
     "id": "A-358",
     "band": "B",
-    "sentence": "事情的真相究竟是誰也不知道。",
-    "pinyin": "Shìqing de zhēnxiàng jiūjìng shì shuí yě bù zhīdào.",
+    "sentence": "事情的真相究竟是什麼，誰也不知道。",
+    "pinyin": "Shìqing de zhēnxiàng jiūjìng shì shénme, shuí yě bù zhīdào.",
     "translation": "事件の真相が一体何なのか誰も知りません。",
     "targetWord": "究竟",
-    "distractors": ["到底", "終於", "畢竟"],
+    "distractors": ["終於", "畢竟", "總算"],
     "grammarNote": "「究竟（jiūjìng）」は「一体・いったい」。疑問文で真実を追求する時に使います。",
-    "chunks": ["事情的真相", "究竟是", "誰也不知道。"],
+    "chunks": ["事情的真相", "究竟是什麼，", "誰也不知道。"],
     "hintText": "事情的真相"
   },
   {
@@ -757,7 +757,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Zhèlǐ quēfá tíngchēwèi hěn bù fāngbiàn.",
     "translation": "ここは駐車スペースが不足していてとても不便です。",
     "targetWord": "缺乏",
-    "distractors": ["缺少", "不足", "擁有"],
+    "distractors": ["擁有", "充足", "缺點"],
     "grammarNote": "「缺乏（quēfá）」は「不足している」。必要なものが足りないことを表します。",
     "chunks": ["這裡缺乏", "停車位", "很不方便。"],
     "hintText": "這裡缺乏"
@@ -841,7 +841,7 @@ export const bandBLevel3Data: FlatSentenceCardInput[] = [
     "pinyin": "Nǐ yào hǎohǎo bǎwò zhè ge hǎo jīhuì.",
     "translation": "あなたはこの良い機会をしっかり掴まなければなりません。",
     "targetWord": "把握",
-    "distractors": ["掌握", "抓住", "擁有"],
+    "distractors": ["擁有", "握手", "把關"],
     "grammarNote": "「把握（bǎwò）」は「しっかり掴む・逃さない」。チャンスや時間を有効に使うことを表します。",
     "chunks": ["你要好好", "把握", "這個好機會。"],
     "hintText": "你要好好"

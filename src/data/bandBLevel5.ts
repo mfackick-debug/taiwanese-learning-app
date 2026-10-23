@@ -9,7 +9,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "pinyin": "bù hǎo yì si, wǒ zhè bēi zhēn nǎi yào wài dài, kě yǐ bāng wǒ zhuāng dài ma?",
     "translation": "すみません、このタピオカミルクティーは持ち帰りで、袋に入れてもらえますか？",
     "targetWord": "外帶",
-    "distractors": ["內用", "外送", "打包"],
+    "distractors": ["內用", "外送", "寄送"],
     "grammarNote": "「外帶（wài dài）」は店で買って持ち帰る注文形態。台湾の飲料店・レストランで「內用還是外帶？」と必ず聞かれます。",
     "chunks": [
       "不好意思，",
@@ -107,15 +107,15 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
   {
     "id": "B-422",
     "band": "B",
-    "sentence": "我的飲料請做成少冰，謝謝。",
-    "pinyin": "wǒ de yǐn liào qǐng zuò chéng shǎo bīng, xiè xie.",
+    "sentence": "我的飲料要少冰，謝謝。",
+    "pinyin": "wǒ de yǐn liào yào shǎo bīng, xiè xie.",
     "translation": "飲み物は氷少なめでお願いします。",
     "targetWord": "少冰",
     "distractors": ["去冰", "多冰", "微冰"],
     "grammarNote": "「少冰（shǎo bīng）」は氷を少なめに。台湾の飲料カスタムで頻出です。",
     "chunks": [
       "我的飲料",
-      "請做成",
+      "要",
       "少冰，",
       "謝謝。"
     ],
@@ -162,7 +162,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "pinyin": "zhè xiē biàn dāng kě yǐ bāng wǒ zhuāng dài ma? wǒ yào dài dào gōng sī.",
     "translation": "これらの弁当、袋に入れてもらえますか？会社に持っていきます。",
     "targetWord": "裝袋",
-    "distractors": ["打包", "外帶", "包裝"],
+    "distractors": ["外帶", "內用", "結帳"],
     "grammarNote": "「裝袋（zhuāng dài）」は袋に入れること。テイクアウト時の定型依頼です。",
     "chunks": [
       "這些便當",
@@ -226,19 +226,19 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
   {
     "id": "B-429",
     "band": "B",
-    "sentence": "這家餐廳的服務費已經包含小費了嗎？",
-    "pinyin": "zhè jiā cān tīng de fú wù fèi yǐ jīng bāo hán xiǎo fèi le ma?",
-    "translation": "このレストランのサービス料にはチップが含まれていますか？",
+    "sentence": "這家餐廳有收服務費，還需要另外給小費嗎？",
+    "pinyin": "zhè jiā cān tīng yǒu shōu fú wù fèi, hái xū yào lìng wài gěi xiǎo fèi ma?",
+    "translation": "このレストランはサービス料を取っていますが、別にチップを渡す必要はありますか？",
     "targetWord": "小費",
     "distractors": ["稅金", "押金", "訂金"],
     "grammarNote": "「小費（xiǎo fèi）」はチップ。台湾ではサービス料10%が含まれる店が多く、別途小費は必須ではありません。",
     "chunks": [
-      "這家餐廳的",
-      "服務費",
-      "已經包含",
-      "小費了嗎？"
+      "這家餐廳",
+      "有收服務費，",
+      "還需要另外給",
+      "小費嗎？"
     ],
-    "hintText": "這家餐廳的"
+    "hintText": "這家餐廳"
   },
   {
     "id": "B-430",
@@ -294,19 +294,19 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
   {
     "id": "B-433",
     "band": "B",
-    "sentence": "這道菜的口味會不會太鹹？我比較怕重口味。",
-    "pinyin": "zhè dào cài de kǒu wèi huì bù huì tài xián? wǒ bǐ jiào pà zhòng kǒu wèi.",
-    "translation": "この料理の味付けはしょっぱすぎませんか？私は濃い味が少し苦手です。",
+    "sentence": "這道菜會不會太鹹？我比較怕重口味。",
+    "pinyin": "zhè dào cài huì bù huì tài xián? wǒ bǐ jiào pà zhòng kǒu wèi.",
+    "translation": "この料理はしょっぱすぎませんか？私は濃い味が少し苦手です。",
     "targetWord": "口味",
     "distractors": ["味道", "香氣", "口感"],
     "grammarNote": "「口味（kǒu wèi）」は味の好み・味付け。「重口味／清淡口味」のように好みを伝えます。",
     "chunks": [
-      "這道菜的口味",
+      "這道菜",
       "會不會太鹹？",
       "我比較怕",
       "重口味。"
     ],
-    "hintText": "這道菜的口味"
+    "hintText": "這道菜會不會太鹹？我比較怕重"
   },
   {
     "id": "B-434",
@@ -413,36 +413,36 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
   {
     "id": "B-440",
     "band": "B",
-    "sentence": "如果你有會員的話，結帳可以再折十元。",
-    "pinyin": "rú guǒ nǐ yǒu huì yuán de huà, jié zhàng kě yǐ zài zhé shí yuán.",
+    "sentence": "如果你是會員的話，結帳可以再折十元。",
+    "pinyin": "rú guǒ nǐ shì huì yuán de huà, jié zhàng kě yǐ zài zhé shí yuán.",
     "translation": "会員であれば、会計でさらに10元割引できます。",
     "targetWord": "會員",
     "distractors": ["顧客", "貴賓", "員工"],
     "grammarNote": "「會員（huì yuán）」は会員。コンビニやドラッグストアのポイント会員を指すことが多いです。",
     "chunks": [
-      "如果你有會員的",
+      "如果你是會員的",
       "話，",
       "結帳可以",
       "再折十元。"
     ],
-    "hintText": "如果你有會員的"
+    "hintText": "如果你是會員的"
   },
   {
     "id": "B-441",
     "band": "B",
-    "sentence": "這次消費的積分會在明天入帳，記得確認一下。",
-    "pinyin": "zhè cì xiāo fèi de jī fēn huì zài míng tiān rù zhàng, jì de què rèn yī xià.",
+    "sentence": "這次消費的點數會在明天入帳，記得確認一下。",
+    "pinyin": "zhè cì xiāo fèi de diǎn shù huì zài míng tiān rù zhàng, jì de què rèn yī xià.",
     "translation": "今回の買い物のポイントは明日反映されるので、確認してください。",
-    "targetWord": "積分",
+    "targetWord": "點數",
     "distractors": ["折扣", "現金", "發票"],
-    "grammarNote": "「積分（jī fēn）」はポイント。会員アプリの還元で日常的に使われます。",
+    "grammarNote": "「點數（diǎn shù）」はポイント。台湾ではポイントカードや会員アプリの還元を「點數」と言うのが一般的です（「積分」は大陸寄りの言い方）。",
     "chunks": [
-      "這次消費的積分",
+      "這次消費的點數",
       "會在明天入帳，",
       "記得確認",
       "一下。"
     ],
-    "hintText": "這次消費的積分"
+    "hintText": "這次消費的點數"
   },
   {
     "id": "B-442",
@@ -468,7 +468,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "pinyin": "zhè bǐ jīn é bǐ jiào dà, wǒ xiǎng shuā kǎ fù kuǎn.",
     "translation": "金額が大きいので、カードで支払いたいです。",
     "targetWord": "刷卡",
-    "distractors": ["現金", "轉帳", "掃碼"],
+    "distractors": ["現金", "轉帳", "打卡"],
     "grammarNote": "「刷卡（shuā kǎ）」はカード決済。クレジットカード・デビットカード両方に使えます。",
     "chunks": [
       "這筆金額",
@@ -706,7 +706,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "pinyin": "cóng jī chǎng dào wǒ jiā, xū yào zài tái běi chē zhàn zhuǎn chéng jié yùn.",
     "translation": "空港から家までは、台北駅で捷運に乗り換える必要があります。",
     "targetWord": "轉乘",
-    "distractors": ["直達", "下車", "換車"],
+    "distractors": ["直達", "下車", "出站"],
     "grammarNote": "「轉乘（zhuǎn chéng）」は乗り換えること。捷運・公車の案内で頻出です。",
     "chunks": [
       "從機場",
@@ -1026,7 +1026,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-476",
     "band": "B",
     "sentence": "我最近一直咳嗽，晚上睡覺也會咳醒。",
-    "pinyin": "wǒ zuì jìn yì zhí ké sou, wǎn shàng shuì jiào yě huì ké xǐng.",
+    "pinyin": "wǒ zuì jìn yī zhí ké sou, wǎn shàng shuì jiào yě huì ké xǐng.",
     "translation": "最近ずっと咳が出て、夜寝ていても咳で起きてしまいます。",
     "targetWord": "咳嗽",
     "distractors": ["打噴嚏", "發燒", "流汗"],
@@ -1067,7 +1067,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "grammarNote": "「喉嚨痛（hóu lóng tòng）」はのどの痛み。風邪やアレルギーの症状説明で頻出です。",
     "chunks": [
       "我喉嚨痛",
-      "得厉害，",
+      "得厲害，",
       "說話都有點",
       "辛苦。"
     ],
@@ -1080,7 +1080,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "pinyin": "yī huàn jì wǒ jiù kāi shǐ liú bí shuǐ, kě néng shì guò mǐn.",
     "translation": "季節の変わり目になると鼻水が出始めて、アレルギーかもしれません。",
     "targetWord": "鼻水",
-    "distractors": ["鼻涕", "流汗", "眼淚"],
+    "distractors": ["流汗", "眼淚", "口水"],
     "grammarNote": "「鼻水（bí shuǐ）」は鼻水。台湾でも季節の変わり目の体調トークでよく出ます。",
     "chunks": [
       "一換季",
@@ -1131,7 +1131,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "pinyin": "wǒ xiǎng qù zhěn suǒ kàn bìng, xū yào xiān zài xiàn shàng guà hào ma?",
     "translation": "クリニックに受診したいのですが、先にオンラインで受付登録が必要ですか？",
     "targetWord": "掛號",
-    "distractors": ["報到", "預約", "排隊"],
+    "distractors": ["報到", "排隊", "結帳"],
     "grammarNote": "「掛號（guà hào）」は受診の受付登録。台湾の医療システムで欠かせない語です。",
     "chunks": [
       "我想去診",
@@ -1230,7 +1230,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-488",
     "band": "B",
     "sentence": "最近睡眠品質不好，白天常常沒精神。",
-    "pinyin": "zuì jìn shuì mián pǐn zhì bù hǎo, bái tiān cháng cháng méi jīng shén.",
+    "pinyin": "zuì jìn shuì mián pǐn zhí bù hǎo, bái tiān cháng cháng méi jīng shén.",
     "translation": "最近は睡眠の質が悪くて、昼間もしょっちゅう元気が出ません。",
     "targetWord": "睡眠",
     "distractors": ["午睡", "失眠", "打呼"],
@@ -1349,7 +1349,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-495",
     "band": "B",
     "sentence": "我昨天吃壞肚子，一直拉肚子，今天只能吃清淡一點。",
-    "pinyin": "wǒ zuó tiān chī huài dù zi, yì zhí lā dù zi, jīn tiān zhǐ néng chī qīng dàn yī diǎn.",
+    "pinyin": "wǒ zuó tiān chī huài dù zi, yī zhí lā dù zi, jīn tiān zhǐ néng chī qīng dàn yī diǎn.",
     "translation": "昨日お腹を壊してずっと下痢で、今日は薄味のものしか食べられません。",
     "targetWord": "拉肚子",
     "distractors": ["發燒", "咳嗽", "流汗"],
@@ -1587,7 +1587,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-509",
     "band": "B",
     "sentence": "我到了會傳訊息給你，你不用一直在門口等。",
-    "pinyin": "wǒ dào le huì chuán xùn xī gěi nǐ, nǐ bù yòng yì zhí zài mén kǒu děng.",
+    "pinyin": "wǒ dào le huì chuán xùn xī gěi nǐ, nǐ bù yòng yī zhí zài mén kǒu děng.",
     "translation": "着いたらメッセージするから、ずっと入口で待たなくていいよ。",
     "targetWord": "傳訊息",
     "distractors": ["打電話", "寄信", "留言"],
@@ -1754,10 +1754,10 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-519",
     "band": "B",
     "sentence": "房間太熱了，可以幫我把冷氣開強一點嗎？",
-    "pinyin": "fáng jiān tài rè le, kě yǐ bāng wǒ bǎ lěng qì kāi qiáng yì diǎn ma?",
+    "pinyin": "fáng jiān tài rè le, kě yǐ bāng wǒ bǎ lěng qì kāi qiáng yī diǎn ma?",
     "translation": "部屋が暑すぎるので、エアコンを少し強くしてもらえますか？",
     "targetWord": "冷氣",
-    "distractors": ["暖氣", "電扇", "空調"],
+    "distractors": ["暖氣", "電燈", "熱水器"],
     "grammarNote": "「冷氣（lěng qì）」はエアコン。台湾では「空調」より日常語としてよく使います。",
     "chunks": [
       "房間太熱了，",
@@ -1786,7 +1786,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-521",
     "band": "B",
     "sentence": "不好意思，我的發票載具條碼在手機裡，等我一下。",
-    "pinyin": "bù hǎo yì si, wǒ de fā piào zài jù tiáo mǎ zài shǒu jī lǐ, děng wǒ yí xià.",
+    "pinyin": "bù hǎo yì si, wǒ de fā piào zài jù tiáo mǎ zài shǒu jī lǐ, děng wǒ yī xià.",
     "translation": "すみません、電子發票の載具バーコードがスマホの中にあるので、少し待ってください。",
     "targetWord": "載具",
     "distractors": ["載體", "條碼", "會員卡"],
@@ -1819,7 +1819,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-523",
     "band": "B",
     "sentence": "我每天騎機車上班，所以一定會戴安全帽。",
-    "pinyin": "wǒ měi tiān qí jī chē shàng bān, suǒ yǐ yí dìng huì dài ān quán mào.",
+    "pinyin": "wǒ měi tiān qí jī chē shàng bān, suǒ yǐ yī dìng huì dài ān quán mào.",
     "translation": "毎日スクーターで通勤するので、必ずヘルメットをかぶります。",
     "targetWord": "機車",
     "distractors": ["汽車", "腳踏車", "公車"],
@@ -1835,7 +1835,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-524",
     "band": "B",
     "sentence": "這裡不能停車，請把車移到前面一點。",
-    "pinyin": "zhè lǐ bù néng tíng chē, qǐng bǎ chē yí dào qián miàn yì diǎn.",
+    "pinyin": "zhè lǐ bù néng tíng chē, qǐng bǎ chē yí dào qián miàn yī diǎn.",
     "translation": "ここには駐車できません。車を少し前に移動してください。",
     "targetWord": "停車",
     "distractors": ["開車", "騎車", "等車"],
@@ -1851,7 +1851,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-525",
     "band": "B",
     "sentence": "騎機車一定要戴安全帽，不然警察會開罰單。",
-    "pinyin": "qí jī chē yí dìng yào dài ān quán mào, bù rán jǐng chá huì kāi fá dān.",
+    "pinyin": "qí jī chē yī dìng yào dài ān quán mào, bù rán jǐng chá huì kāi fá dān.",
     "translation": "スクーターに乗るときは必ずヘルメットをかぶらないと、警察に罰金切符を切られます。",
     "targetWord": "安全帽",
     "distractors": ["帽子", "安全鞋", "雨衣"],
@@ -1867,7 +1867,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-526",
     "band": "B",
     "sentence": "因為明天放颱風假，所以公司不用上班。",
-    "pinyin": "yīn wèi míng tiān fàng tái fēng jià, suǒ yǐ gōng sī bú yòng shàng bān.",
+    "pinyin": "yīn wèi míng tiān fàng tái fēng jià, suǒ yǐ gōng sī bù yòng shàng bān.",
     "translation": "明日は台風休業なので、会社は出勤しなくてよいです。",
     "targetWord": "颱風假",
     "distractors": ["國定假日", "病假", "年假"],
@@ -1899,7 +1899,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-528",
     "band": "B",
     "sentence": "紙箱要拿到外面做資源回收，不要跟一般垃圾放一起。",
-    "pinyin": "zhǐ xiāng yào ná dào wài miàn zuò zī yuán huí shōu, bú yào gēn yì bān lè sè fàng yì qǐ.",
+    "pinyin": "zhǐ xiāng yào ná dào wài miàn zuò zī yuán huí shōu, bù yào gēn yī bān lè sè fàng yī qǐ.",
     "translation": "段ボールは外に出して資源回収へ。普通ゴミと一緒に捨てないでください。",
     "targetWord": "資源回收",
     "distractors": ["一般垃圾", "廚餘", "堆肥"],
@@ -1946,18 +1946,18 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
   {
     "id": "B-531",
     "band": "B",
-    "sentence": "請把你的門號傳給我，我到了再打電話。",
-    "pinyin": "qǐng bǎ nǐ de mén hào chuán gěi wǒ, wǒ dào le zài dǎ diàn huà.",
-    "translation": "電話番号を送ってください。着いたら電話します。",
+    "sentence": "我想辦一個新的門號，請問要帶什麼證件？",
+    "pinyin": "wǒ xiǎng bàn yī gè xīn de mén hào, qǐng wèn yào dài shén me zhèng jiàn?",
+    "translation": "新しい電話回線（番号）を契約したいのですが、どんな書類が必要ですか？",
     "targetWord": "門號",
     "distractors": ["帳號", "地址", "信箱"],
     "grammarNote": "「門號（mén hào）」は携帯電話の番号。台湾では「電話號碼」よりカジュアルに使われます。",
     "chunks": [
-      "請把你的門號",
-      "傳給我，",
-      "我到了再打電話。"
+      "我想辦一個新的門號，",
+      "請問要帶",
+      "什麼證件？"
     ],
-    "hintText": "請把你的門號"
+    "hintText": "我想辦一個新的"
   },
   {
     "id": "B-532",
@@ -1995,7 +1995,7 @@ export const bandBLevel5Data: FlatSentenceCardInput[] = [
     "id": "B-534",
     "band": "B",
     "sentence": "房租我已經轉帳了，你看一下帳戶有沒有入帳。",
-    "pinyin": "fáng zū wǒ yǐ jīng zhuǎn zhàng le, nǐ kàn yí xià zhàng hù yǒu méi yǒu rù zhàng.",
+    "pinyin": "fáng zū wǒ yǐ jīng zhuǎn zhàng le, nǐ kàn yī xià zhàng hù yǒu méi yǒu rù zhàng.",
     "translation": "家賃はもう振り込みました。口座に入金されているか見てください。",
     "targetWord": "轉帳",
     "distractors": ["提款", "刷卡", "找零"],

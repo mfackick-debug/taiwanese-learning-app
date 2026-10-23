@@ -66,7 +66,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他心裡很不開心，但為了家庭和諧，他只好一直壓抑自己的情緒。",
-        "pinyin": "suī rán tā xīn lǐ hěn bù kāi xīn, dàn wèi le jiā tíng hé xié, tā zhǐ hǎo yì zhí yā yì zì jǐ de qíng xù.",
+        "pinyin": "suī rán tā xīn lǐ hěn bù kāi xīn, dàn wèi le jiā tíng hé xié, tā zhǐ hǎo yī zhí yā yì zì jǐ de qíng xù.",
         "japanese": "彼は心の中でとても不満だったが、家庭の和を保つためにずっと自分の感情を抑えていた。",
         "chunks": [
           "雖然他心裡很不開心",
@@ -78,7 +78,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "店舗・サービス",
         "chinese": "因為店員的態度太差，他壓抑不住怒火，直接跟店長投訴。",
-        "pinyin": "yīn wèi diàn yuán de tài dù tài chà, tā yā yì bú zhù nù huǒ, zhí jiē gēn diàn zhǎng tóu sù.",
+        "pinyin": "yīn wèi diàn yuán de tài dù tài chà, tā yā yì bù zhù nù huǒ, zhí jiē gēn diàn zhǎng tóu sù.",
         "japanese": "店員の態度がひどすぎて、彼は怒りを抑えきれず、直接店長に苦情を言った。",
         "chunks": [
           "因為店員的態度太差",
@@ -171,26 +171,25 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       },
       {
         "situation": "雖然這家火鍋店價格實惠，但服務品質懸殊，有時候很好有時候很差。",
-        "chinese": "雖然這家火鍋店價格實惠，但服務品質懸殊，有時候很好有時候很差。",
-        "pinyin": "suī rán zhè jiā huǒ guō diàn jià gé shí huì, dàn fú wù pǐn zhì xuán shū, yǒu shí hòu hěn hǎo yǒu shí hòu hěn chà.",
-        "japanese": "この火鍋店は値段が手頃ですが、サービスの質にばらつきが大きく、良い時もあれば悪い時もあります。",
+        "chinese": "雖然兩家火鍋店都在同一條街上，但價格差距懸殊。",
+        "pinyin": "suī rán liǎng jiā huǒ guō diàn dōu zài tóng yī tiáo jiē shàng, dàn jià gé chā jù xuán shū.",
+        "japanese": "2軒の火鍋店は同じ通りにあるけれど、値段の差がとても大きいです。",
         "chunks": [
-          "雖然這家火鍋店價格實惠",
-          "但服務品質懸殊",
-          "有時候很好有時候很差"
+          "雖然兩家火鍋店都在同一條街上",
+          "但價格差距懸殊"
         ],
-        "hintText": "雖然這家火鍋店價格實惠，但"
+        "hintText": "雖然兩家火鍋店都在同一條街上，但價格差距"
       },
       {
         "situation": "因為鄰居噪音問題懸殊，所以我們只好報警處理。",
-        "chinese": "因為鄰居噪音問題懸殊，所以我們只好報警處理。",
-        "pinyin": "yīn wèi lín jū zào yīn wèn tí xuán shū, suǒ yǐ wǒ men zhǐ hǎo bào jǐng chǔ lǐ.",
-        "japanese": "隣人の騒音問題が極端に酷いので、私たちは警察に通報するしかありませんでした。",
+        "chinese": "因為雙方實力懸殊，所以這場比賽一下子就結束了。",
+        "pinyin": "yīn wèi shuāng fāng shí lì xuán shū, suǒ yǐ zhè chǎng bǐ sài yī xià zi jiù jié shù le.",
+        "japanese": "両者の実力差が大きすぎたので、この試合はあっという間に終わりました。",
         "chunks": [
-          "因為鄰居噪音問題懸殊",
-          "所以我們只好報警處理"
+          "因為雙方實力懸殊",
+          "所以這場比賽一下子就結束了"
         ],
-        "hintText": "因為鄰居噪音問題懸殊，所以"
+        "hintText": "因為雙方實力"
       }
     ]
   },
@@ -208,7 +207,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "人間関係・家族",
         "chinese": "雖然爺爺年紀大了，但他還是堅持把做餅的技術傳承給我們這些孫子。",
-        "pinyin": "suī rán yé ye nián jì dà le，dàn tā hái shì jiān chí bǎ zuò bǐng de jì shù chuán chéng gěi wǒ men zhè xiē sūn zi。",
+        "pinyin": "suī rán yé ye nián jì dà le, dàn tā hái shì jiān chí bǎ zuò bǐng de jì shù chuán chéng gěi wǒ men zhè xiē sūn zi.",
         "japanese": "祖父は年を取っていますが、それでも餅を作る技術を私たち孫に伝え続けています。",
         "chunks": [
           "雖然爺爺年紀大了",
@@ -220,7 +219,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家老店的老闆希望傳承傳統口味，所以堅持不用化學添加物。",
-        "pinyin": "yīn wèi zhè jiā lǎo diàn de lǎo bǎn xī wàng chuán chéng chuán tǒng kǒu wèi，suǒ yǐ jiān chí bù yòng huà xué tiān jiā wù。",
+        "pinyin": "yīn wèi zhè jiā lǎo diàn de lǎo bǎn xī wàng chuán chéng chuán tǒng kǒu wèi, suǒ yǐ jiān chí bù yòng huà xué tiān jiā wù.",
         "japanese": "この老舗の店主は伝統的な味を伝承したいので、化学添加物を使わないと主張しています。",
         "chunks": [
           "因為這家老店的老闆希望傳承傳統口味",
@@ -232,7 +231,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "公的手続き・職場",
         "chinese": "只要我們把這些重要經驗記錄下來，就能傳承給新進同事，不用擔心他們犯錯。",
-        "pinyin": "zhǐ yào wǒ men bǎ zhè xiē zhòng yào jīng yàn jì lù xià lái，jiù néng chuán chéng gěi xīn jìn tóng shì，bù yòng dān xīn tā men fàn cuò。",
+        "pinyin": "zhǐ yào wǒ men bǎ zhè xiē zhòng yào jīng yàn jì lù xià lái, jiù néng chuán chéng gěi xīn jìn tóng shì, bù yòng dān xīn tā men fàn cuò.",
         "japanese": "これらの重要な経験を記録しておけば、新入社員に伝承でき、彼らがミスをする心配はありません。",
         "chunks": [
           "只要我們把這些重要經驗記錄下來",
@@ -256,20 +255,19 @@ export const bandCData: ExamplesSentenceCardInput[] = [
     "examples": [
       {
         "situation": "人間関係・家族",
-        "chinese": "雖然爸媽一直幫我斡旋，但是我還是決定跟男朋友分手。",
-        "pinyin": "suī rán bà mā yī zhí bāng wǒ wò xuán，dàn shì wǒ hái shì jué dìng gēn nán péng yǒu fēn shǒu。",
-        "japanese": "両親がずっと調停してくれたけど、私はやっぱり彼氏と別れることに決めた。",
+        "chinese": "因為兩家公司的合作談不攏，所以經理親自出面斡旋。",
+        "pinyin": "yīn wèi liǎng jiā gōng sī de hé zuò tán bù lǒng, suǒ yǐ jīng lǐ qīn zì chū miàn wò xuán.",
+        "japanese": "2社の提携交渉がまとまらなかったので、マネージャーが自ら仲介に乗り出しました。",
         "chunks": [
-          "雖然爸媽一直幫我斡旋",
-          "但是我還是決定",
-          "跟男朋友分手"
+          "因為兩家公司的合作談不攏",
+          "所以經理親自出面斡旋"
         ],
-        "hintText": "雖然爸媽一直幫我斡旋，但是我還是決定"
+        "hintText": "因為兩家公司的合作談不攏，所以經理親自出面"
       },
       {
         "situation": "店舗・サービス",
         "chinese": "因為店家跟客人為了發票問題吵起來，所以店長只好出面斡旋。",
-        "pinyin": "yīn wèi diàn jiā gēn kè rén wèi le fā piào wèn tí chǎo qǐ lái，suǒ yǐ diàn zhǎng zhǐ hǎo chū miàn wò xuán。",
+        "pinyin": "yīn wèi diàn jiā gēn kè rén wèi le fā piào wèn tí chǎo qǐ lái, suǒ yǐ diàn zhǎng zhǐ hǎo chū miàn wò xuán.",
         "japanese": "店と客がレシートの問題で喧嘩になったので、店長が仕方なく調停に出た。",
         "chunks": [
           "因為店家跟客人為了發票問題吵起來",
@@ -281,7 +279,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "生活トラブル",
         "chinese": "只要鄰居願意各退一步，我就可以幫他們斡旋噪音糾紛。",
-        "pinyin": "zhǐ yào lín jū yuàn yì gè tuì yī bù，wǒ jiù kě yǐ bāng tā men wò xuán zào yīn jiū fēn。",
+        "pinyin": "zhǐ yào lín jū yuàn yì gè tuì yī bù, wǒ jiù kě yǐ bāng tā men wò xuán zào yīn jiū fēn.",
         "japanese": "隣人がお互いに一歩譲ってくれさえすれば、私は騒音トラブルの調停をしてあげられる。",
         "chunks": [
           "只要鄰居願意各退一步",
@@ -306,7 +304,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "人間関係・家族",
         "chinese": "因為爸媽經常吵架，他們的婚姻關係正瀕臨破裂，讓我非常擔心。",
-        "pinyin": "yīn wèi bà mā jīng cháng chǎo jià，tā men de hūn yīn guān xì zhèng bīn lín pò liè，ràng wǒ fēi cháng dān xīn。",
+        "pinyin": "yīn wèi bà mā jīng cháng chǎo jià, tā men de hūn yīn guān xì zhèng bīn lín pò liè, ràng wǒ fēi cháng dān xīn.",
         "japanese": "両親がよく喧嘩するので、彼らの結婚関係はまさに破綻寸前で、私はとても心配しています。",
         "chunks": [
           "因為爸媽經常吵架",
@@ -317,27 +315,27 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       },
       {
         "situation": "生活トラブル",
-        "chinese": "只要再不下雨，水庫的水位就會瀕臨警戒線，到時候可能又要限水了。",
-        "pinyin": "zhǐ yào zài bù xià yǔ，shuǐ kù de shuǐ wèi jiù huì bīn lín jǐng jiè xiàn，dào shí hòu kě néng yòu yào xiàn shuǐ le。",
-        "japanese": "あと雨が降らなければ、ダムの水位は警戒線に達しようとしており、その時はまた給水制限になるかもしれません。",
+        "chinese": "如果再不下雨，水庫的水位就會瀕臨警戒線，到時候可能又要限水了。",
+        "pinyin": "rú guǒ zài bù xià yǔ, shuǐ kù de shuǐ wèi jiù huì bīn lín jǐng jiè xiàn, dào shí hòu kě néng yòu yào xiàn shuǐ le.",
+        "japanese": "これ以上雨が降らなければ、ダムの水位は警戒ラインに迫り、その時はまた給水制限になるかもしれません。",
         "chunks": [
-          "只要再不下雨",
+          "如果再不下雨",
           "水庫的水位就會瀕臨警戒線",
           "到時候可能又要限水了"
         ],
-        "hintText": "只要再不下雨，水庫的水位就會"
+        "hintText": "如果再不下雨，水庫的水位就會"
       },
       {
         "situation": "交通・移動",
-        "chinese": "雖然機車已經很舊了，但因為預算有限，我的機車還一直瀕臨報廢邊緣。",
-        "pinyin": "suī rán jī chē yǐ jīng hěn jiù le，dàn yīn wèi yù suàn yǒu xiàn，wǒ de jī chē hái yī zhí bīn lín bào fèi biān yuán。",
-        "japanese": "バイクはもうとても古いけれど、予算が限られているので、私のバイクはまだずっと廃車寸前の状態です。",
+        "chinese": "雖然我的機車已經瀕臨報廢，但因為預算有限，所以還捨不得換。",
+        "pinyin": "suī rán wǒ de jī chē yǐ jīng bīn lín bào fèi, dàn yīn wèi yù suàn yǒu xiàn, suǒ yǐ hái shě bù dé huàn.",
+        "japanese": "私のバイクはもう廃車寸前だけれど、予算が限られているので、まだ買い替える気になれません。",
         "chunks": [
-          "雖然機車已經很舊了",
+          "雖然我的機車已經瀕臨報廢",
           "但因為預算有限",
-          "我的機車還一直瀕臨報廢邊緣"
+          "所以還捨不得換"
         ],
-        "hintText": "雖然機車已經很舊了，但因為預算有限，我的機車還一直"
+        "hintText": "雖然我的機車已經"
       }
     ]
   },
@@ -367,16 +365,14 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "只要去超商繳費，就能拿到發票，對離鄉背井的學生來說，這樣的生活很方便。",
-        "pinyin": "zhǐ yào qù chāo shāng jiǎo fèi, jiù néng ná dào fā piào, duì lí xiāng bèi jǐng de xué shēng lái shuō, zhè yàng de shēng huó hěn fāng biàn.",
-        "japanese": "コンビニで料金を支払えばレシートがもらえるので、故郷を離れた学生にとって、こういう生活はとても便利だ。",
+        "chinese": "雖然離鄉背井的生活很辛苦，但我在台灣交到了很多好朋友。",
+        "pinyin": "suī rán lí xiāng bèi jǐng de shēng huó hěn xīn kǔ, dàn wǒ zài tái wān jiāo dào le hěn duō hǎo péng yǒu.",
+        "japanese": "故郷を離れての生活は大変だけれど、台湾でたくさんの良い友達ができました。",
         "chunks": [
-          "只要去超商繳費",
-          "就能拿到發票",
-          "對離鄉背井的學生來說",
-          "這樣的生活很方便"
+          "雖然離鄉背井的生活很辛苦",
+          "但我在台灣交到了很多好朋友"
         ],
-        "hintText": "只要去超商繳費，就能拿到發票，對"
+        "hintText": "雖然"
       },
       {
         "situation": "公的手続き・職場",
@@ -406,7 +402,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "生活トラブル",
         "chinese": "因為他沒有仔細檢查預算，所以這個計畫很快就出現破綻了。",
-        "pinyin": "yīn wèi tā méi yǒu zǐ xì jiǎn chá yù suàn ，suǒ yǐ zhè ge jì huà hěn kuài jiù chū xiàn pò zhàn le 。",
+        "pinyin": "yīn wèi tā méi yǒu zǐ xì jiǎn chá yù suàn, suǒ yǐ zhè ge jì huà hěn kuài jiù chū xiàn pò zhàn le.",
         "japanese": "彼が予算を細かくチェックしなかったので、この計画はすぐに欠陥が現れた。",
         "chunks": [
           "因為他沒有仔細檢查預算",
@@ -418,7 +414,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "公的手続き・職場",
         "chinese": "雖然他們的提案聽起來很完美，但只要仔細分析就會發現破綻。",
-        "pinyin": "suī rán tā men de tí àn tīng qǐ lái hěn wán měi ，dàn zhǐ yào zǐ xì fēn xī jiù huì fā xiàn pò zhàn 。",
+        "pinyin": "suī rán tā men de tí àn tīng qǐ lái hěn wán měi, dàn zhǐ yào zǐ xì fēn xī jiù huì fā xiàn pò zhàn.",
         "japanese": "彼らの提案は完璧に聞こえるが、よく分析すれば欠陥が見つかる。",
         "chunks": [
           "雖然他們的提案聽起來很完美",
@@ -430,7 +426,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "人間関係・家族",
         "chinese": "因為他一直隱瞞自己的財務狀況，所以婚姻最後還是出現破綻。",
-        "pinyin": "yīn wèi tā yī zhí yǐn mán zì jǐ de cái wù zhuàng kuàng ，suǒ yǐ hūn yīn zuì hòu hái shì chū xiàn pò zhàn 。",
+        "pinyin": "yīn wèi tā yī zhí yǐn mán zì jǐ de cái wù zhuàng kuàng, suǒ yǐ hūn yīn zuì hòu hái shì chū xiàn pò zhàn.",
         "japanese": "彼がずっと自分の財務状況を隠していたので、結婚は結局破綻した。",
         "chunks": [
           "因為他一直隱瞞自己的財務狀況",
@@ -514,29 +510,27 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       },
       {
         "situation": "店舗・サービス",
-        "category": "店舗・サービス",
-        "chinese": "因為店員一直灌輸顧客辦會員卡的好處，所以很多人就當場辦了。",
-        "pinyin": "yīn wèi diàn yuán yī zhí guàn shū gù kè bàn huì yuán kǎ de hǎo chù, suǒ yǐ hěn duō rén jiù dāng chǎng bàn le.",
-        "japanese": "店員が会員カードを作るメリットを一方的に説明したので、多くの人がその場で作った。",
+        "chinese": "因為從小被灌輸讀書最重要的觀念，所以他很少出去玩。",
+        "pinyin": "yīn wèi cóng xiǎo bèi guàn shū dú shū zuì zhòng yào de guān niàn, suǒ yǐ tā hěn shǎo chū qù wán.",
+        "japanese": "子どもの頃から「勉強が一番大事」という考えを植え付けられてきたので、彼はめったに遊びに出かけません。",
         "chunks": [
-          "因為店員一直",
-          "灌輸顧客辦會員卡的好處",
-          "所以很多人就當場辦了"
+          "因為從小被灌輸讀書最重要的觀念",
+          "所以他很少出去玩"
         ],
-        "hintText": "因為店員一直"
+        "hintText": "因為從小被",
+        "category": "店舗・サービス"
       },
       {
         "situation": "生活トラブル",
-        "category": "生活トラブル",
-        "chinese": "只要鄰居不再灌輸他那些奇怪的想法，我們就能好好溝通。",
-        "pinyin": "zhǐ yào lín jū bù zài guàn shū tā nà xiē qí guài de xiǎng fǎ, wǒ men jiù néng hǎo hǎo gōu tōng.",
-        "japanese": "隣人が彼に変な考えを植え付けなくなれば、私たちはうまく話し合える。",
+        "chinese": "只要媒體不斷灌輸錯誤的觀念，社會就容易產生偏見。",
+        "pinyin": "zhǐ yào méi tǐ bù duàn guàn shū cuò wù de guān niàn, shè huì jiù róng yì chǎn shēng piān jiàn.",
+        "japanese": "メディアが誤った考えを繰り返し植え付ければ、社会には偏見が生まれやすくなります。",
         "chunks": [
-          "只要鄰居不再",
-          "灌輸他那些奇怪的想法",
-          "我們就能好好溝通"
+          "只要媒體不斷灌輸錯誤的觀念",
+          "社會就容易產生偏見"
         ],
-        "hintText": "只要鄰居不再"
+        "hintText": "只要媒體不斷",
+        "category": "生活トラブル"
       }
     ]
   },
@@ -555,7 +549,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
         "situation": "生活トラブル",
         "chinese": "因為最近詐騙集團猖獗，所以就算接到自稱是銀行的電話，我也會先掛掉再打客服確認。",
         "pinyin": "yīn wèi zuì jìn zhà piàn jí tuán chāng jué, suǒ yǐ jiù suàn jiē dào zì chēng shì yín háng de diàn huà, wǒ yě huì xiān guà diào zài dǎ kè fú què rèn.",
-        "japanese": "最近詐欺グループが猖獗なので、銀行を名乗る電話がかかってきても、一度切ってからカスタマーサービスに確認します。",
+        "japanese": "最近詐欺グループが横行しているので、銀行を名乗る電話がかかってきても、一度切ってからカスタマーサービスに確認します。",
         "chunks": [
           "因為最近詐騙集團猖獗",
           "所以就算接到自稱是銀行的電話",
@@ -567,19 +561,19 @@ export const bandCData: ExamplesSentenceCardInput[] = [
         "situation": "店舗・サービス",
         "chinese": "雖然這家店的牛肉麵很好吃，但因為附近違規擺攤猖獗，每次來都要找車位找到快抓狂。",
         "pinyin": "suī rán zhè jiā diàn de niú ròu miàn hěn hǎo chī, dàn yīn wèi fù jìn wéi guī bǎi tān chāng jué, měi cì lái dōu yào zhǎo chē wèi zhǎo dào kuài zhuā kuáng.",
-        "japanese": "この店の牛肉麺はとても美味しいけど、近くで違法露店が猖獗なので、来るたびに駐車場探しでイライラする。",
+        "japanese": "この店の牛肉麺はとても美味しいけど、近くで違法な露店がはびこっているので、来るたびに駐車場探しでイライラする。",
         "chunks": [
           "雖然這家店的牛肉麵很好吃",
           "但因為附近違規擺攤猖獗",
           "每次來都要找車位找到快抓狂"
         ],
-        "hintText": "但因為附近違規擺攤"
+        "hintText": "雖然這家店的牛肉麵很好吃，但因為附近違規擺攤"
       },
       {
         "situation": "公的手続き・職場",
         "chinese": "只要公司內部盜版軟體的使用情況繼續猖獗，我們就可能被檢調單位盯上。",
         "pinyin": "zhǐ yào gōng sī nèi bù dào bǎn ruǎn tǐ de shǐ yòng qíng kuàng jì xù chāng jué, wǒ men jiù kě néng bèi jiǎn diào dān wèi dīng shàng.",
-        "japanese": "会社内部で海賊版ソフトウェアの使用が猖獗し続ければ、検察当局に目をつけられる可能性があります。",
+        "japanese": "会社内で海賊版ソフトの使用がはびこり続ければ、検察当局に目をつけられる可能性があります。",
         "chunks": [
           "只要公司內部盜版軟體的使用情況繼續猖獗",
           "我們就可能被檢調單位盯上"
@@ -674,15 +668,14 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       },
       {
         "situation": "交通・移動",
-        "chinese": "因為捷運站都有免費WiFi，所以乘客可以隨時上網，讓資訊的傳遞無遠弗屆。",
-        "pinyin": "yīn wèi jié yùn zhàn dōu yǒu miǎn fèi WiFi, suǒ yǐ chéng kè kě yǐ suí shí shàng wǎng, ràng zī xùn de chuán dì wú yuǎn fú jiè.",
-        "japanese": "MRTの駅には無料WiFiがあるので、乗客はいつでもネットに接続でき、情報の伝達をどこにでも届けることができる。",
+        "chinese": "因為網路的影響力無遠弗屆，所以一則貼文可能在一天內傳遍全世界。",
+        "pinyin": "yīn wèi wǎng lù de yǐng xiǎng lì wú yuǎn fú jiè, suǒ yǐ yī zé tiē wén kě néng zài yī tiān nèi chuán biàn quán shì jiè.",
+        "japanese": "インターネットの影響力はどこまでも届くので、一つの投稿が1日で世界中に広まることもあります。",
         "chunks": [
-          "因為捷運站都有免費WiFi",
-          "所以乘客可以隨時上網",
-          "讓資訊的傳遞無遠弗屆"
+          "因為網路的影響力無遠弗屆",
+          "所以一則貼文可能在一天內傳遍全世界"
         ],
-        "hintText": "因為捷運站都有免費WiFi，所以乘客可以隨時上網，讓資訊的傳遞"
+        "hintText": "因為網路的影響力"
       }
     ]
   },
@@ -712,7 +705,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "店舗・サービス",
         "chinese": "雖然那家連鎖店打折很吸引人，但是因為它壟斷了市場，所以品質反而變差了。",
-        "pinyin": "suī rán nà jiā lián suǒ diàn dǎ zhé hěn xī yǐn rén, dàn shì yīn wèi tā lǒng duàn le shì chǎng, suǒ yǐ pǐn zhì fǎn ér biàn chà le.",
+        "pinyin": "suī rán nà jiā lián suǒ diàn dǎ zhé hěn xī yǐn rén, dàn shì yīn wèi tā lǒng duàn le shì chǎng, suǒ yǐ pǐn zhí fǎn ér biàn chà le.",
         "japanese": "あのチェーン店の割引はとても魅力的ですが、市場を独占しているため、品質がかえって悪くなりました。",
         "chunks": [
           "雖然那家連鎖店打折很吸引人",
@@ -724,7 +717,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "公的手続き・職場",
         "chinese": "只要政府不加強監管，大企業就會繼續壟斷資源，讓小公司很難生存。",
-        "pinyin": "zhǐ yào zhèng fǔ bù jiā qiáng jiān guǎn, dà qǐ yè jiù huì jì xù lǒng duàn zī yuán, ràng xiǎo gōng sī hěn nán shēng cún.",
+        "pinyin": "zhǐ yào zhèng fǔ bù jiā qiáng jiān guǎn, dà qì yè jiù huì jì xù lǒng duàn zī yuán, ràng xiǎo gōng sī hěn nán shēng cún.",
         "japanese": "政府が規制を強化しなければ、大企業は資源を独占し続け、小企業は生き残るのが難しくなります。",
         "chunks": [
           "只要政府不加強監管",
@@ -772,15 +765,15 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要按時繳健保費，就能防患未然，避免被罰款。",
-        "pinyin": "zhǐ yào àn shí jiǎo jiàn bǎo fèi, jiù néng fáng huàn wèi rán, bì miǎn bèi fá kuǎn.",
-        "japanese": "時間通りに健康保険料を払えば、予防できて罰金を避けられる。",
+        "chinese": "只要定期檢查家裡的電線，就能防患未然，避免發生火災。",
+        "pinyin": "zhǐ yào dìng qī jiǎn chá jiā lǐ de diàn xiàn, jiù néng fáng huàn wèi rán, bì miǎn fā shēng huǒ zāi.",
+        "japanese": "家の電気配線を定期的に点検すれば、未然に防いで火事を避けられます。",
         "chunks": [
-          "只要按時繳健保費",
+          "只要定期檢查家裡的電線",
           "就能防患未然",
-          "避免被罰款"
+          "避免發生火災"
         ],
-        "hintText": "只要按時繳健保費，就能"
+        "hintText": "只要定期檢查家裡的電線，就能"
       }
     ]
   },
@@ -798,7 +791,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我弟弟的成績以前不太好，但是自從他開始認真學習以後，成績就突飛猛進，讓全家都很驚訝。",
-        "pinyin": "suī rán wǒ dì di de chéng jì yǐ qián bú tài hǎo, dàn shì zì cóng tā kāi shǐ rèn zhēn xué xí yǐ hòu, chéng jì jiù tū fēi měng jìn, ràng quán jiā dōu hěn jīng yà。",
+        "pinyin": "suī rán wǒ dì di de chéng jì yǐ qián bù tài hǎo, dàn shì zì cóng tā kāi shǐ rèn zhēn xué xí yǐ hòu, chéng jì jiù tū fēi měng jìn, ràng quán jiā dōu hěn jīng yà.",
         "japanese": "私の弟の成績は以前はあまり良くなかったけれど、真剣に勉強し始めてから成績が飛躍的に向上し、家族全員が驚いています。",
         "chunks": [
           "雖然我弟弟的成績以前不太好",
@@ -811,7 +804,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "交通・移動",
         "chinese": "因為捷運網路的建設突飛猛進，所以現在從台北到桃園機場只要三十幾分鐘就到了。",
-        "pinyin": "yīn wèi jié yùn wǎng lù de jiàn shè tū fēi měng jìn, suǒ yǐ xiàn zài cóng Tái běi dào Táo yuán jī chǎng zhǐ yào sān shí jǐ fēn zhōng jiù dào le。",
+        "pinyin": "yīn wèi jié yùn wǎng lù de jiàn shè tū fēi měng jìn, suǒ yǐ xiàn zài cóng Tái běi dào Táo yuán jī chǎng zhǐ yào sān shí jǐ fēn zhōng jiù dào le.",
         "japanese": "MRTネットワークの建設が飛躍的に進んだので、今では台北から桃園空港まで30分ほどで着きます。",
         "chunks": [
           "因為捷運網路的建設突飛猛進",
@@ -823,7 +816,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "生活トラブル",
         "chinese": "雖然手機的維修技術突飛猛進，但是只要摔到螢幕，還是得花不少錢修理。",
-        "pinyin": "suī rán shǒu jī de wéi xiū jì shù tū fēi měng jìn, dàn shì zhǐ yào shuāi dào yíng mù, hái shì děi huā bù shǎo qián xiū lǐ。",
+        "pinyin": "suī rán shǒu jī de wéi xiū jì shù tū fēi měng jìn, dàn shì zhǐ yào shuāi dào yíng mù, hái shì děi huā bù shǎo qián xiū lǐ.",
         "japanese": "スマホの修理技術は飛躍的に進歩しているけれど、画面を割ってしまうとやはりかなりの修理代がかかります。",
         "chunks": [
           "雖然手機的維修技術突飛猛進",
@@ -849,7 +842,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
         "situation": "人間関係・家族",
         "chinese": "因為家庭內部的利益糾葛，所以他們兄弟之間的關係一直很緊張。",
         "pinyin": "yīn wèi jiā tíng nèi bù de lì yì jiū gé, suǒ yǐ tā men xiōng dì zhī jiān de guān xì yī zhí hěn jǐn zhāng.",
-        "japanese": "因為家庭內部的利益糾葛，所以他們兄弟之間的關係一直很緊張。",
+        "japanese": "家族内の利害のもつれのせいで、兄弟の関係はずっと緊張しています。",
         "chunks": [
           "因為家庭內部的利益糾葛",
           "所以他們兄弟之間的關係一直很緊張"
@@ -860,10 +853,10 @@ export const bandCData: ExamplesSentenceCardInput[] = [
         "situation": "生活トラブル",
         "chinese": "雖然只是小小的誤會，但如果不解決，可能變成複雜的情感糾葛。",
         "pinyin": "suī rán zhǐ shì xiǎo xiǎo de wù huì, dàn rú guǒ bù jiě jué, kě néng biàn chéng fù zá de qíng gǎn jiū gé.",
-        "japanese": "雖然只是小小的誤會，但如果沒有解決，可能變成複雜的情感糾葛。",
+        "japanese": "ちょっとした誤解でも、解決しなければ複雑な感情のもつれになるかもしれません。",
         "chunks": [
           "雖然只是小小的誤會",
-          "但如果沒有解決",
+          "但如果不解決",
           "可能變成複雜的情感糾葛"
         ],
         "hintText": "雖然只是小小的誤會，但如果"
@@ -872,7 +865,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
         "situation": "公的手続き・職場",
         "chinese": "只要把合約條文看清楚，就能避免日後的法律糾葛。",
         "pinyin": "zhǐ yào bǎ hé yuē tiáo wén kàn qīng chu, jiù néng bì miǎn rì hòu de fǎ lǜ jiū gé.",
-        "japanese": "只要把合約條文看清楚，就能避免日後的法律糾葛。",
+        "japanese": "契約条項をよく読んでおけば、後々の法的なトラブルを避けられます。",
         "chunks": [
           "只要把合約條文看清楚",
           "就能避免日後的法律糾葛"
@@ -955,6 +948,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       },
       {
         "situation": "店舗・サービス",
+        "chinese": "雖然這家餐廳的菜單上有些調整，但是老闆說這是因為通貨膨脹的關係。",
         "pinyin": "suī rán zhè jiā cān tīng de cài dān shàng yǒu xiē tiáo zhěng, dàn shì lǎo bǎn shuō zhè shì yīn wèi tōng huò péng zhàng de guān xì.",
         "japanese": "このレストランのメニューは一部変更があったが、店主はインフレのせいだと言っている。",
         "chunks": [
@@ -962,11 +956,11 @@ export const bandCData: ExamplesSentenceCardInput[] = [
           "但是老闆說",
           "這是因為通貨膨脹的關係"
         ],
-        "hintText": "雖然這家餐廳的菜單上有些調整，但是老闆說",
-        "chinese": "雖然這家餐廳的菜單上有些調整，但是老闆說這是因為通貨膨脹的關係。"
+        "hintText": "雖然這家餐廳的菜單上有些調整，但是老闆說"
       },
       {
         "situation": "生活トラブル",
+        "chinese": "只要通貨膨脹繼續上升，我們就得考慮減少外食的次數。",
         "pinyin": "zhǐ yào tōng huò péng zhàng jì xù shàng shēng, wǒ men jiù déi kǎo lǜ jiǎn shǎo wài shí de cì shù.",
         "japanese": "インフレが続けば、外食の回数を減らすことを考えなければならない。",
         "chunks": [
@@ -974,8 +968,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
           "我們就得考慮",
           "減少外食的次數"
         ],
-        "hintText": "只要",
-        "chinese": "只要通貨膨脹繼續上升，我們就得考慮減少外食的次數。"
+        "hintText": "只要"
       }
     ]
   },
@@ -1052,25 +1045,25 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要經費不匱乏，我們就能順利完成這次的捷運擴建計畫。",
-        "pinyin": "zhǐ yào jīng fèi bù kuì fá, wǒ men jiù néng shùn lì wán chéng zhè cì de jié yùn kuò jiàn jì huà.",
-        "japanese": "経費が不足しなければ、今回のMRT拡張計画を順調に完了できます。",
+        "chinese": "因為偏鄉的醫療資源匱乏，所以很多老人看病要坐很久的車。",
+        "pinyin": "yīn wèi piān xiāng de yī liáo zī yuán kuì fá, suǒ yǐ hěn duō lǎo rén kàn bìng yào zuò hěn jiǔ de chē.",
+        "japanese": "過疎地は医療資源が乏しいので、多くのお年寄りは受診のために長時間車に乗らなければなりません。",
         "chunks": [
-          "只要經費不匱乏",
-          "我們就能順利完成這次的捷運擴建計畫"
+          "因為偏鄉的醫療資源匱乏",
+          "所以很多老人看病要坐很久的車"
         ],
-        "hintText": "只要經費不"
+        "hintText": "因為偏鄉的醫療資源"
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "雖然食材匱乏，但是這家店還是堅持使用有機蔬菜來做便當。",
-        "pinyin": "suī rán shí cái kuì fá, dàn shì zhè jiā diàn hái shì jiān chí shǐ yòng yǒu jī shū cài lái zuò biàn dāng.",
-        "japanese": "食材は不足しているが、この店は有機野菜を使って弁当を作ることを堅持している。",
+        "chinese": "雖然當時物資匱乏，但阿公阿嬤還是把孩子養得很好。",
+        "pinyin": "suī rán dāng shí wù zī kuì fá, dàn ā gōng ā mà hái shì bǎ hái zi yǎng de hěn hǎo.",
+        "japanese": "当時は物資が乏しかったけれど、祖父母はそれでも子どもたちを立派に育てました。",
         "chunks": [
-          "雖然食材匱乏",
-          "但是這家店還是堅持使用有機蔬菜來做便當"
+          "雖然當時物資匱乏",
+          "但阿公阿嬤還是把孩子養得很好"
         ],
-        "hintText": "雖然食材"
+        "hintText": "雖然當時物資"
       }
     ]
   },
@@ -1100,28 +1093,27 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為店員詳細解說退貨流程，所以原本很擔心的我豁然開朗，立刻決定買這台機車。",
-        "pinyin": "yīn wèi diàn yuán xiáng xì jiě shuō tuì huò liú chéng, suǒ yǐ yuán běn hěn dān xīn de wǒ huò rán kāi lǎng, lì kè jué dìng mǎi zhè tái jī chē.",
-        "japanese": "店員が返品手順を詳しく説明してくれたので、最初は心配していた私ははっと悟り、すぐにこのバイクを買うことに決めました。",
+        "chinese": "聽了店員詳細說明保固規定，我才豁然開朗，原來自己一直誤會了。",
+        "pinyin": "tīng le diàn yuán xiáng xì shuō míng bǎo gù guī dìng, wǒ cái huò rán kāi lǎng, yuán lái zì jǐ yī zhí wù huì le.",
+        "japanese": "店員から保証の規定を詳しく説明してもらって、ずっと誤解していたことにようやく気づき、すっきりしました。",
         "chunks": [
-          "因為店員詳細解說退貨流程",
-          "所以原本很擔心的我豁然開朗",
-          "立刻決定買這台機車"
+          "聽了店員詳細說明保固規定",
+          "我才豁然開朗",
+          "原來自己一直誤會了"
         ],
-        "hintText": "因為店員詳細解說退貨流程，所以原本很擔心的我"
+        "hintText": "聽了店員詳細說明保固規定，我才"
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要把健保卡和身分證準備好，去區公所辦理就很簡單，我聽完後豁然開朗，不再緊張。",
-        "pinyin": "zhǐ yào bǎ jiàn bǎo kǎ hé shēn fèn zhèng zhǔn bèi hǎo, qù qū gōng suǒ bàn lǐ jiù hěn jiǎn dān, wǒ tīng wán hòu huò rán kāi lǎng, bù zài jǐn zhāng.",
-        "japanese": "健保卡と身分証を用意して区役所に行けば手続きは簡単だと聞いて、私ははっと悟り、もう緊張しなくなりました。",
+        "chinese": "只要換個角度想，問題就沒那麼難，聽完老師的建議後我豁然開朗。",
+        "pinyin": "zhǐ yào huàn gè jiǎo dù xiǎng, wèn tí jiù méi nà me nán, tīng wán lǎo shī de jiàn yì hòu wǒ huò rán kāi lǎng.",
+        "japanese": "見方を変えれば問題はそれほど難しくない。先生のアドバイスを聞いて、急に目の前が開けた気がしました。",
         "chunks": [
-          "只要把健保卡和身分證準備好",
-          "去區公所辦理就很簡單",
-          "我聽完後豁然開朗",
-          "不再緊張"
+          "只要換個角度想",
+          "問題就沒那麼難",
+          "聽完老師的建議後我豁然開朗"
         ],
-        "hintText": "只要把健保卡和身分證準備好，去區公所辦理就很簡單，我聽完後"
+        "hintText": "只要換個角度想，問題就沒那麼難，聽完老師的建議後我"
       }
     ]
   },
@@ -1188,7 +1180,7 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他學中文遇到很多困難，但只要鍥而不捨，就一定能進步。",
-        "pinyin": "suī rán tā xué zhōng wén yù dào hěn duō kùn nán，dàn zhǐ yào qiè ér bù shě，jiù yī dìng néng jìn bù。",
+        "pinyin": "suī rán tā xué zhōng wén yù dào hěn duō kùn nán, dàn zhǐ yào qiè ér bù shě, jiù yī dìng néng jìn bù.",
         "japanese": "彼は中国語学習で多くの困難に直面しているが、粘り強く続ければ必ず上達する。",
         "chunks": [
           "雖然他學中文遇到很多困難，",
@@ -1199,27 +1191,27 @@ export const bandCData: ExamplesSentenceCardInput[] = [
       },
       {
         "situation": "店舗・サービス",
-        "category": "店舗・サービス",
-        "chinese": "因為這家店的服務品質一直鍥而不捨地改進，所以客人越來越多。",
-        "pinyin": "yīn wèi zhè jiā diàn de fú wù pǐn zhí yī zhí qiè ér bù shě de gǎi jìn，suǒ yǐ kè rén yuè lái yuè duō。",
-        "japanese": "この店はサービスの質を粘り強く改善し続けているので、客がどんどん増えている。",
+        "chinese": "因為他鍥而不捨地練習，所以終於通過了TOCFL考試。",
+        "pinyin": "yīn wèi tā qiè ér bù shě de liàn xí, suǒ yǐ zhōng yú tōng guò le TOCFL kǎo shì.",
+        "japanese": "彼は粘り強く練習を続けたので、ついにTOCFLに合格しました。",
         "chunks": [
-          "因為這家店的服務品質一直鍥而不捨地改進，",
-          "所以客人越來越多。"
+          "因為他鍥而不捨地練習",
+          "所以終於通過了TOCFL考試"
         ],
-        "hintText": "因為這家店的服務品質一直"
+        "hintText": "因為他",
+        "category": "店舗・サービス"
       },
       {
         "situation": "交通・移動",
-        "chinese": "雖然捷運施工常造成交通不便，但為了未來便利，我們必須鍥而不捨。",
-        "pinyin": "suī rán jié yùn shī gōng cháng zào chéng jiāo tōng bù biàn，dàn wèi le wèi lái biàn lì，wǒ men bì xū qiè ér bù shě。",
-        "japanese": "地下鉄工事は交通の不便を引き起こすことが多いが、将来の便利のためには粘り強く取り組まなければならない。",
+        "chinese": "雖然創業初期失敗了好幾次，但她鍥而不捨，最後終於成功了。",
+        "pinyin": "suī rán chuàng yè chū qī shī bài le hǎo jǐ cì, dàn tā qiè ér bù shě, zuì hòu zhōng yú chéng gōng le.",
+        "japanese": "起業当初は何度も失敗したけれど、彼女は粘り強く続け、最後にはついに成功しました。",
         "chunks": [
-          "雖然捷運施工常造成交通不便，",
-          "但為了未來便利，",
-          "我們必須鍥而不捨。"
+          "雖然創業初期失敗了好幾次",
+          "但她鍥而不捨",
+          "最後終於成功了"
         ],
-        "hintText": "雖然捷運施工常造成交通不便，但為了未來便利，"
+        "hintText": "雖然創業初期失敗了好幾次，但她"
       }
     ]
   }

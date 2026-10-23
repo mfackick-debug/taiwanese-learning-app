@@ -13,7 +13,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我哥看起來很懶散，其實他做事非常認真。",
-        "pinyin": "suī rán wǒ gē kàn qǐ lái hěn lǎn sǎn，qí shí tā zuò shì fēi cháng rèn zhēn。",
+        "pinyin": "suī rán wǒ gē kàn qǐ lái hěn lǎn sǎn, qí shí tā zuò shì fēi cháng rèn zhēn.",
         "japanese": "私の兄はだらしなく見えますが、実は仕事はとても真面目です。",
         "chunks": [
           "雖然我哥看起來很懶散，",
@@ -24,7 +24,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "這家餐廳看起來不怎麼樣，其實他們的牛肉麵很好吃。",
-        "pinyin": "zhè jiā cān tīng kàn qǐ lái bù zěn me yàng，qí shí tā men de niú ròu miàn hěn hǎo chī。",
+        "pinyin": "zhè jiā cān tīng kàn qǐ lái bù zěn me yàng, qí shí tā men de niú ròu miàn hěn hǎo chī.",
         "japanese": "このレストランはあまり良くなさそうに見えますが、実は牛肉麺がとても美味しいです。",
         "chunks": [
           "這家餐廳看起來不怎麼樣，",
@@ -35,7 +35,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "因為捷運誤點，我以為會遲到，其實到公司還來得及。",
-        "pinyin": "yīn wèi jié yùn wù diǎn，wǒ yǐ wéi huì chí dào，qí shí dào gōng sī hái lái de jí。",
+        "pinyin": "yīn wèi jié yùn wù diǎn, wǒ yǐ wéi huì chí dào, qí shí dào gōng sī hái lái de jí.",
         "japanese": "地下鉄が遅れたので遅れると思いましたが、実は会社にまだ間に合いました。",
         "chunks": [
           "因為捷運誤點，",
@@ -60,7 +60,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我媽媽對我的成績很滿意，但她還是希望我能再多努力一點。",
-        "pinyin": "suī rán wǒ mā ma duì wǒ de chéng jì hěn mǎn yì，dàn tā hái shì xī wàng wǒ néng zài duō nǔ lì yī diǎn。",
+        "pinyin": "suī rán wǒ mā ma duì wǒ de chéng jì hěn mǎn yì, dàn tā hái shì xī wàng wǒ néng zài duō nǔ lì yī diǎn.",
         "japanese": "母は私の成績に満足しているけれど、もっと頑張ってほしいと思っています。",
         "chunks": [
           "雖然我媽媽",
@@ -76,7 +76,7 @@
         "situation": "店舗・サービス",
         "category": "店舗・サービス",
         "chinese": "因為這家店的服務態度很好，所以我對他們的服務很滿意。",
-        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù hěn hǎo，suǒ yǐ wǒ duì tā men de fú wù hěn mǎn yì。",
+        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù hěn hǎo, suǒ yǐ wǒ duì tā men de fú wù hěn mǎn yì.",
         "japanese": "この店のサービス態度がとても良いので、私は彼らのサービスに満足しています。",
         "chunks": [
           "因為這家店的",
@@ -90,7 +90,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要房東願意修好漏水的水管，我就對目前的租屋條件很滿意。",
-        "pinyin": "zhǐ yào fáng dōng yuàn yì xiū hǎo lòu shuǐ de shuǐ guǎn，wǒ jiù duì mù qián de zū wū tiáo jiàn hěn mǎn yì。",
+        "pinyin": "zhǐ yào fáng dōng yuàn yì xiū hǎo lòu shuǐ de shuǐ guǎn, wǒ jiù duì mù qián de zū wū tiáo jiàn hěn mǎn yì.",
         "japanese": "大家さんが水漏れする水道管を直してくれさえすれば、今の賃貸条件に満足しています。",
         "chunks": [
           "只要房東願意",
@@ -139,15 +139,15 @@
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要健保卡遺失，補辦的程序就會變得非常嚴重麻煩，所以要小心保管。",
-        "pinyin": "zhǐ yào jiàn bǎo kǎ yí shī, bǔ bàn de chéng xù jiù huì biàn de fēi cháng yán zhòng má fan, suǒ yǐ yào xiǎo xīn bǎo guǎn.",
-        "japanese": "健康保険証を紛失すると、再発行の手続きが非常に面倒になるので、大切に保管しなければなりません。",
+        "chinese": "雖然健保卡遺失不算嚴重的問題，但補辦手續很麻煩，所以要小心保管。",
+        "pinyin": "suī rán jiàn bǎo kǎ yí shī bù suàn yán zhòng de wèn tí, dàn bǔ bàn shǒu xù hěn má fán, suǒ yǐ yào xiǎo xīn bǎo guǎn.",
+        "japanese": "健康保険証の紛失は深刻な問題ではないけれど、再発行の手続きが面倒なので、大切に保管しましょう。",
         "chunks": [
-          "只要健保卡遺失",
-          "補辦的程序就會變得非常嚴重麻煩",
+          "雖然健保卡遺失不算嚴重的問題",
+          "但補辦手續很麻煩",
           "所以要小心保管"
         ],
-        "hintText": "只要健保卡遺失，補辦的程序就會變得"
+        "hintText": "雖然健保卡遺失不算"
       },
       {
         "situation": "交通・移動",
@@ -200,15 +200,15 @@
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要按時繳交健保卡資料，就能為了保護自己的醫療權益而順利申請補助。",
-        "pinyin": "zhǐ yào àn shí jiǎo jiāo jiàn bǎo kǎ zī liào, jiù néng wèi le bǎo hù zì jǐ de yī liáo quán yì ér shùn lì shēn qǐng bǔ zhù.",
-        "japanese": "健康保険証の資料を期限内に提出すれば、自分の医療の権利を守るために補助金をスムーズに申請できます。",
+        "chinese": "因為詐騙電話越來越多，所以為了保護自己的個資，接到可疑電話時要先查證。",
+        "pinyin": "yīn wèi zhà piàn diàn huà yuè lái yuè duō, suǒ yǐ wèi le bǎo hù zì jǐ de gè zī, jiē dào kě yí diàn huà shí yào xiān chá zhèng.",
+        "japanese": "詐欺電話がますます増えているので、自分の個人情報を守るために、怪しい電話を受けたらまず確認しましょう。",
         "chunks": [
-          "只要按時繳交健保卡資料",
-          "就能為了保護自己的醫療權益",
-          "而順利申請補助"
+          "因為詐騙電話越來越多",
+          "所以為了保護自己的個資",
+          "接到可疑電話時要先查證"
         ],
-        "hintText": "只要按時繳交健保卡資料，就能"
+        "hintText": "因為詐騙電話越來越多，所以為了"
       }
     ]
   },
@@ -227,7 +227,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "因為垃圾車常常遲到，所以我們只好把垃圾先放在家門口。",
-        "pinyin": "yīn wèi lā jī chē cháng cháng chí dào, suǒ yǐ wǒ men zhǐ hǎo bǎ lā jī xiān fàng zài jiā mén kǒu.",
+        "pinyin": "yīn wèi lè sè chē cháng cháng chí dào, suǒ yǐ wǒ men zhǐ hǎo bǎ lè sè xiān fàng zài jiā mén kǒu.",
         "japanese": "ゴミ収集車がよく遅れるので、仕方なくゴミを玄関先に置いておく。",
         "chunks": [
           "因為垃圾車常常遲到，",
@@ -238,21 +238,20 @@
       },
       {
         "situation": "店舗・サービス",
-        "japanese": "只要把發票捐出去，就可以參加抽獎。",
-        "chinese": "只要把發票捐出去，就可以參加抽獎。",
-        "pinyin": "zhǐ yào bǎ fā piào juān chū qù, jiù kě yǐ cān jiā chōu jiǎng.",
+        "chinese": "只要晚上聽到垃圾車的音樂，大家就會拿著垃圾下樓。",
+        "pinyin": "zhǐ yào wǎn shàng tīng dào lè sè chē de yīn lè, dà jiā jiù huì ná zhe lè sè xià lóu.",
+        "japanese": "夜にゴミ収集車の音楽が聞こえると、みんなゴミを持って下に降りていきます。",
         "chunks": [
-          "只要把發票捐出去，",
-          "就可以",
-          "參加抽獎。"
+          "只要晚上聽到垃圾車的音樂",
+          "大家就會拿著垃圾下樓"
         ],
-        "hintText": "只要"
+        "hintText": "只要晚上聽到"
       },
       {
         "situation": "人間関係・家族",
-        "japanese": "雖然媽媽叫我把垃圾拿去丟，但是我還在看電視。",
         "chinese": "雖然媽媽叫我把垃圾拿去丟，但是我還在看電視。",
-        "pinyin": "suī rán mā ma jiào wǒ bǎ lā jī ná qù diū, dàn shì wǒ hái zài kàn diàn shì.",
+        "pinyin": "suī rán mā ma jiào wǒ bǎ lè sè ná qù diū, dàn shì wǒ hái zài kàn diàn shì.",
+        "japanese": "母にゴミを捨ててくるように言われたけれど、私はまだテレビを見ています。",
         "chunks": [
           "雖然媽媽叫我把垃圾拿去丟，",
           "但是",
@@ -336,7 +335,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我媽媽很愛嘮叨，可是她總是為我準備便當。",
-        "pinyin": "suī rán wǒ mā mā hěn ài lào dāo，kě shì tā zǒng shì wèi wǒ zhǔn bèi biàn dāng。",
+        "pinyin": "suī rán wǒ mā mā hěn ài lào dāo, kě shì tā zǒng shì wèi wǒ zhǔn bèi biàn dāng.",
         "japanese": "私の母はとても口うるさいけれど、いつも私のためにお弁当を用意してくれます。",
         "chunks": [
           "雖然我媽媽很愛嘮叨",
@@ -348,7 +347,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "雖然這家店的價格比較貴，可是他們的服務態度很好。",
-        "pinyin": "suī rán zhè jiā diàn de jià gé bǐ jiào guì，kě shì tā men de fú wù tài dù hěn hǎo。",
+        "pinyin": "suī rán zhè jiā diàn de jià gé bǐ jiào guì, kě shì tā men de fú wù tài dù hěn hǎo.",
         "japanese": "この店の値段は少し高いけれど、サービス態度はとても良いです。",
         "chunks": [
           "雖然這家店的價格比較貴",
@@ -360,7 +359,7 @@
       {
         "situation": "交通・移動",
         "chinese": "雖然捷運站離我家有點遠，可是搭公車很方便。",
-        "pinyin": "suī rán jié yùn zhàn lí wǒ jiā yǒu diǎn yuǎn，kě shì dā gōng chē hěn fāng biàn。",
+        "pinyin": "suī rán jié yùn zhàn lí wǒ jiā yǒu diǎn yuǎn, kě shì dā gōng chē hěn fāng biàn.",
         "japanese": "MRTの駅は家から少し遠いけれど、バスに乗るのはとても便利です。",
         "chunks": [
           "雖然捷運站離我家有點遠",
@@ -385,7 +384,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我妹妹以前不愛運動，但是她現在已經習慣每天去健身房了。",
-        "pinyin": "suī rán wǒ mèi mei yǐ qián bù ài yùn dòng，dàn shì tā xiàn zài yǐ jīng xí guàn měi tiān qù jiàn shēn fáng le。",
+        "pinyin": "suī rán wǒ mèi mei yǐ qián bù ài yùn dòng, dàn shì tā xiàn zài yǐ jīng xí guàn měi tiān qù jiàn shēn fáng le.",
         "japanese": "私の妹は以前は運動が嫌いでしたが、今では毎日ジムに行く習慣がついています。",
         "chunks": [
           "雖然我妹妹以前不愛運動",
@@ -397,7 +396,7 @@
       {
         "situation": "交通・移動",
         "chinese": "因為捷運站離我家很近，所以我習慣走路去搭捷運上班。",
-        "pinyin": "yīn wèi jié yùn zhàn lí wǒ jiā hěn jìn，suǒ yǐ wǒ xí guàn zǒu lù qù dā jié yùn shàng bān。",
+        "pinyin": "yīn wèi jié yùn zhàn lí wǒ jiā hěn jìn, suǒ yǐ wǒ xí guàn zǒu lù qù dā jié yùn shàng bān.",
         "japanese": "MRTの駅が家からとても近いので、歩いてMRTに乗って通勤するのが習慣です。",
         "chunks": [
           "因為捷運站離我家很近",
@@ -408,14 +407,15 @@
       },
       {
         "situation": "生活トラブル",
-        "chinese": "只要我忘記帶錢包出門，就會習慣先用手機掃碼付款。",
-        "pinyin": "zhǐ yào wǒ wàng jì dài qián bāo chū mén，jiù huì xí guàn xiān yòng shǒu jī sǎo mǎ fù kuǎn。",
-        "japanese": "財布を忘れて外出すると、まずスマホでQRコード決済するのが習慣です。",
+        "chinese": "只要出門沒帶錢包，我就會用手機付款，現在已經習慣了。",
+        "pinyin": "zhǐ yào chū mén méi dài qián bāo, wǒ jiù huì yòng shǒu jī fù kuǎn, xiàn zài yǐ jīng xí guàn le.",
+        "japanese": "財布を持たずに出かけたときはスマホで支払っていて、今ではすっかり慣れました。",
         "chunks": [
-          "只要我忘記帶錢包出門",
-          "就會習慣先用手機掃碼付款"
+          "只要出門沒帶錢包",
+          "我就會用手機付款",
+          "現在已經習慣了"
         ],
-        "hintText": "只要我忘記帶錢包出門，就會"
+        "hintText": "只要出門沒帶錢包，我就會用手機付款，現在已經"
       }
     ]
   },
@@ -443,27 +443,25 @@
     "examples": [
       {
         "situation": "人間関係・家族",
-        "chinese": "雖然他常忙工作，但對孩子的發展還是很有幫助。",
-        "pinyin": "suīrán tā cháng máng gōngzuò, dàn duì háizi de fāzhǎn háishì hěn yǒu bāngzhù.",
-        "japanese": "彼はよく仕事で忙しいけれど、子どもの成長にはとても役立っている。",
+        "chinese": "雖然他工作很忙，但還是很關心孩子的發展。",
+        "pinyin": "suī rán tā gōng zuò hěn máng, dàn hái shì hěn guān xīn hái zi de fā zhǎn.",
+        "japanese": "彼は仕事がとても忙しいけれど、それでも子どもの成長をとても気にかけています。",
         "chunks": [
-          "雖然他常忙工作，",
-          "但對孩子的發展",
-          "還是很有幫助。"
+          "雖然他工作很忙",
+          "但還是很關心孩子的發展"
         ],
-        "hintText": "雖然他常忙工作，但對孩子的"
+        "hintText": "雖然他工作很忙，但還是很關心孩子的"
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為店員的專業建議，所以對這家店的發展很有幫助。",
-        "pinyin": "yīnwèi diànyuán de zhuānyè jiànyì, suǒyǐ duì zhè jiā diàn de fāzhǎn hěn yǒu bāngzhù.",
-        "japanese": "店員の専門的なアドバイスのおかげで、この店の発展に大いに役立っている。",
+        "chinese": "因為店員的專業建議很受歡迎，所以對這家店的發展很有幫助。",
+        "pinyin": "yīn wèi diàn yuán de zhuān yè jiàn yì hěn shòu huān yíng, suǒ yǐ duì zhè jiā diàn de fā zhǎn hěn yǒu bāng zhù.",
+        "japanese": "店員の専門的なアドバイスが好評なので、この店の発展に大いに役立っています。",
         "chunks": [
-          "因為店員的專業建議，",
-          "所以對這家店的發展",
-          "很有幫助。"
+          "因為店員的專業建議很受歡迎",
+          "所以對這家店的發展很有幫助"
         ],
-        "hintText": "因為店員的專業建議，所以對這家店的"
+        "hintText": "因為店員的專業建議很受歡迎，所以對這家店的"
       },
       {
         "situation": "公的手続き・職場",
@@ -555,7 +553,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "只要發票還在，就算商品有問題，店家也不會放棄幫你處理。",
-        "pinyin": "zhǐ yào fā piào hái zài, jiù suàn shāng pǐn yǒu wèn tí, diàn jiā yě bú huì fàng qì bāng nǐ chǔ lǐ.",
+        "pinyin": "zhǐ yào fā piào hái zài, jiù suàn shāng pǐn yǒu wèn tí, diàn jiā yě bù huì fàng qì bāng nǐ chǔ lǐ.",
         "japanese": "領収書があれば、たとえ商品に問題があっても、お店はあなたの対応を諦めません。",
         "chunks": [
           "只要發票還在",
@@ -614,27 +612,25 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為這家店打折，所以店員鼓勵大家趕快買發票對獎。",
-        "pinyin": "yīnwèi zhè jiā diàn dǎzhé, suǒyǐ diànyuán gǔlì dàjiā gǎnkuài mǎi fāpiào duìjiǎng.",
-        "japanese": "この店がセール中なので、店員はみんなに早く買ってレシートで抽選に応募するよう促しています。",
+        "chinese": "因為發票可以對獎，所以店員鼓勵大家結帳時記得拿發票。",
+        "pinyin": "yīn wèi fā piào kě yǐ duì jiǎng, suǒ yǐ diàn yuán gǔ lì dà jiā jié zhàng shí jì de ná fā piào.",
+        "japanese": "レシートで抽選に参加できるので、店員はみんなに会計の時にレシートを忘れずにもらうよう勧めています。",
         "chunks": [
-          "因為這家店打折",
-          "所以店員鼓勵大家",
-          "趕快買發票對獎"
+          "因為發票可以對獎",
+          "所以店員鼓勵大家結帳時記得拿發票"
         ],
-        "hintText": "因為這家店打折，所以店員鼓勵大家"
+        "hintText": "因為發票可以對獎，所以店員"
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要辦好健保卡，公司就會鼓勵員工定期健檢。",
-        "pinyin": "zhǐyào bànhǎo jiànbǎo kǎ, gōngsī jiù huì gǔlì yuángōng dìngqí jiànjiǎn.",
-        "japanese": "健康保険カードを手続きすれば、会社は従業員に定期的な健康診断を受けるよう促します。",
+        "chinese": "只要員工年滿四十歲，公司就會鼓勵他們定期健檢。",
+        "pinyin": "zhǐ yào yuán gōng nián mǎn sì shí suì, gōng sī jiù huì gǔ lì tā men dìng qī jiàn jiǎn.",
+        "japanese": "社員が40歳以上になると、会社は定期的な健康診断を受けるよう勧めます。",
         "chunks": [
-          "只要辦好健保卡",
-          "公司就會鼓勵員工",
-          "定期健檢"
+          "只要員工年滿四十歲",
+          "公司就會鼓勵他們定期健檢"
         ],
-        "hintText": "只要辦好健保卡，公司就會鼓勵員工"
+        "hintText": "只要員工年滿四十歲，公司就會"
       }
     ]
   },
@@ -714,25 +710,25 @@
       },
       {
         "situation": "交通・移動",
-        "chinese": "因為捷運站附近有停車位，所以這是一個騎機車轉乘的好機會。",
-        "pinyin": "yīn wèi jié yùn zhàn fù jìn yǒu tíng chē wèi, suǒ yǐ zhè shì yī gè qí jī chē zhuǎn chéng de hǎo jī huì.",
-        "japanese": "MRTの駅の近くに駐車スペースがあるので、バイクで乗り換える良いチャンスです。",
+        "chinese": "因為公司就在捷運站旁邊，所以我趁這個機會改搭捷運上班。",
+        "pinyin": "yīn wèi gōng sī jiù zài jié yùn zhàn páng biān, suǒ yǐ wǒ chèn zhè gè jī huì gǎi dā jié yùn shàng bān.",
+        "japanese": "会社がMRT駅のすぐそばなので、この機会にMRT通勤に切り替えました。",
         "chunks": [
-          "因為捷運站附近有停車位",
-          "所以這是一個騎機車轉乘的好機會"
+          "因為公司就在捷運站旁邊",
+          "所以我趁這個機會改搭捷運上班"
         ],
-        "hintText": "因為捷運站附近有停車位，所以這是一個"
+        "hintText": "因為公司就在捷運站旁邊，所以我趁這個"
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要準備好健保卡和身分證，就可以把握這次補辦的機會。",
-        "pinyin": "zhǐ yào zhǔn bèi hǎo jiàn bǎo kǎ hé shēn fèn zhèng, jiù kě yǐ bǎ wò zhè cì bǔ bàn de jī huì.",
-        "japanese": "健康保険証と身分証を用意すれば、今回の再発行のチャンスを掴むことができます。",
+        "chinese": "只要準備好身分證，就可以利用午休的機會去補辦健保卡。",
+        "pinyin": "zhǐ yào zhǔn bèi hǎo shēn fèn zhèng, jiù kě yǐ lì yòng wǔ xiū de jī huì qù bǔ bàn jiàn bǎo kǎ.",
+        "japanese": "身分証を用意すれば、昼休みを利用して健康保険証を再発行できます。",
         "chunks": [
-          "只要準備好健保卡和身分證",
-          "就可以把握這次補辦的機會"
+          "只要準備好身分證",
+          "就可以利用午休的機會去補辦健保卡"
         ],
-        "hintText": "只要準備好健保卡和身分證，就可以把握"
+        "hintText": "只要準備好身分證，就可以利用午休的"
       }
     ]
   },
@@ -912,7 +908,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然媽媽很固執，但只要好好溝通，她還是願意改變想法。",
-        "pinyin": "suī rán mā ma hěn gù zhí，dàn zhǐ yào hǎo hǎo gōu tōng，tā hái shì yuàn yì gǎi biàn xiǎng fǎ。",
+        "pinyin": "suī rán mā ma hěn gù zhí, dàn zhǐ yào hǎo hǎo gōu tōng, tā hái shì yuàn yì gǎi biàn xiǎng fǎ.",
         "japanese": "母は頑固ですが、しっかり話し合えばやはり考えを変えてくれます。",
         "chunks": [
           "雖然媽媽很固執",
@@ -924,7 +920,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家店的服務態度太差，所以老闆決定改變員工訓練方式。",
-        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù tài chà，suǒ yǐ lǎo bǎn jué dìng gǎi biàn yuán gōng xùn liàn fāng shì。",
+        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù tài chà, suǒ yǐ lǎo bǎn jué dìng gǎi biàn yuán gōng xùn liàn fāng shì.",
         "japanese": "この店のサービス態度が悪すぎるので、店主は社員研修の方法を変えることにしました。",
         "chunks": [
           "因為這家店的服務態度太差",
@@ -935,7 +931,7 @@
       {
         "situation": "交通・移動",
         "chinese": "只要捷運票價再調漲，我就會改變通勤方式改騎機車。",
-        "pinyin": "zhǐ yào jié yùn piào jià zài tiáo zhǎng，wǒ jiù huì gǎi biàn tōng qín fāng shì gǎi qí jī chē。",
+        "pinyin": "zhǐ yào jié yùn piào jià zài tiáo zhǎng, wǒ jiù huì gǎi biàn tōng qín fāng shì gǎi qí jī chē.",
         "japanese": "MRTの運賃がまた値上げされたら、通勤方法を変えてバイクに乗り換えます。",
         "chunks": [
           "只要捷運票價再調漲",
@@ -959,7 +955,7 @@
       {
         "situation": "交通・移動",
         "chinese": "因為我發現捷運站附近有YouBike站，所以決定騎腳踏車去上班。",
-        "pinyin": "yīn wèi wǒ fā xiàn jié yùn zhàn fù jìn yǒu YouBike zhàn，suǒ yǐ jué dìng qí jiǎo tà chē qù shàng bān。",
+        "pinyin": "yīn wèi wǒ fā xiàn jié yùn zhàn fù jìn yǒu YouBike zhàn, suǒ yǐ jué dìng qí jiǎo tà chē qù shàng bān.",
         "japanese": "地下鉄の駅の近くにYouBikeステーションがあることに気づいたので、自転車で通勤することにしました。",
         "chunks": [
           "因為我發現",
@@ -971,7 +967,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "雖然這家餐廳的發票可以兌獎，但我發現他們沒給我統編，所以不能報帳。",
-        "pinyin": "suī rán zhè jiā cān tīng de fā piào kě yǐ duì jiǎng，dàn wǒ fā xiàn tā men méi gěi wǒ tǒng biān，suǒ yǐ bù néng bào zhàng。",
+        "pinyin": "suī rán zhè jiā cān tīng de fā piào kě yǐ duì jiǎng, dàn wǒ fā xiàn tā men méi gěi wǒ tǒng biān, suǒ yǐ bù néng bào zhàng.",
         "japanese": "このレストランのレシートは宝くじに応募できますが、統一番号をもらっていなかったので、経費精算ができません。",
         "chunks": [
           "雖然這家餐廳的發票可以兌獎",
@@ -983,7 +979,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要我發現健保卡資料有誤，就會立刻去區公所申請更正。",
-        "pinyin": "zhǐ yào wǒ fā xiàn jiàn bǎo kǎ zī liào yǒu wù，jiù huì lì kè qù qū gōng suǒ shēn qǐng gēng zhèng。",
+        "pinyin": "zhǐ yào wǒ fā xiàn jiàn bǎo kǎ zī liào yǒu wù, jiù huì lì kè qù qū gōng suǒ shēn qǐng gēng zhèng.",
         "japanese": "健康保険証のデータに誤りがあることに気づいたら、すぐに区役所に訂正を申請します。",
         "chunks": [
           "只要我發現",
@@ -1008,7 +1004,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我已經很累了，但還是繼續陪小孩練鋼琴。",
-        "pinyin": "suī rán wǒ yǐ jīng hěn lèi le，dàn hái shì jì xù péi xiǎo hái liàn gāng qín。",
+        "pinyin": "suī rán wǒ yǐ jīng hěn lèi le, dàn hái shì jì xù péi xiǎo hái liàn gāng qín.",
         "japanese": "もうすごく疲れているけど、それでも子どものピアノ練習に付き合い続ける。",
         "chunks": [
           "雖然我已經很累了",
@@ -1020,7 +1016,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為今天客人很多，所以我們要繼續加快出餐的速度。",
-        "pinyin": "yīn wèi jīn tiān kè rén hěn duō，suǒ yǐ wǒ men yào jì xù jiā kuài chū cān de sù dù。",
+        "pinyin": "yīn wèi jīn tiān kè rén hěn duō, suǒ yǐ wǒ men yào jì xù jiā kuài chū cān de sù dù.",
         "japanese": "今日はお客様が多いので、料理を出すスピードを速め続けなければなりません。",
         "chunks": [
           "因為今天客人很多",
@@ -1032,7 +1028,7 @@
       {
         "situation": "交通・移動",
         "chinese": "只要捷運沒有停駛，我就會繼續搭捷運上班。",
-        "pinyin": "zhǐ yào jié yùn méi yǒu tíng shǐ，wǒ jiù huì jì xù dā jié yùn shàng bān。",
+        "pinyin": "zhǐ yào jié yùn méi yǒu tíng shǐ, wǒ jiù huì jì xù dā jié yùn shàng bān.",
         "japanese": "地下鉄が運行を止めない限り、私は地下鉄で通勤し続けます。",
         "chunks": [
           "只要捷運沒有停駛",
@@ -1128,15 +1124,14 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為店員的服務態度很好，所以結帳時我覺得很輕鬆。",
-        "pinyin": "yīn wèi diàn yuán de fú wù tài dù hěn hǎo, suǒ yǐ jié zhàng shí wǒ jué de hěn qīng sōng.",
-        "japanese": "店員のサービス態度がとても良いので、会計の時に気楽に感じる。",
+        "chinese": "因為現在可以用手機自助結帳，所以買東西變得很輕鬆。",
+        "pinyin": "yīn wèi xiàn zài kě yǐ yòng shǒu jī zì zhù jié zhàng, suǒ yǐ mǎi dōng xi biàn de hěn qīng sōng.",
+        "japanese": "今はスマホでセルフ会計ができるので、買い物がとても楽になりました。",
         "chunks": [
-          "因為店員的服務態度很好",
-          "所以結帳時",
-          "我覺得很輕鬆"
+          "因為現在可以用手機自助結帳",
+          "所以買東西變得很輕鬆"
         ],
-        "hintText": "因為店員的服務態度很好，所以結帳時，我覺得"
+        "hintText": "因為現在可以用手機自助結帳，所以買東西變得很"
       },
       {
         "situation": "交通・移動",
@@ -1166,7 +1161,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "只要你有空，我們就一起吃晚餐吧。",
-        "pinyin": "zhǐ yào nǐ yǒu kòng, wǒ men jiù yì qǐ chī wǎn cān ba.",
+        "pinyin": "zhǐ yào nǐ yǒu kòng, wǒ men jiù yī qǐ chī wǎn cān ba.",
         "japanese": "あなたが暇なら、一緒に夕食を食べましょう。",
         "chunks": [
           "只要你有空",
@@ -1223,8 +1218,8 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然家裡的環境很吵，但是我還是可以專心讀書。",
-        "pinyin": "suī rán jiā lǐ de huán jìng hěn chǎo，dàn shì wǒ hái shì kě yǐ zhuān xīn dú shū。",
-        "japanese": "雖然家裡的環境很吵，但我還是可以專心讀書。",
+        "pinyin": "suī rán jiā lǐ de huán jìng hěn chǎo, dàn shì wǒ hái shì kě yǐ zhuān xīn dú shū.",
+        "japanese": "家の環境はうるさいけれど、私はそれでも集中して勉強できます。",
         "chunks": [
           "雖然家裡的環境很吵",
           "但是我還是可以專心讀書"
@@ -1234,8 +1229,8 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家餐廳的用餐環境很好，所以我們常常來這裡聚餐。",
-        "pinyin": "yīn wèi zhè jiā cān tīng de yòng cān huán jìng hěn hǎo，suǒ yǐ wǒ men cháng cháng lái zhè lǐ jù cān。",
-        "japanese": "因為這家餐廳的用餐環境很好，所以我們常常來這裡聚餐。",
+        "pinyin": "yīn wèi zhè jiā cān tīng de yòng cān huán jìng hěn hǎo, suǒ yǐ wǒ men cháng cháng lái zhè lǐ jù cān.",
+        "japanese": "このレストランは食事の環境がとても良いので、私たちはよくここで会食します。",
         "chunks": [
           "因為這家餐廳的用餐環境很好",
           "所以我們常常來這裡聚餐"
@@ -1245,8 +1240,8 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要改善居住環境，就能減少鄰居之間的糾紛。",
-        "pinyin": "zhǐ yào gǎi shàn jū zhù huán jìng，jiù néng jiǎn shǎo lín jū zhī jiān de jiū fēn。",
-        "japanese": "只要改善居住環境，就能減少鄰居之間的糾紛。",
+        "pinyin": "zhǐ yào gǎi shàn jū zhù huán jìng, jiù néng jiǎn shǎo lín jū zhī jiān de jiū fēn.",
+        "japanese": "住環境を改善すれば、近所同士のトラブルを減らせます。",
         "chunks": [
           "只要改善居住環境",
           "就能減少鄰居之間的糾紛"
@@ -1280,15 +1275,14 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "就目前的排隊情況來看，恐怕要等一個小時才能拿到發票。",
-        "pinyin": "jiù mù qián de pái duì qíng kuàng lái kàn, kǒng pà yào děng yī gè xiǎo shí cái néng ná dào fā piào.",
-        "japanese": "今の行列の状況から見ると、レシートを受け取るまでに1時間はかかりそうです。",
+        "chinese": "就目前的排隊情況來看，恐怕要等一個小時才能結帳。",
+        "pinyin": "jiù mù qián de pái duì qíng kuàng lái kàn, kǒng pà yào děng yī gè xiǎo shí cái néng jié zhàng.",
+        "japanese": "今の行列の状況から見ると、会計まで1時間はかかりそうです。",
         "chunks": [
           "就目前的排隊情況來看",
-          "恐怕要等一個小時",
-          "才能拿到發票"
+          "恐怕要等一個小時才能結帳"
         ],
-        "hintText": "就目前的"
+        "hintText": "就目前的排隊"
       },
       {
         "situation": "交通・移動",
@@ -1329,9 +1323,9 @@
       },
       {
         "situation": "交通・移動",
-        "japanese": "因為捷運站突然發生了故障，所以我只好改搭公車去上班。",
-        "pinyin": "yīn wèi jié yùn zhàn tú rán fā shēng le gù zhàng, suǒ yǐ wǒ zhǐ hǎo gǎi dā gōng chē qù shàng bān.",
         "chinese": "因為捷運站突然發生了故障，所以我只好改搭公車去上班。",
+        "pinyin": "yīn wèi jié yùn zhàn tú rán fā shēng le gù zhàng, suǒ yǐ wǒ zhǐ hǎo gǎi dā gōng chē qù shàng bān.",
+        "japanese": "MRTの駅で突然故障が発生したので、仕方なくバスに乗り換えて出勤しました。",
         "chunks": [
           "因為捷運站突然",
           "發生了",
@@ -1389,7 +1383,6 @@
       },
       {
         "situation": "生活トラブル",
-        "context": "生活トラブル",
         "chinese": "因為機車突然故障的原因很複雜，所以車行說要留車檢查幾天。",
         "pinyin": "yīn wèi jī chē tū rán gù zhàng de yuán yīn hěn fù zá, suǒ yǐ chē háng shuō yào liú chē jiǎn chá jǐ tiān.",
         "japanese": "バイクが突然故障した原因が複雑なので、バイク屋は数日間預かって点検すると言った。",
@@ -1401,7 +1394,6 @@
       },
       {
         "situation": "公的手続き・職場",
-        "context": "公的手続き・職場",
         "chinese": "只要申請流程不那麼複雜，我就會自己去辦健保卡。",
         "pinyin": "zhǐ yào shēn qǐng liú chéng bù nà me fù zá, wǒ jiù huì zì jǐ qù bàn jiàn bǎo kǎ.",
         "japanese": "申請手続きがそんなに複雑でなければ、自分で健康保険証を取りに行くのに。",
@@ -1544,13 +1536,12 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "這家餐廳不僅東西好吃，甚至連發票都可以打統編。",
-        "pinyin": "zhè jiā cān tīng bù jǐn dōng xi hǎo chī, shèn zhì lián fā piào dōu kě yǐ dǎ tǒng biān.",
-        "japanese": "このレストランは料理が美味しいだけでなく、領収書にも統一番号を付けられます。",
+        "chinese": "這家餐廳不僅東西好吃，甚至連甜點都是免費的。",
+        "pinyin": "zhè jiā cān tīng bù jǐn dōng xi hǎo chī, shèn zhì lián tián diǎn dōu shì miǎn fèi de.",
+        "japanese": "このレストランは料理が美味しいだけでなく、デザートまで無料です。",
         "chunks": [
           "這家餐廳不僅東西好吃",
-          "甚至連發票",
-          "都可以打統編"
+          "甚至連甜點都是免費的"
         ],
         "hintText": "這家餐廳不僅東西好吃，"
       },
@@ -1631,7 +1622,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我認為他的想法不錯，但是還是要考慮預算問題。",
-        "pinyin": "suī rán wǒ rèn wéi tā de xiǎng fǎ bù cuò，dàn shì hái shì yào kǎo lǜ yù suàn wèn tí。",
+        "pinyin": "suī rán wǒ rèn wéi tā de xiǎng fǎ bù cuò, dàn shì hái shì yào kǎo lǜ yù suàn wèn tí.",
         "japanese": "彼の考えは良いと思うけれど、やはり予算の問題を考慮しなければならない。",
         "chunks": [
           "雖然我認為他的想法不錯",
@@ -1642,7 +1633,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為我認為這家店的服務很好，所以就算貴一點也會再來。",
-        "pinyin": "yīn wèi wǒ rèn wéi zhè jiā diàn de fú wù hěn hǎo，suǒ yǐ jiù suàn guì yī diǎn yě huì zài lái。",
+        "pinyin": "yīn wèi wǒ rèn wéi zhè jiā diàn de fú wù hěn hǎo, suǒ yǐ jiù suàn guì yī diǎn yě huì zài lái.",
         "japanese": "この店のサービスが良いと思うので、たとえ少し高くてもまた来ます。",
         "chunks": [
           "因為我認為這家店的服務很好",
@@ -1653,7 +1644,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要我認為這張發票有問題，就會拿去跟店家確認。",
-        "pinyin": "zhǐ yào wǒ rèn wéi zhè zhāng fā piào yǒu wèn tí，jiù huì ná qù gēn diàn jiā què rèn。",
+        "pinyin": "zhǐ yào wǒ rèn wéi zhè zhāng fā piào yǒu wèn tí, jiù huì ná qù gēn diàn jiā què rèn.",
         "japanese": "このレシートに問題があると思ったら、すぐに店に確認しに行きます。",
         "chunks": [
           "只要我認為這張發票有問題",
@@ -1760,15 +1751,14 @@
       },
       {
         "situation": "交通・移動",
-        "chinese": "因為捷運站離我家很遠，所以我不願意騎機車過去。",
-        "pinyin": "yīn wèi jié yùn zhàn lí wǒ jiā hěn yuǎn, suǒ yǐ wǒ bù yuàn yì qí jī chē guò qù.",
-        "japanese": "MRTの駅が家からとても遠いので、私は進んでバイクで行きたくない。",
+        "chinese": "雖然捷運站離我家有點遠，但我還是願意走路過去。",
+        "pinyin": "suī rán jié yùn zhàn lí wǒ jiā yǒu diǎn yuǎn, dàn wǒ hái shì yuàn yì zǒu lù guò qù.",
+        "japanese": "MRTの駅は家から少し遠いけれど、それでも私は歩いて行くのをいといません。",
         "chunks": [
-          "因為捷運站離我家很遠",
-          "所以我不願意",
-          "騎機車過去"
+          "雖然捷運站離我家有點遠",
+          "但我還是願意走路過去"
         ],
-        "hintText": "因為捷運站離我家很遠，所以"
+        "hintText": "雖然捷運站離我家有點遠，但我還是"
       }
     ]
   },
@@ -1857,21 +1847,21 @@
       },
       {
         "situation": "生活トラブル",
-        "japanese": "因為忘記帶悠遊卡，所以搭捷運時失敗了，只好去服務台買單程票。",
-        "pinyin": "yīn wèi wàng jì dài yōu yóu kǎ, suǒ yǐ dā jié yùn shí shī bài le, zhǐ hǎo qù fú wù tái mǎi dān chéng piào.",
-        "chinese": "因為忘記帶悠遊卡，所以搭捷運時失敗了，只好去服務台買單程票。",
+        "chinese": "因為悠遊卡餘額不足，所以進站時刷卡失敗，只好先去加值。",
+        "pinyin": "yīn wèi yōu yóu kǎ yú é bù zú, suǒ yǐ jìn zhàn shí shuā kǎ shī bài, zhǐ hǎo xiān qù jiā zhí.",
+        "japanese": "悠遊カードの残高が足りなかったので、改札でのタッチに失敗し、まずチャージしに行くしかありませんでした。",
         "chunks": [
-          "因為忘記帶悠遊卡",
-          "所以搭捷運時失敗了",
-          "只好去服務台買單程票"
+          "因為悠遊卡餘額不足",
+          "所以進站時刷卡失敗",
+          "只好先去加值"
         ],
-        "hintText": "因為忘記帶悠遊卡，所以搭捷運時"
+        "hintText": "因為悠遊卡餘額不足，所以進站時刷卡"
       },
       {
         "situation": "公的手続き・職場",
-        "japanese": "雖然這次提案失敗了，但是只要修正預算，下次還是有機會通過。",
-        "pinyin": "suī rán zhè cì tí àn shī bài le, dàn shì zhǐ yào xiū zhèng yù suàn, xià cì hái shì yǒu jī huì tōng guò.",
         "chinese": "雖然這次提案失敗了，但是只要修正預算，下次還是有機會通過。",
+        "pinyin": "suī rán zhè cì tí àn shī bài le, dàn shì zhǐ yào xiū zhèng yù suàn, xià cì hái shì yǒu jī huì tōng guò.",
+        "japanese": "今回の提案は失敗したけれど、予算を修正すれば、次回はまだ通る可能性がある。",
         "chunks": [
           "雖然這次提案失敗了",
           "但是只要修正預算",
@@ -1894,15 +1884,14 @@
     "examples": [
       {
         "situation": "人間関係・家族",
-        "chinese": "因為最近常常加班，所以跟家人相處的時間反而增加了。",
-        "pinyin": "yīn wèi zuì jìn cháng cháng jiā bān, suǒ yǐ gēn jiā rén xiāng chǔ de shí jiān fǎn ér zēng jiā le.",
-        "japanese": "最近よく残業するので、家族と過ごす時間がかえって増えました。",
+        "chinese": "因為最近改成在家工作，所以跟家人相處的時間增加了。",
+        "pinyin": "yīn wèi zuì jìn gǎi chéng zài jiā gōng zuò, suǒ yǐ gēn jiā rén xiāng chǔ de shí jiān zēng jiā le.",
+        "japanese": "最近在宅勤務に変わったので、家族と過ごす時間が増えました。",
         "chunks": [
-          "因為最近常常加班",
-          "所以跟家人相處的時間",
-          "反而增加了"
+          "因為最近改成在家工作",
+          "所以跟家人相處的時間增加了"
         ],
-        "hintText": "因為最近常常加班，所以跟家人相處的時間反而"
+        "hintText": "因為最近改成在家工作，所以跟家人相處的時間"
       },
       {
         "situation": "店舗・服務",
@@ -1955,7 +1944,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "雖然這家店客人減少，但是服務品質依然維持得很好。",
-        "pinyin": "suī rán zhè jiā diàn kè rén jiǎn shǎo, dàn shì fú wù pǐn zhì yī rán wéi chí dé hěn hǎo.",
+        "pinyin": "suī rán zhè jiā diàn kè rén jiǎn shǎo, dàn shì fú wù pǐn zhí yī rán wéi chí dé hěn hǎo.",
         "japanese": "この店は客が減ったが、サービス品質は依然としてよく保たれています。",
         "chunks": [
           "雖然這家店客人減少",
@@ -2050,7 +2039,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他平常很少說愛我，但是這次的行動已經證明他真的很在乎我。",
-        "pinyin": "suī rán tā píng cháng hěn shǎo shuō ài wǒ，dàn shì zhè cì de xíng dòng yǐ jīng zhèng míng tā zhēn de hěn zài hu wǒ。",
+        "pinyin": "suī rán tā píng cháng hěn shǎo shuō ài wǒ, dàn shì zhè cì de xíng dòng yǐ jīng zhèng míng tā zhēn de hěn zài hu wǒ.",
         "japanese": "彼は普段あまり愛してると言わないけど、今回の行動で本当に私を大事に思っていることが証明された。",
         "chunks": [
           "雖然他平常很少說愛我",
@@ -2062,7 +2051,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家店的發票都有打統編，所以可以證明我們公司有在這裡消費。",
-        "pinyin": "yīn wèi zhè jiā diàn de fā piào dōu yǒu dǎ tǒng biān，suǒ yǐ kě yǐ zhèng míng wǒ men gōng sī yǒu zài zhè lǐ xiāo fèi。",
+        "pinyin": "yīn wèi zhè jiā diàn de fā piào dōu yǒu dǎ tǒng biān, suǒ yǐ kě yǐ zhèng míng wǒ men gōng sī yǒu zài zhè lǐ xiāo fèi.",
         "japanese": "この店の領収書にはすべて統一番号が記載されているので、私たちの会社がここで消費したことを証明できる。",
         "chunks": [
           "因為這家店的發票都有打統編",
@@ -2074,7 +2063,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要附上健保卡和身分證影本，就能證明你的投保資格。",
-        "pinyin": "zhǐ yào fù shàng jiàn bǎo kǎ hé shēn fèn zhèng yǐng běn，jiù néng zhèng míng nǐ de tóu bǎo zī gé。",
+        "pinyin": "zhǐ yào fù shàng jiàn bǎo kǎ hé shēn fèn zhèng yǐng běn, jiù néng zhèng míng nǐ de tóu bǎo zī gé.",
         "japanese": "健康保険証と身分証のコピーを添付すれば、あなたの保険加入資格を証明できます。",
         "chunks": [
           "只要附上健保卡和身分證影本",
@@ -2123,15 +2112,14 @@
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要填好申請表，然後做選擇，就可以拿到健保卡了。",
-        "pinyin": "zhǐ yào tián hǎo shēn qǐng biǎo, rán hòu zuò xuǎn zé, jiù kě yǐ ná dào jiàn bǎo kǎ le.",
-        "japanese": "申請書に記入して選択すれば、健康保険証を受け取れます。",
+        "chinese": "只要填好申請表，就能選擇要郵寄還是自己去拿健保卡。",
+        "pinyin": "zhǐ yào tián hǎo shēn qǐng biǎo, jiù néng xuǎn zé yào yóu jì hái shì zì jǐ qù ná jiàn bǎo kǎ.",
+        "japanese": "申請書を記入すれば、健康保険証を郵送にするか自分で受け取りに行くか選べます。",
         "chunks": [
           "只要填好申請表",
-          "然後做選擇",
-          "就可以拿到健保卡了"
+          "就能選擇要郵寄還是自己去拿健保卡"
         ],
-        "hintText": "只要填好申請表，然後"
+        "hintText": "只要填好申請表，就能"
       }
     ]
   },
@@ -2258,7 +2246,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他解釋了很多次，但我還是沒明白他的意思。",
-        "pinyin": "suī rán tā jiě shì le hěn duō cì，dàn wǒ hái shì méi míng bái tā de yì si。",
+        "pinyin": "suī rán tā jiě shì le hěn duō cì, dàn wǒ hái shì méi míng bái tā de yì si.",
         "japanese": "彼が何度も説明してくれたけど、私はまだ彼の意味がわからなかった。",
         "chunks": [
           "雖然他解釋了很多次",
@@ -2268,7 +2256,7 @@
       },
       {
         "situation": "店舗・サービス",
-        "pinyin": "yīn wèi diàn yuán yòng tái yǔ jiè shào，suǒ yǐ wǒ míng bái le zhè xiē chǎn pǐn de tè sè。",
+        "pinyin": "yīn wèi diàn yuán yòng tái yǔ jiè shào, suǒ yǐ wǒ míng bái le zhè xiē chǎn pǐn de tè sè.",
         "chinese": "因為店員用台語介紹，所以我明白了這些產品的特色。",
         "japanese": "店員が台湾語で説明してくれたので、これらの商品の特徴がわかりました。",
         "hints": [
@@ -2280,7 +2268,7 @@
       {
         "situation": "交通・移動",
         "chinese": "只要看過捷運路線圖，你就會明白怎麼轉車最方便。",
-        "pinyin": "zhǐ yào kàn guò jié yùn lù xiàn tú，nǐ jiù huì míng bái zěn me zhuǎn chē zuì fāng biàn。",
+        "pinyin": "zhǐ yào kàn guò jié yùn lù xiàn tú, nǐ jiù huì míng bái zěn me zhuǎn chē zuì fāng biàn.",
         "japanese": "MRTの路線図を見さえすれば、どう乗り換えるのが一番便利かわかるよ。",
         "chunks": [
           "只要看過捷運路線圖",
@@ -2315,7 +2303,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我爸的觀點比較傳統，但是我覺得他的想法還是很有道理。",
-        "pinyin": "suī rán wǒ bà de guān diǎn bǐ jiào chuán tǒng ， dàn shì wǒ jué de tā de xiǎng fǎ hái shì hěn yǒu dào lǐ 。",
+        "pinyin": "suī rán wǒ bà de guān diǎn bǐ jiào chuán tǒng, dàn shì wǒ jué de tā de xiǎng fǎ hái shì hěn yǒu dào lǐ.",
         "japanese": "私の父の考え方は比較的伝統的ですが、私は彼の考えにはまだ道理があると思います。",
         "chunks": [
           "雖然我爸的觀點比較傳統",
@@ -2325,25 +2313,27 @@
       },
       {
         "situation": "店舗・サービス",
-        "japanese": "因為這家店的服務態度很差，所以很多顧客的觀點都認為需要改善。",
-        "chinese": "因為這家店的服務態度很差，所以很多顧客的觀點都認為需要改善。",
-        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù hěn chà ， suǒ yǐ hěn duō gù kè de guān diǎn dōu rèn wéi xū yào gǎi shàn 。",
+        "chinese": "因為這家店的服務態度很差，所以從顧客的觀點來看，還有很多需要改善的地方。",
+        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù hěn chà, suǒ yǐ cóng gù kè de guān diǎn lái kàn, hái yǒu hěn duō xū yào gǎi shàn de dì fāng.",
+        "japanese": "この店はサービスが悪いので、客の観点から見ると、改善すべき点がまだたくさんあります。",
         "chunks": [
           "因為這家店的服務態度很差",
-          "所以很多顧客的觀點都認為需要改善"
+          "所以從顧客的觀點來看",
+          "還有很多需要改善的地方"
         ],
-        "hintText": "因為這家店的服務態度很差，所以很多顧客的"
+        "hintText": "因為這家店的服務態度很差，所以從顧客的"
       },
       {
         "situation": "交通・移動",
-        "chinese": "只要搭捷運的時候不要滑手機，我的觀點是這樣比較安全。",
-        "pinyin": "zhǐ yào dā jié yùn de shí hòu bù yào huá shǒu jī ， wǒ de guān diǎn shì zhè yàng bǐ jiào ān quán 。",
-        "japanese": "地下鉄に乗るときにスマホをいじらなければ、私の考えではその方が安全です。",
+        "chinese": "從我的觀點來看，只要走路時不滑手機，就能減少意外。",
+        "pinyin": "cóng wǒ de guān diǎn lái kàn, zhǐ yào zǒu lù shí bù huá shǒu jī, jiù néng jiǎn shǎo yì wài.",
+        "japanese": "私の考えでは、歩きながらスマホを見なければ、事故を減らせます。",
         "chunks": [
-          "只要搭捷運的時候不要滑手機",
-          "我的觀點是這樣比較安全"
+          "從我的觀點來看",
+          "只要走路時不滑手機",
+          "就能減少意外"
         ],
-        "hintText": "只要搭捷運的時候不要滑手機，"
+        "hintText": "從我的"
       }
     ]
   },
@@ -2408,7 +2398,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然面對家人時，我總是很有耐心，但是面對同事時卻容易不耐煩。",
-        "pinyin": "suī rán miàn duì jiā rén shí，wǒ zǒng shì hěn yǒu nài xīn，dàn shì miàn duì tóng shì shí què róng yì bù nài fán。",
+        "pinyin": "suī rán miàn duì jiā rén shí, wǒ zǒng shì hěn yǒu nài xīn, dàn shì miàn duì tóng shì shí què róng yì bù nài fán.",
         "japanese": "家族と向き合う時はいつも忍耐強いのですが、同僚と向き合う時はすぐにイライラしてしまいます。",
         "chunks": [
           "雖然",
@@ -2422,23 +2412,19 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "只要面對店員時主動出示載具，就可以自動對獎不用拿發票。",
-        "pinyin": "zhǐ yào miàn duì diàn yuán shí zhǔ dòng chū shì zài jù，jiù kě yǐ zì dòng duì jiǎng bù yòng ná fā piào。",
-        "japanese": "店員と向き合う時に自らバーコードを提示すれば、自動的に当選確認ができて領収書を持たなくて済みます。",
+        "chinese": "只要面對問題不逃避，再難的事情也能慢慢解決。",
+        "pinyin": "zhǐ yào miàn duì wèn tí bù táo bì, zài nán de shì qíng yě néng màn màn jiě jué.",
+        "japanese": "問題から逃げずに向き合えば、どんなに難しいことも少しずつ解決できます。",
         "chunks": [
-          "只要",
-          "面對店員時",
-          "主動出示載具",
-          "就可以",
-          "自動對獎",
-          "不用拿發票"
+          "只要面對問題不逃避",
+          "再難的事情也能慢慢解決"
         ],
         "hintText": "只要"
       },
       {
         "situation": "交通・移動",
         "chinese": "因為面對尖峰時段的捷運人潮，所以我決定提早出門避開擁擠。",
-        "pinyin": "yīn wèi miàn duì jiān fēng shí duàn de jié yùn rén cháo，suǒ yǐ wǒ jué dìng tí zǎo chū mén bì kāi yōng jǐ。",
+        "pinyin": "yīn wèi miàn duì jiān fēng shí duàn de jié yùn rén cháo, suǒ yǐ wǒ jué dìng tí zǎo chū mén bì kāi yōng jǐ.",
         "japanese": "ラッシュ時のMRTの人混みに直面するので、私は早めに出かけて混雑を避けることにしました。",
         "chunks": [
           "因為",
@@ -2462,7 +2448,7 @@
     ],
     "grammarNote": "「受 + 二文字の動詞」で「〜を受ける（受身的な状態）」を表します。",
     "bossReading": {
-      "text": "面對激烈的市場競爭，我們不但引進了新的[ ? ]來提昇工作效率，還開發出非常受歡迎的新產品，希望能藉此擴大市場佔有率。",
+      "text": "面對激烈的市場競爭，我們不但引進了新的[ ? ]來提升工作效率，還開發出非常受歡迎的新產品，希望能藉此擴大市場佔有率。",
       "targetWord": "軟體",
       "distractors": [
         "硬體",
@@ -2549,7 +2535,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "只要他順利取得駕照，我們就可以一起騎機車去玩了。",
-        "pinyin": "zhǐ yào tā shùn lì qǔ dé jià zhào, wǒ men jiù kě yǐ yì qǐ qí jī chē qù wán le.",
+        "pinyin": "zhǐ yào tā shùn lì qǔ dé jià zhào, wǒ men jiù kě yǐ yī qǐ qí jī chē qù wán le.",
         "japanese": "彼が順調に運転免許を取得すれば、一緒にバイクで遊びに行けます。",
         "chunks": [
           "只要他",
@@ -2620,7 +2606,7 @@
     ],
     "grammarNote": "「尊重（zūn zhòng）」は、他人の意見やプライバシーを重んじる際に使われます。",
     "bossReading": {
-      "text": "為了在職場上順利[ ? ]專業執照，他不但每天嚴重違反自己的休息時間拚命讀書，還學會了如何尊重並向優秀的同事學習。",
+      "text": "為了在職場上順利[ ? ]專業執照，他不但每天犧牲自己的休息時間拚命讀書，還學會了如何尊重並向優秀的同事學習。",
       "targetWord": "取得",
       "distractors": [
         "解決",
@@ -2628,7 +2614,7 @@
         "拒絕"
       ],
       "question": "請選出最適合填入 [ ? ] 的詞彙：",
-      "grammarNote": "資格（執照）を「取得（取得する）」するために、自分の時間を削って努力し、他人の権利を「尊重（尊重する）」しながら成長するというストーリーです。法律に「違反（違反する）」という言葉を比喩的に使って努力の凄さを表現しています。"
+      "grammarNote": "資格（執照）を「取得（取得する）」するために、休息時間を犠牲にして努力し、優秀な同僚を「尊重（尊重する）」しながら学ぶというストーリーです。"
     },
     "examples": [
       {
@@ -2644,6 +2630,7 @@
       },
       {
         "situation": "生活トラブル",
+        "chinese": "因為鄰居太吵，所以我覺得他們應該尊重別人的休息時間。",
         "pinyin": "yīn wèi lín jū tài chǎo, suǒ yǐ wǒ jué de tā men yīng gāi zūn zhòng bié rén de xiū xí shí jiān.",
         "japanese": "隣人がうるさすぎるので、彼らは他人の休息時間を尊重すべきだと思います。",
         "chunks": [
@@ -2679,7 +2666,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "因為最近的疫情趨勢，我感到出門很不安全。",
-        "pinyin": "yīn wèi zuì jìn de yì qíng qū shì，wǒ gǎn dào chū mén hěn bù ān quán。",
+        "pinyin": "yīn wèi zuì jìn de yì qíng qū shì, wǒ gǎn dào chū mén hěn bù ān quán.",
         "japanese": "最近の感染症の傾向のため、外出がとても安全でないと感じています。",
         "chunks": [
           "因為最近的疫情趨勢",
@@ -2690,27 +2677,25 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "只要打折的趨勢持續，我就會感到一定要買。",
-        "pinyin": "zhǐ yào dǎ zhé de qū shì chí xù，wǒ jiù huì gǎn dào yī dìng yào mǎi。",
-        "japanese": "割引の傾向が続けば、必ず買わなければと感じます。",
+        "chinese": "因為網購越來越普遍，所以實體店面減少已經成為一種趨勢。",
+        "pinyin": "yīn wèi wǎng gòu yuè lái yuè pǔ biàn, suǒ yǐ shí tǐ diàn miàn jiǎn shǎo yǐ jīng chéng wéi yī zhǒng qū shì.",
+        "japanese": "ネット通販がますます普及しているので、実店舗の減少はすでに一つの流れになっています。",
         "chunks": [
-          "只要打折的趨勢持續",
-          "我就會感到",
-          "一定要買"
+          "因為網購越來越普遍",
+          "所以實體店面減少已經成為一種趨勢"
         ],
-        "hintText": "只要打折的趨勢持續，"
+        "hintText": "因為網購越來越普遍，所以實體店面減少已經成為一種"
       },
       {
         "situation": "交通・移動",
-        "chinese": "雖然捷運的搭乘人數有下降趨勢，但我感到還是很方便。",
-        "pinyin": "suī rán jié yùn de dā chéng rén shù yǒu xià jiàng qū shì，dàn wǒ gǎn dào hái shì hěn fāng biàn。",
-        "japanese": "MRTの利用者数は減少傾向にありますが、それでも便利だと感じています。",
+        "chinese": "雖然捷運的搭乘人數有下降趨勢，但尖峰時段還是很擁擠。",
+        "pinyin": "suī rán jié yùn de dā chéng rén shù yǒu xià jiàng qū shì, dàn jiān fēng shí duàn hái shì hěn yōng jǐ.",
+        "japanese": "MRTの利用者数は減少傾向にありますが、ラッシュ時はやはり混雑しています。",
         "chunks": [
           "雖然捷運的搭乘人數有下降趨勢",
-          "但我感到",
-          "還是很方便"
+          "但尖峰時段還是很擁擠"
         ],
-        "hintText": "雖然捷運的搭乘人數有下降趨勢，"
+        "hintText": "雖然捷運的搭乘人數有下降"
       }
     ]
   },
@@ -2835,7 +2820,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "由於父親臨時出差，我們只好取消家庭聚餐。",
-        "pinyin": "yóu yú fù qīn lín shí chū chāi，wǒ men zhǐ hǎo qǔ xiāo jiā tíng jù cān。",
+        "pinyin": "yóu yú fù qīn lín shí chū chāi, wǒ men zhǐ hǎo qǔ xiāo jiā tíng jù cān.",
         "japanese": "父が急に出張になったので、私たちはやむを得ず家族での食事会をキャンセルしました。",
         "chunks": [
           "由於父親臨時出差",
@@ -2845,7 +2830,7 @@
       },
       {
         "situation": "交通・移動",
-        "pinyin": "yóu yú jié yùn gù zhàng，wǒ men zhǐ hǎo gǎi chéng gōng chē shàng bān。",
+        "pinyin": "yóu yú jié yùn gù zhàng, wǒ men zhǐ hǎo gǎi chéng gōng chē shàng bān.",
         "chinese": "由於捷運故障，我們只好改搭公車上班。",
         "japanese": "MRTが故障したため、私たちはやむを得ずバスに乗り換えて出勤しました。",
         "chunks": [
@@ -2856,7 +2841,7 @@
       },
       {
         "situation": "生活トラブル",
-        "pinyin": "yóu yú fā piào diū shī，wǒ wú fǎ shēn qǐng jiàn kāng bǎo bǔ fā。",
+        "pinyin": "yóu yú fā piào diū shī, wǒ wú fǎ shēn qǐng jiàn kāng bǎo bǔ fā.",
         "chinese": "由於發票遺失，我無法申請健保卡補發。",
         "japanese": "領収書を紛失したため、私は健康保険証の再発行を申請できません。",
         "chunks": [
@@ -2881,7 +2866,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他的教育理念跟我不太一樣，但是我還是很尊重他的想法。",
-        "pinyin": "suī rán tā de jiào yù lǐ niàn gēn wǒ bù tài yī yàng ，dàn shì wǒ hái shì hěn zūn zhòng tā de xiǎng fǎ 。",
+        "pinyin": "suī rán tā de jiào yù lǐ niàn gēn wǒ bù tài yī yàng, dàn shì wǒ hái shì hěn zūn zhòng tā de xiǎng fǎ.",
         "japanese": "彼の教育理念は私とは少し違うけれど、それでも私は彼の考えを尊重しています。",
         "chunks": [
           "雖然他的教育理念",
@@ -2893,7 +2878,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家店的經營理念是環保，所以他們不提供塑膠袋跟吸管。",
-        "pinyin": "yīn wèi zhè jiā diàn de jīng yíng lǐ niàn shì huán bǎo ，suǒ yǐ tā men bù tí gōng sù jiāo dài gēn xī guǎn 。",
+        "pinyin": "yīn wèi zhè jiā diàn de jīng yíng lǐ niàn shì huán bǎo, suǒ yǐ tā men bù tí gōng sù jiāo dài gēn xī guǎn.",
         "japanese": "このお店の経営理念は環境保護なので、ビニール袋やストローは提供していません。",
         "chunks": [
           "因為這家店的經營理念是環保",
@@ -2904,7 +2889,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要公司的管理理念不改，員工的離職率就只會越來越高。",
-        "pinyin": "zhǐ yào gōng sī de guǎn lǐ lǐ niàn bù gǎi ，yuán gōng de lí zhí lǜ jiù zhǐ huì yuè lái yuè gāo 。",
+        "pinyin": "zhǐ yào gōng sī de guǎn lǐ lǐ niàn bù gǎi, yuán gōng de lí zhí lǜ jiù zhǐ huì yuè lái yuè gāo.",
         "japanese": "会社の管理理念が変わらなければ、従業員の離職率はますます高くなるばかりです。",
         "chunks": [
           "只要公司的管理理念不改",
@@ -2988,7 +2973,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他平時不太說話，但是在家庭聚會中他總能發揮幽默感，讓大家笑得很開心。",
-        "pinyin": "suī rán tā píng shí bù tài shuō huà，dàn shì zài jiā tíng jù huì zhōng tā zǒng néng fā huī yōu mò gǎn，ràng dà jiā xiào de hěn kāi xīn。",
+        "pinyin": "suī rán tā píng shí bù tài shuō huà, dàn shì zài jiā tíng jù huì zhōng tā zǒng néng fā huī yōu mò gǎn, ràng dà jiā xiào de hěn kāi xīn.",
         "japanese": "彼は普段あまり話さないけど、家族の集まりではいつもユーモアを発揮して、みんなを大笑いさせている。",
         "chunks": [
           "雖然他平時不太說話",
@@ -3000,7 +2985,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家餐廳的廚師很會發揮創意，所以每次推出的新菜色都讓人驚喜。",
-        "pinyin": "yīn wèi zhè jiā cān tīng de chú shī hěn huì fā huī chuàng yì，suǒ yǐ měi cì tuī chū de xīn cài sè dōu ràng rén jīng xǐ。",
+        "pinyin": "yīn wèi zhè jiā cān tīng de chú shī hěn huì fā huī chuàng yì, suǒ yǐ měi cì tuī chū de xīn cài sè dōu ràng rén jīng xǐ.",
         "japanese": "このレストランのシェフはとても創造性を発揮するので、新しく出す料理は毎回驚きがある。",
         "chunks": [
           "因為這家餐廳的廚師很會發揮創意",
@@ -3012,7 +2997,7 @@
       {
         "situation": "交通・移動",
         "chinese": "只要遇到塞車，他就會發揮耐心，一邊聽音樂一邊慢慢等。",
-        "pinyin": "zhǐ yào yù dào sāi chē，tā jiù huì fā huī nài xīn，yī biān tīng yīn yuè yī biān màn màn děng。",
+        "pinyin": "zhǐ yào yù dào sāi chē, tā jiù huì fā huī nài xīn, yī biān tīng yīn yuè yī biān màn màn děng.",
         "japanese": "渋滞に遭うと、彼は忍耐力を発揮して、音楽を聴きながらゆっくり待つ。",
         "chunks": [
           "只要遇到塞車",
@@ -3097,7 +3082,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我們常常吵架，但是為了維持家庭和諧，還是要互相體諒。",
-        "pinyin": "suī rán wǒ men cháng cháng chǎo jià，dàn shì wèi le wéi chí jiā tíng hé xié，hái shì yào hù xiāng tǐ liàng。",
+        "pinyin": "suī rán wǒ men cháng cháng chǎo jià, dàn shì wèi le wéi chí jiā tíng hé xié, hái shì yào hù xiāng tǐ liàng.",
         "japanese": "私たちはよく喧嘩するけれども、家庭の調和を保つためには、やはりお互いを思いやらなければならない。",
         "chunks": [
           "雖然我們常常吵架",
@@ -3109,7 +3094,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家店的服務態度很好，所以他們才能維持那麼多忠實顧客。",
-        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù hěn hǎo，suǒ yǐ tā men cái néng wéi chí nà me duō zhōng shí gù kè。",
+        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù hěn hǎo, suǒ yǐ tā men cái néng wéi chí nà me duō zhōng shí gù kè.",
         "japanese": "この店のサービス態度がとても良いので、多くの常連客を維持できているのだ。",
         "chunks": [
           "因為這家店的服務態度很好",
@@ -3120,7 +3105,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要定期更新健保卡資料，就能維持有效的醫療保障。",
-        "pinyin": "zhǐ yào dìng qī gēng xīn jiàn bǎo kǎ zī liào，jiù néng wéi chí yǒu xiào de yī liáo bǎo zhàng。",
+        "pinyin": "zhǐ yào dìng qī gēng xīn jiàn bǎo kǎ zī liào, jiù néng wéi chí yǒu xiào de yī liáo bǎo zhàng.",
         "japanese": "定期的に健保卡の情報を更新しさえすれば、有効な医療保障を維持できる。",
         "chunks": [
           "只要定期更新健保卡資料",
@@ -3144,7 +3129,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他剛搬來台灣，但很快就適應了這裡的生活。",
-        "pinyin": "suī rán tā gāng bān lái tái wān，dàn hěn kuài jiù shì yìng le zhè lǐ de shēng huó。",
+        "pinyin": "suī rán tā gāng bān lái tái wān, dàn hěn kuài jiù shì yìng le zhè lǐ de shēng huó.",
         "japanese": "彼は台湾に引っ越してきたばかりですが、すぐにここの生活に慣れました。",
         "chunks": [
           "雖然他剛搬來台灣",
@@ -3157,7 +3142,7 @@
         "situation": "交通・移動",
         "category": "交通・移動",
         "chinese": "因為台北捷運很方便，所以外國人也能很快適應。",
-        "pinyin": "yīn wèi tái běi jié yùn hěn fāng biàn，suǒ yǐ wài guó rén yě néng hěn kuài shì yìng。",
+        "pinyin": "yīn wèi tái běi jié yùn hěn fāng biàn, suǒ yǐ wài guó rén yě néng hěn kuài shì yìng.",
         "japanese": "台北のMRTは便利なので、外国人もすぐに慣れることができます。",
         "chunks": [
           "因為台北捷運很方便",
@@ -3168,15 +3153,14 @@
       },
       {
         "situation": "生活トラブル",
-        "chinese": "只要拿到健保卡，就可以適應台灣的醫療制度。",
-        "pinyin": "zhǐ yào ná dào jiàn bǎo kǎ，jiù kě yǐ shì yìng tái wān de yī liáo zhì dù。",
-        "japanese": "健康保険証を手に入れさえすれば、台湾の医療制度に慣れることができます。",
+        "chinese": "雖然台灣的看病方式跟日本不太一樣，但我很快就適應了。",
+        "pinyin": "suī rán tái wān de kàn bìng fāng shì gēn rì běn bù tài yī yàng, dàn wǒ hěn kuài jiù shì yīng le.",
+        "japanese": "台湾の受診の仕方は日本とは少し違いますが、すぐに慣れました。",
         "chunks": [
-          "只要拿到健保卡",
-          "就可以適應",
-          "台灣的醫療制度"
+          "雖然台灣的看病方式跟日本不太一樣",
+          "但我很快就適應了"
         ],
-        "hintText": "只要拿到健保卡，就可以"
+        "hintText": "雖然台灣的看病方式跟日本不太一樣，但我很快就"
       }
     ]
   },
@@ -3217,15 +3201,15 @@
       },
       {
         "situation": "生活トラブル",
-        "chinese": "只要這張發票中獎，那張舊沙發就有保留價值。",
-        "pinyin": "zhǐ yào zhè zhāng fā piào zhòng jiǎng, nà zhāng jiù shā fā jiù yǒu bǎo liú jià zhí.",
-        "japanese": "このレシートが当たれば、あの古いソファは保存する価値がある。",
+        "chinese": "雖然這張舊沙發已經很破了，但因為是阿嬤留下來的，所以很有保留價值。",
+        "pinyin": "suī rán zhè zhāng jiù shā fā yǐ jīng hěn pò le, dàn yīn wèi shì ā mà liú xià lái de, suǒ yǐ hěn yǒu bǎo liú jià zhí.",
+        "japanese": "この古いソファはもうボロボロですが、祖母が残してくれたものなので、とっておく価値があります。",
         "chunks": [
-          "只要這張發票中獎",
-          "那張舊沙發",
-          "就有保留價值"
+          "雖然這張舊沙發已經很破了",
+          "但因為是阿嬤留下來的",
+          "所以很有保留價值"
         ],
-        "hintText": "只要這張發票中獎，那張舊沙發就有"
+        "hintText": "雖然這張舊沙發已經很破了，但因為是阿嬤留下來的，所以很有保留"
       }
     ]
   },
@@ -3254,7 +3238,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "既然你已經答應了，就不要隨便反悔。",
-        "pinyin": "jì rán nǐ yǐ jīng dā yìng le， jiù bú yào suí biàn fǎn huǐ。",
+        "pinyin": "jì rán nǐ yǐ jīng dā yìng le, jiù bù yào suí biàn fǎn huǐ.",
         "japanese": "もう約束したのだから、軽々しく反故にしてはいけません。",
         "chunks": [
           "既然你已經答應了",
@@ -3265,7 +3249,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "既然這件衣服打五折，就多買幾件吧。",
-        "pinyin": "jì rán zhè jiàn yī fu dǎ wǔ zhé， jiù duō mǎi jǐ jiàn ba。",
+        "pinyin": "jì rán zhè jiàn yī fu dǎ wǔ zhé, jiù duō mǎi jǐ jiàn ba.",
         "japanese": "この服が半額なのだから、何着か買いましょう。",
         "chunks": [
           "既然這件衣服打五折",
@@ -3276,7 +3260,7 @@
       {
         "situation": "交通・移動",
         "chinese": "既然捷運這麼方便，我們就搭捷運去吧。",
-        "pinyin": "jì rán jié yùn zhè me fāng biàn， wǒ men jiù dā jié yùn qù ba。",
+        "pinyin": "jì rán jié yùn zhè me fāng biàn, wǒ men jiù dā jié yùn qù ba.",
         "japanese": "地下鉄がこんなに便利なのだから、地下鉄で行きましょう。",
         "chunks": [
           "既然捷運這麼方便",
@@ -3372,15 +3356,15 @@
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "因為公司最近裁員，所以每個人都要提昇自己的競爭力才不會被淘汰。",
-        "pinyin": "yīn wèi gōng sī zuì jìn cái yuán, suǒ yǐ měi ge rén dōu yào tí shēng zì jǐ de jìng zhēng lì cái bú huì bèi táo tài.",
+        "chinese": "因為公司最近裁員，所以每個人都要提升自己的競爭力才不會被淘汰。",
+        "pinyin": "yīn wèi gōng sī zuì jìn cái yuán, suǒ yǐ měi ge rén dōu yào tí shēng zì jǐ de jìng zhēng lì cái bù huì bèi táo tài.",
         "japanese": "会社が最近人員削減をしているので、皆自分の競争力を高めなければ淘汰されない。",
         "chunks": [
           "因為公司最近裁員",
-          "所以每個人都要提昇自己的競爭力",
+          "所以每個人都要提升自己的競爭力",
           "才不會被淘汰"
         ],
-        "hintText": "因為公司最近裁員，所以每個人都要提昇"
+        "hintText": "因為公司最近裁員，所以每個人都要提升"
       }
     ]
   },
@@ -3466,15 +3450,14 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為這家店的存在著很多老客戶，所以即使漲價生意還是很好。",
-        "pinyin": "yīn wèi zhè jiā diàn de cún zài zhe hěn duō lǎo kè hù, suǒ yǐ jí shǐ zhǎng jià shēng yì hái shì hěn hǎo.",
-        "japanese": "この店には多くの常連客が存在しているので、値上げしても商売はまだ良い。",
+        "chinese": "雖然這家店已經開了五十年，但它的存在對附近居民來說還是很重要。",
+        "pinyin": "suī rán zhè jiā diàn yǐ jīng kāi le wǔ shí nián, dàn tā de cún zài duì fù jìn jū mín lái shuō hái shì hěn zhòng yào.",
+        "japanese": "この店は開店から50年経っていますが、その存在は近所の住民にとって今も大切です。",
         "chunks": [
-          "因為這家店",
-          "存在著很多老客戶",
-          "所以即使漲價生意還是很好"
+          "雖然這家店已經開了五十年",
+          "但它的存在對附近居民來說還是很重要"
         ],
-        "hintText": "因為這家店"
+        "hintText": "雖然這家店已經開了五十年，但它的"
       },
       {
         "situation": "交通・移動",
@@ -3504,7 +3487,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然媽媽很擔心，但她還是保持冷靜，幫我處理問題。",
-        "pinyin": "suī rán mā ma hěn dān xīn，dàn tā hái shì bǎo chí lěng jìng，bāng wǒ chǔ lǐ wèn tí。",
+        "pinyin": "suī rán mā ma hěn dān xīn, dàn tā hái shì bǎo chí lěng jìng, bāng wǒ chǔ lǐ wèn tí.",
         "japanese": "母はとても心配していたが、それでも冷静さを保ち、私の問題を処理してくれた。",
         "chunks": [
           "雖然媽媽很擔心",
@@ -3516,7 +3499,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為排隊的人很多，所以店員請大家保持距離，並出示健保卡。",
-        "pinyin": "yīn wèi pái duì de rén hěn duō，suǒ yǐ diàn yuán qǐng dà jiā bǎo chí jù lí，bìng chū shì jiàn bǎo kǎ。",
+        "pinyin": "yīn wèi pái duì de rén hěn duō, suǒ yǐ diàn yuán qǐng dà jiā bǎo chí jù lí, bìng chū shì jiàn bǎo kǎ.",
         "japanese": "列に並ぶ人が多かったので、店員は皆に距離を保ち、健保卡を提示するよう頼んだ。",
         "chunks": [
           "因為排隊的人很多",
@@ -3528,7 +3511,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要按時吃藥，就能保持血壓穩定，避免突然昏倒。",
-        "pinyin": "zhǐ yào àn shí chī yào，jiù néng bǎo chí xiě yā wěn dìng，bì miǎn tū rán hūn dǎo。",
+        "pinyin": "zhǐ yào àn shí chī yào, jiù néng bǎo chí xiě yā wěn dìng, bì miǎn tū rán hūn dǎo.",
         "japanese": "時間通りに薬を飲めば、血圧を安定に保ち、突然の失神を避けられる。",
         "chunks": [
           "只要按時吃藥",
@@ -3658,7 +3641,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "隨著電子支付的普及，現在很多店家都不收現金，只接受信用卡或行動支付。",
-        "pinyin": "suí zhe diàn zǐ zhī fù de pǔ jí, xiàn zài hěn duō diàn jiā dōu bù shōu xiàn jīn, zhǐ jiē shòu xìn yòng kǎ huò xíng dòng zhī fù。",
+        "pinyin": "suí zhe diàn zǐ zhī fù de pǔ jí, xiàn zài hěn duō diàn jiā dōu bù shōu xiàn jīn, zhǐ jiē shòu xìn yòng kǎ huò xíng dòng zhī fù.",
         "japanese": "電子決済の普及に伴い、今では多くの店が現金を受け付けず、クレジットカードやモバイル決済のみ対応しています。",
         "chunks": [
           "隨著電子支付的普及",
@@ -3670,7 +3653,7 @@
       {
         "situation": "交通・移動",
         "chinese": "雖然捷運越來越普及，但是因為票價調漲，所以有些人還是寧願騎機車。",
-        "pinyin": "suī rán jié yùn yuè lái yuè pǔ jí, dàn shì yīn wèi piào jià tiáo zhǎng, suǒ yǐ yǒu xiē rén hái shì níng yuàn qí jī chē。",
+        "pinyin": "suī rán jié yùn yuè lái yuè pǔ jí, dàn shì yīn wèi piào jià tiáo zhǎng, suǒ yǐ yǒu xiē rén hái shì níng yuàn qí jī chē.",
         "japanese": "MRTはますます普及しているけれども、運賃が値上げされたので、やはりバイクに乗ることを選ぶ人もいます。",
         "chunks": [
           "雖然捷運越來越普及",
@@ -3682,7 +3665,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要網路普及，詐騙集團就容易透過手機簡訊騙人，所以要小心不要亂點連結。",
-        "pinyin": "zhǐ yào wǎng lù pǔ jí, zhà piàn jí tuán jiù róng yì tòu guò shǒu jī jiǎn xùn piàn rén, suǒ yǐ yào xiǎo xīn bù yào luàn diǎn lián jié。",
+        "pinyin": "zhǐ yào wǎng lù pǔ jí, zhà piàn jí tuán jiù róng yì tòu guò shǒu jī jiǎn xùn piàn rén, suǒ yǐ yào xiǎo xīn bù yào luàn diǎn lián jié.",
         "japanese": "ネットが普及さえすれば、詐欺グループは携帯のSMSを通じて簡単に人を騙すので、むやみにリンクをクリックしないよう注意が必要です。",
         "chunks": [
           "只要網路普及",
@@ -3718,7 +3701,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我跟我太太經常吵架，但只要我們互相溝通，就能克服婚姻中的困難。",
-        "pinyin": "suī rán wǒ gēn wǒ tài tài jīng cháng chǎo jià，dàn zhǐ yào wǒ men hù xiāng gōu tōng，jiù néng kè fú hūn yīn zhōng de kùn nán。",
+        "pinyin": "suī rán wǒ gēn wǒ tài tài jīng cháng chǎo jià, dàn zhǐ yào wǒ men hù xiāng gōu tōng, jiù néng kè fú hūn yīn zhōng de kùn nán.",
         "japanese": "妻とよく喧嘩しますが、お互いにコミュニケーションを取れば、結婚生活の困難を克服できます。",
         "chunks": [
           "雖然我跟我太太經常吵架",
@@ -3730,7 +3713,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "因為機車突然拋錨，我只好努力克服不便，改搭捷運去上班。",
-        "pinyin": "yīn wèi jī chē tū rán pāo máo，wǒ zhǐ hǎo nǔ lì kè fú bù biàn，gǎi dā jié yùn qù shàng bān。",
+        "pinyin": "yīn wèi jī chē tū rán pāo máo, wǒ zhǐ hǎo nǔ lì kè fú bù biàn, gǎi dā jié yùn qù shàng bān.",
         "japanese": "バイクが突然故障したので、不便を克服してMRTで通勤することにしました。",
         "chunks": [
           "因為機車突然拋錨",
@@ -3742,7 +3725,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "雖然申請健保卡的流程很複雜，但為了看病方便，我還是努力克服了。",
-        "pinyin": "suī rán shēn qǐng jiàn bǎo kǎ de liú chéng hěn fù zá，dàn wèi le kàn bìng fāng biàn，wǒ hái shì nǔ lì kè fú le。",
+        "pinyin": "suī rán shēn qǐng jiàn bǎo kǎ de liú chéng hěn fù zá, dàn wèi le kàn bìng fāng biàn, wǒ hái shì nǔ lì kè fú le.",
         "japanese": "健康保険証の申請手続きは複雑ですが、受診の便利さのために頑張って克服しました。",
         "chunks": [
           "雖然申請健保卡的流程很複雜",
@@ -3875,8 +3858,8 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "雖然申請補助的程序很繁瑣，但是只要準備好文件就沒問題。",
-        "pinyin": "suī rán shēn qǐng bǔ zhù de chéng xù hěn fán suǒ, dàn shì zhǐ yào zhǔn bèi hǎo wén jiàn jiù méi wèn tí。",
-        "japanese": "雖然申請補助的程序很繁瑣，但是只要準備好文件就沒問題。",
+        "pinyin": "suī rán shēn qǐng bǔ zhù de chéng xù hěn fán suǒ, dàn shì zhǐ yào zhǔn bèi hǎo wén jiàn jiù méi wèn tí.",
+        "japanese": "補助金の申請手続きはとても煩雑ですが、書類をそろえておけば問題ありません。",
         "chunks": [
           "雖然申請補助的程序",
           "很繁瑣",
@@ -3887,8 +3870,8 @@
       {
         "situation": "生活トラブル",
         "chinese": "因為報稅流程太繁瑣，所以我直接請會計師幫忙處理。",
-        "pinyin": "yīn wèi bào shuì liú chéng tài fán suǒ, suǒ yǐ wǒ zhí jiē qǐng kuài jì shī bāng máng chǔ lǐ。",
-        "japanese": "因為報稅流程太繁瑣，所以我直接請會計師幫忙處理。",
+        "pinyin": "yīn wèi bào shuì liú chéng tài fán suǒ, suǒ yǐ wǒ zhí jiē qǐng kuài jì shī bāng máng chǔ lǐ.",
+        "japanese": "確定申告の手続きが煩雑すぎるので、会計士に直接お願いして処理してもらいました。",
         "chunks": [
           "因為報稅流程",
           "太繁瑣",
@@ -3899,8 +3882,8 @@
       {
         "situation": "店舗・サービス",
         "chinese": "只要按照步驟操作，退貨手續就不會那麼繁瑣。",
-        "pinyin": "zhǐ yào àn zhào bù zhòu cāo zuò, tuì huò shǒu xù jiù bù huì nà me fán suǒ。",
-        "japanese": "只要按照步驟操作，退貨手續就不會那麼繁瑣。",
+        "pinyin": "zhǐ yào àn zhào bù zhòu cāo zuò, tuì huò shǒu xù jiù bù huì nà me fán suǒ.",
+        "japanese": "手順どおりに操作すれば、返品手続きはそれほど面倒ではありません。",
         "chunks": [
           "只要按照步驟操作",
           "退貨手續",
@@ -3947,15 +3930,14 @@
       },
       {
         "situation": "交通・移動",
-        "chinese": "只要搭捷運，就能珍惜通勤時間，看看書或聽音樂。",
-        "pinyin": "zhǐ yào dā jié yùn, jiù néng zhēn xī tōng qín shí jiān, kàn kàn shū huò tīng yīn yuè.",
-        "japanese": "MRTに乗れば、通勤時間を大切にして本を読んだり音楽を聴いたりできます。",
+        "chinese": "因為通勤時間很長，所以我很珍惜在捷運上看書的時間。",
+        "pinyin": "yīn wèi tōng qín shí jiān hěn cháng, suǒ yǐ wǒ hěn zhēn xī zài jié yùn shàng kàn shū de shí jiān.",
+        "japanese": "通勤時間が長いので、MRTの中で本を読む時間を大切にしています。",
         "chunks": [
-          "只要搭捷運",
-          "就能珍惜通勤時間",
-          "看看書或聽音樂"
+          "因為通勤時間很長",
+          "所以我很珍惜在捷運上看書的時間"
         ],
-        "hintText": "只要搭捷運，就能"
+        "hintText": "因為通勤時間很長，所以我很"
       }
     ]
   },
@@ -3973,7 +3955,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他平時很少說話，但他的真誠舉動卻深深打動了我的心。",
-        "pinyin": "suī rán tā píng shí hěn shǎo shuō huà，dàn tā de zhēn chéng jǔ dòng què shēn shēn dǎ dòng le wǒ de xīn。",
+        "pinyin": "suī rán tā píng shí hěn shǎo shuō huà, dàn tā de zhēn chéng jǔ dòng què shēn shēn dǎ dòng le wǒ de xīn.",
         "japanese": "彼は普段めったに話さないけれど、彼の誠実な行動が私の心を深く打ちました。",
         "chunks": [
           "雖然他平時很少說話",
@@ -3986,7 +3968,7 @@
         "situation": "店舗・サービス",
         "japanese": "店員がとても親切だったので、そのサービスに感動して思わずたくさん買ってしまいました。",
         "chinese": "因為店員的服務非常貼心，所以他們的態度深深打動了我，讓我忍不住買了很多。",
-        "pinyin": "yīn wèi diàn yuán de fú wù fēi cháng tiē xīn，suǒ yǐ tā men de tài dù shēn shēn dǎ dòng le wǒ，ràng wǒ rěn bù zhù mǎi le hěn duō。",
+        "pinyin": "yīn wèi diàn yuán de fú wù fēi cháng tiē xīn, suǒ yǐ tā men de tài dù shēn shēn dǎ dòng le wǒ, ràng wǒ rěn bù zhù mǎi le hěn duō.",
         "chunks": [
           "因為店員的服務非常貼心",
           "所以他們的態度深深打動了我",
@@ -3996,9 +3978,9 @@
       },
       {
         "situation": "生活トラブル",
-        "japanese": "雖然手機壞掉很麻煩，但朋友立刻借我備用機，那份心意實在讓我感動。",
         "chinese": "雖然手機壞掉很麻煩，但朋友立刻借我備用機的舉動，深深打動了我。",
-        "pinyin": "suī rán shǒu jī huài diào hěn má fan，dàn péng yǒu lì kè jiè wǒ bèi yòng jī de jǔ dòng，shēn shēn dǎ dòng le wǒ。",
+        "pinyin": "suī rán shǒu jī huài diào hěn má fan, dàn péng yǒu lì kè jiè wǒ bèi yòng jī de jǔ dòng, shēn shēn dǎ dòng le wǒ.",
+        "japanese": "スマホが壊れて大変だったけれど、友達がすぐに予備の携帯を貸してくれたことに、深く心を打たれました。",
         "chunks": [
           "雖然手機壞掉很麻煩",
           "但朋友立刻借我備用機的舉動",
@@ -4034,7 +4016,7 @@
         "situation": "交通・移動",
         "chinese": "因為捷運站的指示不清楚，所以我差點坐錯車。",
         "pinyin": "yīn wèi jié yùn zhàn de zhǐ shì bù qīng chǔ, suǒ yǐ wǒ chà diǎn zuò cuò chē.",
-        "japanese": "因為捷運站的指示不清楚，所以我差點搭錯車。",
+        "japanese": "MRT駅の案内表示がわかりにくくて、危うく電車を乗り間違えるところでした。",
         "chunks": [
           "因為捷運站的指示不清楚",
           "所以我差點坐錯車"
@@ -4045,7 +4027,7 @@
         "situation": "店舗・サービス",
         "chinese": "只要按照店員的指示填寫資料，就可以拿到會員卡。",
         "pinyin": "zhǐ yào àn zhào diàn yuán de zhǐ shì tián xiě zī liào, jiù kě yǐ ná dào huì yuán kǎ.",
-        "japanese": "只要按照店員的指示填寫資料，就可以拿到會員卡。",
+        "japanese": "店員の指示どおりに情報を記入すれば、会員カードがもらえます。",
         "chunks": [
           "只要按照店員的指示填寫資料",
           "就可以拿到會員卡"
@@ -4056,7 +4038,7 @@
         "situation": "公的手続き・職場",
         "chinese": "雖然主管給了很多指示，但是我們還是得自己找方法解決。",
         "pinyin": "suī rán zhǔ guǎn gěi le hěn duō zhǐ shì, dàn shì wǒ men hái shì děi zì jǐ zhǎo fāng fǎ jiě jué.",
-        "japanese": "雖然主管給了很多指示，但是我們還是得自己找方法解決。",
+        "japanese": "上司からたくさん指示をもらったけれど、やはり自分たちで解決方法を探さなければなりません。",
         "chunks": [
           "雖然主管給了很多指示",
           "但是我們還是得自己找方法解決"
@@ -4079,7 +4061,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "雖然這家餐廳的價格有點高，但是服務品質完全超出我的預期。",
-        "pinyin": "suī rán zhè jiā cān tīng de jià gé yǒu diǎn gāo，dàn shì fú wù pǐn zhì wán quán chāo chū wǒ de yù qī。",
+        "pinyin": "suī rán zhè jiā cān tīng de jià gé yǒu diǎn gāo, dàn shì fú wù pǐn zhí wán quán chāo chū wǒ de yù qī.",
         "japanese": "このレストランの値段は少し高いけど、サービスの質は完全に私の予想を超えていました。",
         "chunks": [
           "雖然這家餐廳的價格有點高",
@@ -4092,7 +4074,7 @@
         "situation": "生活トラブル",
         "key": "2",
         "chinese": "因為機車突然拋錨，所以修理費超出預期，讓我很頭痛。",
-        "pinyin": "yīn wèi jī chē tū rán pāo máo，suǒ yǐ xiū lǐ fèi chāo chū yù qī，ràng wǒ hěn tóu tòng。",
+        "pinyin": "yīn wèi jī chē tū rán pāo máo, suǒ yǐ xiū lǐ fèi chāo chū yù qī, ràng wǒ hěn tóu tòng.",
         "japanese": "バイクが突然故障したので、修理代が予想を超えてしまい、頭が痛いです。",
         "chunks": [
           "因為機車突然拋錨",
@@ -4104,16 +4086,15 @@
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要按時繳納健保費，補助金額就會超出預期，減輕負擔。",
-        "pinyin": "zhǐ yào àn shí jiǎo nà jiàn bǎo fèi，bǔ zhù jīn é jiù huì chāo chū yù qī，jiǎn qīng fù dān。",
-        "japanese": "健康保険料を期限内に納めさえすれば、補助額が予想を超えて、負担が軽減されます。",
+        "chinese": "雖然健保費每年都在調整，但這次漲幅超出預期，讓很多人覺得負擔變重了。",
+        "pinyin": "suī rán jiàn bǎo fèi měi nián dōu zài tiáo zhěng, dàn zhè cì zhǎng fú chāo chū yù qī, ràng hěn duō rén jué de fù dān biàn zhòng le.",
+        "japanese": "健康保険料は毎年調整されていますが、今回の値上げ幅は予想を超えていて、多くの人が負担が重くなったと感じています。",
         "chunks": [
-          "只要按時繳納健保費",
-          "補助金額就會",
-          "超出預期",
-          "減輕負擔"
+          "雖然健保費每年都在調整",
+          "但這次漲幅超出預期",
+          "讓很多人覺得負擔變重了"
         ],
-        "hintText": "只要按時繳納健保費，補助金額就會"
+        "hintText": "雖然健保費每年都在調整，但這次漲幅超出"
       }
     ]
   },
@@ -4243,8 +4224,8 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然媽媽一直反對，但他還是堅持要娶那個女生。",
-        "pinyin": "suī rán mā ma yī zhí fǎn duì，dàn tā hái shì jiān chí yào qǔ nà ge nǚ shēng。",
-        "japanese": "雖然媽媽一直反對，但他還是堅持要娶那個女生。",
+        "pinyin": "suī rán mā ma yī zhí fǎn duì, dàn tā hái shì jiān chí yào qǔ nà ge nǚ shēng.",
+        "japanese": "母はずっと反対していたけれど、彼はそれでもその女性と結婚すると言い張りました。",
         "chunks": [
           "雖然媽媽一直反對，",
           "但他還是堅持",
@@ -4255,8 +4236,8 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家店的東西品質很好，所以我堅持要用他們的產品。",
-        "pinyin": "yīn wèi zhè jiā diàn de dōng xi pǐn zhí hěn hǎo，suǒ yǐ wǒ jiān chí yào yòng tā men de chǎn pǐn。",
-        "japanese": "因為這家店的東西品質很好，所以我堅持要用他們的產品。",
+        "pinyin": "yīn wèi zhè jiā diàn de dōng xi pǐn zhí hěn hǎo, suǒ yǐ wǒ jiān chí yào yòng tā men de chǎn pǐn.",
+        "japanese": "この店の商品は品質がとても良いので、私はこだわってこの店の製品を使っています。",
         "chunks": [
           "因為這家店的東西品質很好，",
           "所以我堅持",
@@ -4267,8 +4248,8 @@
       {
         "situation": "交通・移動",
         "chinese": "只要捷運沒有停駛，我就堅持搭捷運上班，不騎機車。",
-        "pinyin": "zhǐ yào jié yùn méi yǒu tíng shǐ，wǒ jiù jiān chí dā jié yùn shàng bān，bù qí jī chē。",
-        "japanese": "只要捷運沒有停駛，我就堅持搭捷運上班，不騎機車。",
+        "pinyin": "zhǐ yào jié yùn méi yǒu tíng shǐ, wǒ jiù jiān chí dā jié yùn shàng bān, bù qí jī chē.",
+        "japanese": "MRTが運休しない限り、私はバイクではなくMRTで通勤することにこだわっています。",
         "chunks": [
           "只要捷運沒有停駛，",
           "我就堅持",
@@ -4292,7 +4273,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他們是夫妻，但很少探討彼此的感受。",
-        "pinyin": "suī rán tā men shì fū qī，dàn hěn shǎo tàn tǎo bǐ cǐ de gǎn shòu。",
+        "pinyin": "suī rán tā men shì fū qī, dàn hěn shǎo tàn tǎo bǐ cǐ de gǎn shòu.",
         "japanese": "彼らは夫婦ですが、お互いの気持ちを深く話し合うことはほとんどありません。",
         "chunks": [
           "雖然他們是夫妻，",
@@ -4303,7 +4284,7 @@
       },
       {
         "situation": "生活トラブル",
-        "pinyin": "yīn wèi lóu shàng wǎn shàng tài chǎo，suǒ yǐ wǒ men zhǔn bèi gēn tā men tàn tǎo jiě jué fāng àn。",
+        "pinyin": "yīn wèi lóu shàng wǎn shàng tài chǎo, suǒ yǐ wǒ men zhǔn bèi gēn tā men tàn tǎo jiě jué fāng àn.",
         "chinese": "因為樓上晚上太吵，所以我們準備跟他們探討解決方案。",
         "japanese": "上の階が夜うるさいので、解決策を話し合うつもりです。",
         "chunks": [
@@ -4316,7 +4297,7 @@
       {
         "situation": "職場",
         "chinese": "只要大家願意探討問題，就一定能找到改善的方法。",
-        "pinyin": "zhǐ yào dà jiā yuàn yì tàn tǎo wèn tí，jiù yī dìng néng zhǎo dào gǎi shàn de fāng fǎ。",
+        "pinyin": "zhǐ yào dà jiā yuàn yì tàn tǎo wèn tí, jiù yī dìng néng zhǎo dào gǎi shàn de fāng fǎ.",
         "japanese": "皆が問題を深く議論すれば、必ず改善方法が見つかります。",
         "chunks": [
           "只要大家願意",
@@ -4447,7 +4428,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我家經濟狀況不好，但我們還是盡力幫助弱勢鄰居。",
-        "pinyin": "suī rán wǒ jiā jīng jì zhuàng kuàng bù hǎo，dàn wǒ men hái shì jìn lì bāng zhù ruò shì lín jū。",
+        "pinyin": "suī rán wǒ jiā jīng jì zhuàng kuàng bù hǎo, dàn wǒ men hái shì jìn lì bāng zhù ruò shì lín jū.",
         "japanese": "うちは経済的に厳しいですが、それでも弱い立場の隣人を助けるよう努めています。",
         "chunks": [
           "雖然我家經濟狀況不好",
@@ -4459,7 +4440,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "因為公司有補助弱勢員工的方案，所以只要申請就能獲得津貼。",
-        "pinyin": "yīn wèi gōng sī yǒu bǔ zhù ruò shì yuán gōng de fāng àn，suǒ yǐ zhǐ yào shēn qǐng jiù néng huò dé jīn tiē。",
+        "pinyin": "yīn wèi gōng sī yǒu bǔ zhù ruò shì yuán gōng de fāng àn, suǒ yǐ zhǐ yào shēn qǐng jiù néng huò dé jīn tiē.",
         "japanese": "会社には弱い立場の従業員を補助する制度があるので、申請さえすれば手当がもらえます。",
         "chunks": [
           "因為公司有補助弱勢員工的方案",
@@ -4471,7 +4452,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "這家超市每週三會打折，而且特別關照弱勢顧客。",
-        "pinyin": "zhè jiā chāo shì měi zhōu sān huì dǎ zhé，ér qiě tè bié guān zhào ruò shì gù kè。",
+        "pinyin": "zhè jiā chāo shì měi zhōu sān huì dǎ zhé, ér qiě tè bié guān zhào ruò shì gù kè.",
         "japanese": "このスーパーは毎週水曜日に割引があり、特に弱い立場のお客様に配慮しています。",
         "chunks": [
           "這家超市每週三會打折",
@@ -4567,9 +4548,9 @@
       },
       {
         "situation": "生活トラブル",
-        "japanese": "雖然我已經申請了數位身分證，但是一直還沒收到。",
-        "pinyin": "suī rán wǒ yǐ jīng shēn qǐng le shù wèi shēn fèn zhèng, dàn shì yī zhí hái méi shōu dào.",
         "chinese": "雖然我已經申請了數位身分證，但是一直還沒收到。",
+        "pinyin": "suī rán wǒ yǐ jīng shēn qǐng le shù wèi shēn fèn zhèng, dàn shì yī zhí hái méi shōu dào.",
+        "japanese": "デジタル身分証を申請したけれど、まだ届いていません。",
         "chunks": [
           "雖然我已經申請了",
           "數位身分證",
@@ -4616,15 +4597,14 @@
       },
       {
         "situation": "生活トラブル",
-        "chinese": "因為健保卡弄丟了，所以我要趕快去掌握補辦的流程。",
-        "pinyin": "yīn wèi jiàn bǎo kǎ nòng diū le, suǒ yǐ wǒ yào gǎn kuài qù zhǎng wò bǔ bàn de liú chéng.",
-        "japanese": "健康保険証をなくしたので、早く再発行の手続きを把握しに行かなくては。",
+        "chinese": "因為健保卡弄丟了，所以我先上網掌握補辦需要的文件。",
+        "pinyin": "yīn wèi jiàn bǎo kǎ nòng diū le, suǒ yǐ wǒ xiān shàng wǎng zhǎng wò bǔ bàn xū yào de wén jiàn.",
+        "japanese": "健康保険証をなくしたので、まずネットで再発行に必要な書類を把握しました。",
         "chunks": [
           "因為健保卡弄丟了",
-          "所以我要趕快去掌握",
-          "補辦的流程"
+          "所以我先上網掌握補辦需要的文件"
         ],
-        "hintText": "因為健保卡弄丟了，所以我要趕快去"
+        "hintText": "因為健保卡弄丟了，所以我先上網"
       },
       {
         "situation": "店舗・サービス",
@@ -4714,7 +4694,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我們家的預算有限，但是只要合理規劃，還是可以出國旅行。",
-        "pinyin": "suī rán wǒ men jiā de yù suàn yǒu xiàn，dàn shì zhǐ yào hé lǐ guī huà，hái shì kě yǐ chū guó lǚ xíng。",
+        "pinyin": "suī rán wǒ men jiā de yù suàn yǒu xiàn, dàn shì zhǐ yào hé lǐ guī huà, hái shì kě yǐ chū guó lǚ xíng.",
         "japanese": "うちの家計の予算は限られているけれど、ちゃんと計画すれば海外旅行にも行けるよ。",
         "chunks": [
           "雖然我們家的預算有限",
@@ -4726,7 +4706,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這次的預算不夠，所以我們只能買打折的機車零件，不能買全新的。",
-        "pinyin": "yīn wèi zhè cì de yù suàn bù gòu，suǒ yǐ wǒ men zhǐ néng mǎi dǎ zhé de jī chē líng jiàn，bù néng mǎi quán xīn de。",
+        "pinyin": "yīn wèi zhè cì de yù suàn bù gòu, suǒ yǐ wǒ men zhǐ néng mǎi dǎ zhé de jī chē líng jiàn, bù néng mǎi quán xīn de.",
         "japanese": "今回の予算が足りないので、割引されたバイクの部品しか買えず、新品は買えません。",
         "chunks": [
           "因為這次的預算不夠",
@@ -4737,12 +4717,12 @@
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要預算審核通過，我們就可以申請新的健保卡設備了。",
-        "pinyin": "zhǐ yào yù suàn shěn hé tōng guò，wǒ men jiù kě yǐ shēn qǐng xīn de jiàn bǎo kǎ shè bèi le。",
-        "japanese": "予算の審査が通れば、新しい健保カードの機器を申請できます。",
+        "chinese": "只要預算審核通過，我們就可以更新診所的電腦設備了。",
+        "pinyin": "zhǐ yào yù suàn shěn hé tōng guò, wǒ men jiù kě yǐ gēng xīn zhěn suǒ de diàn nǎo shè bèi le.",
+        "japanese": "予算の審査が通れば、診療所のパソコン設備を新しくできます。",
         "chunks": [
           "只要預算審核通過",
-          "我們就可以申請新的健保卡設備了"
+          "我們就可以更新診所的電腦設備了"
         ],
         "hintText": "只要"
       }
@@ -4792,7 +4772,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "因為這份報告的結構不夠清楚，所以主管要求我重新整理一遍。",
-        "pinyin": "yīn wèi zhè fèn bào gào de jié gòu bú gòu qīng chǔ, suǒ yǐ zhǔ guǎn yāo qiú wǒ chóng xīn zhěng lǐ yī biàn.",
+        "pinyin": "yīn wèi zhè fèn bào gào de jié gòu bù gòu qīng chǔ, suǒ yǐ zhǔ guǎn yāo qiú wǒ chóng xīn zhěng lǐ yī biàn.",
         "japanese": "この報告書の構成が十分に明確でないため、上司が私に最初から整理し直すよう要求しました。",
         "chunks": [
           "因為",
@@ -4831,7 +4811,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "無論爸媽同不同意，我都會支持你的決定。",
-        "pinyin": "wú lùn bà mā tóng bù tóng yì，wǒ dōu huì zhī chí nǐ de jué dìng。",
+        "pinyin": "wú lùn bà mā tóng bù tóng yì, wǒ dōu huì zhī chí nǐ de jué dìng.",
         "japanese": "両親が賛成しようがしまいが、私はあなたの決断を支持します。",
         "chunks": [
           "無論爸媽同不同意",
@@ -4843,7 +4823,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家店的服務很好，所以我支持他們推出新的會員制度。",
-        "pinyin": "yīn wèi zhè jiā diàn de fú wù hěn hǎo，suǒ yǐ wǒ zhī chí tā men tuī chū xīn de huì yuán zhì dù。",
+        "pinyin": "yīn wèi zhè jiā diàn de fú wù hěn hǎo, suǒ yǐ wǒ zhī chí tā men tuī chū xīn de huì yuán zhì dù.",
         "japanese": "この店のサービスが良いので、私は彼らが新しい会員制度を導入するのを支持します。",
         "chunks": [
           "因為這家店的服務很好",
@@ -4855,7 +4835,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "雖然提案還需要修改，但只要方向正確，我就會支持。",
-        "pinyin": "suī rán tí àn hái xū yào xiū gǎi，dàn zhǐ yào fāng xiàng zhèng què，wǒ jiù huì zhī chí。",
+        "pinyin": "suī rán tí àn hái xū yào xiū gǎi, dàn zhǐ yào fāng xiàng zhèng què, wǒ jiù huì zhī chí.",
         "japanese": "提案はまだ修正が必要ですが、方向性が正しければ私は支持します。",
         "chunks": [
           "雖然提案還需要修改",
@@ -4880,7 +4860,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他已經退休了，但還是常常展示他收藏的老照片給我們看。",
-        "pinyin": "suī rán tā yǐ jīng tuì xiū le，dàn hái shì cháng cháng zhǎn shì tā shōu cáng de lǎo zhào piàn gěi wǒ men kàn。",
+        "pinyin": "suī rán tā yǐ jīng tuì xiū le, dàn hái shì cháng cháng zhǎn shì tā shōu cáng de lǎo zhào piàn gěi wǒ men kàn.",
         "japanese": "彼はもう引退したけど、よくコレクションの古い写真を私たちに見せてくれる。",
         "chunks": [
           "雖然他已經退休了",
@@ -4892,7 +4872,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為百貨公司正在打折，所以店家在門口展示最新的包包款式。",
-        "pinyin": "yīn wèi bǎi huò gōng sī zhèng zài dǎ zhé，suǒ yǐ diàn jiā zài mén kǒu zhǎn shì zuì xīn de bāo bāo kuǎn shì。",
+        "pinyin": "yīn wèi bǎi huò gōng sī zhèng zài dǎ zhé, suǒ yǐ diàn jiā zài mén kǒu zhǎn shì zuì xīn de bāo bāo kuǎn shì.",
         "japanese": "デパートがセール中なので、店先で最新のバッグを展示している。",
         "chunks": [
           "因為百貨公司正在打折",
@@ -4904,7 +4884,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要把發票收好，就能在服務台展示購買證明來換貨。",
-        "pinyin": "zhǐ yào bǎ fā piào shōu hǎo，jiù néng zài fú wù tái zhǎn shì gòu mǎi zhèng míng lái huàn huò。",
+        "pinyin": "zhǐ yào bǎ fā piào shōu hǎo, jiù néng zài fú wù tái zhǎn shì gòu mǎi zhèng míng lái huàn huò.",
         "japanese": "領収書をちゃんと保管しておけば、サービスカウンターで購入証明を見せて交換できる。",
         "chunks": [
           "只要把發票收好",
@@ -4929,7 +4909,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "因為鄰居抱怨噪音，所以管委會針對這個問題召開會議。",
-        "pinyin": "yīn wèi lín jū bào yuàn zào yīn，suǒ yǐ guǎn wěi huì zhēn duì zhè ge wèn tí zhào kāi huì yì。",
+        "pinyin": "yīn wèi lín jū bào yuàn zào yīn, suǒ yǐ guǎn wěi huì zhēn duì zhè ge wèn tí zhào kāi huì yì.",
         "japanese": "隣人が騒音を苦情したので、管理委員会はこの問題に焦点を当てて会議を開きました。",
         "chunks": [
           "因為鄰居抱怨噪音",
@@ -4941,20 +4921,19 @@
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要針對健保卡遺失的問題，去區公所申請補發就可以了。",
-        "pinyin": "zhǐ yào zhēn duì jiàn bǎo kǎ yí shī de wèn tí，qù qū gōng suǒ shēn qǐng bǔ fā jiù kě yǐ le。",
-        "japanese": "健康保険証を紛失した問題については、区役所で再発行を申請すれば大丈夫です。",
+        "chinese": "健保署針對健保卡遺失的問題，提供線上申請補發的服務。",
+        "pinyin": "jiàn bǎo shǔ zhēn duì jiàn bǎo kǎ yí shī de wèn tí, tí gōng xiàn shàng shēn qǐng bǔ fā de fú wù.",
+        "japanese": "健康保険証の紛失については、健保署がオンラインで再発行を申請できるサービスを提供しています。",
         "chunks": [
-          "只要針對健保卡遺失的問題",
-          "去區公所申請補發",
-          "就可以了"
+          "健保署針對健保卡遺失的問題",
+          "提供線上申請補發的服務"
         ],
-        "hintText": "只要"
+        "hintText": "健保署"
       },
       {
         "situation": "店舗・サービス",
         "chinese": "雖然這家店經常打折，但是針對會員才有額外優惠。",
-        "pinyin": "suī rán zhè jiā diàn jīng cháng dǎ zhé，dàn shì zhēn duì huì yuán cái yǒu é wài yōu huì。",
+        "pinyin": "suī rán zhè jiā diàn jīng cháng dǎ zhé, dàn shì zhēn duì huì yuán cái yǒu é wài yōu huì.",
         "japanese": "この店はよく割引をしていますが、会員向けにしか追加の特典はありません。",
         "chunks": [
           "雖然這家店經常打折",
@@ -5013,15 +4992,15 @@
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要健保卡過期，就會被罰錢，這是一個實用的教訓。",
-        "pinyin": "zhǐ yào jiàn bǎo kǎ guò qī, jiù huì bèi fá qián, zhè shì yī gè shí yòng de jiào xùn.",
-        "japanese": "健康保険証が期限切れになると罰金が科せられる、これは実用的な教訓です。",
+        "chinese": "因為上次忘記帶健保卡，看病時要先自費，這是一個很實用的教訓。",
+        "pinyin": "yīn wèi shàng cì wàng jì dài jiàn bǎo kǎ, kàn bìng shí yào xiān zì fèi, zhè shì yī gè hěn shí yòng de jiào xùn.",
+        "japanese": "前回健康保険証を忘れて、受診時にいったん自費で払うことになった。これはとても役に立つ教訓だ。",
         "chunks": [
-          "只要健保卡過期",
-          "就會被罰錢",
-          "這是一個實用的教訓"
+          "因為上次忘記帶健保卡",
+          "看病時要先自費",
+          "這是一個很實用的教訓"
         ],
-        "hintText": "只要健保卡過期，就會被罰錢，"
+        "hintText": "因為上次忘記帶健保卡，看病時要先自費，這是一個很實用的"
       }
     ]
   },
@@ -5086,8 +5065,8 @@
       {
         "situation": "店舗・サービス",
         "chinese": "雖然我的目標是存錢買房子，但是看到百貨公司打折還是忍不住買了衣服。",
-        "pinyin": "suī rán wǒ de mù biāo shì cún qián mǎi fáng zi, dàn shì kàn dào bǎi huò gōng sī dǎ zhé hái shì rěn bú zhù mǎi le yī fú.",
-        "japanese": "雖然我的目標是存錢買房子，但是看到百貨公司打折還是忍不住買了衣服。",
+        "pinyin": "suī rán wǒ de mù biāo shì cún qián mǎi fáng zi, dàn shì kàn dào bǎi huò gōng sī dǎ zhé hái shì rěn bù zhù mǎi le yī fú.",
+        "japanese": "私の目標は家を買うために貯金することだけど、デパートのセールを見ると、つい服を買ってしまった。",
         "chunks": [
           "雖然我的目標是存錢買房子",
           "但是看到百貨公司打折",
@@ -5099,7 +5078,7 @@
         "situation": "職場",
         "chinese": "因為公司今年的目標是提升業績，所以我們每週都要開會檢討進度。",
         "pinyin": "yīn wèi gōng sī jīn nián de mù biāo shì tí shēng yè jì, suǒ yǐ wǒ men měi zhōu dōu yào kāi huì jiǎn tǎo jìn dù.",
-        "japanese": "因為公司今年的目標是提升業績，所以我們每週都要開會檢討進度。",
+        "japanese": "会社の今年の目標は業績を上げることなので、毎週会議で進捗を確認しなければなりません。",
         "chunks": [
           "因為公司今年的目標是提升業績",
           "所以我們每週都要開會",
@@ -5111,7 +5090,7 @@
         "situation": "生活トラブル",
         "chinese": "只要我達成減肥目標，就要去夜市吃一頓大餐慶祝。",
         "pinyin": "zhǐ yào wǒ dá chéng jiǎn féi mù biāo, jiù yào qù yè shì chī yī dùn dà cān qìng zhù.",
-        "japanese": "只要我達成減肥目標，就要去夜市吃一頓大餐慶祝。",
+        "japanese": "ダイエットの目標を達成したら、夜市でごちそうを食べてお祝いするつもりです。",
         "chunks": [
           "只要我達成減肥目標",
           "就要去夜市吃一頓大餐",
@@ -5146,7 +5125,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為要買打折的商品，所以我先確認了發票上的日期。",
-        "pinyin": "yīn wèi yào mǎi dǎ zhé de shāng pǐn，suǒ yǐ wǒ xiān què rèn le fā piào shàng de rì qī。",
+        "pinyin": "yīn wèi yào mǎi dǎ zhé de shāng pǐn, suǒ yǐ wǒ xiān què rèn le fā piào shàng de rì qī.",
         "japanese": "割引商品を買うため、まずレシートの日付を確認しました。",
         "chunks": [
           "因為要買打折的商品",
@@ -5159,7 +5138,7 @@
         "situation": "交通・移動",
         "pattern": "只要〜就",
         "chinese": "只要搭捷運前先確認路線圖，就不會搭錯車。",
-        "pinyin": "zhǐ yào dā jié yùn qián xiān què rèn lù xiàn tú，jiù bù huì dā cuò chē。",
+        "pinyin": "zhǐ yào dā jié yùn qián xiān què rèn lù xiàn tú, jiù bù huì dā cuò chē.",
         "japanese": "MRTに乗る前に路線図を確認さえすれば、間違った電車に乗ることはありません。",
         "chunks": [
           "只要搭捷運前先確認路線圖",
@@ -5170,7 +5149,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "雖然已經確認了與會人員名單，但是還是要再核對一次。",
-        "pinyin": "suī rán yǐ jīng què rèn le yǔ huì rén yuán míng dān，dàn shì hái shì yào zài hé duì yī cì。",
+        "pinyin": "suī rán yǐ jīng què rèn le yǔ huì rén yuán míng dān, dàn shì hái shì yào zài hé duì yī cì.",
         "japanese": "出席者リストは確認済みですが、もう一度照合する必要があります。",
         "chunks": [
           "雖然已經確認了與會人員名單",
@@ -5194,7 +5173,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他們常常吵架，但是這次的誤會卻產生了更大的裂痕。",
-        "pinyin": "suī rán tā men cháng cháng chǎo jià，dàn shì zhè cì de wù huì què chǎn shēng le gèng dà de liè hén。",
+        "pinyin": "suī rán tā men cháng cháng chǎo jià, dàn shì zhè cì de wù huì què chǎn shēng le gèng dà de liè hén.",
         "japanese": "彼らはよく喧嘩するけれど、今回の誤解はさらに大きな亀裂を生み出した。",
         "chunks": [
           "雖然他們常常吵架，",
@@ -5206,7 +5185,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家餐廳的服務態度很差，所以對顧客產生了不好的印象。",
-        "pinyin": "yīn wèi zhè jiā cān tīng de fú wù tài dù hěn chà，suǒ yǐ duì gù kè chǎn shēng le bù hǎo de yìn xiàng。",
+        "pinyin": "yīn wèi zhè jiā cān tīng de fú wù tài dù hěn chà, suǒ yǐ duì gù kè chǎn shēng le bù hǎo de yìn xiàng.",
         "japanese": "このレストランのサービス態度が非常に悪いので、お客様に悪い印象を与えた。",
         "chunks": [
           "因為這家餐廳的服務態度很差，",
@@ -5218,7 +5197,7 @@
       {
         "situation": "交通・移動",
         "chinese": "只要搭捷運的時候注意安全，就不會產生任何危險。",
-        "pinyin": "zhǐ yào dā jié yùn de shí hòu zhù yì ān quán，jiù bù huì chǎn shēng rèn hé wēi xiǎn。",
+        "pinyin": "zhǐ yào dā jié yùn de shí hòu zhù yì ān quán, jiù bù huì chǎn shēng rèn hé wéi xiǎn.",
         "japanese": "MRTに乗るときに安全に注意さえすれば、どんな危険も生じない。",
         "chunks": [
           "只要搭捷運的時候注意安全，",
@@ -5255,7 +5234,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "因為最近詐騙電話很多，所以我們要隨時提高警覺，不要隨便提供個資。",
-        "pinyin": "yīn wèi zuì jìn zhà piàn diàn huà hěn duō, suǒ yǐ wǒ men yào suí shí tí gāo jǐng jué, bú yào suí biàn tí gōng gè zī.",
+        "pinyin": "yīn wèi zuì jìn zhà piàn diàn huà hěn duō, suǒ yǐ wǒ men yào suí shí tí gāo jǐng jué, bù yào suí biàn tí gōng gè zī.",
         "japanese": "最近詐欺電話が多いので、常に警戒心を高めて安易に個人情報を提供しないようにしなければなりません。",
         "chunks": [
           "因為最近詐騙電話很多",
@@ -5352,8 +5331,8 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然這隻手錶是阿公留給我的，但它的精密指針還是走得很準。",
-        "pinyin": "suī rán zhè zhī shǒu biǎo shì ā gōng liú gěi wǒ de，dàn tā de jīng mì zhǐ zhēn hái shì zǒu de hěn zhǔn。",
-        "japanese": "雖然這隻手錶是祖父留給我的，但它的精密指針還是走得很準。",
+        "pinyin": "suī rán zhè zhī shǒu biǎo shì ā gōng liú gěi wǒ de, dàn tā de jīng mì zhǐ zhēn hái shì zǒu de hěn zhǔn.",
+        "japanese": "この腕時計は祖父が残してくれたものだけど、精密な針は今でも正確に時を刻んでいます。",
         "chunks": [
           "雖然這隻手錶是阿公留給我的",
           "但它的精密指針還是走得很準"
@@ -5363,8 +5342,8 @@
       {
         "situation": "店舗・服務",
         "chinese": "因為這家眼鏡行的驗光儀器很精密，所以我配了新眼鏡後看東西都變清楚。",
-        "pinyin": "yīn wèi zhè jiā yǎn jìng háng de yàn guāng yí qì hěn jīng mì，suǒ yǐ wǒ pèi le xīn yǎn jìng hòu kàn dōng xī dōu biàn qīng chǔ。",
-        "japanese": "因為這家眼鏡行的驗光儀器很精密，所以我配了新眼鏡後看東西都變清楚。",
+        "pinyin": "yīn wèi zhè jiā yǎn jìng háng de yàn guāng yí qì hěn jīng mì, suǒ yǐ wǒ pèi le xīn yǎn jìng hòu kàn dōng xī dōu biàn qīng chǔ.",
+        "japanese": "この眼鏡店の検眼機器はとても精密なので、新しい眼鏡を作ってから物がはっきり見えるようになりました。",
         "chunks": [
           "因為這家眼鏡行的驗光儀器很精密",
           "所以我配了新眼鏡後看東西都變清楚"
@@ -5374,8 +5353,8 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要定期保養冷氣機的精密零件，就不用擔心夏天突然故障。",
-        "pinyin": "zhǐ yào dìng qī bǎo yǎng lěng qì jī de jīng mì líng jiàn，jiù bù yòng dān xīn xià tiān tū rán gù zhàng。",
-        "japanese": "只要定期保養冷氣機的精密零件，就不用擔心夏天突然故障。",
+        "pinyin": "zhǐ yào dìng qī bǎo yǎng lěng qì jī de jīng mì líng jiàn, jiù bù yòng dān xīn xià tiān tū rán gù zhàng.",
+        "japanese": "エアコンの精密な部品を定期的にメンテナンスすれば、夏に突然故障する心配はありません。",
         "chunks": [
           "只要定期保養冷氣機的精密零件",
           "就不用擔心夏天突然故障"
@@ -5398,7 +5377,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他每個月只存一點錢，但幾年下來也累積了可觀的存款。",
-        "pinyin": "suī rán tā měi gè yuè zhǐ cún yī diǎn qián，dàn jǐ nián xià lái yě lěi jī le kě guān de cún kuǎn。",
+        "pinyin": "suī rán tā měi gè yuè zhǐ cún yī diǎn qián, dàn jǐ nián xià lái yě lěi jī le kě guān de cún kuǎn.",
         "japanese": "彼は毎月少ししか貯金しないけど、数年でかなりの貯金がたまった。",
         "chunks": [
           "雖然他每個月只存一點錢，",
@@ -5410,7 +5389,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家餐廳的生意很好，所以每個月的營業額都相當可觀。",
-        "pinyin": "yīn wèi zhè jiā cān tīng de shēng yì hěn hǎo，suǒ yǐ měi gè yuè de yíng yè é dōu xiāng dāng kě guān。",
+        "pinyin": "yīn wèi zhè jiā cān tīng de shēng yì hěn hǎo, suǒ yǐ měi gè yuè de yíng yè é dōu xiāng dāng kě guān.",
         "japanese": "このレストランは商売がとてもうまくいっているので、毎月の売上高がかなり大きい。",
         "chunks": [
           "因為這家餐廳的生意很好，",
@@ -5422,7 +5401,7 @@
       {
         "situation": "交通・移動",
         "chinese": "只要搭捷運通勤，每個月就能省下可觀的交通費。",
-        "pinyin": "zhǐ yào dā jié yùn tōng qín，měi gè yuè jiù néng shěng xià kě guān de jiāo tōng fèi。",
+        "pinyin": "zhǐ yào dā jié yùn tōng qín, měi gè yuè jiù néng shěng xià kě guān de jiāo tōng fèi.",
         "japanese": "MRTで通勤すれば、毎月かなりの交通費が節約できる。",
         "chunks": [
           "只要搭捷運通勤，",
@@ -5568,7 +5547,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家餐廳的服務品質卓越，所以即使要排隊我們也願意等。",
-        "pinyin": "yīn wèi zhè jiā cān tīng de fú wù pǐn zhì zhuó yuè, suǒ yǐ jí shǐ yào pái duì wǒ men yě yuàn yì děng.",
+        "pinyin": "yīn wèi zhè jiā cān tīng de fú wù pǐn zhí zhuó yuè, suǒ yǐ jí shǐ yào pái duì wǒ men yě yuàn yì děng.",
         "japanese": "このレストランのサービス品質が卓越しているので、たとえ並んでも私たちは待つつもりだ。",
         "chunks": [
           "因為這家餐廳的服務品質卓越",
@@ -5616,7 +5595,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我哥哥最近失業，但他還是很樂觀，因為他相信很快就會找到新工作。",
-        "pinyin": "suī rán wǒ gē ge zuì jìn shī yè，dàn tā hái shì hěn lè guān，yīn wèi tā xiāng xìn hěn kuài jiù huì zhǎo dào xīn gōng zuò。",
+        "pinyin": "suī rán wǒ gē ge zuì jìn shī yè, dàn tā hái shì hěn lè guān, yīn wèi tā xiāng xìn hěn kuài jiù huì zhǎo dào xīn gōng zuò.",
         "japanese": "私の兄は最近失業していますが、彼はとても楽観的です。なぜならすぐに新しい仕事が見つかると信じているからです。",
         "chunks": [
           "雖然我哥哥最近失業",
@@ -5627,9 +5606,8 @@
       },
       {
         "situation": "生活トラブル",
-        "context": "雖然我哥哥最近失業，但他還是很樂觀，因為他相信很快就會找到新工作。",
         "chinese": "雖然機車被偷了，但只要保持樂觀，就會覺得這只是小事。",
-        "pinyin": "suī rán jī chē bèi tōu le，zhǐ yào bǎo chí lè guān，jiù huì jué de zhè zhǐ shì xiǎo shì。",
+        "pinyin": "suī rán jī chē bèi tōu le, zhǐ yào bǎo chí lè guān, jiù huì jué de zhè zhǐ shì xiǎo shì.",
         "japanese": "バイクは盗まれましたが、楽観的でいれば、これはただの小さなことだと思えます。",
         "chunks": [
           "雖然機車被偷了",
@@ -5641,7 +5619,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家餐廳的服務態度很好，所以即使等很久，我還是很樂觀地繼續等。",
-        "pinyin": "yīn wèi zhè jiā cān tīng de fú wù tài dù hěn hǎo，suǒ yǐ jí shǐ děng hěn jiǔ，wǒ hái shì hěn lè guān dì jì xù děng。",
+        "pinyin": "yīn wèi zhè jiā cān tīng de fú wù tài dù hěn hǎo, suǒ yǐ jí shǐ děng hěn jiǔ, wǒ hái shì hěn lè guān dì jì xù děng.",
         "japanese": "このレストランのサービス態度がとても良いので、たとえ長く待っても、私は楽観的に待ち続けます。",
         "chunks": [
           "因為這家餐廳的服務態度很好",
@@ -5679,7 +5657,7 @@
         "situation": "店舗・サービス",
         "description": "雖然這家餐廳很受歡迎，但為了確保服務品質，他們還是會限制用餐時間。",
         "chinese": "雖然這家餐廳很受歡迎，但為了確保服務品質，他們還是會限制用餐時間。",
-        "pinyin": "suī rán zhè jiā cān tīng hěn shòu huān yíng, dàn wèi le què bǎo fú wù pǐn zhì, tā men hái shì huì xiàn zhì yòng cān shí jiān.",
+        "pinyin": "suī rán zhè jiā cān tīng hěn shòu huān yíng, dàn wèi le què bǎo fú wù pǐn zhí, tā men hái shì huì xiàn zhì yòng cān shí jiān.",
         "japanese": "このレストランは人気だが、サービス品質を確保するために、食事時間を制限している。",
         "chunks": [
           "雖然這家餐廳很受歡迎",
@@ -5850,7 +5828,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "因為公司處理加班費的原則很清楚，所以同事們都不會有爭議。",
-        "pinyin": "yīn wèi gōng sī chǔ lǐ jiā bān fèi de yuán zé hěn qīng chu, suǒ yǐ tóng shì men dōu bú huì yǒu zhēng yì.",
+        "pinyin": "yīn wèi gōng sī chǔ lǐ jiā bān fèi de yuán zé hěn qīng chu, suǒ yǐ tóng shì men dōu bù huì yǒu zhēng yì.",
         "japanese": "会社の残業代のルールが明確なので、同僚たちは揉めることがありません。",
         "chunks": [
           "因為公司處理加班費的原則很清楚",
@@ -5875,7 +5853,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "既然他們的服務品質有優勢，我們選擇這家店就對了。",
-        "pinyin": "jì rán tā men de fú wù pǐn zhí yǒu yōu shì，wǒ men xuǎn zé zhè jiā diàn jiù duì le。",
+        "pinyin": "jì rán tā men de fú wù pǐn zhí yǒu yōu shì, wǒ men xuǎn zé zhè jiā diàn jiù duì le.",
         "japanese": "彼らのサービス品質に優位性がある以上、私たちはこの店を選んで正解だ。",
         "chunks": [
           "既然他們的服務品質有優勢",
@@ -5887,7 +5865,7 @@
         "situation": "生活トラブル",
         "japanese": "既然彼は証拠を持っている以上、私たちは状況的に優位に立てない。",
         "chinese": "既然他有證據，我們在情勢上就沒有優勢了。",
-        "pinyin": "jì rán tā yǒu zhèng jù，wǒ men zài qíng shì shàng jiù méi yǒu yōu shì le。",
+        "pinyin": "jì rán tā yǒu zhèng jù, wǒ men zài qíng shì shàng jiù méi yǒu yōu shì le.",
         "hintText": "既然他有證據，",
         "chunks": [
           "既然他有證據",
@@ -5898,7 +5876,7 @@
         "situation": "人間関係・家族",
         "japanese": "既然彼女は話し合いが得意なので、交渉では彼女が優位に立つだろう。",
         "chinese": "既然她很會溝通，在談判時她就比較有優勢。",
-        "pinyin": "jì rán tā hěn huì gōu tōng，zài tán pàn shí tā jiù bǐ jiào yǒu yōu shì。",
+        "pinyin": "jì rán tā hěn huì gōu tōng, zài tán pàn shí tā jiù bǐ jiào yǒu yōu shì.",
         "hintText": "既然她很會溝通，",
         "chunks": [
           "既然她很會溝通",
@@ -5932,7 +5910,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他現在表現普通，但只要持續努力，潛力就會發揮出來。",
-        "pinyin": "suī rán tā xiàn zài biǎo xiàn pǔ tōng，dàn zhǐ yào chí xù nǔ lì，qián lì jiù huì fā huī chū lái。",
+        "pinyin": "suī rán tā xiàn zài biǎo xiàn pǔ tōng, dàn zhǐ yào chí xù nǔ lì, qián lì jiù huì fā huī chū lái.",
         "japanese": "彼は今は普通の成績ですが、努力を続ければ潜在能力が発揮されるでしょう。",
         "chunks": [
           "雖然他現在表現普通",
@@ -5943,20 +5921,20 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "只要加入會員，就能享有更多優惠，這張發票上的潛力很大。",
-        "pinyin": "zhǐ yào jiā rù huì yuán，jiù néng xiǎng yǒu gèng duō yōu huì，zhè zhāng fā piào shàng de qián lì hěn dà。",
-        "japanese": "会員になれば、より多くの特典が得られます。このレシートの潜在能力は大きいです。",
+        "chinese": "雖然這家小店剛開幕，但老闆很有想法，發展潛力很大。",
+        "pinyin": "suī rán zhè jiā xiǎo diàn gāng kāi mù, dàn lǎo bǎn hěn yǒu xiǎng fǎ, fā zhǎn qián lì hěn dà.",
+        "japanese": "この小さな店はオープンしたばかりですが、店主はアイデアが豊富で、成長の潜在力が大きいです。",
         "chunks": [
-          "只要加入會員",
-          "就能享有更多優惠",
-          "這張發票上的潛力很大"
+          "雖然這家小店剛開幕",
+          "但老闆很有想法",
+          "發展潛力很大"
         ],
-        "hintText": "只要加入會員，就能享有更多優惠，"
+        "hintText": "雖然這家小店剛開幕，但老闆很有想法，發展"
       },
       {
         "situation": "公的手続き・職場",
         "chinese": "因為他懂程式設計，所以只要給他機會，潛力就能在專案中展現。",
-        "pinyin": "yīn wèi tā dǒng chéng shì shè jì，suǒ yǐ zhǐ yào gěi tā jī huì，qián lì jiù néng zài zhuān àn zhōng zhǎn xiàn。",
+        "pinyin": "yīn wèi tā dǒng chéng shì shè jì, suǒ yǐ zhǐ yào gěi tā jī huì, qián lì jiù néng zài zhuān àn zhōng zhǎn xiàn.",
         "japanese": "彼はプログラミングができるので、チャンスを与えればプロジェクトで潜在能力を発揮できます。",
         "chunks": [
           "因為他懂程式設計",
@@ -5982,7 +5960,7 @@
         "situation": "人間関係・家族",
         "chinese": "雖然爸媽的想法跟我不同，但我試著從他們的角度去理解。",
         "pinyin": "suī rán bà mā de xiǎng fǎ gēn wǒ bù tóng, dàn wǒ shì zhe cóng tā men de jiǎo dù qù lǐ jiě.",
-        "japanese": "雖然爸媽的想法跟我不一樣，但我試著從他們的角度去理解。",
+        "japanese": "両親の考えは私とは違うけれど、彼らの立場から理解しようとしています。",
         "chunks": [
           "雖然爸媽的想法跟我不同，",
           "但我試著",
@@ -5994,7 +5972,7 @@
         "situation": "店舗・サービス",
         "chinese": "因為這家店的服務態度很差，所以我們從消費者的角度寫了客訴信。",
         "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù hěn chà, suǒ yǐ wǒ men cóng xiāo fèi zhě de jiǎo dù xiě le kè sù xìn.",
-        "japanese": "因為這家店的服務態度很差，所以我們從消費者的角度寫了客訴信。",
+        "japanese": "この店の接客態度がとても悪かったので、私たちは消費者の立場から苦情の手紙を書きました。",
         "chunks": [
           "因為這家店的服務態度很差，",
           "所以我們",
@@ -6006,7 +5984,7 @@
         "situation": "生活トラブル",
         "chinese": "只要換個角度想，機車被拖走其實也是一種經驗。",
         "pinyin": "zhǐ yào huàn gè jiǎo dù xiǎng, jī chē bèi tuō zǒu qí shí yě shì yī zhǒng jīng yàn.",
-        "japanese": "只要換個角度想，機車被拖走其實也是一種經驗。",
+        "japanese": "見方を変えれば、バイクをレッカー移動されたのも一つの経験です。",
         "chunks": [
           "只要換個角度想，",
           "機車被拖走",
@@ -6054,7 +6032,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要研究報告通過審查，他就能在國際研討會上發表自己的成果。",
-        "pinyin": "zhǐ yào yán jiū bào gào tōng guò shěn chá, tā jiù néng zài guó jì yán tǎo huì shàng fā biǎo zì jǐ de chéng guǒ.",
+        "pinyin": "zhǐ yào yán jiù bào gào tōng guò shěn chá, tā jiù néng zài guó jì yán tǎo huì shàng fā biǎo zì jǐ de chéng guǒ.",
         "japanese": "研究報告が審査を通れば、彼は国際セミナーで自分の成果を発表できる。",
         "chunks": [
           "只要研究報告通過審查",
@@ -6090,7 +6068,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "因為公司旨在提升員工福利，所以只要提出申請就可以獲得補助。",
-        "pinyin": "yīn wèi gōng sī zhǐ zài tí shēng yuán gōng fú lì，suǒ yǐ zhǐ yào tí chū shēn qǐng jiù kě yǐ huò dé bǔ zhù。",
+        "pinyin": "yīn wèi gōng sī zhǐ zài tí shēng yuán gōng fú lì, suǒ yǐ zhǐ yào tí chū shēn qǐng jiù kě yǐ huò dé bǔ zhù.",
         "japanese": "会社は従業員の福利厚生を向上させることを目的としているので、申請すれば補助金を得られます。",
         "chunks": [
           "因為公司旨在提升員工福利，",
@@ -6101,27 +6079,25 @@
       },
       {
         "situation": "生活トラブル",
-        "chinese": "雖然這項政策旨在保障消費者權益，但是發票遺失時還是很麻煩。",
-        "pinyin": "suī rán zhè xiàng zhèng cè zhǐ zài bǎo zhàng xiāo fèi zhě quán yì，dàn shì fā piào yí shī shí hái shì hěn má fan。",
-        "japanese": "この政策は消費者の権利を守ることを目的としていますが、領収書を紛失するとやはり面倒です。",
+        "chinese": "這項發票政策旨在保障消費者權益，同時也能減少逃漏稅。",
+        "pinyin": "zhè xiàng fā piào zhèng cè zhǐ zài bǎo zhàng xiāo fèi zhě quán yì, tóng shí yě néng jiǎn shǎo táo lòu shuì.",
+        "japanese": "このレシート制度は消費者の権利を守ることを目的としており、同時に脱税を減らすこともできます。",
         "chunks": [
-          "雖然這項政策旨在保障消費者權益，",
-          "但是發票遺失時",
-          "還是很麻煩。"
+          "這項發票政策旨在保障消費者權益",
+          "同時也能減少逃漏稅"
         ],
-        "hintText": "雖然這項政策旨在保障消費者權益，但是發票遺失時"
+        "hintText": "這項發票政策"
       },
       {
         "situation": "交通・移動",
-        "chinese": "因為捷運新路線旨在紓解通勤人潮，所以只要刷卡就能享有折扣。",
-        "pinyin": "yīn wèi jié yùn xīn lù xiàn zhǐ zài shū jiě tōng qín rén cháo，suǒ yǐ zhǐ yào shuā kǎ jiù néng xiǎng yǒu zhé kòu。",
-        "japanese": "MRTの新路線は通勤ラッシュを緩和することを目的としているので、カードをタッチするだけで割引が受けられます。",
+        "chinese": "因為捷運新路線旨在紓解通勤人潮，所以班次特別密集。",
+        "pinyin": "yīn wèi jié yùn xīn lù xiàn zhǐ zài shū jiě tōng qín rén cháo, suǒ yǐ bān cì tè bié mì jí.",
+        "japanese": "MRTの新路線は通勤ラッシュの緩和を目的としているので、本数が特に多いです。",
         "chunks": [
-          "因為捷運新路線旨在紓解通勤人潮，",
-          "所以只要刷卡",
-          "就能享有折扣。"
+          "因為捷運新路線旨在紓解通勤人潮",
+          "所以班次特別密集"
         ],
-        "hintText": "因為捷運新路線旨在紓解通勤人潮，所以只要刷卡"
+        "hintText": "因為捷運新路線"
       }
     ]
   },
@@ -6245,7 +6221,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我常常提醒爸媽要防範網路詐騙，但他們還是會不小心點擊可疑連結。",
-        "pinyin": "suī rán wǒ cháng cháng tí xǐng bà mā yào fáng fàn wǎng lù zhà piàn ， dàn tā men hái shì huì bù xiǎo xīn diǎn jī kě yí lián jié 。",
+        "pinyin": "suī rán wǒ cháng cháng tí xǐng bà mā yào fáng fàn wǎng lù zhà piàn, dàn tā men hái shì huì bù xiǎo xīn diǎn jī kě yí lián jié.",
         "japanese": "私はよく両親にネット詐欺に注意するよう促していますが、それでも彼らはうっかり怪しいリンクをクリックしてしまいます。",
         "chunks": [
           "雖然我常常提醒爸媽",
@@ -6258,7 +6234,7 @@
         "situation": "生活トラブル",
         "category": "生活トラブル",
         "chinese": "因為最近社區發生多起竊案，所以管委會呼籲住戶要加強防範。",
-        "pinyin": "yīn wèi zuì jìn shè qū fā shēng duō qǐ qiè àn ， suǒ yǐ guǎn wěi huì hū yù zhù hù yào jiā qiáng fáng fàn 。",
+        "pinyin": "yīn wèi zuì jìn shè qū fā shēng duō qǐ qiè àn, suǒ yǐ guǎn wěi huì hū yù zhù hù yào jiā qiáng fáng fàn.",
         "japanese": "最近コミュニティで複数の窃盗事件が発生したため、管理組合は住民に警戒を強化するよう呼びかけています。",
         "chunks": [
           "因為最近社區發生多起竊案",
@@ -6271,7 +6247,7 @@
         "situation": "公的手続き・職場",
         "category": "公的手続き・職場",
         "chinese": "只要公司員工都能確實防範資料外洩，就能避免客戶個資被盜用的風險。",
-        "pinyin": "zhǐ yào gōng sī yuán gōng dōu néng què shí fáng fàn zī liào wài xiè ， jiù néng bì miǎn kè hù gè zī bèi dào yòng de fēng xiǎn 。",
+        "pinyin": "zhǐ yào gōng sī yuán gōng dōu néng què shí fáng fàn zī liào wài xiè, jiù néng bì miǎn kè hù gè zī bèi dào yòng de fēng xiǎn.",
         "japanese": "会社の従業員が皆、情報漏洩をしっかり防ぐことができれば、顧客の個人情報が悪用されるリスクを回避できます。",
         "chunks": [
           "只要公司員工都能確實",
@@ -6392,7 +6368,7 @@
     ],
     "grammarNote": "「回報（huí bào）」は投資に対する利益や、恩返しを指します。",
     "bossReading": {
-      "text": "雖然市場波動大，但只要資訊透明並和客戶保持良好溝通，因此投資人更願意長期投入，回報也會更[ ? ]，甚至願意介紹朋友。",
+      "text": "雖然市場波動大，但只要資訊透明並和客戶保持良好溝通，投資人就會更願意長期投入，回報也會更[ ? ]，甚至願意介紹朋友。",
       "targetWord": "豐厚",
       "distractors": [
         "微薄",
@@ -6501,7 +6477,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我們常常吵架，但只要願意溝通，關係就會變得更好。",
-        "pinyin": "suī rán wǒ men cháng cháng chǎo jià，dàn zhǐ yào yuàn yì gōu tōng，guān xì jiù huì biàn de gèng hǎo。",
+        "pinyin": "suī rán wǒ men cháng cháng chǎo jià, dàn zhǐ yào yuàn yì gōu tōng, guān xì jiù huì biàn de gèng hǎo.",
         "japanese": "私たちはよく喧嘩するけど、意思疎通を図れば関係は良くなる。",
         "chunks": [
           "雖然我們常常吵架，",
@@ -6513,7 +6489,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為店員的溝通不清楚，所以我拿到的發票金額是錯的。",
-        "pinyin": "yīn wèi diàn yuán de gōu tōng bù qīng chǔ，suǒ yǐ wǒ ná dào de fā piào jīn é shì cuò de。",
+        "pinyin": "yīn wèi diàn yuán de gōu tōng bù qīng chǔ, suǒ yǐ wǒ ná dào de fā piào jīn é shì cuò de.",
         "japanese": "店員の説明が不明瞭だったので、受け取ったレシートの金額が間違っていた。",
         "chunks": [
           "因為店員的溝通不清楚，",
@@ -6524,7 +6500,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要跟鄰居好好溝通，就不用因為噪音問題而報警。",
-        "pinyin": "zhǐ yào gēn lín jū hǎo hǎo gōu tōng，jiù bù yòng yīn wèi zào yīn wèn tí ér bào jǐng。",
+        "pinyin": "zhǐ yào gēn lín jū hǎo hǎo gōu tōng, jiù bù yòng yīn wèi zào yīn wèn tí ér bào jǐng.",
         "japanese": "隣人としっかり話し合えば、騒音問題で警察を呼ぶ必要はない。",
         "chunks": [
           "只要跟鄰居好好溝通，",
@@ -6667,27 +6643,25 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "只要用這張會員卡，消費金額就會大幅提升折扣。",
-        "pinyin": "zhǐ yào yòng zhè zhāng huì yuán kǎ, xiāo fèi jīn é jiù huì dà fú tí shēng zhé kòu.",
-        "japanese": "この会員カードを使えば、消費金額の割引が大幅にアップする。",
+        "chinese": "只要成為白金會員，享有的折扣就會提升到八折。",
+        "pinyin": "zhǐ yào chéng wéi bái jīn huì yuán, xiǎng yǒu de zhé kòu jiù huì tí shēng dào bā zhé.",
+        "japanese": "プラチナ会員になれば、受けられる割引が20%オフに上がります。",
         "chunks": [
-          "只要用這張會員卡，",
-          "消費金額就會",
-          "大幅提升折扣。"
+          "只要成為白金會員",
+          "享有的折扣就會提升到八折"
         ],
-        "hintText": "只要用這張會員卡，消費金額就會"
+        "hintText": "只要成為白金會員，享有的折扣就會"
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "雖然申請程序很麻煩，但是效率大幅提升了。",
-        "pinyin": "suī rán shēn qǐng chéng xù hěn má fan, dàn shì xiào lǜ dà fú tí shēng le.",
-        "japanese": "申請手続きは面倒だが、効率は大幅に向上した。",
+        "chinese": "自從申請程序改成線上辦理，效率大幅提升了。",
+        "pinyin": "zì cóng shēn qǐng chéng xù gǎi chéng xiàn shàng bàn lǐ, xiào lǜ dà fú tí shēng le.",
+        "japanese": "申請手続きがオンラインになってから、効率が大幅に向上しました。",
         "chunks": [
-          "雖然申請程序很麻煩，",
-          "但是效率",
-          "大幅提升了。"
+          "自從申請程序改成線上辦理",
+          "效率大幅提升了"
         ],
-        "hintText": "雖然申請程序很麻煩，但是效率"
+        "hintText": "自從申請程序改成線上辦理，效率大幅"
       }
     ]
   },
@@ -6727,15 +6701,15 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "雖然這家店有打折，但是店員還是要分配好每個客人的發票。",
-        "pinyin": "suī rán zhè jiā diàn yǒu dǎ zhé, dàn shì diàn yuán hái shì yào fēn pèi hǎo měi gè kè rén de fā piào.",
-        "japanese": "この店は割引をしていますが、店員はそれでも各お客様のレシートをうまく分配しなければなりません。",
+        "chinese": "雖然週年慶客人很多，但店長把人力分配得很好，所以結帳很順利。",
+        "pinyin": "suī rán zhōu nián qìng kè rén hěn duō, dàn diàn zhǎng bǎ rén lì fēn pèi dé hěn hǎo, suǒ yǐ jié zhàng hěn shùn lì.",
+        "japanese": "周年セールでお客さんが多かったけれど、店長が人員をうまく割り振ったので、会計はスムーズでした。",
         "chunks": [
-          "雖然這家店有打折",
-          "但是店員還是要",
-          "分配好每個客人的發票"
+          "雖然週年慶客人很多",
+          "但店長把人力分配得很好",
+          "所以結帳很順利"
         ],
-        "hintText": "雖然這家店有打折，但是店員還是要"
+        "hintText": "雖然週年慶客人很多，但店長把人力"
       },
       {
         "situation": "公的手続き・職場",
@@ -6813,7 +6787,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "雖然最近電價一直漲，但只要我們穩定用電量，就可以省下不少錢。",
-        "pinyin": "suī rán zuì jìn diàn jià yī zhí zhǎng，dàn zhǐ yào wǒ men wěn dìng yòng diàn liàng，jiù kě yǐ shěng xià bù shǎo qián。",
+        "pinyin": "suī rán zuì jìn diàn jià yī zhí zhǎng, dàn zhǐ yào wǒ men wěn dìng yòng diàn liàng, jiù kě yǐ shěng xià bù shǎo qián.",
         "japanese": "最近電気代が上がり続けているけれど、私たちが安定して電力量を使えば、かなりお金を節約できます。",
         "chunks": [
           "雖然最近電價一直漲",
@@ -6825,7 +6799,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家店的品質很穩定，所以我每次都來買他們的鳳梨酥。",
-        "pinyin": "yīn wèi zhè jiā diàn de pǐn zhí hěn wěn dìng，suǒ yǐ wǒ měi cì dōu lái mǎi tā men de fèng lí sū。",
+        "pinyin": "yīn wèi zhè jiā diàn de pǐn zhí hěn wěn dìng, suǒ yǐ wǒ měi cì dōu lái mǎi tā men de fèng lí sū.",
         "japanese": "この店の品質が安定しているので、私は毎回ここのパイナップルケーキを買いに来ます。",
         "chunks": [
           "因為這家店的品質很穩定",
@@ -6837,7 +6811,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要我們採取穩定措施，公司的業績就會慢慢好轉。",
-        "pinyin": "zhǐ yào wǒ men cǎi qǔ wěn dìng cuò shī，gōng sī de yè jì jiù huì màn màn hǎo zhuǎn。",
+        "pinyin": "zhǐ yào wǒ men cǎi qǔ wěn dìng cuò shī, gōng sī de yè jì jiù huì màn màn hǎo zhuǎn.",
         "japanese": "私たちが安定した措置を講じれば、会社の業績は徐々に好転するでしょう。",
         "chunks": [
           "只要我們採取穩定措施",
@@ -6873,7 +6847,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他平時很安靜，但在朋友需要幫助時，他顯現出極大的責任感。",
-        "pinyin": "suī rán tā píng shí hěn ān jìng, dàn zài péng yǒu xū yào bāng zhù shí, tā xiǎn xiàn chū jí dà de zé rèn gǎn。",
+        "pinyin": "suī rán tā píng shí hěn ān jìng, dàn zài péng yǒu xū yào bāng zhù shí, tā xiǎn xiàn chū jí dà de zé rèn gǎn.",
         "japanese": "彼は普段はとても静かですが、友達が助けを必要とするとき、大きな責任感を示します。",
         "chunks": [
           "雖然他平時很安靜",
@@ -6885,7 +6859,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家店的服務態度很差，所以客人的不滿逐漸顯現出來。",
-        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù hěn chà, suǒ yǐ kè rén de bù mǎn zhú jiàn xiǎn xiàn chū lái。",
+        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù hěn chà, suǒ yǐ kè rén de bù mǎn zhú jiàn xiǎn xiàn chū lái.",
         "japanese": "この店のサービス態度が悪いので、客の不満が徐々に現れてきました。",
         "chunks": [
           "因為這家店的服務態度很差",
@@ -6896,7 +6870,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要遇到停電，社區居民團結互助的精神就會顯現出來。",
-        "pinyin": "zhǐ yào yù dào tíng diàn, shè qū jū mín tuán jié hù zhù de jīng shén jiù huì xiǎn xiàn chū lái。",
+        "pinyin": "zhǐ yào yù dào tíng diàn, shè qū jū mín tuán jié hù zhù de jīng shén jiù huì xiǎn xiàn chū lái.",
         "japanese": "停電になると、地域住民の団結と助け合いの精神が現れます。",
         "chunks": [
           "只要遇到停電",
@@ -6922,7 +6896,7 @@
         "situation": "人間関係・家族",
         "chinese": "因為要兼顧工作和家庭，所以我和老公商量好輪流請假帶小孩。",
         "pinyin": "yīn wèi yào jiān gù gōng zuò hé jiā tíng, suǒ yǐ wǒ hé lǎo gōng shāng liáng hǎo lún liú qǐng jià dài xiǎo hái.",
-        "japanese": "因為要兼顧工作和家庭，所以我和老公商量好輪流請假帶小孩。",
+        "japanese": "仕事と家庭を両立させるために、夫と交代で休みを取って子どもの面倒を見ることにしました。",
         "chunks": [
           "因為要",
           "兼顧",
@@ -6935,7 +6909,7 @@
         "situation": "店舗・サービス",
         "chinese": "只要刷卡就能兼顧累積點數和拿到發票，非常方便。",
         "pinyin": "zhǐ yào shuā kǎ jiù néng jiān gù lěi jī diǎn shù hé ná dào fā piào, fēi cháng fāng biàn.",
-        "japanese": "只要刷卡就能兼顧累積點數和拿到發票，非常方便。",
+        "japanese": "カードで払えば、ポイントもたまってレシートももらえるので、とても便利です。",
         "chunks": [
           "只要刷卡就能",
           "兼顧",
@@ -6948,7 +6922,7 @@
         "situation": "生活トラブル",
         "chinese": "雖然颱風天要兼顧安全跟採買，但是做好準備就不用擔心。",
         "pinyin": "suī rán tái fēng tiān yào jiān gù ān quán gēn cǎi mǎi, dàn shì zuò hǎo zhǔn bèi jiù bù yòng dān xīn.",
-        "japanese": "雖然颱風天要兼顧安全跟採買，但是做好準備就不用擔心。",
+        "japanese": "台風の日は安全と買い出しの両方に気を配らなければならないけれど、準備をしっかりしておけば心配いりません。",
         "chunks": [
           "雖然颱風天要",
           "兼顧",
@@ -7033,7 +7007,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "因為我手機的通訊軟體故障，所以一直沒辦法跟家人聯絡。",
-        "pinyin": "yīn wèi wǒ shǒu jī de tōng xùn ruǎn tǐ gù zhàng , suǒ yǐ yī zhí méi bàn fǎ gēn jiā rén lián luò .",
+        "pinyin": "yīn wèi wǒ shǒu jī de tōng xùn ruǎn tǐ gù zhàng, suǒ yǐ yī zhí méi bàn fǎ gēn jiā rén lián luò.",
         "japanese": "私のスマホの通信ソフトが故障したので、ずっと家族と連絡が取れません。",
         "chunks": [
           "因為我手機的通訊軟體故障",
@@ -7044,7 +7018,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "雖然這家電信公司的通訊方案比較貴，但是收訊品質很好。",
-        "pinyin": "suī rán zhè jiā diàn xìn gōng sī de tōng xùn fāng àn bǐ jiào guì , dàn shì shōu xùn pǐn zhí hěn hǎo .",
+        "pinyin": "suī rán zhè jiā diàn xìn gōng sī de tōng xùn fāng àn bǐ jiào guì, dàn shì shōu xùn pǐn zhí hěn hǎo.",
         "japanese": "この通信会社の通信プランは割高ですが、受信品質は良いです。",
         "chunks": [
           "雖然這家電信公司的通訊方案比較貴",
@@ -7055,7 +7029,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要捷運站內的通訊系統恢復正常，我就能用手機上網了。",
-        "pinyin": "zhǐ yào jié yùn zhàn nèi de tōng xùn xì tǒng huī fù zhèng cháng , wǒ jiù néng yòng shǒu jī shàng wǎng le .",
+        "pinyin": "zhǐ yào jié yùn zhàn nèi de tōng xùn xì tǒng huī fù zhèng cháng, wǒ jiù néng yòng shǒu jī shàng wǎng le.",
         "japanese": "地下鉄駅内の通信システムが正常に戻れば、スマホでネットが使えるようになります。",
         "chunks": [
           "只要捷運站內的通訊系統恢復正常",
@@ -7079,7 +7053,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "因為我妹妹認真準備考試，所以她順利錄取那間大學。",
-        "pinyin": "yīn wèi wǒ mèi mei rèn zhēn zhǔn bèi kǎo shì，suǒ yǐ tā shùn lì lù qǔ nà jiān dà xué。",
+        "pinyin": "yīn wèi wǒ mèi mei rèn zhēn zhǔn bèi kǎo shì, suǒ yǐ tā shùn lì lù qǔ nà jiān dà xué.",
         "japanese": "妹が真剣に試験勉強をしたので、無事にあの大学に合格しました。",
         "chunks": [
           "因為我妹妹認真準備考試",
@@ -7091,7 +7065,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要通過筆試和面試，就可以錄取這個職位。",
-        "pinyin": "zhǐ yào tōng guò bǐ shì hé miàn shì，jiù kě yǐ lù qǔ zhè ge zhí wèi。",
+        "pinyin": "zhǐ yào tōng guò bǐ shì hé miàn shì, jiù kě yǐ lù qǔ zhè ge zhí wèi.",
         "japanese": "筆記試験と面接にさえ合格すれば、この職位に採用されます。",
         "chunks": [
           "只要通過筆試和面試",
@@ -7103,7 +7077,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "雖然他沒有相關經驗，但是因為表現出色還是被錄取了。",
-        "pinyin": "suī rán tā méi yǒu xiāng guān jīng yàn，dàn shì yīn wèi biǎo xiàn chū sè hái shì bèi lù qǔ le。",
+        "pinyin": "suī rán tā méi yǒu xiāng guān jīng yàn, dàn shì yīn wèi biǎo xiàn chū sè hái shì bèi lù qǔ le.",
         "japanese": "彼は関連する経験がなかったけれど、優秀なパフォーマンスのため採用されました。",
         "chunks": [
           "雖然他沒有相關經驗",
@@ -7128,7 +7102,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "因為要買房子，所以我們審慎評估了每個選項。",
-        "pinyin": "yīn wèi yào mǎi fáng zi ，suǒ yǐ wǒ men shěn shèn píng gū le měi gè xuǎn xiàng 。",
+        "pinyin": "yīn wèi yào mǎi fáng zi, suǒ yǐ wǒ men shěn shèn píng gū le měi gè xuǎn xiàng.",
         "japanese": "家を買うので、私たちは各選択肢を慎重に評価しました。",
         "chunks": [
           "因為要買房子",
@@ -7141,7 +7115,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "雖然這家店打折很多，但我還是審慎地檢查了發票。",
-        "pinyin": "suī rán zhè jiā diàn dǎ zhé hěn duō ，dàn wǒ hái shì shěn shèn de jiǎn chá le fā piào 。",
+        "pinyin": "suī rán zhè jiā diàn dǎ zhé hěn duō, dàn wǒ hái shì shěn shèn de jiǎn chá le fā piào.",
         "japanese": "この店は大幅に割引していますが、私は慎重に領収書を確認しました。",
         "chunks": [
           "雖然這家店打折很多",
@@ -7154,7 +7128,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要資料齊全，審慎填寫申請表就能快速通過。",
-        "pinyin": "zhǐ yào zī liào qí quán ，shěn shèn tián xiě shēn qǐng biǎo jiù néng kuài sù tōng guò 。",
+        "pinyin": "zhǐ yào zī liào qí quán, shěn shèn tián xiě shēn qǐng biǎo jiù néng kuài sù tōng guò.",
         "japanese": "書類が揃っていれば、申請書を慎重に記入すればすぐに通過できます。",
         "chunks": [
           "只要資料齊全",
@@ -7191,7 +7165,7 @@
         "situation": "人間関係・家族",
         "chinese": "因為我跟室友對家事分工的看法不同，所以常常發生衝突。",
         "pinyin": "yīn wèi wǒ gēn shì yǒu duì jiā shì fēn gōng de kàn fǎ bù tóng, suǒ yǐ cháng cháng fā shēng chōng tū.",
-        "japanese": "因為我和室友對家事分工的看法不同，所以經常發生衝突。",
+        "japanese": "ルームメイトとは家事の分担について考え方が違うので、よく衝突します。",
         "chunks": [
           "因為我跟室友對家事分工的看法不同",
           "所以常常發生",
@@ -7201,22 +7175,22 @@
       },
       {
         "situation": "交通・移動",
-        "targetWord": "衝突",
         "chinese": "雖然捷運站人很多，但只要大家排隊就不會發生衝突。",
         "pinyin": "suī rán jié yùn zhàn rén hěn duō, dàn zhǐ yào dà jiā pái duì jiù bù huì fā shēng chōng tū.",
-        "japanese": "雖然捷運站人很多，但只要大家排隊就不會發生衝突。",
+        "japanese": "MRTの駅は人が多いけれど、みんなが並べば衝突は起きません。",
         "chunks": [
           "雖然捷運站人很多",
           "但只要大家排隊",
           "就不會發生衝突"
         ],
-        "hintText": "雖然捷運站人很多，但只要大家排隊就不會發生"
+        "hintText": "雖然捷運站人很多，但只要大家排隊就不會發生",
+        "targetWord": "衝突"
       },
       {
         "situation": "生活トラブル",
         "chinese": "因為店家不讓我退換有瑕疵的商品，所以我們就起了衝突。",
         "pinyin": "yīn wèi diàn jiā bù ràng wǒ tuì huàn yǒu xiá cī de shāng pǐn, suǒ yǐ wǒ men jiù qǐ le chōng tū.",
-        "japanese": "因為店家不讓我退換有瑕疵的商品，所以我們就起了衝突。",
+        "japanese": "店が不良品の返品・交換に応じてくれなかったので、言い争いになりました。",
         "chunks": [
           "因為店家不讓我退換有瑕疵的商品",
           "所以我們就起了",
@@ -7308,7 +7282,7 @@
       },
       {
         "situation": "交通・移動",
-        "pinyin": "yīn wèi jī chē pèng zhuàng dǎo zhì wǒ zàn shí sàng shī píng héng, chà diǎn shuāi dǎo.",
+        "pinyin": "yīn wèi jī chē pèng zhuàng, dǎo zhì wǒ zàn shí sàng shī píng héng, chà diǎn shuāi dǎo.",
         "japanese": "バイクが衝突して一時的にバランスを失い、もう少しで転ぶところだった。",
         "chunks": [
           "因為機車碰撞",
@@ -7317,19 +7291,19 @@
           "差點摔倒"
         ],
         "hintText": "因為機車碰撞，導致我暫時",
-        "chinese": "因為機車碰撞導致我暫時喪失平衡，差點摔倒。"
+        "chinese": "因為機車碰撞，導致我暫時喪失平衡，差點摔倒。"
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要健保卡遺失，就必須立刻申請補發，以免喪失權益。",
-        "pinyin": "zhǐ yào jiàn bǎo kǎ yí shī, jiù bì xū lì kè shēn qǐng bǔ fā, yǐ miǎn sàng shī quán yì.",
+        "chinese": "一旦健保卡遺失，就必須立刻申請補發，以免喪失權益。",
+        "pinyin": "yī dàn jiàn bǎo kǎ yí shī, jiù bì xū lì kè shēn qǐng bǔ fā, yǐ miǎn sàng shī quán yì.",
         "japanese": "健康保険証を紛失したら、すぐに再発行を申請しないと、権利を失う恐れがあります。",
         "chunks": [
-          "只要健保卡遺失",
+          "一旦健保卡遺失",
           "就必須立刻申請補發",
           "以免喪失權益"
         ],
-        "hintText": "只要健保卡遺失，就必須立刻申請補發，以免"
+        "hintText": "一旦健保卡遺失，就必須立刻申請補發，以免"
       }
     ]
   },
@@ -7358,7 +7332,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然家裡的秩序有時候會亂，但只要大家互相配合就能維持整潔。",
-        "pinyin": "suī rán jiā lǐ de zhì xù yǒu shí hou huì luàn，dàn zhǐ yào dà jiā hù xiāng pèi hé jiù néng wéi chí zhěng jié。",
+        "pinyin": "suī rán jiā lǐ de zhì xù yǒu shí hou huì luàn, dàn zhǐ yào dà jiā hù xiāng pèi hé jiù néng wéi chí zhěng jié.",
         "japanese": "家の中の秩序は時々乱れるけど、みんなが協力すれば清潔を保てる。",
         "chunks": [
           "雖然家裡的秩序有時候會亂",
@@ -7370,7 +7344,7 @@
       {
         "situation": "交通・移動",
         "chinese": "因為捷運站裡大家都遵守秩序，所以上下車的過程非常順暢。",
-        "pinyin": "yīn wèi jié yùn zhàn lǐ dà jiā dōu zūn shǒu zhì xù，suǒ yǐ shàng xià chē de guò chéng fēi cháng shùn chàng。",
+        "pinyin": "yīn wèi jié yùn zhàn lǐ dà jiā dōu zūn shǒu zhì xù, suǒ yǐ shàng xià chē de guò chéng fēi cháng shùn chàng.",
         "japanese": "駅ではみんなが秩序を守っているので、乗り降りの過程がとてもスムーズだ。",
         "chunks": [
           "因為捷運站裡大家都遵守秩序",
@@ -7382,7 +7356,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要大家按照號碼牌排隊，辦公室的秩序就能維持得很好。",
-        "pinyin": "zhǐ yào dà jiā àn zhào hào mǎ pái pái duì，bàn gōng shì de zhì xù jiù néng wéi chí dé hěn hǎo。",
+        "pinyin": "zhǐ yào dà jiā àn zhào hào mǎ pái pái duì, bàn gōng shì de zhì xù jiù néng wéi chí dé hěn hǎo.",
         "japanese": "みんなが番号札に従って並べば、オフィスの秩序はうまく保たれる。",
         "chunks": [
           "只要大家按照號碼牌排隊",
@@ -7407,7 +7381,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "因為哥哥帶頭參加義工活動，所以帶動了全家一起投入社區服務。",
-        "pinyin": "yīn wèi gē ge dài tóu cān jiā yì gōng huó dòng, suǒ yǐ dài dòng le quán jiā yī qǐ tóu rù shè qū fú wù。",
+        "pinyin": "yīn wèi gē ge dài tóu cān jiā yì gōng huó dòng, suǒ yǐ dài dòng le quán jiā yī qǐ tóu rù shè qū fú wù.",
         "japanese": "兄が率先してボランティア活動に参加したので、家族全員が地域サービスに取り組むようになりました。",
         "chunks": [
           "因為哥哥帶頭參加義工活動",
@@ -7419,7 +7393,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "只要這家咖啡店推出買一送一活動，就能帶動周邊商圈的人潮。",
-        "pinyin": "zhǐ yào zhè jiā kā fēi diàn tuī chū mǎi yī sòng yī huó dòng, jiù néng dài dòng zhōu biān shāng quān de rén cháo。",
+        "pinyin": "zhǐ yào zhè jiā kā fēi diàn tuī chū mǎi yī sòng yī huó dòng, jiù néng dài dòng zhōu biān shāng quān de rén cháo.",
         "japanese": "このコーヒー店が1つ買うともう1つ無料のキャンペーンをやれば、周辺の商業エリアに人出をもたらすことができます。",
         "chunks": [
           "只要這家咖啡店推出買一送一活動",
@@ -7431,7 +7405,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "雖然申請補助的程序很麻煩，但是成功後就能帶動公司的研發經費增加。",
-        "pinyin": "suī rán shēn qǐng bǔ zhù de chéng xù hěn má fan, dàn shì chéng gōng hòu jiù néng dài dòng gōng sī de yán fā jīng fèi zēng jiā。",
+        "pinyin": "suī rán shēn qǐng bǔ zhù de chéng xù hěn má fan, dàn shì chéng gōng hòu jiù néng dài dòng gōng sī de yán fā jīng fèi zēng jiā.",
         "japanese": "補助金申請の手続きは面倒ですが、成功すれば会社の研究開発費の増加につながります。",
         "chunks": [
           "雖然申請補助的程序很麻煩",
@@ -7514,7 +7488,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他平常很忙，但只要家庭聚會，他總是扮演炒熱氣氛的角色。",
-        "pinyin": "suī rán tā píng cháng hěn máng，dàn zhǐ yào jiā tíng jù huì，tā zǒng shì bàn yǎn chǎo rè qì fēn de jué sè。",
+        "pinyin": "suī rán tā píng cháng hěn máng, dàn zhǐ yào jiā tíng jù huì, tā zǒng shì bàn yǎn chǎo rè qì fēn de jué sè.",
         "japanese": "彼は普段とても忙しいけれど、家族の集まりがあればいつも盛り上げ役を演じます。",
         "chunks": [
           "雖然他平常很忙",
@@ -7525,27 +7499,25 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為這家店的服務員很親切，所以他們在促銷活動中扮演了重要的推手。",
-        "pinyin": "yīn wèi zhè jiā diàn de fú wù yuán hěn qīn qiè，suǒ yǐ tā men zài cù xiāo huó dòng zhōng bàn yǎn le zhòng yào de tuī shǒu。",
-        "japanese": "この店の店員はとても親切なので、彼らは販促活動で重要な推進役を演じました。",
+        "chinese": "因為這家店的服務員很親切，所以他們在促銷活動中扮演了重要的角色。",
+        "pinyin": "yīn wèi zhè jiā diàn de fú wù yuán hěn qīn qiè, suǒ yǐ tā men zài cù xiāo huó dòng zhōng bàn yǎn le zhòng yào de jué sè.",
+        "japanese": "この店の店員はとても親切なので、販促活動で重要な役割を果たしました。",
         "chunks": [
           "因為這家店的服務員很親切",
-          "所以他們在促銷活動中",
-          "扮演了重要的推手"
+          "所以他們在促銷活動中扮演了重要的角色"
         ],
         "hintText": "因為這家店的服務員很親切，所以他們在促銷活動中"
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要拿到健保卡，你就可以在醫療體系中扮演病患的角色。",
-        "pinyin": "zhǐ yào ná dào jiàn bǎo kǎ，nǐ jiù kě yǐ zài yī liáo tǐ xì zhōng bàn yǎn bìng huàn de jué sè。",
-        "japanese": "健保卡を手に入れさえすれば、医療システムの中で患者の役割を演じることができます。",
+        "chinese": "只要家裡有人生病，媽媽就會扮演照顧者的角色。",
+        "pinyin": "zhǐ yào jiā lǐ yǒu rén shēng bìng, mā ma jiù huì bàn yǎn zhào gù zhě de jué sè.",
+        "japanese": "家族の誰かが病気になると、母が看病する役割を担います。",
         "chunks": [
-          "只要拿到健保卡",
-          "你就可以在醫療體系中",
-          "扮演病患的角色"
+          "只要家裡有人生病",
+          "媽媽就會扮演照顧者的角色"
         ],
-        "hintText": "只要拿到健保卡，你就可以在醫療體系中"
+        "hintText": "只要家裡有人生病，媽媽就會"
       }
     ]
   },
@@ -7612,7 +7584,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我們對教養孩子的方式不同，但還是可以慢慢達成共識。",
-        "pinyin": "suī rán wǒ men duì jiào yǎng hái zi de fāng shì bù tóng, dàn hái shì kě yǐ màn màn dá chéng gòng shí。",
+        "pinyin": "suī rán wǒ men duì jiào yǎng hái zi de fāng shì bù tóng, dàn hái shì kě yǐ màn màn dá chéng gòng shí.",
         "japanese": "子供の育て方については違いますが、ゆっくりと合意に達することはできます。",
         "chunks": [
           "雖然我們對教養孩子的方式不同",
@@ -7624,7 +7596,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家餐廳的食材有問題，所以顧客和店家需要建立共識。",
-        "pinyin": "yīn wèi zhè jiā cān tīng de shí cái yǒu wèn tí, suǒ yǐ gù kè hé diàn jiā xū yào jiàn lì gòng shí。",
+        "pinyin": "yīn wèi zhè jiā cān tīng de shí cái yǒu wèn tí, suǒ yǐ gù kè hé diàn jiā xū yào jiàn lì gòng shí.",
         "japanese": "このレストランの食材に問題があるので、客と店は合意を形成する必要があります。",
         "chunks": [
           "因為這家餐廳的食材有問題",
@@ -7636,7 +7608,7 @@
       {
         "situation": "交通・移動",
         "chinese": "只要大家對捷運的乘車禮儀有共識，就能減少衝突。",
-        "pinyin": "zhǐ yào dà jiā duì jié yùn de chéng chē lǐ yí yǒu gòng shí, jiù néng jiǎn shǎo chōng tū。",
+        "pinyin": "zhǐ yào dà jiā duì jié yùn de chéng chē lǐ yí yǒu gòng shí, jiù néng jiǎn shǎo chōng tū.",
         "japanese": "みんながMRTの乗車マナーについて合意していれば、衝突を減らせます。",
         "chunks": [
           "只要大家對捷運的乘車禮儀有共識",
@@ -7672,7 +7644,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "因為這次的合約內容很複雜，所以我們需要找律師一起商討。",
-        "pinyin": "yīn wèi zhè cì de hé yuē nèi róng hěn fù zá, suǒ yǐ wǒ men xū yào zhǎo lǜ shī yì qǐ shāng tǎo.",
+        "pinyin": "yīn wèi zhè cì de hé yuē nèi róng hěn fù zá, suǒ yǐ wǒ men xū yào zhǎo lǜ shī yī qǐ shāng tǎo.",
         "japanese": "今回の契約内容はとても複雑なので、弁護士と一緒に検討する必要があります。",
         "chunks": [
           "因為這次的合約內容很複雜",
@@ -7684,7 +7656,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "雖然這家店的折扣很多，但我們還是要商討一下預算再決定。",
-        "pinyin": "suī rán zhè jiā diàn de zhé kòu hěn duō, dàn wǒ men hái shì yào shāng tǎo yí xià yù suàn zài jué dìng.",
+        "pinyin": "suī rán zhè jiā diàn de zhé kòu hěn duō, dàn wǒ men hái shì yào shāng tǎo yī xià yù suàn zài jué dìng.",
         "japanese": "この店は割引が多いですが、予算を検討してから決めましょう。",
         "chunks": [
           "雖然這家店的折扣很多",
@@ -7770,7 +7742,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "因為我們家的財務動態一直在變，所以每個月都要重新討論預算。",
-        "pinyin": "yīn wèi wǒ men jiā de cái wù dòng tài yī zhí zài biàn , suǒ yǐ měi gè yuè dōu yào chóng xīn tǎo lùn yù suàn 。",
+        "pinyin": "yīn wèi wǒ men jiā de cái wù dòng tài yī zhí zài biàn, suǒ yǐ měi gè yuè dōu yào chóng xīn tǎo lùn yù suàn.",
         "japanese": "我が家の財務状況は常に変動しているので、毎月予算を再検討しなければなりません。",
         "chunks": [
           "因為",
@@ -7784,7 +7756,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "雖然這家店的商品動態更新很快，但是折扣活動只限會員參加。",
-        "pinyin": "suī rán zhè jiā diàn de shāng pǐn dòng tài gēng xīn hěn kuài , dàn shì zhé kòu huó dòng zhǐ xiàn huì yuán cān jiā 。",
+        "pinyin": "suī rán zhè jiā diàn de shāng pǐn dòng tài gēng xīn hěn kuài, dàn shì zhé kòu huó dòng zhǐ xiàn huì yuán cān jiā.",
         "japanese": "この店の商品の動きは更新が速いですが、割引活動は会員限定です。",
         "chunks": [
           "雖然",
@@ -7798,7 +7770,7 @@
       {
         "situation": "交通・移動",
         "chinese": "只要掌握捷運的即時動態，就不用擔心會錯過班次。",
-        "pinyin": "zhǐ yào zhǎng wò jié yùn de jí shí dòng tài , jiù bù yòng dān xīn huì cuò guò bān cì 。",
+        "pinyin": "zhǐ yào zhǎng wò jié yùn de jí shí dòng tài, jiù bù yòng dān xīn huì cuò guò bān cì.",
         "japanese": "MRTのリアルタイムの動きを把握していれば、電車を逃す心配はありません。",
         "chunks": [
           "只要",
@@ -7859,16 +7831,15 @@
       },
       {
         "situation": "交通・移動",
-        "category": "交通・移動",
-        "chinese": "只要大家遵守交通規則，捷運的準點就歸功於系統的穩定。",
-        "pinyin": "zhǐ yào dà jiā zūn shǒu jiāo tōng guī zé, jié yùn de zhǔn diǎn jiù guī gōng yú xì tǒng de wěn dìng.",
-        "japanese": "みんなが交通ルールを守れば、MRTの定時運行はシステムの安定のおかげです。",
+        "chinese": "捷運能這麼準點，要歸功於系統的穩定和員工的努力。",
+        "pinyin": "jié yùn néng zhè me zhǔn diǎn, yào guī gōng yú xì tǒng de wěn dìng hé yuán gōng de nǔ lì.",
+        "japanese": "MRTがこれほど時間通りに運行できるのは、システムの安定と職員の努力のおかげです。",
         "chunks": [
-          "只要大家遵守交通規則，",
-          "捷運的準點",
-          "就歸功於系統的穩定。"
+          "捷運能這麼準點",
+          "要歸功於系統的穩定和員工的努力"
         ],
-        "hintText": "只要大家遵守交通規則，捷運的準點"
+        "hintText": "捷運能這麼準點，要",
+        "category": "交通・移動"
       }
     ]
   },
@@ -7885,20 +7856,20 @@
     "examples": [
       {
         "situation": "人間関係・家族",
-        "chinese": "雖然這個計劃聽起來不錯，但我們還是要先評估它的可行性。",
-        "pinyin": "suī rán zhè ge jì huà tīng qǐ lái bù cuò，dàn wǒ men hái shì yào xiān píng gū tā de kě xíng xìng。",
+        "chinese": "雖然這個計畫聽起來不錯，但我們還是要先評估它的可行性。",
+        "pinyin": "suī rán zhè ge jì huà tīng qǐ lái bù cuò, dàn wǒ men hái shì yào xiān píng gū tā de kě xíng xìng.",
         "japanese": "この計画は良さそうに聞こえるけど、まずはその実現可能性を評価しなければならない。",
         "chunks": [
-          "雖然這個計劃聽起來不錯",
+          "雖然這個計畫聽起來不錯",
           "但我們還是要先評估",
           "它的可行性"
         ],
-        "hintText": "雖然這個計劃聽起來不錯，但我們還是要先評估"
+        "hintText": "雖然這個計畫聽起來不錯，但我們還是要先評估"
       },
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家店的打折方案很吸引人，所以我們需要確認它的可行性。",
-        "pinyin": "yīn wèi zhè jiā diàn de dǎ zhé fāng àn hěn xī yǐn rén，suǒ yǐ wǒ men xū yào què rèn tā de kě xíng xìng。",
+        "pinyin": "yīn wèi zhè jiā diàn de dǎ zhé fāng àn hěn xī yǐn rén, suǒ yǐ wǒ men xū yào què rèn tā de kě xíng xìng.",
         "japanese": "この店の割引プランはとても魅力的なので、その実現可能性を確認する必要がある。",
         "chunks": [
           "因為這家店的打折方案很吸引人",
@@ -7910,7 +7881,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要主管同意，這個提案的可行性就會大幅提升。",
-        "pinyin": "zhǐ yào zhǔ guǎn tóng yì，zhè ge tí àn de kě xíng xìng jiù huì dà fú tí shēng。",
+        "pinyin": "zhǐ yào zhǔ guǎn tóng yì, zhè ge tí àn de kě xíng xìng jiù huì dà fú tí shēng.",
         "japanese": "上司が同意さえすれば、この提案の実現可能性は大幅に向上する。",
         "chunks": [
           "只要主管同意",
@@ -7995,7 +7966,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然變革會帶來不確定性，但是只要家人互相支持，就能一起面對。",
-        "pinyin": "suī rán biàn gé huì dài lái bù què dìng xìng，dàn shì zhǐ yào jiā rén hù xiāng zhī chí，jiù néng yì qǐ miàn duì。",
+        "pinyin": "suī rán biàn gé huì dài lái bù què dìng xìng, dàn shì zhǐ yào jiā rén hù xiāng zhī chí, jiù néng yī qǐ miàn duì.",
         "japanese": "変革は不確実性をもたらすが、家族が互いに支え合えば一緒に立ち向かえる。",
         "chunks": [
           "雖然變革會帶來不確定性",
@@ -8007,7 +7978,7 @@
       {
         "situation": "職場・公的手続き",
         "chinese": "因為公司正在推動數位變革，所以我們都要學會使用新的系統。",
-        "pinyin": "yīn wèi gōng sī zhèng zài tuī dòng shù wèi biàn gé，suǒ yǐ wǒ men dōu yào xué huì shǐ yòng xīn de xì tǒng。",
+        "pinyin": "yīn wèi gōng sī zhèng zài tuī dòng shù wèi biàn gé, suǒ yǐ wǒ men dōu yào xué huì shǐ yòng xīn de xì tǒng.",
         "japanese": "会社がデジタル変革を推進しているので、私たちは新しいシステムの使い方を覚えなければならない。",
         "chunks": [
           "因為公司正在推動數位變革",
@@ -8018,7 +7989,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要心態調整好，面對生活變革就不會那麼焦慮了。",
-        "pinyin": "zhǐ yào xīn tài tiáo zhěng hǎo，miàn duì shēng huó biàn gé jiù bú huì nà me jiāo lǜ le。",
+        "pinyin": "zhǐ yào xīn tài tiáo zhěng hǎo, miàn duì shēng huó biàn gé jiù bù huì nà me jiāo lǜ le.",
         "japanese": "心構えを整えさえすれば、生活の変化に直面してもそれほど不安にならない。",
         "chunks": [
           "只要心態調整好",
@@ -8042,7 +8013,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "因為妹妹的婚禮耗費了太多時間，所以我們只好取消出國計畫。",
-        "pinyin": "yīn wèi mèi mei de hūn lǐ hào fèi le tài duō shí jiān, suǒ yǐ wǒ men zhǐ hǎo qǔ xiāo chū guó jì huà。",
+        "pinyin": "yīn wèi mèi mei de hūn lǐ hào fèi le tài duō shí jiān, suǒ yǐ wǒ men zhǐ hǎo qǔ xiāo chū guó jì huà.",
         "japanese": "妹の結婚式にあまりにも時間を費やしたので、私たちは海外旅行の計画をキャンセルせざるを得ませんでした。",
         "chunks": [
           "因為妹妹的婚禮",
@@ -8054,7 +8025,7 @@
       {
         "situation": "交通・移動",
         "chinese": "雖然搭捷運比較快，但是開車耗費的油錢實在太貴了。",
-        "pinyin": "suī rán dā jié yùn bǐ jiào kuài, dàn shì kāi chē hào fèi de yóu qián shí zài tài guì le。",
+        "pinyin": "suī rán dā jié yùn bǐ jiào kuài, dàn shì kāi chē hào fèi de yóu qián shí zài tài guì le.",
         "japanese": "MRTの方が速いけれど、車を運転するとガソリン代が本当に高すぎます。",
         "chunks": [
           "雖然搭捷運比較快",
@@ -8066,7 +8037,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要冷氣壞掉，耗費的電費就會比平常多好幾倍。",
-        "pinyin": "zhǐ yào lěng qì huài diào, hào fèi de diàn fèi jiù huì bǐ píng cháng duō hǎo jǐ bèi。",
+        "pinyin": "zhǐ yào lěng qì huài diào, hào fèi de diàn fèi jiù huì bǐ píng cháng duō hǎo jǐ bèi.",
         "japanese": "エアコンが壊れると、普段より何倍も電気代がかかります。",
         "chunks": [
           "只要冷氣壞掉",
@@ -8103,7 +8074,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "因為垃圾分類沒做好，所以社區致力於推廣環保。",
-        "pinyin": "yīn wèi lā jī fēn lèi méi zuò hǎo, suǒ yǐ shè qū zhì lì yú tuī guǎng huán bǎo.",
+        "pinyin": "yīn wèi lè sè fēn lèi méi zuò hǎo, suǒ yǐ shè qū zhì lì yú tuī guǎng huán bǎo.",
         "japanese": "ゴミの分別がうまくいっていないので、コミュニティは環境保護の推進に尽力している。",
         "chunks": [
           "因為垃圾分類沒做好，",
@@ -8114,15 +8085,14 @@
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要拿到健保卡，我們就致力於提供更好的服務。",
-        "pinyin": "zhǐ yào ná dào jiàn bǎo kǎ, wǒ men jiù zhì lì yú tí gōng gèng hǎo de fú wù.",
-        "japanese": "健康保険証を取得すれば、私たちはより良いサービスを提供することに尽力します。",
+        "chinese": "這家診所多年來致力於提供更好的服務，深受居民信任。",
+        "pinyin": "zhè jiā zhěn suǒ duō nián lái zhì lì yú tí gōng gèng hǎo de fú wù, shēn shòu jū mín xìn rèn.",
+        "japanese": "この診療所は長年より良いサービスの提供に力を注いでおり、住民から厚い信頼を得ています。",
         "chunks": [
-          "只要拿到健保卡，",
-          "我們就",
-          "致力於提供更好的服務。"
+          "這家診所多年來致力於提供更好的服務",
+          "深受居民信任"
         ],
-        "hintText": "只要拿到健保卡，我們就"
+        "hintText": "這家診所多年來"
       }
     ]
   },
@@ -8150,40 +8120,38 @@
     "examples": [
       {
         "situation": "人間関係・家族",
-        "chinese": "雖然我們家預算有限，但只要夫妻收入不對稱，就容易引發爭吵。",
-        "pinyin": "suī rán wǒ men jiā yù suàn yǒu xiàn，dàn zhǐ yào fū qī shōu rù bú duì chèn，jiù róng yì yǐn fā zhēng chǎo。",
-        "japanese": "我家預算有限，但只要夫妻收入不對稱，就容易引發爭吵。",
+        "chinese": "雖然這棟房子的設計很簡單，但左右對稱的外觀看起來很舒服。",
+        "pinyin": "suī rán zhè dòng fáng zi de shè jì hěn jiǎn dān, dàn zuǒ yòu duì chēng de wài guān kàn qǐ lái hěn shū fu.",
+        "japanese": "この家のデザインはシンプルですが、左右対称の外観は見ていて心地よいです。",
         "chunks": [
-          "雖然我們家預算有限",
-          "但只要夫妻收入不對稱",
-          "就容易引發爭吵"
+          "雖然這棟房子的設計很簡單",
+          "但左右對稱的外觀看起來很舒服"
         ],
-        "hintText": "雖然我們家預算有限，但只要夫妻收入"
+        "hintText": "雖然這棟房子的設計很簡單，但左右"
       },
       {
         "situation": "店舗・サービス",
-        "category": "店舗・サービス",
         "chinese": "因為這家店的蛋糕左右不對稱，所以老闆打折賣給客人。",
-        "pinyin": "yīn wèi zhè jiā diàn de dàn gāo zuǒ yòu bú duì chèn，suǒ yǐ lǎo bǎn dǎ zhé mài gěi kè rén。",
-        "japanese": "因為這家店的蛋糕左右不對稱，所以老闆打折賣給客人。",
+        "pinyin": "yīn wèi zhè jiā diàn de dàn gāo zuǒ yòu bù duì chèn, suǒ yǐ lǎo bǎn dǎ zhé mài gěi kè rén.",
+        "japanese": "この店のケーキは左右が非対称なので、店主は割引して販売しています。",
         "chunks": [
           "因為這家店的蛋糕左右不對稱",
           "所以老闆打折賣給客人"
         ],
-        "hintText": "因為這家店的蛋糕左右"
+        "hintText": "因為這家店的蛋糕左右",
+        "category": "店舗・サービス"
       },
       {
         "situation": "生活トラブル",
-        "category": "生活トラブル",
-        "chinese": "雖然機車的輪胎不對稱，但只要慢慢騎，還是可以騎到機車行。",
-        "pinyin": "suī rán jī chē de lún tāi bú duì chèn，dàn zhǐ yào màn màn qí，hái shì kě yǐ qí dào jī chē háng。",
-        "japanese": "雖然機車的輪胎不對稱，但只要慢慢騎，還是可以騎到機車行。",
+        "chinese": "只要把照片裡的建築拍得對稱，畫面就會更好看。",
+        "pinyin": "zhǐ yào bǎ zhào piàn lǐ de jiàn zhù pāi de duì chēng, huà miàn jiù huì gèng hǎo kàn.",
+        "japanese": "写真の建物を左右対称に撮れば、画面がもっときれいに見えます。",
         "chunks": [
-          "雖然機車的輪胎不對稱",
-          "但只要慢慢騎",
-          "還是可以騎到機車行"
+          "只要把照片裡的建築拍得對稱",
+          "畫面就會更好看"
         ],
-        "hintText": "雖然機車的輪胎"
+        "hintText": "只要把照片裡的建築拍得",
+        "category": "生活トラブル"
       }
     ]
   },
@@ -8201,7 +8169,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "雖然這家餐廳的服務態度不錯，但是餐點品質仍有待加強。",
-        "pinyin": "suī rán zhè jiā cān tīng de fú wù tài dù bù cuò，dàn shì cān diǎn pǐn zhí réng yǒu dài jiā qiáng。",
+        "pinyin": "suī rán zhè jiā cān tīng de fú wù tài dù bù cuò, dàn shì cān diǎn pǐn zhí réng yǒu dài jiā qiáng.",
         "japanese": "このレストランのサービス態度は悪くないけど、料理の品質はまだ改善が必要だ。",
         "chunks": [
           "雖然這家餐廳的服務態度不錯",
@@ -8213,7 +8181,7 @@
       {
         "situation": "交通・移動",
         "chinese": "因為捷運站出口的指標不夠清楚，所以動線規劃仍有待改善。",
-        "pinyin": "yīn wèi jié yùn zhàn chū kǒu de zhǐ biāo bú gòu qīng chǔ，suǒ yǐ dòng xiàn guī huà réng yǒu dài gǎi shàn。",
+        "pinyin": "yīn wèi jié yùn zhàn chū kǒu de zhǐ biāo bù gòu qīng chǔ, suǒ yǐ dòng xiàn guī huà réng yǒu dài gǎi shàn.",
         "japanese": "MRT駅の出口の案内標識がはっきりしないので、動線計画はまだ改善が必要だ。",
         "chunks": [
           "因為捷運站出口的指標不夠清楚",
@@ -8225,7 +8193,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要健保卡申請流程能簡化，行政效率就有待提升。",
-        "pinyin": "zhǐ yào jiàn bǎo kǎ shēn qǐng liú chéng néng jiǎn huà，xíng zhèng xiào lǜ jiù yǒu dài tí shēng。",
+        "pinyin": "zhǐ yào jiàn bǎo kǎ shēn qǐng liú chéng néng jiǎn huà, xíng zhèng xiào lǜ jiù yǒu dài tí shēng.",
         "japanese": "健康保険カードの申請手続きが簡略化されれば、行政効率は向上が待たれる。",
         "chunks": [
           "只要健保卡申請流程能簡化",
@@ -8250,7 +8218,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他沒有顯赫的家世，但憑藉自己的努力，終於考上理想的大學。",
-        "pinyin": "suī rán tā méi yǒu xiǎn hè de jiā shì，dàn píng jiè zì jǐ de nǔ lì，zhōng yú kǎo shàng lǐ xiǎng de dà xué。",
+        "pinyin": "suī rán tā méi yǒu xiǎn hè de jiā shì, dàn píng jiè zì jǐ de nǔ lì, zhōng yú kǎo shàng lǐ xiǎng de dà xué.",
         "japanese": "彼は裕福な家柄ではないが、自分の努力によってついに理想の大学に合格した。",
         "chunks": [
           "雖然他沒有顯赫的家世，",
@@ -8263,7 +8231,7 @@
         "situation": "店舗・サービス",
         "type": "店舗・サービス",
         "chinese": "因為這家餐廳憑藉獨特的醬料打出名號，所以即使要排隊也值得一試。",
-        "pinyin": "yīn wèi zhè jiā cān tīng píng jiè dú tè de jiàng liào dǎ chū míng hào，suǒ yǐ jí shǐ yào pái duì yě zhí dé yī shì。",
+        "pinyin": "yīn wèi zhè jiā cān tīng píng jiè dú tè de jiàng liào dǎ chū míng hào, suǒ yǐ jí shǐ yào pái duì yě zhí dé yī shì.",
         "japanese": "このレストランは独自のソースで有名になったので、たとえ並んでも試す価値がある。",
         "chunks": [
           "因為這家餐廳憑藉獨特的醬料打出名號，",
@@ -8274,7 +8242,7 @@
       {
         "situation": "交通・移動",
         "chinese": "只要憑藉悠遊卡就能搭捷運和公車，而且還享有一點折扣。",
-        "pinyin": "zhǐ yào píng jiè yōu yóu kǎ jiù néng dā jié yùn hé gōng chē，ér qiě hái xiǎng yǒu yī diǎn zhé kòu。",
+        "pinyin": "zhǐ yào píng jiè yōu yóu kǎ jiù néng dā jié yùn hé gōng chē, ér qiě hái xiǎng yǒu yī diǎn zhé kòu.",
         "japanese": "悠遊卡があればMRTやバスに乗れ、さらに少し割引もある。",
         "chunks": [
           "只要憑藉悠遊卡就能搭捷運和公車，",
@@ -8322,7 +8290,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然大家來自不同地方，但只要凝聚力夠，就能一起解決問題。",
-        "pinyin": "suī rán dà jiā lái zì bù tóng dì fāng, dàn zhǐ yào níng jù lì gòu, jiù néng yì qǐ jiě jué wèn tí.",
+        "pinyin": "suī rán dà jiā lái zì bù tóng dì fāng, dàn zhǐ yào níng jù lì gòu, jiù néng yī qǐ jiě jué wèn tí.",
         "japanese": "みんな違う場所から来ているけれど、結束力があれば一緒に問題を解決できます。",
         "chunks": [
           "雖然",
@@ -8335,7 +8303,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "因為社區的凝聚力不足，所以垃圾分類一直做不好。",
-        "pinyin": "yīn wèi shè qū de níng jù lì bù zú, suǒ yǐ lā jī fēn lèi yì zhí zuò bù hǎo.",
+        "pinyin": "yīn wèi shè qū de níng jù lì bù zú, suǒ yǐ lè sè fēn lèi yī zhí zuò bù hǎo.",
         "japanese": "コミュニティの結束力が足りないので、ゴミの分別がうまくいっていません。",
         "chunks": [
           "因為",
@@ -8465,8 +8433,8 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我沒有大學學歷，但因為有相關工作經驗，所以還是符合應徵的資格。",
-        "pinyin": "suī rán wǒ méi yǒu dà xué xué lì，dàn yīn wèi yǒu xiāng guān gōng zuò jīng yàn，suǒ yǐ hái shì fú hé yīng zhēng de zī gé。",
-        "japanese": "雖然我沒有大學學歷，但因為有相關工作經驗，所以還是符合應徵的資格。",
+        "pinyin": "suī rán wǒ méi yǒu dà xué xué lì, dàn yīn wèi yǒu xiāng guān gōng zuò jīng yàn, suǒ yǐ hái shì fú hé yīng zhēng de zī gé.",
+        "japanese": "大学の学歴はないけれど、関連する職務経験があるので、応募資格は満たしています。",
         "chunks": [
           "雖然我沒有大學學歷",
           "但因為有相關工作經驗",
@@ -8476,27 +8444,25 @@
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要通過考試並繳交健保卡影本，就能取得正式的教師資格。",
-        "pinyin": "zhǐ yào tōng guò kǎo shì bìng jiǎo jiāo jiàn bǎo kǎ yǐng běn，jiù néng qǔ dé zhèng shì de jiào shī zī gé。",
-        "japanese": "只要通過考試並繳交健保卡影本，就能取得正式的教師資格。",
+        "chinese": "只要通過考試並完成實習，就能取得正式的教師資格。",
+        "pinyin": "zhǐ yào tōng guò kǎo shì bìng wán chéng shí xí, jiù néng qǔ dé zhèng shì de jiào shī zī gé.",
+        "japanese": "試験に合格して実習を終えれば、正式な教員資格を取得できます。",
         "chunks": [
-          "只要通過考試",
-          "並繳交健保卡影本",
+          "只要通過考試並完成實習",
           "就能取得正式的教師資格"
         ],
-        "hintText": "只要通過考試並繳交健保卡影本，就能取得正式的"
+        "hintText": "只要通過考試並完成實習，就能取得正式的教師"
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為這張會員卡有打折資格，所以每次消費都能累積發票點數。",
-        "pinyin": "yīn wèi zhè zhāng huì yuán kǎ yǒu dǎ zhé zī gé，suǒ yǐ měi cì xiāo fèi dōu néng lěi jī fā piào diǎn shù。",
-        "japanese": "因為這張會員卡有打折資格，所以每次消費都能累積發票點數。",
+        "chinese": "因為我是這家店的會員，所以有資格參加週年慶的抽獎。",
+        "pinyin": "yīn wèi wǒ shì zhè jiā diàn de huì yuán, suǒ yǐ yǒu zī gé cān jiā zhōu nián qìng de chōu jiǎng.",
+        "japanese": "私はこの店の会員なので、周年セールの抽選に参加する資格があります。",
         "chunks": [
-          "因為這張會員卡有打折資格",
-          "所以每次消費",
-          "都能累積發票點數"
+          "因為我是這家店的會員",
+          "所以有資格參加週年慶的抽獎"
         ],
-        "hintText": "因為這張會員卡有打折資格，所以每次消費都能累積發票點數。"
+        "hintText": "因為我是這家店的會員，所以有"
       }
     ]
   },
@@ -8515,7 +8481,7 @@
         "situation": "人間関係・家族",
         "chinese": "雖然朋友一直鼓勵我，但我面對感情問題時還是常常退縮。",
         "pinyin": "suī rán péng yǒu yī zhí gǔ lì wǒ, dàn wǒ miàn duì gǎn qíng wèn tí shí hái shì cháng cháng tuì suō.",
-        "japanese": "雖然朋友一直鼓勵我，但我面對感情問題時還是常常退縮。",
+        "japanese": "友達がずっと励ましてくれたけれど、恋愛の問題に向き合うと、私はやはりよく尻込みしてしまいます。",
         "chunks": [
           "雖然朋友一直鼓勵我，",
           "但我面對感情問題時",
@@ -8525,21 +8491,21 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為這家店的服務態度很差，所以我決定退縮不買了。",
-        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù hěn chà, suǒ yǐ wǒ jué dìng tuì suō bù mǎi le.",
-        "japanese": "因為這家店的服務態度很差，所以我決定退縮不買了。",
+        "chinese": "雖然這次的工作很有挑戰性，但我決定不退縮，好好努力。",
+        "pinyin": "suī rán zhè cì de gōng zuò hěn yǒu tiāo zhàn xìng, dàn wǒ jué dìng bù tuì suō, hǎo hǎo nǔ lì.",
+        "japanese": "今回の仕事はとても難しいけれど、私は尻込みせずにしっかり頑張ることにしました。",
         "chunks": [
-          "因為這家店的服務態度很差，",
-          "所以我決定退縮",
-          "不買了。"
+          "雖然這次的工作很有挑戰性",
+          "但我決定不退縮",
+          "好好努力"
         ],
-        "hintText": "因為這家店的服務態度很差，所以我決定"
+        "hintText": "雖然這次的工作很有挑戰性，但我決定不"
       },
       {
         "situation": "生活トラブル",
         "chinese": "只要遇到困難就退縮，這樣永遠沒辦法解決問題。",
         "pinyin": "zhǐ yào yù dào kùn nán jiù tuì suō, zhè yàng yǒng yuǎn méi bàn fǎ jiě jué wèn tí.",
-        "japanese": "只要遇到困難就退縮，這樣永遠沒辦法解決問題。",
+        "japanese": "困難にぶつかるたびに尻込みしていたら、いつまでも問題を解決できません。",
         "chunks": [
           "只要遇到困難就退縮，",
           "這樣永遠",
@@ -8563,7 +8529,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我們夫妻感情很好，但是溝通上的瓶頸還是需要一起克服。",
-        "pinyin": "suī rán wǒ men fū qī gǎn qíng hěn hǎo，dàn shì gōu tōng shàng de píng jǐng hái shì xū yào yī qǐ kè fú。",
+        "pinyin": "suī rán wǒ men fū qī gǎn qíng hěn hǎo, dàn shì gōu tōng shàng de píng jǐng hái shì xū yào yī qǐ kè fú.",
         "japanese": "私たち夫婦は仲が良いけれど、コミュニケーションのボトルネックは一緒に克服する必要があります。",
         "chunks": [
           "雖然我們夫妻感情很好",
@@ -8576,7 +8542,7 @@
         "situation": "店舗・サービス",
         "category": "店舗・サービス",
         "chinese": "因為這家餐廳的服務態度很差，所以業績一直無法突破瓶頸。",
-        "pinyin": "yīn wèi zhè jiā cān tīng de fú wù tài dù hěn chà，suǒ yǐ yè jì yī zhí wú fǎ tū pò píng jǐng。",
+        "pinyin": "yīn wèi zhè jiā cān tīng de fú wù tài dù hěn chà, suǒ yǐ yè jì yī zhí wú fǎ tū pò píng jǐng.",
         "japanese": "このレストランのサービス態度が悪いので、業績がずっとボトルネックを突破できません。",
         "chunks": [
           "因為這家餐廳的服務態度很差",
@@ -8587,7 +8553,7 @@
       {
         "situation": "交通・移動",
         "chinese": "只要捷運系統的瓶頸路段改善，通勤時間就能大幅縮短。",
-        "pinyin": "zhǐ yào jié yùn xì tǒng de píng jǐng lù duàn gǎi shàn，tōng qín shí jiān jiù néng dà fú suō duǎn。",
+        "pinyin": "zhǐ yào jié yùn xì tǒng de píng jǐng lù duàn gǎi shàn, tōng qín shí jiān jiù néng dà fú suō duǎn.",
         "japanese": "MRTシステムのボトルネック区間が改善されさえすれば、通勤時間は大幅に短縮できます。",
         "chunks": [
           "只要捷運系統的瓶頸路段改善",
@@ -8694,13 +8660,12 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "只要減少外食的開銷，就可以存錢買打折的發票。",
-        "pinyin": "zhǐ yào jiǎn shǎo wài shí de kāi xiāo, jiù kě yǐ cún qián mǎi dǎ zhé de fā piào.",
-        "japanese": "外食の出費を減らせば、割引されたレシートを買うためにお金を貯められます。",
+        "chinese": "只要減少外食的開銷，每個月就可以多存三千塊。",
+        "pinyin": "zhǐ yào jiǎn shǎo wài shí de kāi xiāo, měi gè yuè jiù kě yǐ duō cún sān qiān kuài.",
+        "japanese": "外食の出費を減らせば、毎月3,000元多く貯金できます。",
         "chunks": [
           "只要減少外食的開銷",
-          "就可以存錢",
-          "買打折的發票"
+          "每個月就可以多存三千塊"
         ],
         "hintText": "只要減少外食的"
       }
@@ -8731,14 +8696,14 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "只要這家店的營業額轉虧為盈，老闆就打算開發票給客人。",
-        "pinyin": "zhǐ yào zhè jiā diàn de yíng yè é zhuǎn kuī wéi yíng, lǎo bǎn jiù dǎ suàn kāi fā piào gěi kè rén.",
-        "japanese": "この店の売上が黒字に転じさえすれば、店主はお客さんに領収書を発行するつもりです。",
+        "chinese": "只要這家店的營業額轉虧為盈，老闆就打算多請兩個員工。",
+        "pinyin": "zhǐ yào zhè jiā diàn de yíng yè é zhuǎn kuī wéi yíng, lǎo bǎn jiù dǎ suàn duō qǐng liǎng gè yuán gōng.",
+        "japanese": "この店の売上が黒字に転じれば、店主は従業員を2人増やすつもりです。",
         "chunks": [
           "只要這家店的營業額轉虧為盈",
-          "老闆就打算開發票給客人"
+          "老闆就打算多請兩個員工"
         ],
-        "hintText": "只要這家店的營業額轉虧為盈，"
+        "hintText": "只要這家店的營業額轉虧為"
       },
       {
         "situation": "公的手続き・職場",
@@ -8789,7 +8754,6 @@
       },
       {
         "situation": "交通・移動",
-        "catergory": "交通・移動",
         "chinese": "因為捷運站的人潮太多，所以排隊狀況很難趨於緩和。",
         "pinyin": "yīn wèi jié yùn zhàn de rén cháo tài duō, suǒ yǐ pái duì zhuàng kuàng hěn nán qū yú huǎn hé.",
         "japanese": "MRTの駅の人出が多すぎるので、行列の状況はなかなか落ち着かない。",
@@ -8936,7 +8900,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我跟我爸常常意見不合，但為了家庭和諧，我們最後還是達成妥協。",
-        "pinyin": "suī rán wǒ gēn wǒ bà cháng cháng yì jiàn bù hé, dàn wèi le jiā tíng hé xié, wǒ men zuì hòu hái shì dá chéng tuǒ xié。",
+        "pinyin": "suī rán wǒ gēn wǒ bà cháng cháng yì jiàn bù hé, dàn wèi le jiā tíng hé xié, wǒ men zuì hòu hái shì dá chéng tuǒ xié.",
         "japanese": "私と父はよく意見が合わないけれど、家庭の和のために、最終的には妥協点に至りました。",
         "chunks": [
           "雖然我跟我爸常常意見不合",
@@ -8948,7 +8912,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "因為客戶一直要求降價，所以我們只好在利潤上達成妥協。",
-        "pinyin": "yīn wèi kè hù yī zhí yāo qiú jiàng jià, suǒ yǐ wǒ men zhǐ hǎo zài lì rùn shàng dá chéng tuǒ xié。",
+        "pinyin": "yīn wèi kè hù yī zhí yāo qiú jiàng jià, suǒ yǐ wǒ men zhǐ hǎo zài lì rùn shàng dá chéng tuǒ xié.",
         "japanese": "顧客が値下げを要求し続けたので、私たちは利益面で妥協せざるを得ませんでした。",
         "chunks": [
           "因為客戶一直要求降價",
@@ -8960,7 +8924,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要鄰居願意降低音量，我們就可以達成妥協，不用報警處理。",
-        "pinyin": "zhǐ yào lín jū yuàn yì jiàng dī yīn liàng, wǒ men jiù kě yǐ dá chéng tuǒ xié, bù yòng bào jǐng chǔ lǐ。",
+        "pinyin": "zhǐ yào lín jū yuàn yì jiàng dī yīn liàng, wǒ men jiù kě yǐ dá chéng tuǒ xié, bù yòng bào jǐng chǔ lǐ.",
         "japanese": "隣人が音量を下げてくれさえすれば、妥協点に至って、警察に通報しなくて済むのです。",
         "chunks": [
           "只要鄰居願意降低音量",
@@ -9031,7 +8995,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他個性低調，但才華出眾，大家都佩服他。",
-        "pinyin": "suī rán tā gè xìng dī diào, dàn cái huá chū zhòng, dà jiā dōu pèi fú tā。",
+        "pinyin": "suī rán tā gè xìng dī diào, dàn cái huá chū zhòng, dà jiā dōu pèi fú tā.",
         "japanese": "彼は性格は控えめですが、才能が傑出していて、皆が彼を尊敬しています。",
         "chunks": [
           "雖然他個性低調",
@@ -9043,7 +9007,7 @@
       {
         "situation": "店舗・服務",
         "chinese": "因為這家餐廳的服務品質出眾，所以即使要排隊我也願意等。",
-        "pinyin": "yīn wèi zhè jiā cān tīng de fú wù pǐn zhí chū zhòng, suǒ yǐ jí shǐ yào pái duì wǒ yě yuàn yì děng。",
+        "pinyin": "yīn wèi zhè jiā cān tīng de fú wù pǐn zhí chū zhòng, suǒ yǐ jí shǐ yào pái duì wǒ yě yuàn yì děng.",
         "japanese": "このレストランのサービス品質が傑出しているので、たとえ並んでも待つ覚悟があります。",
         "chunks": [
           "因為這家餐廳的服務品質出眾",
@@ -9054,7 +9018,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "雖然他剛到職不久，但表現出眾，很快就獲得升遷。",
-        "pinyin": "suī rán tā gāng dào zhí bù jiǔ, dàn biǎo xiàn chū zhòng, hěn kuài jiù huò dé shēng qiān。",
+        "pinyin": "suī rán tā gāng dào zhí bù jiǔ, dàn biǎo xiàn chū zhòng, hěn kuài jiù huò dé shēng qiān.",
         "japanese": "彼は着任して間もないですが、業績が傑出しており、すぐに昇進しました。",
         "chunks": [
           "雖然他剛到職不久",
@@ -9101,15 +9065,14 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為這家店的折扣策略很巧妙，所以每次發票都吸引很多客人。",
-        "pinyin": "yīn wèi zhè jiā diàn de zhé kòu cè lüè hěn qiǎo miào, suǒ yǐ měi cì fā piào dōu xī yǐn hěn duō kè rén.",
-        "japanese": "この店の割引戦略が巧妙なので、毎回レシートが多くの客を引きつけます。",
+        "chinese": "因為這家店的折扣策略很巧妙，所以每次都吸引很多客人。",
+        "pinyin": "yīn wèi zhè jiā diàn de zhé kòu cè lüè hěn qiǎo miào, suǒ yǐ měi cì dōu xī yǐn hěn duō kè rén.",
+        "japanese": "この店の割引戦略が巧妙なので、毎回多くの客を引きつけています。",
         "chunks": [
           "因為這家店的折扣策略很巧妙",
-          "所以每次發票",
-          "都吸引很多客人"
+          "所以每次都吸引很多客人"
         ],
-        "hintText": "因為這家店的折扣策略很巧妙，所以每次發票"
+        "hintText": "因為這家店的折扣策略很"
       },
       {
         "situation": "交通・移動",
@@ -9196,27 +9159,27 @@
       },
       {
         "situation": "店舗・サービス",
-        "domain": "店舗・サービス",
-        "chinese": "只要你在這個領域消費滿五百元，就可以拿到一張打折券跟發票。",
-        "pinyin": "zhǐ yào nǐ zài zhè ge lǐng yù xiāo fèi mǎn wǔ bǎi yuán, jiù kě yǐ ná dào yì zhāng dǎ zhé quàn gēn fā piào.",
-        "japanese": "このエリアで500元以上消費すれば、割引券とレシートがもらえます。",
+        "chinese": "因為她在設計領域工作了十年，所以很多公司都想請她幫忙。",
+        "pinyin": "yīn wèi tā zài shè jì lǐng yù gōng zuò le shí nián, suǒ yǐ hěn duō gōng sī dōu xiǎng qǐng tā bāng máng.",
+        "japanese": "彼女はデザインの分野で10年働いているので、多くの会社が彼女に手伝いを頼みたがっています。",
         "chunks": [
-          "只要你在這個領域消費滿五百元",
-          "就可以拿到一張打折券跟發票"
+          "因為她在設計領域工作了十年",
+          "所以很多公司都想請她幫忙"
         ],
-        "hintText": "只要你在這個"
+        "hintText": "因為她在設計",
+        "domain": "店舗・サービス"
       },
       {
         "situation": "交通・移動",
-        "domain": "交通・移動",
-        "chinese": "因為捷運站附近是禁停領域，所以騎機車來的人要注意停車規定。",
-        "pinyin": "yīn wèi jié yùn zhàn fù jìn shì jìn tíng lǐng yù, suǒ yǐ qí jī chē lái de rén yào zhù yì tíng chē guī dìng.",
-        "japanese": "MRT駅の近くは駐車禁止エリアなので、バイクで来る人は駐車規定に注意してください。",
+        "chinese": "只要是跟醫療相關的領域，他都很有興趣。",
+        "pinyin": "zhǐ yào shì gēn yī liáo xiāng guān de lǐng yù, tā dōu hěn yǒu xìng qù.",
+        "japanese": "医療に関係する分野なら、彼は何でもとても興味を持っています。",
         "chunks": [
-          "因為捷運站附近是禁停領域",
-          "所以騎機車來的人要注意停車規定"
+          "只要是跟醫療相關的領域",
+          "他都很有興趣"
         ],
-        "hintText": "因為捷運站附近是"
+        "hintText": "只要是跟醫療相關的",
+        "domain": "交通・移動"
       }
     ]
   },
@@ -9405,7 +9368,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他不想讓家人擔心，但記者還是揭露了他欠債的事。",
-        "pinyin": "suī rán tā bù xiǎng ràng jiā rén dān xīn，dàn jì zhě hái shì jiē lù le tā qiàn zhài de shì。",
+        "pinyin": "suī rán tā bù xiǎng ràng jiā rén dān xīn, dàn jì zhě hái shì jiē lù le tā qiàn zhài de shì.",
         "japanese": "彼は家族を心配させたくなかったが、記者は彼の借金のことを暴露した。",
         "chunks": [
           "雖然他不想讓家人擔心，",
@@ -9417,7 +9380,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "因為房東一直不退押金，所以我們決定揭露他的惡行。",
-        "pinyin": "yīn wèi fáng dōng yī zhí bù tuì yā jīn，suǒ yǐ wǒ men jué dìng jiē lù tā de è xíng。",
+        "pinyin": "yīn wèi fáng dōng yī zhí bù tuì yā jīn, suǒ yǐ wǒ men jué dìng jiē lù tā de è xíng.",
         "japanese": "大家が保証金を返してくれないので、私たちは彼の悪行を暴露することにした。",
         "chunks": [
           "因為房東一直不退押金，",
@@ -9429,7 +9392,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要員工提出證據，就能揭露公司違法使用健保卡的行為。",
-        "pinyin": "zhǐ yào yuán gōng tí chū zhèng jù，jiù néng jiē lù gōng sī wéi fǎ shǐ yòng jiàn bǎo kǎ de xíng wéi。",
+        "pinyin": "zhǐ yào yuán gōng tí chū zhèng jù, jiù néng jiē lù gōng sī wéi fǎ shǐ yòng jiàn bǎo kǎ de xíng wéi.",
         "japanese": "従業員が証拠を提出すれば、会社が健康保険証を違法に使用している行為を暴露できる。",
         "chunks": [
           "只要員工提出證據，",
@@ -9504,7 +9467,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "因為最近疫情升溫，所以公司呼籲大家盡快接種疫苗。",
-        "pinyin": "yīn wèi zuì jìn yì qíng shēng wēn，suǒ yǐ gōng sī hū yù dà jiā jǐn kuài jiē zhòng yì miáo。",
+        "pinyin": "yīn wèi zuì jìn yì qíng shēng wēn, suǒ yǐ gōng sī hū yù dà jiā jǐn kuài jiē zhòng yì miáo.",
         "japanese": "最近疫情が悪化しているので、会社は皆に早急にワクチン接種を受けるよう呼びかけている。",
         "chunks": [
           "因為最近疫情升溫，",
@@ -9516,7 +9479,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "雖然房東已經呼籲多次，但是住戶還是亂丟垃圾。",
-        "pinyin": "suī rán fáng dōng yǐ jīng hū yù duō cì，dàn shì zhù hù hái shì luàn diū lā jī。",
+        "pinyin": "suī rán fáng dōng yǐ jīng hū yù duō cì, dàn shì zhù hù hái shì luàn diū lè sè.",
         "japanese": "大家は何度も呼びかけているが、住人は依然としてゴミを散らかしている。",
         "chunks": [
           "雖然房東已經呼籲多次，",
@@ -9528,7 +9491,7 @@
       {
         "situation": "交通・移動",
         "chinese": "只要捷運公司呼籲民眾戴口罩，我就一定會配合。",
-        "pinyin": "zhǐ yào jié yùn gōng sī hū yù mín zhòng dài kǒu zhào，wǒ jiù yī dìng huì pèi hé。",
+        "pinyin": "zhǐ yào jié yùn gōng sī hū yù mín zhòng dài kǒu zhào, wǒ jiù yī dìng huì pèi hé.",
         "japanese": "MRT会社がマスク着用を呼びかければ、私は必ず協力する。",
         "chunks": [
           "只要捷運公司呼籲民眾戴口罩，",
@@ -9564,7 +9527,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我哥哥比我努力，但他的英文成績還是落後我很多。",
-        "pinyin": "suī rán wǒ gē ge bǐ wǒ nǔ lì ，dàn tā de yīng wén chéng jì hái shì luò hòu wǒ hěn duō 。",
+        "pinyin": "suī rán wǒ gē ge bǐ wǒ nǔ lì, dàn tā de yīng wén chéng jì hái shì luò hòu wǒ hěn duō.",
         "japanese": "私の兄は私より努力しているけれど、彼の英語の成績はまだ私に大きく遅れをとっています。",
         "chunks": [
           "雖然我哥哥比我努力",
@@ -9575,7 +9538,7 @@
       {
         "situation": "交通・移動",
         "chinese": "因為捷運施工的關係，公車的班次落後了將近二十分鐘。",
-        "pinyin": "yīn wèi jié yùn shī gōng de guān xì ，gōng chē de bān cì luò hòu le jiāng jìn èr shí fēn zhōng 。",
+        "pinyin": "yīn wèi jié yùn shī gōng de guān xì, gōng chē de bān cì luò hòu le jiāng jìn èr shí fēn zhōng.",
         "japanese": "MRTの工事の関係で、バスの便は20分近く遅れています。",
         "chunks": [
           "因為捷運施工的關係",
@@ -9585,15 +9548,14 @@
       },
       {
         "situation": "生活トラブル",
-        "chinese": "只要我忘記繳健保費，繳費期限一過就會落後，還要多付滯納金。",
-        "pinyin": "zhǐ yào wǒ wàng jì jiǎo jiàn bǎo fèi ，jiǎo fèi qī xiàn yī guò jiù huì luò hòu ，hái yào duō fù zhì nà jīn 。",
-        "japanese": "健康保険料を払うのを忘れると、支払期限が過ぎれば滞納し、さらに延滞金を払わなければなりません。",
+        "chinese": "因為生病請了一個禮拜的假，所以我的工作進度落後了。",
+        "pinyin": "yīn wèi shēng bìng qǐng le yī gè lǐ bài de jiǎ, suǒ yǐ wǒ de gōng zuò jìn dù luò hòu le.",
+        "japanese": "病気で1週間休んだので、仕事の進み具合が遅れてしまいました。",
         "chunks": [
-          "只要我忘記繳健保費",
-          "繳費期限一過就會落後",
-          "還要多付滯納金"
+          "因為生病請了一個禮拜的假",
+          "所以我的工作進度落後了"
         ],
-        "hintText": "只要我忘記繳健保費，繳費期限一過就會"
+        "hintText": "因為生病請了一個禮拜的假，所以我的工作進度"
       }
     ]
   },
@@ -9657,7 +9619,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他年輕時很受歡迎，但隨著年紀增長，社交圈已逐漸衰退。",
-        "pinyin": "suī rán tā nián qīng shí hěn shòu huān yíng，dàn suí zhe nián jì zēng zhǎng，shè jiāo quān yǐ zhú jiàn shuāi tuì。",
+        "pinyin": "suī rán tā nián qīng shí hěn shòu huān yíng, dàn suí zhe nián jì zēng zhǎng, shè jiāo quān yǐ zhú jiàn shuāi tuì.",
         "japanese": "彼は若い頃は人気がありましたが、年を重ねるにつれて交友関係は徐々に衰退しました。",
         "chunks": [
           "雖然他年輕時很受歡迎",
@@ -9669,7 +9631,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這條老街的商店越來越少，所以當地的經濟明顯衰退。",
-        "pinyin": "yīn wèi zhè tiáo lǎo jiē de shāng diàn yuè lái yuè shǎo，suǒ yǐ dāng dì de jīng jì míng xiǎn shuāi tuì。",
+        "pinyin": "yīn wèi zhè tiáo lǎo jiē de shāng diàn yuè lái yuè shǎo, suǒ yǐ dāng dì de jīng jì míng xiǎn shuāi tuì.",
         "japanese": "この古い商店街は店がどんどん減っているため、地元の経済は明らかに衰退しています。",
         "chunks": [
           "因為這條老街的商店越來越少",
@@ -9680,7 +9642,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要不改善空調設備，這間百貨公司的客流量就會持續衰退。",
-        "pinyin": "zhǐ yào bù gǎi shàn kōng tiáo shè bèi，zhè jiān bǎi huò gōng sī de kè liú liàng jiù huì chí xù shuāi tuì。",
+        "pinyin": "zhǐ yào bù gǎi shàn kōng tiáo shè bèi, zhè jiān bǎi huò gōng sī de kè liú liàng jiù huì chí xù shuāi tuì.",
         "japanese": "空調設備を改善しない限り、このデパートの客足は衰退し続けるでしょう。",
         "chunks": [
           "只要不改善空調設備",
@@ -9775,7 +9737,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然很多人說印刷業是夕陽產業，但我爸爸還是堅持做這一行。",
-        "pinyin": "suī rán hěn duō rén shuō yìn shuā yè shì xī yáng chǎn yè，dàn wǒ bà ba hái shì jiān chí zuò zhè yī háng。",
+        "pinyin": "suī rán hěn duō rén shuō yìn shuā yè shì xī yáng chǎn yè, dàn wǒ bà ba hái shì jiān chí zuò zhè yī háng.",
         "japanese": "多くの人は印刷業は斜陽産業だと言いますが、私の父はそれでもこの仕事を続けています。",
         "chunks": [
           "雖然很多人說印刷業是夕陽產業",
@@ -9786,7 +9748,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家書店被認為是夕陽產業，所以老闆決定轉型賣咖啡。",
-        "pinyin": "yīn wèi zhè jiā shū diàn bèi rèn wéi shì xī yáng chǎn yè，suǒ yǐ lǎo bǎn jué dìng zhuǎn xíng mài kā fēi。",
+        "pinyin": "yīn wèi zhè jiā shū diàn bèi rèn wéi shì xī yáng chǎn yè, suǒ yǐ lǎo bǎn jué dìng zhuǎn xíng mài kā fēi.",
         "japanese": "この書店は斜陽産業と見なされているため、店主はコーヒーを売ることに業態転換しました。",
         "chunks": [
           "因為這家書店被認為是夕陽產業",
@@ -9797,7 +9759,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要傳統相機店不想變成夕陽產業，就要趕快開發新服務。",
-        "pinyin": "zhǐ yào chuán tǒng xiàng jī diàn bù xiǎng biàn chéng xī yáng chǎn yè，jiù yào gǎn kuài kāi fā xīn fú wù。",
+        "pinyin": "zhǐ yào chuán tǒng xiàng jī diàn bù xiǎng biàn chéng xī yáng chǎn yè, jiù yào gǎn kuài kāi fā xīn fú wù.",
         "japanese": "伝統的なカメラ店が斜陽産業になりたくないのであれば、早急に新しいサービスを開発すべきです。",
         "chunks": [
           "只要傳統相機店不想變成夕陽產業",
@@ -9844,15 +9806,15 @@
       },
       {
         "situation": "生活トラブル",
-        "chinese": "雖然機車被拖吊很麻煩，但因為有買保險，所以處理起來還是有點優勢。",
-        "pinyin": "suī rán jī chē bèi tuō diào hěn má fan, dàn yīn wèi yǒu mǎi bǎo xiǎn, suǒ yǐ chǔ lǐ qǐ lái hái shì yǒu diǎn yōu shì.",
-        "japanese": "バイクがレッカー移動されると面倒ですが、保険に入っているので対処する上で少し有利です。",
+        "chinese": "雖然對手很強，但因為我們是主場，所以還是比較有優勢。",
+        "pinyin": "suī rán duì shǒu hěn qiáng, dàn yīn wèi wǒ men shì zhǔ chǎng, suǒ yǐ hái shì bǐ jiào yǒu yōu shì.",
+        "japanese": "相手は強いけれど、私たちはホームなので、やはり有利です。",
         "chunks": [
-          "雖然機車被拖吊很麻煩",
-          "但因為有買保險",
-          "所以處理起來還是有點優勢"
+          "雖然對手很強",
+          "但因為我們是主場",
+          "所以還是比較有優勢"
         ],
-        "hintText": "雖然機車被拖吊很麻煩，但因為有買保險，所以處理起來還是有點"
+        "hintText": "雖然對手很強，但因為我們是主場，所以還是比較有"
       }
     ]
   },
@@ -9974,8 +9936,8 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然家人意見不同，但我們還是需要整合想法，才能解決問題。",
-        "pinyin": "suī rán jiā rén yì jiàn bù tóng，dàn wǒ men hái shì xū yào zhěng hé xiǎng fǎ，cái néng jiě jué wèn tí。",
-        "japanese": "雖然家人意見不同，但我們還是需要整合想法，才能解決問題。",
+        "pinyin": "suī rán jiā rén yì jiàn bù tóng, dàn wǒ men hái shì xū yào zhěng hé xiǎng fǎ, cái néng jiě jué wèn tí.",
+        "japanese": "家族の意見はばらばらだけど、問題を解決するには考えをまとめる必要があります。",
         "chunks": [
           "雖然家人意見不同，",
           "但我們還是需要整合想法，",
@@ -9986,8 +9948,8 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為這家店的發票系統有問題，所以需要整合新的收銀軟體。",
-        "pinyin": "yīn wèi zhè jiā diàn de fā piào xì tǒng yǒu wèn tí，suǒ yǐ xū yào zhěng hé xīn de shōu yín ruǎn tǐ。",
-        "japanese": "因為這家店的發票系統有問題，所以需要整合新的收銀軟體。",
+        "pinyin": "yīn wèi zhè jiā diàn de fā piào xì tǒng yǒu wèn tí, suǒ yǐ xū yào zhěng hé xīn de shōu yín ruǎn tǐ.",
+        "japanese": "この店のレシートシステムに問題があるので、新しいレジソフトを導入して統合する必要があります。",
         "chunks": [
           "因為這家店的發票系統有問題，",
           "所以需要整合新的收銀軟體。"
@@ -9997,8 +9959,8 @@
       {
         "situation": "生活トラブル",
         "chinese": "只要把各部門的資料整合起來，就能找出問題所在。",
-        "pinyin": "zhǐ yào bǎ gè bù mén de zī liào zhěng hé qǐ lái，jiù néng zhǎo chū wèn tí suǒ zài。",
-        "japanese": "只要把各部門的資料整合起來，就能找出問題所在。",
+        "pinyin": "zhǐ yào bǎ gè bù mén de zī liào zhěng hé qǐ lái, jiù néng zhǎo chū wèn tí suǒ zài.",
+        "japanese": "各部署のデータを統合すれば、問題の原因を見つけられます。",
         "chunks": [
           "只要把各部門的資料整合起來，",
           "就能找出問題所在。"
@@ -10056,7 +10018,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要大家認同公司的願景，就能一起為了目標努力。",
-        "pinyin": "zhǐ yào dà jiā rèn tóng gōng sī de yuàn jǐng, jiù néng yì qǐ wèi le mù biāo nǔ lì.",
+        "pinyin": "zhǐ yào dà jiā rèn tóng gōng sī de yuàn jǐng, jiù néng yī qǐ wèi le mù biāo nǔ lì.",
         "japanese": "みんなが会社のビジョンを認めさえすれば、一緒に目標に向かって努力できます。",
         "chunks": [
           "只要大家認同公司的願景",
@@ -10080,7 +10042,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他們是兄弟，但為了遺產還是展開了激烈的角力。",
-        "pinyin": "suī rán tā men shì xiōng dì，dàn wèi le yí chǎn hái shì zhǎn kāi le jī liè de jiǎo lì。",
+        "pinyin": "suī rán tā men shì xiōng dì, dàn wèi le yí chǎn hái shì zhǎn kāi le jī liè de jiǎo lì.",
         "japanese": "彼らは兄弟だが、遺産をめぐって激しい勢力争いを繰り広げた。",
         "chunks": [
           "雖然他們是兄弟",
@@ -10092,7 +10054,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "因為兩家超商在街角開店，所以天天都在進行價格角力。",
-        "pinyin": "yīn wèi liǎng jiā chāo shāng zài jiē jiǎo kāi diàn，suǒ yǐ tiān tiān dōu zài jìn xíng jià gé jiǎo lì。",
+        "pinyin": "yīn wèi liǎng jiā chāo shāng zài jiē jiǎo kāi diàn, suǒ yǐ tiān tiān dōu zài jìn xíng jià gé jiǎo lì.",
         "japanese": "二つのコンビニが街角で店を開いているので、毎日価格競争を繰り広げている。",
         "chunks": [
           "因為兩家超商在街角開店",
@@ -10104,7 +10066,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "只要部門主管之間停止角力，我們就能順利推動這個專案。",
-        "pinyin": "zhǐ yào bù mén zhǔ guǎn zhī jiān tíng zhǐ jiǎo lì，wǒ men jiù néng shùn lì tuī dòng zhè ge zhuān àn。",
+        "pinyin": "zhǐ yào bù mén zhǔ guǎn zhī jiān tíng zhǐ jiǎo lì, wǒ men jiù néng shùn lì tuī dòng zhè ge zhuān àn.",
         "japanese": "部署の主管間の勢力争いが止めば、私たちはこのプロジェクトを順調に進められる。",
         "chunks": [
           "只要部門主管之間停止角力",
@@ -10129,7 +10091,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "因為樓上鄰居半夜經常發出噪音，所以讓我覺得非常困擾。",
-        "pinyin": "yīn wèi lóu shàng lín jū bàn yè jīng cháng fā chū zào yīn ， suǒ yǐ ràng wǒ jué de fēi cháng kùn rǎo 。",
+        "pinyin": "yīn wèi lóu shàng lín jū bàn yè jīng cháng fā chū zào yīn, suǒ yǐ ràng wǒ jué de fēi cháng kùn rǎo.",
         "japanese": "上の階の隣人が夜中に頻繁に騒音を出すので、とても困っています。",
         "chunks": [
           "因為樓上鄰居半夜經常發出噪音",
@@ -10141,7 +10103,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "只要店家願意改善服務態度，就不會造成顧客的困擾。",
-        "pinyin": "zhǐ yào diàn jiā yuàn yì gǎi shàn fú wù tài dù ， jiù bù huì zào chéng gù kè de kùn rǎo 。",
+        "pinyin": "zhǐ yào diàn jiā yuàn yì gǎi shàn fú wù tài dù, jiù bù huì zào chéng gù kè de kùn rǎo.",
         "japanese": "店がサービス態度を改善してくれさえすれば、客に迷惑をかけることはない。",
         "chunks": [
           "只要店家願意改善服務態度",
@@ -10153,7 +10115,7 @@
       {
         "situation": "公的手続き・職場",
         "chinese": "雖然申請補助的流程很複雜，但是為了避免後續的困擾，我還是仔細填寫了表格。",
-        "pinyin": "suī rán shēn qǐng bǔ zhù de liú chéng hěn fù zá ， dàn shì wèi le bì miǎn hòu xù de kùn rǎo ， wǒ hái shì zǐ xì tián xiě le biǎo gé 。",
+        "pinyin": "suī rán shēn qǐng bǔ zhù de liú chéng hěn fù zá, dàn shì wèi le bì miǎn hòu xù de kùn rǎo, wǒ hái shì zǐ xì tián xiě le biǎo gé.",
         "japanese": "補助金申請の手続きは複雑ですが、後々の面倒を避けるため、丁寧に書類を記入しました。",
         "chunks": [
           "雖然申請補助的流程很複雜",
@@ -10212,15 +10174,14 @@
       },
       {
         "situation": "生活トラブル",
-        "chinese": "只要機車拋錨一次，你就會把這個麻煩當成換新車的契機。",
-        "pinyin": "zhǐ yào jī chē pāo máo yī cì, nǐ jiù huì bǎ zhè ge má fan dāng chéng huàn xīn chē de qì jī.",
-        "japanese": "バイクが一度故障すれば、あなたはこの面倒を新車に買い替えるきっかけにするでしょう。",
+        "chinese": "雖然機車拋錨很麻煩，但這反而成了我改搭捷運的契機。",
+        "pinyin": "suī rán jī chē pāo máo hěn má fán, dàn zhè fǎn ér chéng le wǒ gǎi dā jié yùn de qì jī.",
+        "japanese": "バイクの故障は面倒でしたが、それがかえってMRT通勤に切り替えるきっかけになりました。",
         "chunks": [
-          "只要機車拋錨一次",
-          "你就會",
-          "把這個麻煩當成換新車的契機"
+          "雖然機車拋錨很麻煩",
+          "但這反而成了我改搭捷運的契機"
         ],
-        "hintText": "只要機車拋錨一次，你就會把這個麻煩當成換新車的"
+        "hintText": "雖然機車拋錨很麻煩，但這反而成了我改搭捷運的"
       }
     ]
   },
@@ -10307,15 +10268,15 @@
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要健保卡辦好，就不必對醫療費用太悲觀。",
-        "pinyin": "Zhǐyào jiànbǎo kǎ bàn hǎo, jiù bùbì duì yīliáo fèiyòng tài bēiguān.",
-        "japanese": "健康保険証ができさえすれば、医療費についてあまり悲観的になる必要はありません。",
+        "chinese": "雖然醫藥費不便宜，但因為有健保，所以不必太悲觀。",
+        "pinyin": "suī rán yī yào fèi bù biàn yí, dàn yīn wèi yǒu jiàn bǎo, suǒ yǐ bù bì tài bēi guān.",
+        "japanese": "医療費は安くないけれど、健康保険があるので、あまり悲観する必要はありません。",
         "chunks": [
-          "只要",
-          "健保卡辦好",
-          "就不必對醫療費用太悲觀"
+          "雖然醫藥費不便宜",
+          "但因為有健保",
+          "所以不必太悲觀"
         ],
-        "hintText": "只要健保卡辦好，就不必對醫療費用太悲觀。"
+        "hintText": "雖然醫藥費不便宜，但因為有健保，所以不必太"
       }
     ]
   },
@@ -10345,7 +10306,7 @@
         "situation": "公的手続き・職場",
         "chinese": "因為公司內部推動民主化，所以我們開始用投票來決定重要政策。",
         "pinyin": "yīn wèi gōng sī nèi bù tuī dòng mín zhǔ huà, suǒ yǐ wǒ men kāi shǐ yòng tóu piào lái jué dìng zhòng yào zhèng cè.",
-        "japanese": "因為公司內部推動民主化，所以我們開始用投票來決定重要政策。",
+        "japanese": "社内で民主化を進めているので、私たちは重要な方針を投票で決めるようになりました。",
         "chunks": [
           "因為公司內部推動民主化",
           "所以我們開始",
@@ -10355,21 +10316,20 @@
       },
       {
         "situation": "交通・移動",
-        "chinese": "雖然捷運票價調漲，但只要民主化過程透明，民眾還是願意支持。",
-        "pinyin": "suī rán jié yùn piào jià tiáo zhǎng, dàn zhǐ yào mín zhǔ huà guò chéng tòu míng, mín zhòng hái shì yuàn yì zhī chí.",
-        "japanese": "雖然捷運票價調漲，但只要民主化過程透明，民眾還是願意支持。",
+        "chinese": "雖然民主化的過程很漫長，但台灣人一直很珍惜這個成果。",
+        "pinyin": "suī rán mín zhǔ huà de guò chéng hěn màn cháng, dàn tái wān rén yī zhí hěn zhēn xī zhè gè chéng guǒ.",
+        "japanese": "民主化の過程は長かったけれど、台湾の人々はその成果をずっと大切にしてきました。",
         "chunks": [
-          "雖然捷運票價調漲",
-          "但只要民主化過程透明",
-          "民眾還是願意支持"
+          "雖然民主化的過程很漫長",
+          "但台灣人一直很珍惜這個成果"
         ],
-        "hintText": "雖然捷運票價調漲，但只要"
+        "hintText": "雖然"
       },
       {
         "situation": "生活トラブル",
         "chinese": "因為社區管委會不夠民主化，所以住戶經常為了管理費問題吵架。",
         "pinyin": "yīn wèi shè qū guǎn wěi huì bù gòu mín zhǔ huà, suǒ yǐ zhù hù jīng cháng wèi le guǎn lǐ fèi wèn tí chǎo jià.",
-        "japanese": "因為社區管委會不夠民主化，所以住戶經常為了管理費問題吵架。",
+        "japanese": "マンションの管理委員会が十分に民主的でないので、住民は管理費のことでよく揉めています。",
         "chunks": [
           "因為社區管委會不夠民主化",
           "所以住戶經常",
@@ -10393,7 +10353,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然台灣只是一個小島，但它的經濟體在亞洲很有影響力。",
-        "pinyin": "suī rán tái wān zhǐ shì yī gè xiǎo dǎo ，dàn tā de jīng jì tǐ zài yà zhōu hěn yǒu yǐng xiǎng lì 。",
+        "pinyin": "suī rán tái wān zhǐ shì yī gè xiǎo dǎo, dàn tā de jīng jì tǐ zài yà zhōu hěn yǒu yǐng xiǎng lì.",
         "japanese": "台湾は小さな島ですが、その経済体はアジアで大きな影響力を持っています。",
         "chunks": [
           "雖然台灣只是一個小島",
@@ -10405,7 +10365,7 @@
         "situation": "生活トラブル",
         "category": "生活トラブル",
         "chinese": "因為國際油價波動，所以很多經濟體都受到影響，連機車加油都變貴了。",
-        "pinyin": "yīn wèi guó jì yóu jià bō dòng ，suǒ yǐ hěn duō jīng jì tǐ dōu shòu dào yǐng xiǎng ，lián jī chē jiā yóu dōu biàn guì le 。",
+        "pinyin": "yīn wèi guó jì yóu jià bō dòng, suǒ yǐ hěn duō jīng jì tǐ dōu shòu dào yǐng xiǎng, lián jī chē jiā yóu dōu biàn guì le.",
         "japanese": "国際的な原油価格の変動のため、多くの経済体が影響を受け、バイクの給油まで高くなりました。",
         "chunks": [
           "因為國際油價波動",
@@ -10418,7 +10378,7 @@
         "situation": "公的手続き・職場",
         "category": "公的手続き・職場",
         "chinese": "只要政府推動數位轉型，這個經濟體的競爭力就會大幅提升。",
-        "pinyin": "zhǐ yào zhèng fǔ tuī dòng shù wèi zhuǎn xíng ，zhè ge jīng jì tǐ de jìng zhēng lì jiù huì dà fú tí shēng 。",
+        "pinyin": "zhǐ yào zhèng fǔ tuī dòng shù wèi zhuǎn xíng, zhè ge jīng jì tǐ de jìng zhēng lì jiù huì dà fú tí shēng.",
         "japanese": "政府がデジタル変革を推進すれば、この経済体の競争力は大幅に向上するでしょう。",
         "chunks": [
           "只要政府推動數位轉型",
@@ -10502,7 +10462,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他們是兄弟，但每次討論政治就會針鋒相對，誰也不讓誰。",
-        "pinyin": "suī rán tā men shì xiōng dì，dàn měi cì tǎo lùn zhèng zhì jiù huì zhēn fēng xiāng duì，shuí yě bù ràng shuí。",
+        "pinyin": "suī rán tā men shì xiōng dì, dàn měi cì tǎo lùn zhèng zhì jiù huì zhēn fēng xiāng duì, shuí yě bù ràng shuí.",
         "japanese": "彼らは兄弟だが、政治の話になると毎回真っ向から対立し、どちらも譲らない。",
         "chunks": [
           "雖然他們是兄弟",
@@ -10516,7 +10476,7 @@
         "situation": "店舗・サービス",
         "category": "店舗・服務",
         "chinese": "因為退貨問題，客人跟店員在櫃檯前針鋒相對，最後只好報警處理。",
-        "pinyin": "yīn wèi tuì huò wèn tí，kè rén gēn diàn yuán zài guì tái qián zhēn fēng xiāng duì，zuì hòu zhǐ hǎo bào jǐng chǔ lǐ。",
+        "pinyin": "yīn wèi tuì huò wèn tí, kè rén gēn diàn yuán zài guì tái qián zhēn fēng xiāng duì, zuì hòu zhǐ hǎo bào jǐng chǔ lǐ.",
         "japanese": "返品問題で、客と店員がカウンターの前で真っ向から対立し、最後は警察を呼ぶことになった。",
         "chunks": [
           "因為退貨問題",
@@ -10530,7 +10490,7 @@
         "situation": "交通・移動",
         "category": "交通・移動",
         "chinese": "只要遇到尖峰時段，機車和汽車在路口就常常針鋒相對，互不相讓。",
-        "pinyin": "zhǐ yào yù dào jiān fēng shí duàn，jī chē hé qì chē zài lù kǒu jiù cháng cháng zhēn fēng xiāng duì，hù bù xiāng ràng。",
+        "pinyin": "zhǐ yào yù dào jiān fēng shí duàn, jī chē hé qì chē zài lù kǒu jiù cháng cháng zhēn fēng xiāng duì, hù bù xiāng ràng.",
         "japanese": "ラッシュ時にさしかかると、バイクと車が交差点でよく真っ向から対立し、互いに譲らない。",
         "chunks": [
           "只要遇到尖峰時段",
@@ -10556,7 +10516,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "因為他做事情一向光明正大，所以大家都很信任他。",
-        "pinyin": "yīn wèi tā zuò shì qing yī xiàng guāng míng zhèng dà，suǒ yǐ dà jiā dōu hěn xìn rèn tā。",
+        "pinyin": "yīn wèi tā zuò shì qing yī xiàng guāng míng zhèng dà, suǒ yǐ dà jiā dōu hěn xìn rèn tā.",
         "japanese": "彼は物事をいつも公明正大に行うので、みんな彼をとても信頼している。",
         "chunks": [
           "因為他做事情一向",
@@ -10568,7 +10528,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "只要店家光明正大地標示價格，消費者就會比較放心。",
-        "pinyin": "zhǐ yào diàn jiā guāng míng zhèng dà de biāo shì jià gé，xiāo fèi zhě jiù huì bǐ jiào fàng xīn。",
+        "pinyin": "zhǐ yào diàn jiā guāng míng zhèng dà de biāo shì jià gé, xiāo fèi zhě jiù huì bǐ jiào fàng xīn.",
         "japanese": "店が価格を公明正大に表示してくれれば、消費者はより安心する。",
         "chunks": [
           "只要店家",
@@ -10580,7 +10540,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "雖然他光明正大地承認錯誤，但是對方還是不願意原諒。",
-        "pinyin": "suī rán tā guāng míng zhèng dà de chéng rèn cuò wù，dàn shì duì fāng hái shì bù yuàn yì yuán liàng。",
+        "pinyin": "suī rán tā guāng míng zhèng dà de chéng rèn cuò wù, dàn shì duì fāng hái shì bù yuàn yì yuán liàng.",
         "japanese": "彼は公明正大に過ちを認めたけれども、相手は依然として許そうとしなかった。",
         "chunks": [
           "雖然他",
@@ -10605,7 +10565,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然他很有才華，但是他的阿基里斯腱就是太固執，常常跟家人吵架。",
-        "pinyin": "suī rán tā hěn yǒu cái huá，dàn shì tā de ā jī lǐ sī jiàn jiù shì tài gù zhí，cháng cháng gēn jiā rén chǎo jià。",
+        "pinyin": "suī rán tā hěn yǒu cái huá, dàn shì tā de ā jī lǐ sī jiàn jiù shì tài gù zhí, cháng cháng gēn jiā rén chǎo jià.",
         "japanese": "彼は才能があるけれど、最大の弱点は頑固すぎることで、よく家族と喧嘩する。",
         "chunks": [
           "雖然他很有才華",
@@ -10616,25 +10576,25 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為這家餐廳的服務態度很差，所以阿基里斯腱就在於他們不重視客人。",
-        "pinyin": "yīn wèi zhè jiā cān tīng de fú wù tài dù hěn chà，suǒ yǐ ā jī lǐ sī jiàn jiù zài yú tā men bù zhòng shì kè rén。",
-        "japanese": "このレストランはサービス態度が悪いので、最大の弱点は客を重視しないことにある。",
+        "chinese": "雖然這家餐廳東西好吃，但服務太差是它的阿基里斯腱。",
+        "pinyin": "suī rán zhè jiā cān tīng dōng xi hǎo chī, dàn fú wù tài chà shì tā de ā jī lǐ sī jiàn.",
+        "japanese": "このレストランは料理は美味しいけれど、サービスの悪さが最大の弱点です。",
         "chunks": [
-          "因為這家餐廳的服務態度很差",
-          "所以阿基里斯腱就在於他們不重視客人"
+          "雖然這家餐廳東西好吃",
+          "但服務太差是它的阿基里斯腱"
         ],
-        "hintText": "因為這家餐廳的服務態度很差，所以"
+        "hintText": "雖然這家餐廳東西好吃，但服務太差是它的"
       },
       {
         "situation": "生活トラブル",
-        "chinese": "只要他忘記帶健保卡，他的阿基里斯腱就會讓他無法看病。",
-        "pinyin": "zhǐ yào tā wàng jì dài jiàn bǎo kǎ，tā de ā jī lǐ sī jiàn jiù huì ràng tā wú fǎ kàn bìng。",
-        "japanese": "彼が健康保険証を忘れるだけで、最大の弱点が原因で診察を受けられなくなる。",
+        "chinese": "因為他很容易緊張，所以面試一直是他的阿基里斯腱。",
+        "pinyin": "yīn wèi tā hěn róng yì jǐn zhāng, suǒ yǐ miàn shì yī zhí shì tā de ā jī lǐ sī jiàn.",
+        "japanese": "彼はとても緊張しやすいので、面接はずっと彼の最大の弱点です。",
         "chunks": [
-          "只要他忘記帶健保卡",
-          "他的阿基里斯腱就會讓他無法看病"
+          "因為他很容易緊張",
+          "所以面試一直是他的阿基里斯腱"
         ],
-        "hintText": "只要他忘記帶健保卡，"
+        "hintText": "因為他很容易緊張，所以面試一直是他的"
       }
     ]
   },
@@ -10686,15 +10646,14 @@
       },
       {
         "situation": "生活トラブル",
-        "chinese": "只要發票對獎有中獎，時至今日，我都會捐給慈善機構。",
-        "pinyin": "zhǐ yào fā piào duì jiǎng yǒu zhòng jiǎng, shí zhì jīn rì, wǒ dōu huì juān gěi cí shàn jī gòu.",
-        "japanese": "領収書の抽選で当たったら、今日に至るまでずっと慈善団体に寄付している。",
+        "chinese": "雖然發票對獎制度已經實施了幾十年，但時至今日還是很受歡迎。",
+        "pinyin": "suī rán fā piào duì jiǎng zhì dù yǐ jīng shí shī le jǐ shí nián, dàn shí zhì jīn rì hái shì hěn shòu huān yíng.",
+        "japanese": "レシート抽選制度は実施されてから数十年経っていますが、今日に至るまで人気があります。",
         "chunks": [
-          "只要發票對獎有中獎，",
-          "時至今日，",
-          "我都會捐給慈善機構。"
+          "雖然發票對獎制度已經實施了幾十年",
+          "但時至今日還是很受歡迎"
         ],
-        "hintText": "只要發票對獎有中獎，"
+        "hintText": "雖然發票對獎制度已經實施了幾十年，但"
       }
     ]
   },
@@ -10735,15 +10694,14 @@
       },
       {
         "situation": "交通・移動",
-        "chinese": "只要大家養成搭捷運的習慣，台北的塞車問題才會慢慢改變。",
-        "pinyin": "zhǐ yào dà jiā yǎng chéng dā jié yùn de xí guàn, tái běi de sāi chē wèn tí cái huì màn màn gǎi biàn.",
-        "japanese": "みんながMRTに乗る習慣を身につければ、台北の渋滞問題は徐々に改善されるでしょう。",
+        "chinese": "只有大家養成搭捷運的習慣，台北的塞車問題才會慢慢改變。",
+        "pinyin": "zhǐ yǒu dà jiā yǎng chéng dā jié yùn de xí guàn, tái běi de sāi chē wèn tí cái huì màn màn gǎi biàn.",
+        "japanese": "みんながMRTに乗る習慣を身につけて初めて、台北の渋滞問題は少しずつ変わっていくでしょう。",
         "chunks": [
-          "只要大家養成搭捷運的習慣",
-          "台北的塞車問題",
-          "才會慢慢改變"
+          "只有大家養成搭捷運的習慣",
+          "台北的塞車問題才會慢慢改變"
         ],
-        "hintText": "只要大家養成搭捷運的習慣，台北的塞車問題"
+        "hintText": "只有大家養成搭捷運的習慣，台北的塞車問題"
       }
     ]
   },
@@ -10761,7 +10719,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然我媽媽很愛碎碎念，但是她總是幫我把事情處理得很好。",
-        "pinyin": "suī rán wǒ mā ma hěn ài suì suì niàn，dàn shì tā zǒng shì bāng wǒ bǎ shì qing chǔ lǐ dé hěn hǎo。",
+        "pinyin": "suī rán wǒ mā ma hěn ài suì suì niàn, dàn shì tā zǒng shì bāng wǒ bǎ shì qing chǔ lǐ dé hěn hǎo.",
         "japanese": "母はいつも口うるさいですが、いつも私のことをうまく処理してくれます。",
         "chunks": [
           "雖然我媽媽很愛碎碎念",
@@ -10772,7 +10730,7 @@
       {
         "situation": "店舗・サービス",
         "chinese": "雖然這家店的價格比較貴，但是他們的服務態度非常好。",
-        "pinyin": "suī rán zhè jiā diàn de jià gé bǐ jiào guì，dàn shì tā men de fú wù tài dù fēi cháng hǎo。",
+        "pinyin": "suī rán zhè jiā diàn de jià gé bǐ jiào guì, dàn shì tā men de fú wù tài dù fēi cháng hǎo.",
         "japanese": "この店は値段が高いですが、サービス態度はとても良いです。",
         "chunks": [
           "雖然這家店的價格比較貴",
@@ -10783,7 +10741,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "雖然我的機車在半路拋錨了，但是幸好附近有一間機車行。",
-        "pinyin": "suī rán wǒ de jī chē zài bàn lù pāo máo le，dàn shì xìng hǎo fù jìn yǒu yī jiān jī chē háng。",
+        "pinyin": "suī rán wǒ de jī chē zài bàn lù pāo máo le, dàn shì xìng hǎo fù jìn yǒu yī jiān jī chē háng.",
         "japanese": "バイクが途中で故障しましたが、幸い近くにバイク屋がありました。",
         "chunks": [
           "雖然我的機車在半路拋錨了",
@@ -10878,15 +10836,14 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為這家店的服務態度非常好，所以我覺得他們提供的優惠是值得珍惜的。",
-        "pinyin": "yīn wèi zhè jiā diàn de fú wù tài dù fēi cháng hǎo, suǒ yǐ wǒ jué de tā men tí gōng de yōu huì shì zhí dé zhēn xī de.",
-        "japanese": "この店のサービス態度がとても良いので、彼らが提供する割引は大切にする価値があると思う。",
+        "chinese": "因為這家店的老闆每次都多送一點，所以這份人情味是值得珍惜的。",
+        "pinyin": "yīn wèi zhè jiā diàn de lǎo bǎn měi cì dōu duō sòng yī diǎn, suǒ yǐ zhè fèn rén qíng wèi shì zhí de zhēn xī de.",
+        "japanese": "この店の店主はいつも少しおまけしてくれるので、この人情味は大切にする価値があると思います。",
         "chunks": [
-          "因為這家店的服務態度非常好，",
-          "所以我覺得他們提供的優惠",
-          "是值得珍惜的。"
+          "因為這家店的老闆每次都多送一點",
+          "所以這份人情味是值得珍惜的"
         ],
-        "hintText": "因為這家店的服務態度非常好，所以我覺得他們提供的優惠"
+        "hintText": "因為這家店的老闆每次都多送一點，所以這份人情味是"
       },
       {
         "situation": "交通・移動",
@@ -10916,7 +10873,7 @@
       {
         "situation": "人間関係・家族",
         "chinese": "雖然大家平時都很忙，但只要一起吃飯就能凝聚家庭的情感。",
-        "pinyin": "suī rán dà jiā píng shí dōu hěn máng，dàn zhǐ yào yì qǐ chī fàn jiù néng níng jù jiā tíng de qíng gǎn。",
+        "pinyin": "suī rán dà jiā píng shí dōu hěn máng, dàn zhǐ yào yī qǐ chī fàn jiù néng níng jù jiā tíng de qíng gǎn.",
         "japanese": "普段はみんな忙しいけれど、一緒に食事をすれば家族の絆を強めることができる。",
         "chunks": [
           "雖然大家平時都很忙",
@@ -10928,7 +10885,7 @@
       {
         "situation": "職場",
         "chinese": "因為團隊合作的經驗，讓我們凝聚了共識，順利完成專案。",
-        "pinyin": "yīn wèi tuán duì hé zuò de jīng yàn，ràng wǒ men níng jù le gòng shì，shùn lì wán chéng zhuān àn。",
+        "pinyin": "yīn wèi tuán duì hé zuò de jīng yàn, ràng wǒ men níng jù le gòng shì, shùn lì wán chéng zhuān àn.",
         "japanese": "チームワークの経験により、私たちは共通認識を固め、プロジェクトを無事に完了させた。",
         "chunks": [
           "因為團隊合作的經驗",
@@ -10940,7 +10897,7 @@
       {
         "situation": "生活トラブル",
         "chinese": "雖然社區的意見不同，但透過多次會議還是凝聚了解決問題的力量。",
-        "pinyin": "suī rán shè qū de yì jiàn bù tóng，dàn tòu guò duō cì huì yì hái shì níng jù le jiě jué wèn tí de lì liàng。",
+        "pinyin": "suī rán shè qū de yì jiàn bù tóng, dàn tòu guò duō cì huì yì hái shì níng jù le jiě jué wèn tí de lì liàng.",
         "japanese": "コミュニティの意見は異なるが、何度も会議を重ねることで問題解決の力を結集できた。",
         "chunks": [
           "雖然社區的意見不同",
@@ -10987,25 +10944,26 @@
       },
       {
         "situation": "店舗・サービス",
-        "chinese": "因為店員的詳細介紹啟發了我，所以我就決定買這台筆電。",
-        "pinyin": "yīn wèi diàn yuán de xiáng xì jiè shào qǐ fā le wǒ, suǒ yǐ wǒ jiù jué dìng mǎi zhè tái bǐ diàn.",
-        "japanese": "店員の詳しい説明が私に気づきを与えたので、このノートパソコンを買うことにしました。",
+        "chinese": "因為老師的一句話啟發了我，所以我決定去台灣留學。",
+        "pinyin": "yīn wèi lǎo shī de yī jù huà qǐ fā le wǒ, suǒ yǐ wǒ jué dìng qù tái wān liú xué.",
+        "japanese": "先生の一言に刺激を受けて、台湾に留学することにしました。",
         "chunks": [
-          "因為店員的詳細介紹啟發了我",
-          "所以我就決定買這台筆電"
+          "因為老師的一句話啟發了我",
+          "所以我決定去台灣留學"
         ],
-        "hintText": "因為店員的詳細介紹"
+        "hintText": "因為老師的一句話"
       },
       {
         "situation": "公的手続き・職場",
-        "chinese": "只要主管的一句話啟發了我，我就會更努力完成這個專案。",
-        "pinyin": "zhǐ yào zhǔ guǎn de yī jù huà qǐ fā le wǒ, wǒ jiù huì gèng nǔ lì wán chéng zhè ge zhuān àn.",
-        "japanese": "上司の一言が私に気づきを与えさえすれば、私はこのプロジェクトをより一層頑張って完了します。",
+        "chinese": "雖然主管只說了一句話，但卻啟發了我，讓我想到新的做法。",
+        "pinyin": "suī rán zhǔ guǎn zhǐ shuō le yī jù huà, dàn què qǐ fā le wǒ, ràng wǒ xiǎng dào xīn de zuò fǎ.",
+        "japanese": "上司は一言言っただけでしたが、それがヒントになって、新しいやり方を思いつきました。",
         "chunks": [
-          "只要主管的一句話啟發了我",
-          "我就會更努力完成這個專案"
+          "雖然主管只說了一句話",
+          "但卻啟發了我",
+          "讓我想到新的做法"
         ],
-        "hintText": "只要主管的一句話"
+        "hintText": "雖然主管只說了一句話，但卻"
       }
     ]
   }
